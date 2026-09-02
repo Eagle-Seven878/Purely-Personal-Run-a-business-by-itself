@@ -1,13 +1,16 @@
-# Session 6 · LEAD — Facilitator Certification
+# FACILITATOR TRACK · LEAD — Certification Workshop
 
 **Format** Workshop · 2 days · maximum 12 candidates
-**Entry gate** Session 5 pass · signed Operating Plan · **two cohorts observed end
+**Entry gate** Ladder 5 complete · signed Operating Plan · **two cohorts observed end
 to end** · at least one full drawdown-and-recovery experienced on a live position
 **Pass gate** **Certification** — runs Sessions 1 and 2 unaided, scored
 **Slides** [`SLIDES.md`](SLIDES.md)
 
-This is the rung that makes BBT a programme instead of a course. Everything below
-S6 scales linearly with one person's calendar. S6 is where that stops being true.
+**This is not a rung of the participant ladder.** The ladder runs 1 to 5 and ends
+with a graduate who runs their own position. This is a separate track that a
+graduate may enter afterwards, and it is what makes BBT a programme instead of a
+course: everything on the ladder scales linearly with one person's calendar, and
+this is where that stops being true.
 
 Read [`_shared/facilitator-standard.md`](../_shared/facilitator-standard.md) before
 Day 1. It is the syllabus; this script is how it gets taught and tested.
@@ -198,8 +201,8 @@ address the principle to everyone afterwards.
 
 ### F1 · What certification permits
 
-**Certified to run:** Session 1 solo · Session 2 as lead with coaches assigned ·
-Sessions 3–5 co-facilitated with a certified lead for the first two cohorts.
+**Certified to run:** Ladder 1 solo · Ladder 2 as lead with coaches assigned ·
+Ladders 3–5 co-facilitated with a certified lead for the first two cohorts.
 
 **Not permitted, ever:** certifying other facilitators · altering the LTV
 ceilings, the reserve rule, the gates, or the disclosure · running an execution

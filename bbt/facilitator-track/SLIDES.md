@@ -1,4 +1,4 @@
-# Session 6 · LEAD — Slide Specification
+# Facilitator Track · LEAD — Slide Specification
 
 11 slides · 2 days · script: [`SCRIPT.md`](SCRIPT.md)
 
@@ -24,7 +24,7 @@ transitions and hold the rules that must stay visible while candidates work.
 | # | On screen | Visual | Beat |
 |---|---|---|---|
 | 10 | **TEACH-BACK RUBRIC** — accuracy 30 · mechanics 20 · timing 15 · analogy 15 · **honesty 20 (auto-fail)** | Stays on screen throughout Block D so scoring is transparent | D |
-| 11 | **CERTIFIED TO RUN** — S1 solo · S2 as lead with coaches · S3–S5 co-facilitated for two cohorts — **NEVER** certify others · alter the ceilings, reserve, gates or disclosure · run below 1:8 · claim a return | Two columns, permissions and prohibitions | F1 |
+| 11 | **CERTIFIED TO RUN** — Ladder 1 solo · Ladder 2 as lead with coaches · Ladders 3–5 co-facilitated for two cohorts — **NEVER** certify others · alter the ceilings, reserve, gates or disclosure · run below 1:8 · claim a return | Two columns, permissions and prohibitions | F1 |
 
 ---
 
@@ -38,7 +38,7 @@ One per candidate. Retained by the programme lead.
 │  Candidate ________________  Date ________________   │
 ├──────────────────────────────────────────────────────┤
 │  ENTRY GATE                                          │
-│   Session 5 passed, Operating Plan signed      ☐     │
+│   Ladder 5 complete, Operating Plan signed     ☐     │
 │   Two cohorts observed end to end              ☐     │
 │   One live drawdown and recovery experienced   ☐     │
 ├──────────────────────────────────────────────────────┤
@@ -49,8 +49,8 @@ One per candidate. Retained by the programme lead.
 │   Teaching the correction                PASS ☐      │
 ├──────────────────────────────────────────────────────┤
 │  DAY 2                                               │
-│   Teach-back 1  (S1 beat ____)   ____%   PASS ☐      │
-│   Teach-back 2  (S2 beat ____)   ____%   PASS ☐      │
+│   Teach-back 1  (L1 beat ____)   ____%   PASS ☐      │
+│   Teach-back 2  (L2 beat ____)   ____%   PASS ☐      │
 │   Execution simulation                   PASS ☐      │
 │     held the pre-flight gate                   ☐     │
 │     caught the network error before send       ☐     │

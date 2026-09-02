@@ -2,7 +2,7 @@
 
 The programme is taught live, so the programme scales only as far as the number of
 people who can teach it. This is the document that makes a second facilitator
-possible. Session 6 certifies against it.
+possible. The facilitator track certifies against it.
 
 ---
 

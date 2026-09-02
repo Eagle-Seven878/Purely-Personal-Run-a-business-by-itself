@@ -111,8 +111,9 @@ Six bottlenecks, in the order they will bite.
 **1 · One facilitator.** The script is written in one person's voice, with their
 in-jokes and their callbacks. Nobody else can pick it up. → The
 [Facilitator Standard](_shared/facilitator-standard.md) writes down the room
-mechanics as a teachable method, and **Session 6** certifies graduates to run
-Sessions 1 and 2. This is the rung that turns a course into a programme.
+mechanics as a teachable method, and the **facilitator track** certifies graduates
+to run Ladders 1 and 2. This sits alongside the ladder, not on it — it is what
+turns a course into a programme.
 
 **2 · Execution sessions do not scale by adding seats.** Session 2 is hands-on
 troubleshooting; past roughly thirty people it collapses into app support.
@@ -144,10 +145,16 @@ what is on screen and points at the beat. Build animations reference a single be
 
 ## Part 4 — What was built
 
-Six rungs, each with a timed script and a slide spec. Sessions 1 and 2 are
-rewrites of your existing material — same teaching order, same room mechanics,
-corrected numbers and claims, de-duplicated. Sessions 3 to 6 are new and are where
-the programme's missing safety and scale live.
+A five-rung participant ladder, each rung with a timed script and a slide spec,
+plus a separate facilitator track. Ladders 1 and 2 are rewrites of your existing
+material — same teaching order, same room mechanics, corrected numbers and claims,
+de-duplicated. Ladders 3 to 5 and the facilitator track are new.
+
+**Ladders 3, 4 and 5 are reconstructed, not derived.** They were designed to close
+gaps found in the source deck, without sight of a programme prospectus. If a
+prospectus already defines what ladders 3 to 5 are, treat these as a proposal to
+be replaced rather than renumbered — the gaps they close are real either way, but
+where they close them is a decision that belongs to the prospectus.
 
 See [`README.md`](README.md) for the ladder, the gates and the capital bands.
 
