@@ -1,4 +1,4 @@
-# Facilitator Track · LEAD — Slide Specification
+# TRAIN THE TRAINER — Slide Specification
 
 11 slides · 2 days · script: [`SCRIPT.md`](SCRIPT.md)
 
@@ -24,7 +24,7 @@ transitions and hold the rules that must stay visible while candidates work.
 | # | On screen | Visual | Beat |
 |---|---|---|---|
 | 10 | **TEACH-BACK RUBRIC** — accuracy 30 · mechanics 20 · timing 15 · analogy 15 · **honesty 20 (auto-fail)** | Stays on screen throughout Block D so scoring is transparent | D |
-| 11 | **CERTIFIED TO RUN** — Ladder 1 solo · Ladder 2 as lead with coaches · Ladders 3–5 co-facilitated for two cohorts — **NEVER** certify others · alter the ceilings, reserve, gates or disclosure · run below 1:8 · claim a return | Two columns, permissions and prohibitions | F1 |
+| 11 | **CERTIFIED TO RUN** — Level 0 solo · Level 1 solo · Level 2 as lead with coaches · Level 3 co-facilitated for two cohorts · **never Level 4** — **NEVER** certify others · alter the ceilings, reserve, gates or disclosure · run below 1:8 · claim a return | Two columns, permissions and prohibitions | F1 |
 
 ---
 
@@ -38,7 +38,7 @@ One per candidate. Retained by the programme lead.
 │  Candidate ________________  Date ________________   │
 ├──────────────────────────────────────────────────────┤
 │  ENTRY GATE                                          │
-│   Ladder 5 complete, Operating Plan signed     ☐     │
+│   Level 3 Immersion complete, playbook signed  ☐     │
 │   Two cohorts observed end to end              ☐     │
 │   One live drawdown and recovery experienced   ☐     │
 ├──────────────────────────────────────────────────────┤

@@ -1,6 +1,6 @@
-# Session 4 · ACCUMULATION — Slide Specification
+# MODULE 6 · THE ACCUMULATION SYSTEM — Slide Specification
 
-23 slides · 150 minutes · script: [`SCRIPT.md`](SCRIPT.md)
+23 slides · 150 minutes · script: [`MODULE-6-accumulation.md`](MODULE-6-accumulation.md)
 
 | # | On screen | Visual | Beat |
 |---|---|---|---|

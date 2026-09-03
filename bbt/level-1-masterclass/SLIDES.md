@@ -1,6 +1,6 @@
-# Session 1 · PRINCIPLES — Slide Specification
+# LEVEL 1 · BBT MASTERCLASS — Slide Specification
 
-53 slides · 120 minutes · script: [`SCRIPT.md`](SCRIPT.md)
+62 slides · 240 minutes · ₱1,999 · script: [`SCRIPT.md`](SCRIPT.md)
 
 **On screen** is the only text that appears. Everything else is spoken — see the
 beat reference. Nothing on a slide is a number that goes stale: live figures are
@@ -19,7 +19,7 @@ slides 8–14 pointing at **one** beat (B3). Edit B3 once and all seven are corr
 | 1 | **RESERVE ALL YOUR QUESTIONS** · TURN OFF MICROPHONE · USE THE CHATBOX · PARTICIPATE AT 100% · PREPARE YOUR CALCULATORS — *House Rules* | Brand cover. Five rules stacked. | A1–A2 |
 | 2 | The five house rules, numbered | Same layout, numbered build | A2 |
 | 3 | **BEFORE WE BEGIN** | Plain dark slide. **No bullets.** The disclosure is spoken, not read off a wall. | A3 |
-| 4 | BUY BORROW DIE · YEN CARRY TRADE · ENTRY LEVELS | Three stacked module titles | B |
+| 4 | BUY BORROW DIE · YEN CARRY TRADE · ENTRY LEVELS · **CAPITAL PRESERVATION** | Four stacked module titles. The fourth is the one that keeps them in the game. | B |
 
 ## Module 1 · Buy Borrow Die
 
@@ -46,9 +46,9 @@ slides 8–14 pointing at **one** beat (B3). Edit B3 once and all seven are corr
 | 23 | **DRILL 1** — Entry **$90,000** · LTV **60%** · Q: price drops to **$50,000** — liquidated? | Question slide. Hold it. | B8 |
 | 24 | Drop 40,000 → **44%** → new LTV **108%** → 108 > 91 → **LIQUIDATED** | Three-step build. Land hard on LIQUIDATED. | B8 |
 | 25 | **DRILL 2** — Entry $90,000 · LTV **50%** · drops to **$60,000** → 33.3% → **75%** → **NOT LIQUIDATED** | Same three-step build, opposite outcome | B8 |
-| 26 | **50% IS NOT THE SAFE NUMBER** — At 50% LTV you are liquidated at **−45%**. BTC drawdowns: 2018 **−84%** · 2021 **−53%** · 2022 **−77%** — **BBT: position LTV ≤ 30% · programme LTV ≤ 20% · reserve 1:1** | The most important slide in Session 1. Give it the full drawdown table from `_shared/ltv-math.md` §4 as a second panel. Do not rush past it. | **B9** |
+| 26 | **50% IS NOT THE SAFE NUMBER** — At 50% LTV you are liquidated at **−45%**. BTC drawdowns: 2018 **−84%** · 2021 **−53%** · 2022 **−77%** — **BBT: position LTV ≤ 30% · programme LTV ≤ 20% · reserve 1:1** | The most important slide in Module 1. Give it the full drawdown table from `_shared/ltv-math.md` §4 as a second panel. Do not rush past it. | **B9** |
 | 27 | **QUESTIONS** | Bounded — say "three" out loud | B10 |
-| 28 | **5 MIN BREAK** | Timer on screen. Corporate music. | B10 |
+| 28 | **10 MIN BREAK** | Timer on screen. Corporate music. | B10 |
 
 ## Module 2 · Yen Carry Trade
 
@@ -82,13 +82,32 @@ slides 8–14 pointing at **one** beat (B3). Edit B3 once and all seven are corr
 | 49 | **YOUR BUYING PRICE BECOMES YOUR 0.618** — plot the Fib as usual, then move 0.618 onto your entry | Chart, before and after | D7 |
 | 50 | **NOT ENCOURAGED** — walang basehan ang Fibonacci kung nilipat mo lang kung saan ka bumili | Warning treatment. This must not read as a technique. | D7 |
 
-## Block E · Close
+## Second break
 
 | # | On screen | Visual | Beat |
 |---|---|---|---|
-| 51 | **ONE DOLLAR, TWO JOBS** — carry (Module 2) **or** dip-buying (Module 3) — **until Session 4: carry only** | Resolves the contradiction the room just watched | **E1** |
-| 52 | **NEXT SESSION — LIVE · {{session_2_date}}** — COINS.PH FULLY VERIFIED · BINANCE FULLY VERIFIED · **{{min_capital_php}}** IN WALLET OR BANK · BOTH APPS INSTALLED | Date from the cohort file — never typed onto the slide | E2 |
-| 53 | **VERIFIED MEANS APPROVED** — not submitted, not pending — *unverified rolls to the next cohort* | The gate, stated plainly so it isn't a surprise | E2 |
+| 51 | **10 MIN BREAK** | Timer | — |
+
+## Module 4 · Capital Preservation
+
+| # | On screen | Visual | Beat |
+|---|---|---|---|
+| 52 | **A DROP IS NOT A LOSS UNTIL YOU ARE FORCED TO SELL** | The thesis, restated as a general rule. Largest type in the deck after slide 26. | F1 |
+| 53 | **WHERE YOUR ALARMS SIT** — −25% → LTV 40 → *log it* · −40% → 50 → *calculate* · **−50% → 60 → ACT** · −67% → 91 → *liquidation* | Price axis with the four marks and the 17-point gap shaded between Alarm 3 and liquidation | **F2** |
+| 54 | **SEVEN YEARS OF WEATHER** — 2019 −54% · 2020 −63% · 2021 −54% · **2022 −77%** · 2024 −33% · {{current_cycle}} | Drawdown bars with the Alarm 3 line drawn across them. Four of five cross it. Verify figures each cohort. | F3 |
+| 55 | **THE WORST ENTRY IN SEVEN YEARS** — bought the 2021 peak at 30% LTV → liquidation **$22,747** → 2022 low **$15,500** → **you would have been liquidated** — *then the rule set, step by step, and you keep every satoshi* | Two panels: the number alone fails, the number plus the instruction survives. **The most important slide in Level 1.** | **F4** |
+| 56 | **THE HONEST HALF** — at the bottom it was worth 23 centavos on the peso · **you still owned all of it** · we preserve the asset, so you choose your own timing | Never cut. This is the credibility of the programme. | **F5** |
+
+## Block E · Close and Q&A
+
+| # | On screen | Visual | Beat |
+|---|---|---|---|
+| 57 | **ONE PESO, TWO JOBS** — carry (Module 2) **or** dip-buying (Module 3) — **until Level 2/3: carry only** | Resolves the contradiction the room watched | E1 |
+| 58 | **WHAT YOU CAN NOW DO** — compute a liquidation price from any entry · find the instruction that survives a −77% year | Close beat 1. A capability, flatly stated — not a compliment. | E3 |
+| 59 | **IT WAS ALL ON PAPER** — you have never funded a wallet · moved money between platforms · posted collateral · acted at 3am — *reading the fire exit is not walking it in the dark* | Close beat 2 — the gap. Give it a full slide and a pause. | **E3** |
+| 60 | **LEVEL 2/3 · ONE CURRICULUM, TWO WAYS** — **Online · 3 days · ₱15,000** → live position, four alarms, your liquidation price in your own hand — **Face to face · 3–4 days · ₱75,000** → all of that, small class, **plus your personal playbook built beside the faculty** | Two columns, same spine. The room buys the playbook and the attention. Stated once. | E3 |
+| 61 | **DON'T BOOK IF** — you won't fund the reserve · you'd use money you need inside 5 years · tonight made you excited rather than careful | Close beat 4 — **mandatory**. Same visual weight as slide 60. | **E3** |
+| 62 | **{{level_2_date}}** · **{{level_3_date}}** · {{seat_cap}} seats — unsure? message {{ops_lead}} and say so | One step. Then stop. | E3 |
 
 ---
 
@@ -102,6 +121,11 @@ slides 8–14 pointing at **one** beat (B3). Edit B3 once and all seven are corr
 - [ ] Slide 34 present — the unwind, not just the carry
 - [ ] Slide 38 shows tier cap and blended rate, not the headline alone
 - [ ] Slide 47 present as its own slide
-- [ ] Slide 51 present — otherwise the room leaves with a contradiction
-- [ ] No date typed anywhere except via `{{session_2_date}}`
+- [ ] Slide 55 present and not compressed — the number alone must be shown to fail
+- [ ] Slide 56 present — never cut Module 4's honest half for time
+- [ ] Slide 57 present — otherwise the room leaves with a contradiction
+- [ ] Slide 61 present — a close without the disqualifier is a pitch
+- [ ] Slide 54 drawdown figures verified this month; current cycle row filled
+- [ ] No date typed anywhere except via a `{{variable}}`
 - [ ] No live BTC price printed on any slide
+- [ ] No return figure anywhere in the deck

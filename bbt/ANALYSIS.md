@@ -31,9 +31,10 @@ instead of being told it. Slides 6–14 are the strongest sequence in the deck.
 liquidation twice, once where they survive and once where they don't. Most
 programmes in this category never show the losing case at all.
 
-**The prerequisite ladder already exists.** TCIB → BBT, with slide 44 explicitly
-recalling the Fibonacci buying zones from the prior programme. The ascension
-structure is there; it is just not written down anywhere.
+**The ascension structure already exists.** TCIB → BBT, with slide 44 explicitly
+recalling the Fibonacci buying zones from the prior programme, and the prospectus
+naming Levels 0 to 4 with prices. The path is real; it just had no curriculum
+attached to each price.
 
 ## Part 2 — What is wrong
 
@@ -111,9 +112,9 @@ Six bottlenecks, in the order they will bite.
 **1 · One facilitator.** The script is written in one person's voice, with their
 in-jokes and their callbacks. Nobody else can pick it up. → The
 [Facilitator Standard](_shared/facilitator-standard.md) writes down the room
-mechanics as a teachable method, and the **facilitator track** certifies graduates
-to run Ladders 1 and 2. This sits alongside the ladder, not on it — it is what
-turns a course into a programme.
+mechanics as a teachable method, and **Train the Trainer** certifies graduates to
+run Levels 0 and 1. It sits outside the levels, not among them — it is what turns
+a course into a company.
 
 **2 · Execution sessions do not scale by adding seats.** Session 2 is hands-on
 troubleshooting; past roughly thirty people it collapses into app support.
@@ -130,14 +131,15 @@ examples, live numbers read off the platform in the room.
 
 **4 · Nothing gates progression.** A participant can reach the accumulation
 material without ever having demonstrated they can compute a liquidation price.
-→ Every rung has a **pass gate** and a written deliverable. See the ladder table
-in [`README.md`](README.md).
+→ Every level has a **pass gate** and a written deliverable. See
+[`README.md`](README.md).
 
-**5 · The curriculum ends at the riskiest moment.** It teaches participants to open
+**5 · The curriculum ended at the riskiest moment.** It teaches participants to open
 a leveraged position and then stops. There is no rung for managing the position
 through a drawdown, and a drawdown is when people are hurt and when refunds,
 complaints and reputational damage arrive.
-→ **Session 3 (Risk & Defense)** and **Session 5 (Thrive)** exist for exactly this.
+→ **Modules 4–5 (LTV Discipline and Scenario Planning)** and **Level 4** exist for
+exactly this.
 
 **6 · Duplicated speaker notes across build slides.** Maintenance hazard at any
 volume. → Script lives in `SCRIPT.md`, one beat per idea. `SLIDES.md` specifies
@@ -145,28 +147,51 @@ what is on screen and points at the beat. Build animations reference a single be
 
 ## Part 4 — What was built
 
-A five-rung participant ladder, each rung with a timed script and a slide spec,
-plus a separate facilitator track. Ladders 1 and 2 are rewrites of your existing
-material — same teaching order, same room mechanics, corrected numbers and claims,
-de-duplicated. Ladders 3 to 5 and the facilitator track are new.
+The programme mapped onto the prospectus's own Levels 0 to 4, plus the Thrive
+Circle and a Train the Trainer track. See [`README.md`](README.md).
 
-**Ladders 3, 4 and 5 are reconstructed, not derived.** They were designed to close
-gaps found in the source deck, without sight of a programme prospectus. If a
-prospectus already defines what ladders 3 to 5 are, treat these as a proposal to
-be replaced rather than renumbered — the gaps they close are real either way, but
-where they close them is a decision that belongs to the prospectus.
+- **Level 0** and **Level 1** are the existing BBT Principles material, corrected
+  and split: the story and fit check go free, the full framework goes to the
+  ₱1,999 Masterclass, extended to the four hours the prospectus sells.
+- **Levels 2 and 3** are one curriculum in two delivery modes — the Session 2
+  outline turned into a real script, plus the defense, scenario and accumulation
+  material, plus two immersion-only modules.
+- **Level 4** and the **Thrive Circle** are the cadence and the transfer work.
+- **Capital preservation** became the spine at every level rather than a topic in
+  one, per the direction to prove the strategy against the last five to seven
+  years — see [`_shared/capital-preservation.md`](_shared/capital-preservation.md).
+- **Every level closes into the next** on a gap rather than pressure, with a
+  mandatory disqualifier beat, because the prospectus promises no upsell
+  theatrics — see [`_shared/ascension.md`](_shared/ascension.md).
 
-See [`README.md`](README.md) for the ladder, the gates and the capital bands.
+## Part 5 — What is reconstructed, and what to verify
 
-## Part 5 — Verify against your own Session 2 file
+Two things were built without a source and should be read as proposals:
 
-Session 2's script was reconstructed from your outline's eight parts and ten-step
-architecture, plus every "we will show you this in the live workshop" promise made
-in Session 1. The structure follows your outline exactly. Three things were not in
-the outline and were supplied — confirm they match your intent:
+1. **Level 2/3 module boundaries and timings.** The prospectus gives format and
+   price but not a module list. The eight modules, the 1–6 / 1–8 split, and every
+   beat timing are proposed.
+2. **Modules 1, 7 and 8.** Chart structure, the personal playbook, and the
+   transfer question are written from the prospectus's promises rather than from
+   existing material.
 
-1. **Timings.** Beat timings are proposed, not derived from your file.
-2. **A named target asset.** The outline says "target asset"; the script uses BTC
-   throughout, consistent with Session 1.
-3. **The 30% LTV ceiling.** Your outline says "show participants how to manually
-   adjust LTV" without naming a target. The script sets 30%.
+Two things need checking against reality before any cohort runs:
+
+3. **The drawdown figures** in the capital preservation table are approximate and
+   drawn from the record as known at build time. Verify each one and fill the
+   current-cycle row. A wrong number here undermines everything built on it.
+4. **The Level 2 / Level 3 price boundary.** Modules 1–6 online at ₱15,000 and
+   Modules 1–8 in the room at ₱75,000 is a commercial judgement, not a derived
+   one. The curriculum supports moving the line; the file to edit is
+   [`level-2-3-deep-dive-immersion/CURRICULUM.md`](level-2-3-deep-dive-immersion/CURRICULUM.md).
+
+## Part 6 — One thing that reaches outside the curriculum
+
+The prospectus promises **"capital preservation first, growth second"** and prices
+the Immersion at ₱75,000 against it. The source deck taught "keep LTV at 50%",
+which is liquidated by a 45% drawdown — a level Bitcoin has passed three times.
+
+The correction is made throughout this build. But anything already written or
+said against the old rule — sales pages, past cohort material, faculty talk tracks
+— carries the old number and should be checked. That is a marketing and delivery
+question, not a curriculum one, which is why it is flagged here rather than fixed.

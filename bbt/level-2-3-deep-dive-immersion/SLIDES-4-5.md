@@ -1,6 +1,6 @@
-# Session 3 · RISK & DEFENSE — Slide Specification
+# MODULES 4 & 5 · LTV DISCIPLINE AND SCENARIO PLANNING — Slide Specification
 
-20 slides · 120 minutes · script: [`SCRIPT.md`](SCRIPT.md)
+20 slides · 120 minutes · script: [`MODULE-4-5-risk-defense.md`](MODULE-4-5-risk-defense.md)
 
 | # | On screen | Visual | Beat |
 |---|---|---|---|

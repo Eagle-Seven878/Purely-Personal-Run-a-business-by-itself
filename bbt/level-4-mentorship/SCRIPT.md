@@ -1,18 +1,48 @@
-# Session 5 · THRIVE — Facilitator Script
+# LEVEL 4 · DONE-WITH-YOU MENTORSHIP — Faculty Guide
 
-**Format** Live · 120 minutes
-**Entry gate** Session 4 pass — signed 90-Day Plan, one full cycle executed
-**Pass gate** **BBT Operating Plan** — one page, coach-signed
+**Price** USD 3,000 · includes 1 year of the Thrive Circle
+**Format** Premium guided implementation over 12 months, 1:1 and small group
+**Entry** Level 3 Immersion complete, signed playbook, one full cycle executed
+**Closes into** The Thrive Circle, continuing
 **Slides** [`SLIDES.md`](SLIDES.md)
 
-The programme is called Buy · Borrow · **Thrive**, and the third word has never
-had a session. This is it. Everything so far was about a position; this is about
-running it as a system for years — including the part where you're not around to
-run it.
+Level 4 is not a class. It is a year of faculty working beside a participant as
+they apply their own playbook to their own portfolio decisions. There is no
+curriculum to deliver — there is a **cadence to hold** and a set of conversations
+that must happen.
+
+The material below is the teaching content Level 4 draws on. Deliver it as it
+becomes relevant to that participant's position, not as a sequence.
+
+## The year
+
+| When | What happens | Who runs it |
+|---|---|---|
+| Onboarding | Playbook review against the live position. Every number re-verified. | Faculty 1:1 · 90 min |
+| Monthly | The four numbers — borrow rate, blended earn rate, spread, LTV | Participant, logged |
+| Quarterly | Re-plot levels · rebalance buckets · recompute alarms · **confirm reserve is still 1:1** | Faculty 1:1 · 60 min |
+| On any Alarm 3 | Same-day call. This is what they are paying for. | Faculty, on demand |
+| Annually | Full plan re-run: sizing, growth ceiling, transfer, tax | Faculty 1:1 · half day |
+
+**The Alarm 3 call is the product.** Everything else is scaffolding around being
+reachable on the day it matters. A Level 4 participant whose Alarm 3 fired and who
+did not get a same-day call has not received what they bought.
+
+## What faculty will not do
+
+Stated at onboarding, in these words:
+
+> I will not tell you to buy or sell. I will not manage your money. I will not
+> give you a number to act on. What I will do is ask you the questions your
+> playbook says to ask, in the order it says to ask them, on the day you can't
+> think straight.
+>
+> If you wanted the first thing, this is the wrong programme and I'd rather
+> refund you today than disappoint you in eight months.
 
 ---
 
-## BLOCK A · OPEN — 5 min · slide 1
+## ONBOARDING · OPEN — 5 min · slide 1
 
 Read the standing disclosure.
 
@@ -230,7 +260,7 @@ Read the standing disclosure.
 
 ---
 
-## MODULE 5 · THE OPERATING PLAN — 15 min · slide 20 · **[GATE]**
+## THE OPERATING PLAN — onboarding deliverable · slide 20 · **[GATE]**
 
 > One page. Everything you run this on for the next year.
 >
@@ -247,3 +277,36 @@ Read the standing disclosure.
 > And one last thing. You now run something that, done properly, is boring for
 > years at a time. **That's the sign it's working.** The exciting version of this
 > strategy is the one that ends.
+
+
+---
+
+## THE CLOSE INTO THE THRIVE CIRCLE
+
+Delivered at the annual review, not before. Five beats —
+[`../_shared/ascension.md`](../_shared/ascension.md).
+
+> **What you can now do.** You have run your own playbook for a year, through at
+> least one Alarm 3, with me on the phone. You did not panic and you did not
+> improvise. That is the thing this whole programme exists to produce, and you
+> have it.
+>
+> **The gap.** Nothing about your discipline. It's that the ground moves. Rates
+> change — the spread you checked in January may be inverted by June. Your levels
+> are from a swing that has since completed. The seven-year table you learned from
+> now has an eighth year in it, and next year a ninth.
+>
+> A playbook is current the day you write it and slowly stops being true.
+>
+> **What's next.** The Thrive Circle. **USD 1,999 a year** — and your first year
+> came with Level 4, so this is the renewal, not a new purchase. Ongoing market
+> education, research briefs, refreshed levels, and the alumni room.
+>
+> **Who shouldn't renew.** If you haven't logged your four numbers in six months,
+> don't renew — you're not using what you have, and paying for more won't fix
+> that. Come back when the habit is back. And if your position hasn't grown and
+> you don't intend to add to it, the Circle is a nice-to-have, not a need. Say so
+> and I'll tell you honestly.
+>
+> **One step.** Renewal goes out thirty days before your year ends. Reply or
+> don't — nobody will chase you, and it doesn't auto-renew.

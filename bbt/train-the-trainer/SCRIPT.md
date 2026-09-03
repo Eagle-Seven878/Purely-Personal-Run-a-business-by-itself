@@ -1,16 +1,20 @@
-# FACILITATOR TRACK · LEAD — Certification Workshop
+# TRAIN THE TRAINER — Faculty Certification
 
 **Format** Workshop · 2 days · maximum 12 candidates
-**Entry gate** Ladder 5 complete · signed Operating Plan · **two cohorts observed end
+**Entry gate** Level 3 Immersion complete · signed Operating Plan · **two cohorts observed end
 to end** · at least one full drawdown-and-recovery experienced on a live position
-**Pass gate** **Certification** — runs Sessions 1 and 2 unaided, scored
+**Pass gate** **Certification** — runs Level 0 and Level 1 unaided, scored
 **Slides** [`SLIDES.md`](SLIDES.md)
 
-**This is not a rung of the participant ladder.** The ladder runs 1 to 5 and ends
-with a graduate who runs their own position. This is a separate track that a
-graduate may enter afterwards, and it is what makes BBT a programme instead of a
-course: everything on the ladder scales linearly with one person's calendar, and
-this is where that stops being true.
+**This is not one of the levels.** Levels 0 to 4 are what a participant buys.
+This is what a graduate may be invited into afterwards, and it is what makes BBT
+a company rather than a course: every level scales linearly with one person's
+calendar until this track exists.
+
+It is also the mechanism behind the second programme. A faculty member certified
+here is certified on **Layer A — the principle**, which is the part that transfers
+to local stocks, US stocks or any future instrument. See
+[`../_shared/layer-model.md`](../_shared/layer-model.md).
 
 Read [`_shared/facilitator-standard.md`](../_shared/facilitator-standard.md) before
 Day 1. It is the syllabus; this script is how it gets taught and tested.
@@ -26,7 +30,7 @@ Day 1. It is the syllabus; this script is how it gets taught and tested.
 > Here is the honest state of this programme.
 >
 > Every asset we have — the script, the analogies, the room mechanics, the
-> callbacks — lives in one person's head and one person's calendar. One facilitator
+> callbacks — lives in one person's head and one person's calendar. One instructor
 > is roughly two cohorts a month. That is the ceiling, and no amount of marketing
 > moves it.
 >
@@ -42,6 +46,8 @@ Day 1. It is the syllabus; this script is how it gets taught and tested.
 > The standing disclosure — verbatim, always.
 > The LTV ceilings — 30% position, 20% programme.
 > The reserve rule — 1:1.
+> The capital preservation table, and both halves of what it claims.
+> The five closing beats, including the disqualifier.
 > The gates — no gate, no progression, no exceptions for people you like.
 > The nine claim corrections in `risk-disclosure.md`.
 > The pod ratio — one coach per eight.
@@ -81,7 +87,7 @@ Day 1. It is the syllabus; this script is how it gets taught and tested.
 > room that answering is optional.
 >
 > **The calculator moment.** Give them arithmetic they can do. A number you compute
-> yourself is a number you believe. This is why Session 1 works and a lecture on
+> yourself is a number you believe. This is why Level 1 works and a lecture on
 > the same content doesn't.
 >
 > **The filter.** Open question, take real answers, thank each one, then steer.
@@ -93,7 +99,7 @@ Day 1. It is the syllabus; this script is how it gets taught and tested.
 
 ### B2 · Practicum — 40 min · **[PAIRS]**
 
-*Each candidate teaches Session 1 beat B3, the bank walk, to a partner. Partner
+*Each candidate teaches Level 1 beat B3, the bank walk, to a partner. Partner
 scores on: did every step land · was the calculator moment held · was the filter
 used without correcting · did the "hassle" close arrive earned. Swap. Then two
 candidates teach it to the full room and are scored by everyone.*
@@ -141,7 +147,7 @@ credit on a number that decides whether someone keeps their Bitcoin.
 *The hardest thing a new facilitator does: telling a room that the earlier version
 of the material was wrong, without damaging trust in the programme.*
 
-> You will teach Session 1 beat B9, and some of your room will have heard 50% from
+> You will teach Level 1 beat B9, and some of your room will have heard 50% from
 > a previous cohort or from a friend who took this before us.
 >
 > Do not defend it. Do not blame whoever taught it. Do not soften it into "some
@@ -163,7 +169,7 @@ of the material was wrong, without damaging trust in the programme.*
 
 ## BLOCK D · TEACH-BACKS — 180 min · **[SCORED]**
 
-*Each candidate draws two beats blind — one from Session 1, one from Session 2 —
+*Each candidate draws two beats blind — one from Level 1, one from Level 2 —
 and teaches them cold to the room. Trainers and peers score.*
 
 **Scoring rubric, per beat:**
@@ -181,7 +187,7 @@ certification workshop; a candidate who makes a return claim does not certify.
 
 ## BLOCK E · THE EXECUTION SESSION — 90 min · **[SCORED]**
 
-*Simulated Session 2. Candidates run Part 8 with trainers playing participants —
+*Simulated Level 2 execution module. Candidates run Part 8 with trainers playing participants —
 including three planted problems, unannounced:*
 
 1. A participant who arrives unverified and asks to "just watch".
@@ -201,8 +207,9 @@ address the principle to everyone afterwards.
 
 ### F1 · What certification permits
 
-**Certified to run:** Ladder 1 solo · Ladder 2 as lead with coaches assigned ·
-Ladders 3–5 co-facilitated with a certified lead for the first two cohorts.
+**Certified to run:** Level 0 solo · Level 1 solo · Level 2 modules as lead with
+coaches assigned · Level 3 Immersion co-facilitated with a certified lead for the
+first two cohorts. **Never Level 4** — mentorship is faculty only.
 
 **Not permitted, ever:** certifying other facilitators · altering the LTV
 ceilings, the reserve rule, the gates, or the disclosure · running an execution
@@ -211,9 +218,11 @@ session below the one-coach-per-eight ratio · making a return claim.
 ### F2 · Standing obligations
 
 - Submit cohort variables for every cohort you run.
+- Verify the capital preservation figures before every cohort and correct the
+  shared file when they have drifted.
 - Report every participant liquidation to the programme lead within 48 hours, with
   the position card and the alarm history. **No blame attaches to a facilitator for
-  a liquidation** — it attaches to not reporting one. We cannot improve Session 3
+  a liquidation** — it attaches to not reporting one. We cannot improve the defense modules
   from cohorts we never hear about.
 - Re-certify annually.
 - Re-read `risk-disclosure.md` before every cohort. It changes as the platform

@@ -1,123 +1,122 @@
 # BBT · Buy · Borrow · Thrive
 
-The teaching ladder, the cohort gates, and the scripts and slides for every rung.
+The programme build for **The Confident Investor's Blueprint**, operated by
+Thrive Blueprint Education Corp. Scripts and slides for every level, the shared
+faculty library, and the model that lets other asset classes follow later.
 
-Built from `BBT Principles 26 April 2026_v3.pptx` and the Session 2 outline.
-Start with [`ANALYSIS.md`](ANALYSIS.md) — it explains what changed and why.
+Built from the BBT Principles deck, the Session 2 outline, and the
+**Buy Borrow Thrive Program Prospectus**. Start with
+[`ANALYSIS.md`](ANALYSIS.md) for what changed in the source material and why.
 
 ---
 
-## The ladder
-
-TCIB is the prerequisite, not part of BBT. Everything below is BBT.
+## The programme
 
 ```
-  TCIB · The Confident Investor's Blueprint          [prerequisite]
-    Fibonacci buying zones · entry levels · Cashflow fundamentals
-                          │
-                          ▼
-  ┌───────────────────────────────────────────────────────────────┐
-  │  THE LADDER                                                   │
-  │                                                               │
-  │  1  PRINCIPLES           understand the model      no capital  │
-  │  2  FIRST EXECUTION      open the position         ₱6,000      │
-  │  3  RISK & DEFENSE       survive the drawdown      no new      │
-  │  4  ACCUMULATION         compound the position     $200        │
-  │  5  THRIVE               run it as a system        $500        │
-  └───────────────────────────────────────────────────────────────┘
-                          │
-                          ▼  (optional, for graduates)
-  ┌───────────────────────────────────────────────────────────────┐
-  │  FACILITATOR TRACK       teach it                  track record│
-  └───────────────────────────────────────────────────────────────┘
+  LEVEL 0   ORIENTATION            90 min · free              understand the idea
+                │                                            ─────────────────────
+                ▼                                            "a drop is not a loss
+  LEVEL 1   MASTERCLASS            4 hrs · ₱1,999              until you are forced
+                │                                              to sell"
+                ▼
+  LEVEL 2   DEEP DIVE              3 days online · ₱15,000   ┐
+  LEVEL 3   IMMERSION              3–4 days in room · ₱75,000┘ ONE CURRICULUM
+                │
+                ▼
+  LEVEL 4   DONE-WITH-YOU          12 months · USD 3,000
+                │                  (includes yr 1 of the Circle)
+                ▼
+  CONTINUING  THE THRIVE CIRCLE    USD 1,999 / yr · alumni
+
+  ─────────────────────────────────────────────────────────────────────────
+  TRAIN THE TRAINER    2 days · by invitation · not sold to participants
 ```
 
-Ladders 1–2 are the current programme. Ladders 3–5 are the curriculum that was
-missing. The facilitator track sits **alongside** the ladder, not on it — a
-graduate may enter it afterwards, and it is how the programme grows past one
-facilitator.
-
-> **Ladders 3, 4 and 5 are reconstructed, not derived.** They were designed to
-> close gaps found in the source deck, without sight of a programme prospectus.
-> If a prospectus already defines what ladders 3 to 5 are, these are a proposal to
-> be replaced rather than renumbered. See [`ANALYSIS.md`](ANALYSIS.md) Part 4.
-
-## The five rungs
-
-| # | Rung | Format | Entry gate | Pass gate — the written deliverable |
+| Level | Price | Format | You leave able to | Build |
 |---|---|---|---|---|
-| **1** | [Principles](session-1-principles/) | Zoom · 2h | TCIB complete | Accounts verified, ₱6,000 funded, pre-flight checklist returned |
-| **2** | [Platform & First Execution](session-2-platform-execution/) | Live · 3h · pods of 8 | Ladder 1 pass | **Position Card** — live position at ≤30% LTV, liquidation price written down |
-| **3** | [Risk & Defense](session-3-risk-defense/) | Live · 2h | Ladder 2 pass | **Risk Card** + passes the margin-call drill unaided |
-| **4** | [Accumulation](session-4-accumulation/) | Live · 2.5h | Ladder 3 pass + 1:1 reserve funded | **90-Day Accumulation Plan** with pre-committed levels |
-| **5** | [Thrive](session-5-thrive/) | Live · 2h | Ladder 4 pass + one full cycle executed | **BBT Operating Plan**, one page |
+| **0** Orientation | Free | 90 min | Explain why the wealthy borrow instead of selling | [→](level-0-orientation/) |
+| **1** Masterclass | ₱1,999 | 4 hrs live | Compute your own liquidation price and survivable drawdown | [→](level-1-masterclass/) |
+| **2** Deep Dive | ₱15,000 | 3 days online | Hold a live position at ≤30% LTV with four alarms set | [→](level-2-3-deep-dive-immersion/) |
+| **3** Immersion | ₱75,000 | 3–4 days in room | All of Level 2, **plus your own written playbook** | [→](level-2-3-deep-dive-immersion/) |
+| **4** Done-With-You | USD 3,000 | 12 months | Run your playbook through a real cycle with faculty | [→](level-4-mentorship/) |
+| **Continuing** Thrive Circle | USD 1,999/yr | Ongoing | Keep levels, rates and the record current | [→](continuing-thrive-circle/) |
+| *Train the Trainer* | — | 2 days | *Teach Levels 0–3 to the standard* | [→](train-the-trainer/) |
 
-Gates are gates. A participant who has not produced the deliverable does not enter
-the next rung — they repeat. This is not administrative strictness; the rungs are
-sequenced by risk, and Ladder 4 hands someone a bigger position than Ladder 3
-taught them to defend.
+**Levels 2 and 3 are one curriculum in two delivery modes** — eight modules, of
+which Level 2 runs 1–6 and Level 3 runs 1–8. One script, one standard, one set of
+corrections. See [`level-2-3-deep-dive-immersion/CURRICULUM.md`](level-2-3-deep-dive-immersion/CURRICULUM.md).
 
-## The facilitator track
+## The spine
 
-Not a rung. A separate two-day certification workshop a graduate may enter after
-Ladder 5, capped at 12 candidates.
+Every level teaches one sentence at increasing depth:
 
-| Track | Format | Entry gate | Pass gate |
-|---|---|---|---|
-| [Lead](facilitator-track/) | Workshop · 2 days | Ladder 5 complete + 2 cohorts observed | **Certification** — runs Ladders 1 and 2 unaided |
+> **A drop is not a loss until you are forced to sell.**
 
-## Capital bands
+And every level is honest about both halves of what that buys:
 
-| Rung | Deployed | Reserve (1:1) | Total | Position LTV | Programme LTV |
-|---|---|---|---|---|---|
-| 1–2 | ~$100 (₱6,000) | — first cycle | $100 | ≤ 30% | ≤ 30% |
-| 3 | ~$100 | $100 | $200 | ≤ 30% | ≤ 20% |
-| 4 | $200 | $200 | $400 | ≤ 30% | ≤ 20% |
-| 5 | $500+ | $500+ | $1,000+ | ≤ 30% | ≤ 20% |
+- **What the rules protect** — the asset. Run to BBT rules, a position is never
+  force-sold in any drawdown Bitcoin has produced in seven years.
+- **What they do not protect** — the value. At the 2022 bottom the asset was worth
+  23 centavos on the peso. You still owned all of it.
 
-The reserve is not optional above Ladder 2 and is a hard gate into Ladder 4. Why 30% and not
-the 50% the original deck teaches: [`_shared/ltv-math.md`](_shared/ltv-math.md) §4.
+The arithmetic, the seven-year record, and the case that breaks the shortcut are
+in [`_shared/capital-preservation.md`](_shared/capital-preservation.md). **The
+30% LTV ceiling by itself does not save a top-tick 2021 entry through 2022. The
+written instruction to act at −50% does.** That finding is the reason the drill
+is a gate rather than a lecture.
+
+## Closing into the next level
+
+Every level closes on a **gap**, never on pressure — the prospectus promises "no
+pressure, no upsell theatrics," and that is the positioning, not a nicety. Five
+beats, four minutes, once, and **beat four names who should not buy.**
+
+The method and the full ladder of closes: [`_shared/ascension.md`](_shared/ascension.md).
 
 ## Repository map
 
 ```
 bbt/
-├── README.md                        this file — the ladder
-├── ANALYSIS.md                      audit of the source material + scale plan
+├── README.md                            this file
+├── ANALYSIS.md                          audit of the source material
 ├── _shared/
-│   ├── ltv-math.md                  the four formulas, the drawdown table
-│   ├── risk-disclosure.md           standing disclosure + 9 claim corrections
-│   ├── facilitator-standard.md      room mechanics, pod structure, hard questions
-│   └── cohort-variables.md          per-cohort file; kills hard-coded numbers
-├── session-N-*/                     ladders 1–5
-│   ├── SCRIPT.md                    beat-by-beat, timed, spoken
-│   └── SLIDES.md                    slide-by-slide: on screen, build, beat ref
-└── facilitator-track/               not a rung — certification workshop
-    ├── SCRIPT.md
-    └── SLIDES.md
+│   ├── capital-preservation.md          the seven-year stress test  ← the spine
+│   ├── ltv-math.md                      four formulas, drawdown table
+│   ├── risk-disclosure.md               standing disclosure + 9 corrections
+│   ├── ascension.md                     the closing method
+│   ├── facilitator-standard.md          room mechanics, pods, hard questions
+│   ├── layer-model.md                   how other asset classes follow later
+│   └── cohort-variables.md              per-cohort file; kills hard-coded numbers
+├── level-0-orientation/                 SCRIPT · SLIDES
+├── level-1-masterclass/                 SCRIPT · SLIDES
+├── level-2-3-deep-dive-immersion/       CURRICULUM · 5 modules · 5 slide specs
+├── level-4-mentorship/                  SCRIPT · SLIDES
+├── continuing-thrive-circle/            SCRIPT
+└── train-the-trainer/                   SCRIPT · SLIDES
 ```
 
-`SCRIPT.md` is what the facilitator says. `SLIDES.md` is what the room sees. They
-are separate files so a build animation across seven slides references **one**
-beat instead of carrying seven copies of the same speaker note — which is how the
-current deck is built, and how it drifts.
+`SCRIPT` / `MODULE` files are what faculty says. `SLIDES` files are what the room
+sees. They are separate so a seven-slide build references **one** script beat
+instead of carrying seven copies of the same speaker note.
+
+## Other asset classes
+
+Local stocks, US stocks, forex and options are **separate programmes and are not
+built here.** What is recorded is the architecture that lets them follow without
+rewriting the curriculum: every beat is tagged **[LAYER A]** (the principle —
+invariant) or **[LAYER B]** (the instrument — swaps out).
+
+[`_shared/layer-model.md`](_shared/layer-model.md) also carries an honest fit
+assessment. Short version: stocks fit well, forex fits partially, **options do not
+fit** — they expire and cannot be borrowed against, so an options course belongs
+under the same company and the same faculty standard but must not be sold as BBT.
 
 ## Running a cohort
 
-1. Copy `_shared/cohort-variables.md` → `cohorts/<name>.md`. Fill it.
-2. Assign one coach per eight participants. Below that ratio, execution sessions
-   fail — see [`_shared/facilitator-standard.md`](_shared/facilitator-standard.md) §5.
-3. Run the pre-flight gate **before** Session 2, asynchronously. Unverified
-   participants roll to the next cohort.
-4. The morning of each session, read the platform figures live and record them in
-   the cohort file.
-5. Read the standing disclosure at the top of every session, unedited.
-6. Collect the pass deliverable before opening the next rung.
-
-## A note on what this programme teaches
-
-BBT teaches leverage against a volatile asset. That is a legitimate thing to
-teach and a dangerous thing to teach carelessly. The material here is deliberately
-more conservative than the source deck, states the failure modes plainly, and
-gates progression on demonstrated competence rather than attendance. Read
-[`_shared/risk-disclosure.md`](_shared/risk-disclosure.md) before facilitating.
+1. Copy `_shared/cohort-variables.md` → `cohorts/<name>.md`. Fill every field.
+2. **Verify the capital preservation figures** and fill the current-cycle row.
+3. One coach per eight for any module where participants execute.
+4. Run the pre-flight gate asynchronously before Module 2. Unverified rolls over.
+5. Read the standing disclosure at the top of every level, including the free one.
+6. Collect the written deliverable before opening the next level.
+7. Close on the gap. Name who shouldn't buy. Say it once and stop.

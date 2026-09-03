@@ -1,9 +1,10 @@
-# Session 3 · RISK & DEFENSE — Facilitator Script
+# MODULES 4 & 5 · LTV DISCIPLINE AND SCENARIO PLANNING
 
-**Format** Live · 120 minutes · pods of 8
-**Entry gate** Session 2 pass — Position Card, open position at ≤30% LTV
+**Level 2 & 3 · 130 minutes · Day 3 · both modes**
+
+**Entry gate** Modules 2–3 complete — Position Card, open position at ≤30% LTV
 **Pass gate** **Risk Card** + passes the margin-call drill unaided
-**Slides** [`SLIDES.md`](SLIDES.md)
+**Slides** see this level's slide specs in [`CURRICULUM.md`](CURRICULUM.md)
 
 **New rung.** The source curriculum taught participants to open a leveraged
 position and stopped. This is the session that teaches them to survive one. It is
@@ -248,8 +249,8 @@ Liquidation risk goes to zero.*
 states: new LTV, which alarm, action, amount, remaining reserve. Coach scores
 pass/fail on the Risk Card.*
 
-**A participant who cannot do this unaided does not enter Session 4. They repeat
-Session 3 with the next cohort — with their position open and their coach
+**A participant who cannot do this unaided does not proceed to Module 6. They repeat
+Module 4 with the next cohort — with their position open and their coach
 watching.**
 
 ---
@@ -271,4 +272,4 @@ watching.**
 > What it buys is that you're still holding this position in two years, when the
 > people who ran 78% are telling a story about getting unlucky.
 >
-> {{session_4_date}}. Reserve must be funded 1:1 before you're in that room.
+> {{next_module_day}}. Reserve must be funded 1:1 before you're in that room.

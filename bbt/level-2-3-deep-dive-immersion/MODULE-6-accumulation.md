@@ -1,9 +1,10 @@
-# Session 4 · ACCUMULATION — Facilitator Script
+# MODULE 6 · THE ACCUMULATION SYSTEM
 
-**Format** Live · 150 minutes · pods of 8
-**Entry gate** Session 3 pass — Risk Card, drill passed unaided, **reserve funded 1:1**
+**Level 2 & 3 · 150 minutes · Day 3 · both modes**
+
+**Entry gate** Modules 4–5 complete, drill passed — Risk Card, drill passed unaided, **reserve funded 1:1**
 **Pass gate** **90-Day Accumulation Plan** with pre-committed levels, coach-signed
-**Slides** [`SLIDES.md`](SLIDES.md)
+**Slides** see this level's slide specs in [`CURRICULUM.md`](CURRICULUM.md)
 
 This rung resolves the open conflict in the source curriculum: Session 1 Module 2
 tells participants to put borrowed capital into Earn, Module 3 tells them to hold
@@ -231,7 +232,7 @@ people forget.
 **Drill 5 · The spread inverts — slide 21**
 Borrow rate rises above the earn rate. *Carry is now costing money. Action: move
 carry capital to dry powder or repay part of the loan. Do not hold a negative
-carry because the strategy has a name.* Tests Session 5's material early.
+carry because the strategy has a name.* Tests Level 4's material early.
 
 **Drill 6 · Everything at once — slide 22**
 Price → $60,000, spread inverted, reserve $100 intact. *LTV = 50%. Alarm 2:

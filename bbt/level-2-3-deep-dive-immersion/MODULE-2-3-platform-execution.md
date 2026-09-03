@@ -1,10 +1,11 @@
-# Session 2 · PLATFORM WALKTHROUGH & FIRST EXECUTION — Facilitator Script
+# MODULES 2 & 3 · THE PLATFORM AND FIRST EXECUTION
 
-**Format** Live · 180 minutes · **pods of 8, one coach each**
-**Entry gate** Session 1 pass — accounts verified, ₱6,000 funded, checklist returned
+**Level 2 & 3 · 180 minutes · Day 2 · both modes**
+
+**Entry gate** Level 1 complete, or direct registration — accounts verified, ₱6,000 funded, checklist returned
 **Pass gate** **Position Card** — a live position at ≤30% LTV with the liquidation
 price written down by the participant, in their own hand
-**Slides** [`SLIDES.md`](SLIDES.md)
+**Slides** see this level's slide specs in [`CURRICULUM.md`](CURRICULUM.md)
 
 This is the highest-risk session in the programme: participants move real money
 and take on leverage for the first time. Your source material for it was an
@@ -38,7 +39,7 @@ Read [`_shared/risk-disclosure.md`](../_shared/risk-disclosure.md) §1 verbatim.
 *Anyone failing the gate leaves for the next cohort's Session 2 now, warmly:*
 
 > You're not behind and you haven't lost anything. This room is going to move fast
-> with real money and I'm not letting you do that half-ready. {{session_2_date}}
+> with real money and I'm not letting you do that half-ready. {{level_2_date}}
 > next cohort, you'll walk in ahead of everyone.
 
 **Do not let an unverified participant stay "just to watch." They will pull a
@@ -378,7 +379,7 @@ weren't watching.*
 
 ### I2 · What you may and may not do before Session 3 — 4 min · slide 34
 
-> Between now and {{session_3_date}}:
+> Between now and {{next_module_day}}:
 >
 > **Do** — check your LTV once a day. Not ten times. Once.
 > **Do** — put your borrowed stablecoin into Earn. Carry only.
@@ -399,4 +400,4 @@ weren't watching.*
 > a position. Next session you learn to survive one. Those are different skills and
 > the second one is worth more.
 >
-> {{session_3_date}}. Bring the card.
+> {{next_module_day}}. Bring the card.

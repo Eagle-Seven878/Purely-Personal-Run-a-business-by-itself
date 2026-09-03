@@ -1,21 +1,49 @@
-# Session 1 · PRINCIPLES — Facilitator Script
+# LEVEL 1 · BBT MASTERCLASS — Facilitator Script
 
-**Format** Zoom · 120 minutes · unlimited seats
-**Entry gate** TCIB complete
-**Pass gate** Accounts verified · ₱6,000 funded · pre-flight checklist returned
+**Price** ₱1,999
+**Format** 240 minutes · live Zoom · one facilitator, no coaches required
+**Entry** Level 0 Orientation, or direct registration
+**Closes into** Level 2/3 · Deep Dive & Immersion
 **Slides** [`SLIDES.md`](SLIDES.md)
 
-This is a rewrite of `BBT Principles 26 April 2026_v3.pptx`. Same teaching order,
-same room mechanics, same voice. Corrected per
-[`_shared/risk-disclosure.md`](../_shared/risk-disclosure.md) §2, de-duplicated,
-and with every hard-coded price replaced by a round abstract number or a live read.
+The complete framework end to end, exactly as the prospectus promises it: asset
+selection, buying zones, prudent borrowing mechanics, and the risk rules that
+protect you. This is the level where a person stops being interested and starts
+being able to compute.
+
+**This level must stand on its own.** Someone who takes Level 1 and never buys
+anything else has to leave with something whole. Nothing is withheld to make the
+next level necessary — see [`../_shared/ascension.md`](../_shared/ascension.md).
 
 `{{VARIABLE}}` comes from the cohort file. **[LIVE]** means read it off the
-platform in the room; never off the slide.
+platform in the room, never off the slide. **[LAYER A]** / **[LAYER B]** mark
+what transfers to future programmes — see
+[`../_shared/layer-model.md`](../_shared/layer-model.md).
 
 ---
 
-## BLOCK A · OPEN — 8 min
+## The 240-minute plan
+
+| Block | Minutes | Running |
+|---|---|---|
+| A · Open, house rules, disclosure | 12 | 0:12 |
+| B · Frame the four modules | 5 | 0:17 |
+| **Module 1 · Buy Borrow Die** | 65 | 1:22 |
+| Break | 10 | 1:32 |
+| **Module 2 · Yen Carry Trade** | 40 | 2:12 |
+| **Module 3 · Entry Levels** | 40 | 2:52 |
+| Break | 10 | 3:02 |
+| **Module 4 · Capital Preservation** | 40 | 3:42 |
+| E · Close and Q&A | 18 | 4:00 |
+
+Beat timings inside each module are the **floor**. Where a module has slack in
+the four-hour format, spend it on: the calculator moments in Module 1 (let every
+person finish), a second worked drill in Module 1, the unwind story in Module 2,
+and a second scenario in Module 3. Never spend it on the close.
+
+---
+
+## BLOCK A · OPEN — 12 min
 
 ### A1 · Welcome — 2 min · slide 1
 
@@ -28,7 +56,7 @@ platform in the room; never off the slide.
 
 *Wait. Acknowledge what comes in.* "Thank you, I see the Yes coming in."
 
-### A2 · House rules — 3 min · slide 2
+### A2 · House rules — 4 min · slide 2
 
 > Before we start — the house rules.
 >
@@ -43,7 +71,7 @@ platform in the room; never off the slide.
 
 *Wait for the responses.* "Here we go."
 
-### A3 · The standing disclosure — 3 min · slide 3
+### A3 · The standing disclosure — 5 min · slide 3
 
 **Read [`_shared/risk-disclosure.md`](../_shared/risk-disclosure.md) §1 verbatim.
 Do not paraphrase, do not soften, do not add a joke at the end.**
@@ -53,13 +81,15 @@ Do not paraphrase, do not soften, do not add a joke at the end.**
 
 ---
 
-## BLOCK B · FRAME — 3 min · slide 4
+## BLOCK B · FRAME — 5 min · slide 4
 
-> Tonight, three principles.
+> Tonight, four modules.
 >
 > One — **Buy, Borrow, Die**.
 > Two — the **Yen Carry Trade**.
 > Three — **Entry Levels**.
+> Four — **Capital Preservation**, which is the one that keeps you in the game
+> long enough for the first three to matter.
 >
 > We'll discuss the principles first, and relate them to the Binance interface as
 > we go. Because just like in Cashflow — you have to know the fundamentals, the
@@ -71,7 +101,7 @@ Do not paraphrase, do not soften, do not add a joke at the end.**
 
 ---
 
-## MODULE 1 · BUY BORROW DIE — 40 min
+## MODULE 1 · BUY BORROW DIE — 65 min
 
 ### B1 · The land — 3 min · slides 5–6
 
@@ -247,7 +277,7 @@ it", filter:*
 
 ### B9 · The rule the old version got wrong — 4 min · slide 26
 
-**This is the most important beat in Session 1. Do not compress it.**
+**This is the most important beat in Module 1. Do not compress it.**
 
 > Now here's where I'm going to correct something you may have heard elsewhere —
 > including from us, in earlier cohorts.
@@ -273,15 +303,15 @@ it", filter:*
 > Two different numbers, and you need to be able to say both of yours. Write them
 > down now.
 
-### B10 · Break — 5 min · slides 27–28
+### B10 · Break — 10 min · slides 27–28
 
 > Questions before the break? I'll take three.
 
-*Bound it. Take three. Then:* "Five-minute break. Music on. Be back."
+*Bound it. Take three. Then:* "Ten-minute break. Music on. Be back."
 
 ---
 
-## MODULE 2 · YEN CARRY TRADE — 25 min
+## MODULE 2 · YEN CARRY TRADE — 40 min
 
 ### C1 · Re-entry — 2 min · slide 29
 
@@ -379,7 +409,7 @@ module.**
 > On your actual balance the blended rate is {{usdc_earn_apr_blended}}.
 >
 > **Two** — both rates float, independently. The gap narrows. Some months it
-> **inverts** and you pay more than you earn. In Session 5 you'll check this
+> **inverts** and you pay more than you earn. In Level 4 you'll check this
 > monthly and know what to do when it flips.
 >
 > **Three** — the money earning that rate is sitting on a platform. That's its own
@@ -397,7 +427,7 @@ module.**
 
 ---
 
-## MODULE 3 · ENTRY LEVELS — 25 min
+## MODULE 3 · ENTRY LEVELS — 40 min
 
 ### D1 · Recall — 3 min · slides 41–42
 
@@ -478,7 +508,7 @@ module.**
 > Buying more Bitcoin with borrowed money raises your loan and your collateral
 > together — it does not rescue the position.
 >
-> Session 3 is where we drill this until it's automatic.
+> Level 2/3 is where we drill this until it's automatic.
 
 ### D7 · No signal — 2 min · slides 48–50
 
@@ -494,56 +524,227 @@ module.**
 
 ---
 
-## BLOCK E · CLOSE — 11 min
+## SECOND BREAK — 10 min · slide 51
 
-### E1 · Where the two competing uses land — 3 min · slide 51
+---
 
-**Correction C8. Say this. Without it, the room leaves with a contradiction.**
+## MODULE 4 · CAPITAL PRESERVATION — 40 min · **[LAYER A]**
 
-> One thing to close cleanly, because I've shown you two different things to do
-> with the same borrowed dollar.
->
-> Module 2 said: borrow USDT, convert to USDC, park it in Earn, collect the spread.
-> Module 3 said: borrow USDT, hold it, buy the dip.
->
-> You can't do both with the same $30. So here's the rule until Session 4:
->
-> **Run the carry only.** Borrowed capital goes to Earn. You are learning the
-> mechanism, not chasing the return.
->
-> Session 4 is where we split that dollar properly, with a written allocation and
-> pre-committed levels. Nobody deploys into dips before then.
+**New module, and the reason the other three are worth anything.** Everything here
+is drawn from
+[`../_shared/capital-preservation.md`](../_shared/capital-preservation.md) —
+read it before you teach it, and verify the figures.
 
-### E2 · What you owe before Session 2 — 5 min · slides 52–53
+### F1 · The sentence — 4 min · slide 52
 
-> Session 2 is **live** and it is hands-on. You will move real money and you will
-> open a real position. So there is a gate, and it is a real gate.
+> Module 1 ended on a word: **foreclosed.** Let me give you the general version.
 >
-> Before you walk into that room you must have:
+> **A drop is not a loss until you are forced to sell.**
 >
-> **One.** A **Coins.ph** account — fully verified.
-> **Two.** A **Binance** account — fully verified.
-> **Three.** **{{min_capital_php}} pesos** or equivalent in your wallet or bank.
-> **Four.** Both apps installed on the phone you'll bring.
+> Say it back to me. Type it in the chat.
 >
-> "Verified" means verified. Not submitted. Not pending. Approved.
->
-> Here is why I'm strict. Session 2 runs in pods of eight with a coach each. If
-> three people arrive unverified, that room becomes tech support and everyone else
-> loses their session. So if you're not verified by {{session_2_date}}, you roll to
-> the next cohort. No penalty, no drama — you just come back ready.
->
-> Your checklist goes out after this call. Send it back completed.
+> Everything in the next forty minutes is one question: how do we remove the
+> force?
 
-### E3 · Q&A and close — 3 min
+### F2 · Where your alarms sit on the price — 10 min · slide 53
 
-> Five minutes of questions. Anything we don't get to, we handle in the live
-> session.
-
-*Take questions. Then:*
-
-> One last thing. Nothing tonight was a promise about money. What you got was a
-> mechanism, and the price at which it breaks. That's the honest version, and it's
-> the only version that survives a bad year.
+> You already know 91% is liquidation. Let's turn that into prices you can
+> actually watch.
 >
-> See you on {{session_2_date}}. Come verified.
+> Open at **30% LTV**. Calculators. What price fall takes you to 40% LTV?
+>
+> 30 divided by 0.75 is 40. So a **25% fall.** That's your first alarm.
+>
+> Now 50% LTV — 30 over 0.6, so a **40% fall.**
+> Now 60% — 30 over 0.5, a **50% fall.**
+> And liquidation at 91% — a **67% fall.**
+
+| Price falls | LTV | What you do |
+|---|---|---|
+| −25% | 40% | **Log it.** Nothing else. |
+| −40% | 50% | **Calculate** the top-up. Don't execute. |
+| −50% | 60% | **ACT.** Top up from reserve, or close the loan. |
+| −67% | 91% | Liquidation — *you never arrive here* |
+
+> Look at the gap between the third row and the fourth. **Seventeen percentage
+> points**, and a written instruction sitting inside it.
+>
+> That gap is what you're actually buying with the discipline.
+
+### F3 · Seven years of weather — 8 min · slide 54
+
+*Walk the drawdown record. Verify the figures before the session.*
+
+> 2019, about −54%. 2020 COVID, about −63%. 2021, about −54%. 2022 — **−77%.**
+> 2024, about −33%.
+>
+> Roughly once a year, every year, for seven years.
+>
+> Now match those to the table. Four of those five hit **Alarm 3**. Which tells
+> you something you need to hear now rather than at 3am:
+>
+> **Alarm 3 is not an emergency. It is a normal event.** It happens about once a
+> year. Someone who thinks it's a catastrophe will panic. Someone who expects it
+> will act.
+
+### F4 · The worst entry in seven years — 12 min · slide 55
+
+**The most important beat in Level 1. Do not compress it.**
+
+> Let's try to break the rule. Worst possible entry — you bought at the **2021
+> peak, around $69,000.** The exact top. And you followed our ceiling, 30% LTV.
+>
+> Calculators. Your liquidation price: 69,000 times 0.30 divided by 0.91.
+>
+> **$22,747.**
+>
+> Now — the 2022 low was about **$15,500.**
+
+*Let the room do the comparison. Wait for it.*
+
+> Yes. **You would have been liquidated.**
+>
+> So let me say the thing plainly: **30% by itself does not save you.** Anyone who
+> tells you "just keep LTV at 30" is telling you the same half-truth as "just keep
+> it at 50", one rung up. I'm not going to be that person.
+>
+> Now run it again with the whole rule set.
+
+| Price | Event | What you do |
+|---|---|---|
+| $69,000 | Open at 30%, reserve funded 1:1 | — |
+| $51,750 | −25% · Alarm 1 | Log it |
+| $41,400 | −40% · Alarm 2 | Calculate the top-up |
+| **$34,500** | **−50% · Alarm 3** | **Close the loan from reserve. Keep every satoshi.** |
+| $22,747 | *would have been liquidation* | Loan already closed. Nothing to sell. |
+| $15,500 | The 2022 bottom | Still holding 100% of it |
+
+> Your loan was 30% of what you deployed. Your reserve was 100% of it. Closing
+> that loan cost you **less than a third of your reserve** — and it ended the
+> risk completely.
+>
+> So what saved you? Not the number. **The instruction to act at minus fifty,
+> written down while nothing was wrong.**
+
+### F5 · The honest half — 6 min · slide 56
+
+**Never skip. This is the credibility of the programme.**
+
+> Now the part I'd rather you hear from me than find out yourself.
+>
+> **You still took the drawdown.** At the bottom of 2022 that Bitcoin was worth
+> about 23 cents on the peso. Our rules didn't stop that. Nothing stops that.
+>
+> What they did was make sure **you still owned all of it.** So when it turned, it
+> turned in your hands.
+>
+> **We preserve the asset. That's what lets you choose your own timing.**
+>
+> If you came here hoping we'd show you how to avoid red on a screen — we can't,
+> nobody can, and anyone who says otherwise is selling you something. What we
+> teach is how to still be holding when it comes back.
+
+---
+
+## BLOCK E · CLOSE AND Q&A — 18 min
+
+### E1 · Where the two competing uses land — 3 min · slide 57
+
+**Correction C8. Without this the room leaves with a contradiction.**
+
+> One thing to close cleanly. I showed you two different jobs for the same
+> borrowed peso.
+>
+> Module 2 said: borrow, convert, park it in Earn, collect the spread.
+> Module 3 said: borrow, hold it, buy the dip.
+>
+> You cannot do both with the same money. Splitting it properly needs a written
+> allocation and pre-committed levels, and that's Level 2/3 work.
+>
+> **Until then: run the carry only.** You're learning the mechanism, not chasing
+> a return.
+
+### E2 · Q&A — 6 min
+
+> Questions. I'll take as many as we can fit in six minutes, and anything I don't
+> reach, {{ops_lead}} will answer after.
+
+*Answer straight. Model answers for the hard ones are in
+[`../_shared/facilitator-standard.md`](../_shared/facilitator-standard.md) §4.
+If anyone asks how much they'll make: no number, no range, no "historically".*
+
+### E3 · The close — 9 min · slides 58–62
+
+*The five beats from [`../_shared/ascension.md`](../_shared/ascension.md).*
+
+**Beat 1 · What you can now do — slide 58**
+
+> Four hours ago most of you couldn't have told me what LTV stood for. Tonight
+> you computed a liquidation price from a peak you didn't choose, and you found
+> the one instruction that saved a position through a 77% drawdown.
+>
+> That's not a small thing. Most people who own Bitcoin cannot do what you just
+> did.
+
+**Beat 2 · The gap — slide 59**
+
+> Here's what you still can't do.
+>
+> Everything tonight was **on paper.** You have never funded a wallet, moved money
+> between two platforms, posted collateral, or watched an LTV slider move with
+> your own money behind it.
+>
+> And there's a specific night coming. Bitcoin is down 40%, your phone is going
+> off, it's 3am, and you have to act **in order**, correctly, tired. Tonight you
+> learned that night exists. You haven't rehearsed it.
+>
+> Reading the fire exit is not the same as walking it in the dark.
+
+**Beat 3 · The next level — slide 60**
+
+> That's **Level 2/3 — the Deep Dive and the Immersion.** One curriculum, two ways
+> to take it.
+>
+> **Online, three days, ₱15,000** — chart structure and levels, the platform,
+> your first live position, LTV discipline, and the drill. You leave with a
+> position at 30% LTV, four alarms set on your phone, and your liquidation price
+> written in your own hand.
+>
+> **Face to face, three to four days, ₱75,000** — everything above, in a room,
+> small class, plus your complete personal playbook built beside the faculty:
+> your accumulation system, your three buckets, your operating plan.
+>
+> Same principle either way. The room buys you the playbook and the attention.
+
+**Beat 4 · Who shouldn't take it — slide 61**
+
+**Mandatory. Deliver it slowly.**
+
+> Now — who should **not** book Level 2 or 3.
+>
+> **If you're not going to fund the reserve, don't come.** You saw tonight what
+> did the saving. It wasn't the ceiling, it was having money behind the position.
+> Half the rule set is worse than none, because it feels like protection and
+> isn't. Come back when you can fund both sides.
+>
+> **If you're planning to use money you'll need inside five years, don't come.**
+> Nothing we teach makes short money safe.
+>
+> **And if tonight made you excited rather than careful** — sit with it a week.
+> Excitement is what puts people at 78% LTV. I'd rather you came to the next
+> cohort calm than this one eager.
+>
+> Those aren't disclaimers. If you're in that list I'd genuinely rather have your
+> respect than your ₱15,000.
+
+**Beat 5 · One step — slide 62**
+
+> Registration is in the chat. Next Deep Dive {{level_2_date}}, next Immersion
+> {{level_3_date}}. Seats are capped at {{seat_cap}} because pods run one coach
+> to eight and we don't stretch that.
+>
+> If you're unsure which — or unsure at all — message {{ops_lead}} and say so.
+> You'll get a real answer, including "not yet" if that's the real answer.
+>
+> Thank you for four hours. Whatever you decide, take this home:
+> **a drop is not a loss until you're forced to sell.**

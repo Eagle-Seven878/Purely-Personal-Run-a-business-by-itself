@@ -1,6 +1,6 @@
-# Session 2 · PLATFORM WALKTHROUGH & FIRST EXECUTION — Slide Specification
+# MODULES 2 & 3 · THE PLATFORM AND FIRST EXECUTION — Slide Specification
 
-34 slides · 180 minutes · script: [`SCRIPT.md`](SCRIPT.md)
+34 slides · 180 minutes · script: [`MODULE-2-3-platform-execution.md`](MODULE-2-3-platform-execution.md)
 
 Session 2 is a **demonstration session**, so the slides carry less than Session 1's
 do. Most of the room's attention belongs on the shared platform screen, not on a
