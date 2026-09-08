@@ -50,10 +50,17 @@ python3 mkscript.py                # Word + PDF facilitator scripts
 ```
 
 `topdf.py` reads each deck's real shape geometry and renders it through headless
-Chromium, so the PDF matches the deck's layout rather than approximating it. The
-PDFs substitute DejaVu for Cambria and Calibri because this build environment has
-neither, so glyph shapes differ very slightly from what PowerPoint will show — the
-layout, colours and content are identical.
+Chromium, so the PDF matches the deck's layout rather than approximating it.
+
+**Fonts.** The decks specify Cambria and Calibri, which ship with Office but are
+not installable here. The renderer falls back to **Caladea** and **Carlito** —
+Google's metric-compatible clones, with identical character widths and line
+breaks. Install them before rendering or the fallback drops to DejaVu, whose
+different metrics will shift line breaks:
+
+```bash
+apt-get install -y fonts-crosextra-carlito fonts-crosextra-caladea && fc-cache -f
+```
 
 `qa.py` exists because LibreOffice is a stub install in the build sandbox — it has
 no Impress or Writer modules and cannot load any Office file. The usual

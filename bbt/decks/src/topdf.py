@@ -22,7 +22,7 @@ def shape_fill(sh):
     return None
 
 def para_html(p):
-    align = {1: "center", 2: "right", 3: "justify"}.get(p.alignment, "left")
+    align = {1: "left", 2: "center", 3: "right", 4: "justify"}.get(int(p.alignment) if p.alignment is not None else None, "left")
     bullet = False
     try:
         ppr = p._pPr
@@ -39,8 +39,8 @@ def para_html(p):
         c = rgb(f.color)
         if c: st.append("color:%s" % c)
         if f.name:
-            fam = ("Cambria,'DejaVu Serif',Georgia,serif" if 'Cambria' in f.name
-                   else "Calibri,'DejaVu Sans',Arial,sans-serif")
+            fam = ("Cambria,Caladea,'DejaVu Serif',Georgia,serif" if 'Cambria' in f.name
+                   else "Calibri,Carlito,'DejaVu Sans',Arial,sans-serif")
             st.append("font-family:%s" % fam)
         runs.append('<span style="%s">%s</span>' % (";".join(st), html.escape(r.text)))
     if not runs: return ""
@@ -107,16 +107,17 @@ def render(path, out_html):
             inner = ""
             if sh.has_text_frame:
                 tf = sh.text_frame
-                va = "flex-start"
+                va = "top"
                 try:
                     v = tf.vertical_anchor
-                    if v is not None and int(v) == 3: va = "center"
-                    elif v is not None and int(v) == 4: va = "flex-end"
+                    if v is not None and int(v) == 3: va = "middle"
+                    elif v is not None and int(v) == 4: va = "bottom"
                 except Exception: pass
                 paras = "".join(para_html(p) for p in tf.paragraphs)
                 if paras:
-                    inner = ('<div style="display:flex;flex-direction:column;justify-content:%s;'
-                             'align-items:stretch;height:100%%;width:100%%">%s</div>' % (va, paras))
+                    inner = ('<div style="display:table;width:100%%;height:100%%">'
+                             '<div style="display:table-cell;vertical-align:%s">%s</div></div>'
+                             % (va, paras))
             items.append('<div style="%s">%s</div>' % (st, inner))
         pages.append('<section style="background:%s">%s</section>' % (bg, "".join(items)))
 
@@ -127,7 +128,7 @@ html,body { margin:0; padding:0; background:#fff }
 section { position:relative; width:%.3fin; height:%.3fin; overflow:hidden;
   page-break-after:always; break-after:page; }
 section:last-child { page-break-after:auto }
-p { margin:0; font-family:Calibri,'DejaVu Sans',Arial,sans-serif; font-size:14pt; color:#1A2340 }
+p { margin:0; font-family:Calibri,Carlito,'DejaVu Sans',Arial,sans-serif; font-size:14pt; color:#1A2340 }
 .bul { display:inline-block; width:0.16in; margin-left:-0.16in }
 td p { margin:0 }
 </style>%s""" % (W, H, W, H, "".join(pages))

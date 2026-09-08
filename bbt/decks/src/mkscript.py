@@ -172,10 +172,10 @@ def docx_to_html(name, title, sub, mds):
 
 CSS_TEMPLATE = """<!doctype html><meta charset=utf-8><style>
 @page { size: A4; margin: 18mm 16mm }
-body{font-family:Calibri,'DejaVu Sans',Arial,sans-serif;font-size:10.5pt;color:#1A2340;line-height:1.45}
-h1{font-family:Cambria,'DejaVu Serif',Georgia,serif;font-size:21pt;color:#141C36;margin:0 0 4pt;page-break-before:always}
+body{font-family:Calibri,Carlito,'DejaVu Sans',Arial,sans-serif;font-size:10.5pt;color:#1A2340;line-height:1.45}
+h1{font-family:Cambria,Caladea,'DejaVu Serif',Georgia,serif;font-size:21pt;color:#141C36;margin:0 0 4pt;page-break-before:always}
 h1:first-of-type{page-break-before:avoid}
-h2{font-family:Cambria,'DejaVu Serif',Georgia,serif;font-size:15pt;color:#141C36;margin:16pt 0 4pt}
+h2{font-family:Cambria,Caladea,'DejaVu Serif',Georgia,serif;font-size:15pt;color:#141C36;margin:16pt 0 4pt}
 h3{font-size:11.5pt;color:#A0711E;margin:12pt 0 3pt}
 blockquote{margin:2pt 0 2pt 14pt;color:#141C36;font-size:11pt}
 table{border-collapse:collapse;width:100%;margin:8pt 0;font-size:9pt}

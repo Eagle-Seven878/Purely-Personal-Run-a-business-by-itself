@@ -35,6 +35,16 @@ Three places, deliberately:
 If you change a script, change the markdown and regenerate: `python3 decks/src/mkscript.py`.
 Otherwise the three drift apart, which is the exact failure the original deck had.
 
+## Regenerating
+
+`python3 ../decks/src/mkscript.py` rebuilds both formats from the level markdown.
+Install the metric-compatible fonts first, or the PDFs fall back to DejaVu and
+line breaks shift:
+
+```bash
+apt-get install -y fonts-crosextra-carlito fonts-crosextra-caladea && fc-cache -f
+```
+
 ## Before every cohort
 
 Replace every `{{variable}}` — dates, seat cap, ops lead — and **verify the
