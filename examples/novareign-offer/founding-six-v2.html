@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Founding Six</title>
+<link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;500;600;700;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#e90d41; --red-deep:#c70a38; --red-soft:#fdf0f3;
+  --ink:#16161a; --text:#34343a; --muted:#77777f; --line:#e6e3de;
+  --paper:#ffffff; --panel:#faf8f4; --green:#127a3e;
+  --display:'Rethink Sans',-apple-system,'Segoe UI',sans-serif;
+  --body:'Source Serif 4',Georgia,serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:#efece7;color:var(--text);font-family:var(--body);font-size:9.7pt;line-height:1.45}
+.page{width:210mm;min-height:297mm;margin:0 auto 12px;background:var(--paper);padding:10mm 15mm 12mm;position:relative}
+@page{size:A4;margin:0}
+@media print{html,body{background:#fff}.page{margin:0;page-break-after:always;min-height:auto;height:297mm;overflow:hidden}}
+@media screen and (max-width:820px){.page{width:auto;min-height:0;padding:24px 16px}}
+.eyebrow{font-family:var(--display);font-weight:700;font-size:8.5pt;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin:0 0 6px}
+h1{font-family:var(--display);font-weight:800;font-size:19pt;line-height:1.12;letter-spacing:-.02em;color:var(--ink);margin:0 0 10px}
+h1 em{font-style:normal;color:var(--red)}
+h2{font-family:var(--display);font-weight:700;font-size:11.5pt;color:var(--ink);margin:11px 0 4px;letter-spacing:-.01em}
+p{margin:0 0 6px}
+.goal{font-family:var(--display);font-weight:600;font-size:10.4pt;line-height:1.4;color:var(--ink);border-left:3px solid var(--red);padding:6px 0 6px 12px;margin:0 0 10px}
+.quote{font-style:italic;color:var(--ink)}
+.twin{color:var(--muted);font-size:9.5pt}
+.phase{display:grid;grid-template-columns:22px 1fr;gap:0 8px;margin:0 0 6px}
+.num{font-family:var(--display);font-weight:800;color:#fff;background:var(--red);width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9pt;margin-top:2px}
+.phase b{font-family:var(--display);color:var(--ink)}
+.projects{font-family:var(--display);font-size:8.6pt;color:var(--red-deep);font-weight:600;letter-spacing:.01em;margin:2px 0 1px}
+.win{font-family:var(--display);font-size:9pt;font-weight:600;color:var(--green)}
+.week{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:4px 0 2px}
+.day{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:7px 9px;font-size:9.4pt;line-height:1.4}
+.day b{display:block;font-family:var(--display);color:var(--ink);font-size:9.6pt;margin-bottom:2px}
+.alt{width:100%;border-collapse:collapse;font-size:9.3pt;margin:4px 0 2px}
+.alt td{border-bottom:1px solid var(--line);padding:4px 6px;vertical-align:top}
+.alt td:first-child{font-family:var(--display);font-weight:600;color:var(--ink);width:34%}
+.alt tr.us td{background:var(--red-soft);border-bottom:0}
+.alt tr.us td:first-child{color:var(--red-deep)}
+.stack{border:1px solid var(--line);border-radius:8px;overflow:hidden;margin:4px 0 8px}
+.row{display:grid;grid-template-columns:1fr auto;gap:10px;padding:4px 11px;border-bottom:1px solid var(--line);font-size:9.4pt;line-height:1.35}
+.row b{font-family:var(--display);color:var(--ink)}
+.row .v{font-family:var(--display);font-weight:600;color:var(--muted);white-space:nowrap}
+.row.total{background:var(--panel)}
+.row.total .v{text-decoration:line-through}
+.row.price{background:var(--ink);color:#fff;border-bottom:0;align-items:center}
+.row.price b{color:#fff;font-size:10.5pt}
+.row.price .v{color:#fff;font-size:15pt;font-weight:800;text-decoration:none}
+.row.price small{display:block;color:#c9c9d1;font-family:var(--display);font-weight:500;font-size:8.6pt}
+.anchor{font-size:9.6pt;background:var(--panel);border-radius:6px;padding:6px 10px;margin:0 0 4px}
+.guarantee{border:2px solid var(--red);border-radius:8px;padding:7px 11px;margin:3px 0 3px}
+.proof{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:4px 0}
+.card{border:1px solid var(--line);border-radius:6px;padding:6px 9px;font-size:8.9pt;line-height:1.35}
+.card .fig{font-family:var(--display);font-weight:800;color:var(--red);font-size:13pt;line-height:1.1;margin-bottom:3px}
+.card .who{font-family:var(--display);font-size:8.3pt;color:var(--muted);margin-top:4px}
+ol.fit{margin:2px 0 4px;padding-left:18px;columns:2;column-gap:22px}
+ol.fit li{margin-bottom:2px;break-inside:avoid}
+.nofit{font-size:9.4pt;color:var(--muted)}
+.cta{display:block;text-align:center;background:var(--red);color:#fff;text-decoration:none;font-family:var(--display);font-weight:700;font-size:11pt;padding:9px;border-radius:8px;margin:6px 0 6px}
+.sign{font-family:var(--display);font-weight:800;color:var(--ink);font-size:12pt;margin:6px 0 0}
+.sign small{display:block;font-weight:500;color:var(--muted);font-size:8.6pt}
+.ps{font-style:italic;color:var(--text);margin-top:4px}
+.foot{position:absolute;left:15mm;right:15mm;bottom:4mm;display:flex;justify-content:space-between;font-family:var(--display);font-size:7.6pt;color:var(--muted);border-top:1px solid var(--line);padding-top:4px}
+@media screen and (max-width:820px){.week,.proof{grid-template-columns:1fr}.foot{position:static;margin-top:16px}}
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<section class="page">
+  <p class="eyebrow">The Founding Six · The Money That Stays Method</p>
+  <h1>I work with six business owners who have big sales and empty pockets, to build businesses where <em>the money stays.</em></h1>
+
+  <p class="goal">Our goal is simple: in 90 days, you know your breakeven, keep at least 10% net income every month, and pay yourself first, with your own Numbers Navigator sending you your numbers every morning.</p>
+
+  <p>For years the financial statements of more than 20 companies crossed my desk every month, and I headed the accounting of all of them, and the same thing showed up again and again and again: big sales, a busy owner, and nobody who could say the breakeven. And so the money came in, and the money went out, and the owner was the last one paid. Painful.</p>
+
+  <p><span class="quote">"Malaki ang benta, bakit parang wala pa rin?"</span> <span class="twin">(Sales are big, so why does it feel like there's nothing?)</span> You work harder every month, and it still doesn't move. Everyone in your business gets paid except you.</p>
+
+  <h2>Why not just keep doing what you're doing?</h2>
+  <table class="alt">
+    <tr><td>Your bookkeeper or accountant</td><td>Tells you what happened, after it happened, for the BIR. Not what to do on Monday.</td></tr>
+    <tr><td>Another hype program</td><td>Sells you a platform and disappears when the onboarding cheque clears.</td></tr>
+    <tr><td>A spreadsheet on your own</td><td>Started on a Sunday, abandoned by Wednesday.</td></tr>
+    <tr class="us"><td>The Money That Stays Method</td><td>Your actual books, three times a week, for 90 days. Then a system that keeps showing you the numbers after we finish.</td></tr>
+  </table>
+
+  <h2>The plan is simple.</h2>
+  <div class="phase"><div class="num">1</div><div>
+    <b>Numbers You Trust (days 1 to 30).</b> We work on your actual books. We find your breakeven, rank what you sell so you see your top earners, and find where the money leaks out. Then we stop the leaks, and the cash you recover goes toward paying for the program.
+    <div class="projects">The Breakeven Map · The Top Earners Rank · The Leak Stop</div>
+    <div class="win">The win: your breakeven, your top earners, and your first leak stopped, by day 30.</div>
+  </div></div>
+  <div class="phase"><div class="num">2</div><div>
+    <b>Profit You Keep (days 31 to 60).</b> Profit stops being leftovers and becomes a line you pay first. The day money comes in, your profit is set aside before any bill is paid. Every peso gets a job before it is spent. Then we build the weekly habit that keeps it there, even in a slow month.
+    <div class="projects">The Profit Set-Aside · The Peso Plan · The Weekly Money Check</div>
+    <div class="win">The win: at least 10% net income set aside, every month, by day 60.</div>
+  </div></div>
+  <div class="phase"><div class="num">3</div><div>
+    <b>Pay You Take (days 61 to 90).</b> You go on the payroll. You set a real salary and pay it on a fixed day, like any employee. Then we install your Numbers Navigator, your own AI system that sends you sales, cash, and net income against breakeven every morning, so it keeps working after we finish.
+    <div class="projects">The Fixed Salary · The Morning Numbers · The Numbers Navigator</div>
+    <div class="win">The win: a salary you pay yourself on schedule, and your numbers every morning, by day 90.</div>
+  </div></div>
+
+  <h2>Here's how we work, every single week.</h2>
+  <div class="week">
+    <div class="day"><b>Numbers Mondays</b>We read last week on your actual books: sales, costs, cash, and any new leak.</div>
+    <div class="day"><b>Build Wednesdays</b>We build your Numbers Navigator and fix one thing, with accountability.</div>
+    <div class="day"><b>Payday Fridays</b>Profit set aside, your salary checked, and next week's one move.</div>
+  </div>
+
+  <h2>After you graduate.</h2>
+  <p>You graduate at 90 days. Your next three monthly Money Check calls are on me. After those, we go month to month at ₱5,000 for as long as it's working, or you step up to REIGN OS when you're ready.</p>
+
+  <div class="foot"><span>The Founding Six · NOVAREIGN Global Health Ventures Inc.</span><span>1 / 2</span></div>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page">
+  <h2 style="margin-top:0">And you get these bonuses.</h2>
+  <div class="stack">
+    <div class="row"><div><b>A Seat at The Money Table</b><br>So "I'm not a numbers person" is never the reason you stall.</div><div class="v">₱24,499</div></div>
+    <div class="row"><div><b>Three Monthly Money Check Calls after graduation</b><br>So "What if it slips back after?" is never the reason you stall.</div><div class="v">₱15,000</div></div>
+    <div class="row"><div><b>Clarity Intensive: Personal Voice</b><br>So "My life is too messy to start" is never the reason you stall.</div><div class="v">₱125,000</div></div>
+    <div class="row"><div><b>Your Numbers Navigator, yours to keep</b><br>So the numbers keep coming every morning after day 90.</div><div class="v">Included</div></div>
+    <div class="row total"><div><b>Total bonus value</b></div><div class="v">₱164,499</div></div>
+    <div class="row price"><div><b>Easy to start. Quick to pay for itself.</b><small>₱48,000 to get started. ₱50,000 in a month. Then ₱50,000.</small></div><div class="v">₱148,000</div></div>
+  </div>
+  <p class="anchor">For scale: a ₱5M loan at 5% a month costs ₱250,000 in interest every single month. This program costs less than one month of that interest, and Phase 1 is built to find the money you already made before you borrow another peso.</p>
+
+  <h2>Love it or leave it.</h2>
+  <div class="guarantee">If you do the work and don't have your breakeven, your top earners, your profit set aside, and your own salary on the calendar by day 90, you choose: I keep working with you at no cost until you do, or I refund every peso. Either way, you keep everything we built. Doing the work means attending every session and sharing your books every week.</div>
+
+  <h2>Real people. Real money.</h2>
+  <div class="proof">
+    <div class="card"><div class="fig">₱200,000+</div>One request for quotation became a ₱500,000 purchase order, and I used none of my own capital. I collected first against a supplier credit line.<div class="who">My first deal · the birth of ARB Pharmaceutical</div></div>
+    <div class="card"><div class="fig">A board seat</div>A client came to borrow ₱5M to ₱10M. I asked to see their financials first and talked them down to a lower rate. They opened their books and invited me onto their board.<div class="who">BRO Lending client</div></div>
+    <div class="card"><div class="fig">₱60,000 a month</div>"Borrowed less, kept more."<div class="who">[Client name], [business], who came to me for loan advice</div></div>
+  </div>
+
+  <h2>This isn't for everyone.</h2>
+  <ol class="fit">
+    <li>You own a business or practice that already makes sales every month.</li>
+    <li>You can't say your breakeven or net income with confidence.</li>
+    <li>You can show up three times a week and share your actual books.</li>
+    <li>You're ready to pay yourself first, even when it feels uncomfortable.</li>
+  </ol>
+  <p class="nofit">If you're not making sales yet, you don't need me yet. Start with a seat at The Money Table, and come back when the sales come in.</p>
+
+  <h2>Apply for The Founding Six. We start Monday, November 2.</h2>
+  <p>Six seats, because six is how many sets of books I can read properly three times a week. Applications close Friday, October 30. I'll review yours and reply within 72 hours, and if your numbers say you don't need me yet, I'll tell you that too. The founding rate is for these six owners.</p>
+  <a class="cta" href="#apply">Apply for one of the six seats</a>
+
+  <p class="sign">Coach Gilbert<small>Gilbert H. Trani · Founder, NOVAREIGN Global Health Ventures Inc.</small></p>
+  <p class="ps">P.S. Phase 1 finds money you already made, and that is how the program pays for itself.</p>
+
+  <div class="foot"><span>The Founding Six · NOVAREIGN Global Health Ventures Inc.</span><span>2 / 2</span></div>
+</section>
+</body>
+</html>
