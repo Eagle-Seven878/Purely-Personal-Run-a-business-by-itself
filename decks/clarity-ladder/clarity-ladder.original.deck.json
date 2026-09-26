@@ -1,0 +1,609 @@
+{
+  "mode": "blueprint",
+  "theme": "simple",
+  "title": "Clarity Ladder",
+  "titleLines": [
+    "Clarity Ladder"
+  ],
+  "badge": "The Money That Stays Method · starting November 7, 2026",
+  "promise": "You will see where your money leaks and what your breakeven number as the Business Owners",
+  "panels": [
+    {
+      "type": "story",
+      "id": "open",
+      "kicker": "Before we begin",
+      "label": "Welcome",
+      "center": true,
+      "title": "You will see where your money leaks and what your breakeven number as the Business Owners",
+      "lede": "For Business owners who already have big sales every month but empty pockets, who can't say their breakeven or net income with confidence.",
+      "cue": "Keep scrolling"
+    },
+    {
+      "id": "s1",
+      "kicker": "Warm the Room",
+      "label": "Cameras On, Let's Get Started",
+      "notes": "Picture: webinar room, cameras turning on\nHey everyone, turn your cameras on right now. I'll call you out by name today. Let's get this room warm together.",
+      "type": "story",
+      "title": "Cameras On, Let's Get Started",
+      "cue": "Where are you from? Drop it in the chat."
+    },
+    {
+      "id": "s2",
+      "kicker": "Warm the Room",
+      "label": "Can You Hear Me Clearly?",
+      "notes": "Quick check before we start today. Cameras on, stay to the end, there's an offer coming later. That's the deal for today.",
+      "type": "story",
+      "title": "Can You Hear Me Clearly?",
+      "lines": [
+        "Type OK",
+        "Rules: cameras on, stay to the end"
+      ],
+      "cue": "Type OK in the chat if you can hear me clearly."
+    },
+    {
+      "id": "s3",
+      "kicker": "Warm the Room",
+      "label": "Today's Promise, One Group Photo",
+      "notes": "Picture: group photo, everyone waving\nHere's my promise to you today. You'll see where your money leaks and your breakeven number. Let's take one photo before we dive in.",
+      "type": "story",
+      "title": "Today's Promise, One Group Photo",
+      "cue": "Camera on, stay to the end, there's an offer coming, sound good?"
+    },
+    {
+      "id": "s4",
+      "kicker": "Earn the Right",
+      "label": "30 Seconds About Me",
+      "notes": "I've helped business owners find financial clarity. That's the short version of who I am. Let's get into why that matters today.",
+      "type": "story",
+      "title": "30 Seconds About Me",
+      "lede": "I've helped business owners find financial clarity"
+    },
+    {
+      "id": "s5",
+      "kicker": "Earn the Right",
+      "label": "The Fare We Saved",
+      "notes": "Picture: a mother and son walking to school\nThere was a season, not my best money season. I made up little stories so my son would walk with me to school. Because the fare we saved mattered that much.",
+      "type": "story",
+      "title": "The Fare We Saved",
+      "cue": "How many of you have ever counted your fare before you counted your income?"
+    },
+    {
+      "id": "s6",
+      "kicker": "Earn the Right",
+      "label": "I Learned To Count",
+      "notes": "I learned to count every peso with my hands. Long before I ever read an income statement. That counting is what I'm teaching you today.",
+      "type": "story",
+      "title": "I Learned To Count",
+      "lede": "COUNT",
+      "cue": "The word is COUNT. Type it back to me in the chat."
+    },
+    {
+      "id": "s7",
+      "kicker": "Teach One Win",
+      "label": "Today's One Win",
+      "notes": "Today you'll find your breakeven and your first leak. From your own books, in plain words. No accounting jargon, I promise.",
+      "type": "story",
+      "title": "Today's One Win",
+      "lede": "Find your breakeven and your first leak"
+    },
+    {
+      "id": "s8",
+      "kicker": "Teach One Win",
+      "label": "Ang Dami Kong Ginagawa",
+      "notes": "I'm doing so much, why is nothing moving? Sound familiar to anyone in this room? That's the Wrong Hill Grind, and it traps good owners.",
+      "type": "story",
+      "title": "Ang Dami Kong Ginagawa",
+      "lede": "\"Ang dami kong ginagawa, bakit hindi pa rin umaandar?\""
+    },
+    {
+      "id": "s9",
+      "kicker": "Teach One Win",
+      "label": "Malaki Ang Benta, Bakit Wala?",
+      "notes": "Sales are big, so why does it feel like there's nothing? This is the Leftover Habit, and it's costing you. Watch what I do next with real numbers.",
+      "type": "story",
+      "title": "Malaki Ang Benta, Bakit Wala?",
+      "lede": "\"Malaki ang benta, bakit parang wala pa rin?\"",
+      "cue": "Say it with me: malaki ang benta, bakit parang wala pa rin?"
+    },
+    {
+      "id": "s10",
+      "kicker": "Teach One Win",
+      "label": "Watch Me: Sales Minus Costs",
+      "notes": "Watch me first, then you'll do this yourself. I take your sales, I subtract your costs. What's left is the number that actually matters.",
+      "type": "story",
+      "title": "Watch Me: Sales Minus Costs",
+      "lines": [
+        "Sales",
+        "minus costs",
+        "equals what's really left"
+      ],
+      "cue": "So where does the money actually go, sales minus what?"
+    },
+    {
+      "id": "s11",
+      "kicker": "Teach One Win",
+      "label": "Watch Me: Find The Breakeven",
+      "notes": "Picture: a simple ledger with breakeven circled\nHere's how I find the breakeven point on paper. It's the number where you stop losing and start keeping. This is ten minutes a week, nothing more.",
+      "type": "story",
+      "title": "Watch Me: Find The Breakeven"
+    },
+    {
+      "id": "s12",
+      "kicker": "Teach One Win",
+      "label": "You Do It: Pull Your Books",
+      "notes": "Now it's your turn, pull up your own sales and costs. Find your own breakeven number, right now. Take a few minutes, I'll wait with you.",
+      "type": "story",
+      "title": "You Do It: Pull Your Books",
+      "lede": "Open your sales and costs right now",
+      "cue": "You pulled up your own sales and costs, found your breakeven yet?"
+    },
+    {
+      "id": "s13",
+      "kicker": "Teach One Win",
+      "label": "Rank Your Top Earners",
+      "notes": "Next, rank what you sell from highest to lowest. This shows you your top earners fast. Some of what you sell is quietly carrying the rest.",
+      "type": "story",
+      "title": "Rank Your Top Earners",
+      "lede": "List what you sell, highest to lowest"
+    },
+    {
+      "id": "s14",
+      "kicker": "Teach One Win",
+      "label": "Find Where It Leaks",
+      "notes": "Now look for where the money leaks out. Circle the one leak that surprised you. That circle is worth more than it looks today.",
+      "type": "story",
+      "title": "Find Where It Leaks",
+      "lede": "Circle the one leak you just found"
+    },
+    {
+      "id": "s15",
+      "kicker": "Teach One Win",
+      "label": "What Did You Just Find?",
+      "notes": "Some of you just found a number you didn't expect. That number has been hiding in plain sight. Let's see it.",
+      "type": "story",
+      "title": "What Did You Just Find?",
+      "lede": "Type your number in the chat",
+      "cue": "How many of you just found a number you didn't expect? Type it in the chat."
+    },
+    {
+      "id": "s16",
+      "kicker": "Teach One Win",
+      "label": "Your Finished Result Today",
+      "notes": "Look at what you built in the last few minutes. Your breakeven, your top earners, your first leak stopped. That's the Phase 1 win, done inside 30 days.",
+      "type": "story",
+      "title": "Your Finished Result Today",
+      "lines": [
+        "Breakeven found",
+        "Top earners ranked",
+        "First leak stopped"
+      ]
+    },
+    {
+      "id": "s17",
+      "kicker": "Teach One Win",
+      "label": "This Is Numbers You Trust",
+      "notes": "This is Numbers You Trust. It's Month 1 of the Money That Stays Method. You just did it live, on your own books.",
+      "type": "story",
+      "title": "This Is Numbers You Trust",
+      "lede": "Numbers You Trust, Month 1 of the Method"
+    },
+    {
+      "id": "s18",
+      "kicker": "Teach One Win",
+      "label": "In Control, Not Guessing",
+      "notes": "Notice how that feels, in control, not guessing anymore. That feeling is the whole point of today. Money you don't see is money you can't keep.",
+      "type": "story",
+      "title": "In Control, Not Guessing",
+      "lede": "From guessing to knowing, in one sitting"
+    },
+    {
+      "id": "s19",
+      "kicker": "The Bridge",
+      "label": "Before I Share Anything Else",
+      "notes": "Today you found your breakeven point, and maybe your leak. Before I share anything further, I'll ask first, I do not take without asking. Type OK in the chat if that's alright with you.",
+      "type": "story",
+      "title": "Before I Share Anything Else",
+      "lede": "Would it be okay if I shared an offer?"
+    },
+    {
+      "id": "s20",
+      "kicker": "The Bridge",
+      "label": "Old Way Or New Way?",
+      "notes": "Some of you are still guessing your numbers every month. Others are ready for a new way. Which one are you today?",
+      "type": "story",
+      "title": "Old Way Or New Way?",
+      "lines": [
+        "OLD: guessing",
+        "NEW: Money That Stays Method"
+      ],
+      "cue": "Type OLD in the chat if you're still guessing your numbers every month."
+    },
+    {
+      "id": "s21",
+      "kicker": "The Bridge",
+      "label": "Real Proof From Real Owners",
+      "notes": "200,000 pesos, no capital, just clarity on his numbers, that's Gilbert Trani, his first deal. Another owner made 60,000 pesos a month, borrowed less, kept more. Ako na lang ang hindi sumasahod, does that sound familiar?",
+      "type": "story",
+      "title": "Real Proof From Real Owners",
+      "lines": [
+        "200,000 pesos, no capital, just clarity",
+        "Gilbert Trani, ARB"
+      ],
+      "cue": "Ako na lang ang hindi sumasahod, anybody else ever felt that?"
+    },
+    {
+      "id": "s22",
+      "kicker": "The Stack",
+      "label": "The Money That Stays Method",
+      "notes": "How many of you have big sales every month but still feel like there's nothing left? That's why I created The Money That Stays Method. The most important thing you'll learn is how to keep a net income every month and pay yourself first. It starts November 7, 2026, online.",
+      "type": "offer",
+      "problem": "How many of you have big sales every month but still feel like there's nothing left?",
+      "name": "The Money That Stays Method",
+      "benefit": "How to keep a net income every month and pay yourself first, with your own AI system showing you the numbers every morning",
+      "tagline": "Money That Stays",
+      "when": [
+        "starting November 7, 2026"
+      ],
+      "where": "online",
+      "format": "90-day, one-to-one program, on your actual books, with weekly sessions: Numbers Mondays, Build Wednesdays, Payday Fridays"
+    },
+    {
+      "type": "statement",
+      "id": "s22-learn-1",
+      "role": "learn",
+      "kicker": "What you'll learn",
+      "label": "What you'll learn",
+      "title": "Month 1, Numbers You Trust",
+      "sub": "find your breakeven, rank your top earners, find and stop your first leak"
+    },
+    {
+      "type": "statement",
+      "id": "s22-learn-2",
+      "role": "learn",
+      "kicker": "What you'll learn",
+      "label": "What you'll learn",
+      "title": "Month 2, Profit You Keep",
+      "sub": "set your profit aside before any bill is paid, build the weekly habit that keeps it there"
+    },
+    {
+      "type": "statement",
+      "id": "s22-learn-3",
+      "role": "learn",
+      "kicker": "What you'll learn",
+      "label": "What you'll learn",
+      "title": "Month 3, Pay You Take",
+      "sub": "set a real salary and pay it on a fixed day, install your Numbers Navigator so your numbers come to you every morning"
+    },
+    {
+      "id": "s23",
+      "kicker": "The Stack",
+      "label": "90 Days, On Your Actual Books",
+      "notes": "This is a 90-day, one-to-one program on your actual books. Month 1 is Numbers You Trust, Month 2 is Profit You Keep, Month 3 is Pay You Take. Every week we meet three times to keep it moving.",
+      "type": "story",
+      "title": "90 Days, On Your Actual Books",
+      "lines": [
+        "Numbers Mondays",
+        "Build Wednesdays",
+        "Payday Fridays"
+      ]
+    },
+    {
+      "type": "item",
+      "id": "s24-item-1",
+      "kicker": "The Stack",
+      "label": "Phase 1, Numbers You Trust",
+      "heading": "Everything you get",
+      "n": 1,
+      "of": 6,
+      "currency": "₱",
+      "name": "Phase 1, Numbers You Trust",
+      "desc": "The first month is on your actual books. We find your breakeven, rank what you sell so you see your top earners, and find where the money leaks out, then we stop the leaks",
+      "value": 300000,
+      "notes": "Phase 1, Numbers You Trust, is 300,000 pesos, running total 300,000. Phase 2, Profit You Keep, is 400,000 pesos, running total 700,000. Phase 3, Pay You Take, is 600,000 pesos, running total 1,300,000. Books Rescue Voice is 125,000 pesos, running total 1,425,000. A Seat at The Money Table is 24,499 pesos, running total 1,449,499. Three Monthly Money Check Calls is 150,000 pesos, for a total value of 1,599,499 pesos."
+    },
+    {
+      "type": "item",
+      "id": "s24-item-2",
+      "kicker": "The Stack",
+      "label": "Phase 2, Profit You Keep",
+      "heading": "Everything you get",
+      "n": 2,
+      "of": 6,
+      "currency": "₱",
+      "name": "Phase 2, Profit You Keep",
+      "desc": "The second month turns profit from leftovers into a line you pay first. The day money comes in, your profit is set aside before any bill is paid",
+      "value": 400000
+    },
+    {
+      "type": "item",
+      "id": "s24-item-3",
+      "kicker": "The Stack",
+      "label": "Phase 3, Pay You Take",
+      "heading": "Everything you get",
+      "n": 3,
+      "of": 6,
+      "currency": "₱",
+      "name": "Phase 3, Pay You Take",
+      "desc": "The third month puts you on the payroll. You set a real salary and pay it on a fixed day, and we install your Numbers Navigator, your own AI system that sends you your numbers every morning",
+      "value": 600000
+    },
+    {
+      "type": "item",
+      "id": "s24-item-4",
+      "kicker": "The Stack",
+      "label": "Clarity Intensive: Books Rescue ",
+      "heading": "Everything you get",
+      "n": 4,
+      "of": 6,
+      "currency": "₱",
+      "name": "Clarity Intensive: Books Rescue Voice",
+      "desc": "so \"My books are too messy to start.\" is never the reason you stall",
+      "value": 125000
+    },
+    {
+      "type": "item",
+      "id": "s24-item-5",
+      "kicker": "The Stack",
+      "label": "A Seat at The Money Table",
+      "heading": "Everything you get",
+      "n": 5,
+      "of": 6,
+      "currency": "₱",
+      "name": "A Seat at The Money Table",
+      "desc": "so \"I'm not a numbers person.\" is never the reason you stall",
+      "value": 24499
+    },
+    {
+      "type": "item",
+      "id": "s24-item-6",
+      "kicker": "The Stack",
+      "label": "Three Monthly Money Check Calls",
+      "heading": "Everything you get",
+      "n": 6,
+      "of": 6,
+      "currency": "₱",
+      "name": "Three Monthly Money Check Calls",
+      "desc": "so \"What if it slips back after?\" is never the reason you stall",
+      "value": 150000
+    },
+    {
+      "type": "stacklist",
+      "id": "s24-list",
+      "build": true,
+      "kicker": "The Stack",
+      "label": "Everything you get",
+      "title": "Everything you get",
+      "items": [
+        { "name": "Phase 1, Numbers You Trust", "value": 300000 },
+        { "name": "Phase 2, Profit You Keep", "value": 400000 },
+        { "name": "Phase 3, Pay You Take", "value": 600000 },
+        { "name": "Clarity Intensive: Books Rescue Voice", "value": 125000 },
+        { "name": "A Seat at The Money Table", "value": 24499 },
+        { "name": "Three Monthly Money Check Calls", "value": 150000 }
+      ],
+      "totalLabel": "Total value",
+      "currency": "₱"
+    },
+    {
+      "id": "s25",
+      "kicker": "The Stack",
+      "label": "The Anchor: Which Costs More?",
+      "notes": "Look at the leak you circled today. How many pesos does that cost you in a month? Multiply that by twelve, and put it next to 48,000. Only you know which one is bigger.",
+      "type": "story",
+      "title": "The Anchor: Which Costs More?",
+      "lede": "Your leak times 12 vs 48,000 pesos",
+      "cue": "Say it with me: Money That Stays."
+    },
+    {
+      "type": "struck",
+      "id": "s27-struck",
+      "kicker": "The Close",
+      "label": "The total",
+      "amount": 1599499,
+      "currency": "₱"
+    },
+    {
+      "type": "statement",
+      "id": "s26",
+      "role": "reason",
+      "kicker": "The Close",
+      "label": "Why I Do This Work",
+      "title": "Why I Do This Work",
+      "notes": "Picture: Coach Gilbert, a quiet portrait\nSomeone once called me a user, someone who takes and gives nothing back. That word stayed with me for years. So I decided to count every peso for every owner I meet. This first group is the Founding Six, and you prove it with me.\nThe reason, said out loud: The founding rate won't return for the next group"
+    },
+    {
+      "id": "s27",
+      "kicker": "The Close",
+      "label": "Today's Investment",
+      "notes": "The total value here is 1,599,499 pesos. Today it's only 48,000 to get started. Then 50,000 in a month, then 50,000 more. Easy to start, quick to pay for itself.",
+      "type": "price",
+      "anchor": 1599499,
+      "price": 48000,
+      "currency": "₱",
+      "reframe": "Easy to start. Quick to pay for itself. Php48K to get started, Php50K in a month, then Php50K.",
+      "todayLabel": "For today only",
+      "was": true
+    },
+    {
+      "id": "s28",
+      "kicker": "The Close",
+      "label": "Six Spots, On Purpose",
+      "notes": "This is small on purpose, six owners on their actual books. You are the Founding Six, the first through this method. Your results become the proof for every owner after you. Applications close October 31, 2026.",
+      "type": "limiter",
+      "title": "Six Spots, On Purpose",
+      "line": "Small on purpose: six owners, on their actual books. Someone once called me a user. A user takes and gives nothing back. That word stayed with me for years. So I made a decision: I would count every peso, and I would make sure nobody ever again had to wonder what I bring to the table.     Today, financial clarity for business owners is my advocacy. One Filipino at a time. Because when one owner finally sees their numbers, their family, their team, and everyone downstream of them sees it too.                     For that reason, this first group is different. You are the Founding Six, the first owners to go through The Money That Stays Method. I'm not asking you to prove me right. I'm asking to prove it with you, on your actual books. Your results will become the proof for every owner who comes after you.  So today it is not going to be Php 302,499. It's not even Php 148,000 paid all at once. You start with Php 48,000, and you pay each next phase only when it begins.  And I'll be honest with you: the next cohort will pay more. Not as a trick. Because by then, the proof will already exist, and you're the ones who built it.\".",
+      "kind": "spots",
+      "spots": {
+        "total": 6,
+        "left": 6
+      },
+      "deadline": "October 31, 2026"
+    },
+    {
+      "id": "s29",
+      "kicker": "The Close",
+      "label": "Claim Your Seat Now",
+      "notes": "Apply for one of the six seats right now. Type SIX in the chat, my team will send the link privately. Fill out a short form, pay the first 48,000, your seat is locked.",
+      "type": "cta",
+      "title": "Claim Your Seat Now",
+      "steps": [
+        "Apply for one of the six seats"
+      ],
+      "chatWord": "If",
+      "price": "₱48,000",
+      "help": "Payment issues? Write TEAM in the chat."
+    },
+    {
+      "id": "s30",
+      "kicker": "The Close",
+      "label": "Welcome, Founding Six",
+      "notes": "Picture: confetti, Founding Six names\nA few of you just locked your seat. Let's celebrate that right now. This is the start you've been asking for.",
+      "type": "story",
+      "title": "Welcome, Founding Six",
+      "cue": "[buyer's name], [buyer's name], welcome to the Founding Six, isn't this the start you've been waiting for?"
+    },
+    {
+      "type": "statement",
+      "id": "s31-permission",
+      "role": "permission",
+      "kicker": "The Close",
+      "label": "The upgrade",
+      "title": "We will install",
+      "vip": true
+    },
+    {
+      "type": "item",
+      "id": "s31-item-1",
+      "kicker": "The Close",
+      "label": "REIGN OS",
+      "heading": "Get the VIP admission",
+      "n": 1,
+      "of": 3,
+      "currency": "₱",
+      "name": "REIGN OS",
+      "desc": "REIGN OS is your business second brain. It keeps your breakeven in view and turns your real stories into Facebook, Instagram and LinkedIn content as posts, images, carousels, cheatsheets and thumbnails, so you always know you're profitable and your brand never goes quiet.",
+      "value": 2750000,
+      "vip": true,
+      "notes": "REIGN OS is your business second brain, it keeps your breakeven in view, that's 2,750,000 pesos. My Person incorporates your reason for leaving and why you love what you do, 1,950,000 pesos. My Business incorporates your journey, the pain and the joy, 2,850,000 pesos, for a VIP items total of 7,550,000."
+    },
+    {
+      "type": "item",
+      "id": "s31-item-2",
+      "kicker": "The Close",
+      "label": "My Person",
+      "heading": "Get the VIP admission",
+      "n": 2,
+      "of": 3,
+      "currency": "₱",
+      "name": "My Person",
+      "desc": "Incorporate your reason for leaving and why you do what you love to do",
+      "value": 1950000,
+      "vip": true
+    },
+    {
+      "type": "item",
+      "id": "s31-item-3",
+      "kicker": "The Close",
+      "label": "My Business",
+      "heading": "Get the VIP admission",
+      "n": 3,
+      "of": 3,
+      "currency": "₱",
+      "name": "My Business",
+      "desc": "Your business journey, the pain, agony, joy and where you want to be incorporated in your business and maybe in your code of honor",
+      "value": 2850000,
+      "vip": true
+    },
+    {
+      "type": "stacklist",
+      "id": "s31-list",
+      "build": true,
+      "kicker": "The Close",
+      "label": "Get the VIP admission",
+      "title": "Get the VIP admission",
+      "items": [
+        { "name": "REIGN OS", "value": 2750000 },
+        { "name": "My Person", "value": 1950000 },
+        { "name": "My Business", "value": 2850000 }
+      ],
+      "totalLabel": "VIP value",
+      "currency": "₱",
+      "vip": true
+    },
+    {
+      "type": "stacklist",
+      "id": "total-worth",
+      "combined": true,
+      "vip": true,
+      "kicker": "The Close",
+      "label": "Total worth + VIP",
+      "title": "Total worth + VIP",
+      "items": [
+        { "name": "Everything you get", "value": 1599499 },
+        { "name": "The VIP admission", "value": 7550000 }
+      ],
+      "totalLabel": "Total value",
+      "currency": "₱"
+    },
+    {
+      "type": "struck",
+      "id": "s32-struck",
+      "kicker": "The Close",
+      "label": "The total",
+      "amount": 9149499,
+      "currency": "₱",
+      "vip": true
+    },
+    {
+      "id": "s32",
+      "kicker": "The Close",
+      "label": "The VIP Upgrade",
+      "notes": "The VIP upgrade is 850,000 pesos. That brings your total worth with VIP to 9,149,499 pesos. If you want everything, this is the seat to take.",
+      "type": "price",
+      "anchor": 9149499,
+      "price": 850000,
+      "currency": "₱",
+      "anchorLabel": "Total worth + VIP",
+      "reframe": "VIP price 850,000 · Total worth 9,149,499",
+      "todayLabel": "For today only",
+      "was": true,
+      "vip": true
+    },
+    {
+      "type": "cta",
+      "id": "vip-cta",
+      "vip": true,
+      "kicker": "The Close",
+      "label": "VIP now",
+      "title": "Want the VIP seat?",
+      "steps": [
+        "Write VIP in the chat once you've paid"
+      ],
+      "chatWord": "VIP",
+      "price": "₱850,000",
+      "help": "Payment issues? Write TEAM in the chat."
+    },
+    {
+      "id": "s33",
+      "kicker": "The Close",
+      "label": "Payment Help, We're Here",
+      "notes": "If you need help with payment, we're here for you. This isn't about pressure, it's about serving you well. Reach out and we'll walk you through it.",
+      "type": "story",
+      "title": "Payment Help, We're Here",
+      "lede": "Type TEAM for payment help",
+      "cue": "Need help with payment? Type TEAM in the chat."
+    },
+    {
+      "id": "s34",
+      "kicker": "The Close",
+      "label": "Questions, Proof, Thank You",
+      "notes": "Let's open it up, what questions do you have? Remember Gilbert Trani, 200,000 pesos, no capital, just clarity on his numbers, his first deal. Thank you so much for being here today.",
+      "type": "story",
+      "title": "Questions, Proof, Thank You",
+      "lines": [
+        "200,000 pesos, no capital, just clarity",
+        "Gilbert Trani"
+      ]
+    }
+  ]
+}
