@@ -253,7 +253,8 @@ purely-personal/
 ├── skills/                             # the brains behind the commands
 │   ├── business-brain-renderer/        # renders BUSINESS-BRAIN.md as HTML
 │   ├── content-visual-builder/         # 4-platform content cards
-│   └── engine-output-builder/          # standalone engine visuals
+│   ├── engine-output-builder/          # standalone engine visuals
+│   └── idea-statica/                   # IDEA StatiCa connection design co-pilot
 ├── scripts/
 │   └── build_pdf.py                    # automated HTML→PDF export
 ├── examples/
