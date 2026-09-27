@@ -1,6 +1,6 @@
 ---
 name: idea-statica
-description: Structural engineering co-pilot for IDEA StatiCa (Connection, Member, Detail, Checkbot). Sets up steel connection models, reads CBFEM results, diagnoses failing checks (plates, bolts, welds, anchors, buckling), writes client-ready calculation summaries, and scripts batch runs through the IDEA StatiCa Connection API. Triggers on "IDEA StatiCa", "IDEA Statica", "Statica", "CBFEM", "steel connection check", "connection design", "my bolts fail", "plastic strain over 5%", "buckling factor", "Checkbot", "export from Tekla/SAP2000/ETABS/RFEM/Robot to IDEA", "idea connection api", "batch connections", "connection report", or any request to design, check, troubleshoot, report, or automate a steel or concrete detail in IDEA StatiCa.
+description: Structural engineering co-pilot for IDEA StatiCa (Connection, Member, Detail, Checkbot). Calculates and designs steel connections by hand (EN 1993-1-8 and AISC 360 bolts, welds, T-stub end plates) with a tested Python calculator, sets up steel connection models, reads CBFEM results, diagnoses failing checks (plates, bolts, welds, anchors, buckling), writes client-ready calculation summaries, and scripts batch runs through the IDEA StatiCa Connection API. Triggers on "IDEA StatiCa", "IDEA Statica", "Statica", "CBFEM", "calculation and design", "hand calc", "size the bolts", "how many bolts", "weld size", "end plate thickness", "T-stub", "EN 1993-1-8", "AISC 360", "steel connection check", "connection design", "my bolts fail", "plastic strain over 5%", "buckling factor", "Checkbot", "export from Tekla/SAP2000/ETABS/RFEM/Robot to IDEA", "idea connection api", "batch connections", "connection report", or any request to design, check, troubleshoot, report, or automate a steel or concrete detail in IDEA StatiCa.
 ---
 
 # IDEA StatiCa
@@ -16,18 +16,21 @@ IDEA StatiCa does the math. The slow part is everything around it:
 - Explaining a 60-page auto report to a client or checker in one page
 - Moving member forces from the global model without losing a load case
 
-This skill handles those four jobs.
+- Sizing the joint before you model it, so the first CBFEM run is close
+
+This skill handles those five jobs.
 
 ## Non-Negotiable Rule
 
 **Claude is not the engineer of record.** Every number this skill produces is a draft for a qualified engineer to verify in IDEA StatiCa and sign. Never tell a user a connection is "safe" or "approved". Say "passes the checks shown" and name the code, version, and settings used. If inputs are missing (code, steel grade, bolt grade, load combinations), ask. Do not invent them.
 
-## The 5 Modes
+## The 6 Modes
 
-Pick the mode from the request. If unclear, ask one question: "Are you modelling, troubleshooting, reporting, automating, or linking from a global model?"
+Pick the mode from the request. If unclear, ask one question: "Are you calculating/designing, modelling, troubleshooting, reporting, automating, or linking from a global model?"
 
 | # | Mode | User says | Read |
 |---|------|-----------|------|
+| 0 | **Calculate & Design** | "design a connection for V = 450 kN", "how many M20 bolts", "what end plate thickness", "check this weld by hand" | [references/calculation-and-design.md], run `scripts/connection_calc.py` |
 | 1 | **Model** | "set up a beam-to-column end plate", "what operations do I need" | [references/modelling-playbook.md] |
 | 2 | **Troubleshoot** | "plate fails", "bolts over 100%", "weld red", "αcr = 2.1", "analysis won't converge" | [references/checks-and-limits.md], [references/troubleshooting.md] |
 | 3 | **Report** | "summarise this report", "write the calc note", "explain to the client" | [references/report-template.md] |
@@ -48,7 +51,7 @@ Before any advice, confirm or ask for:
 If the user pastes a report, extract these from it and state them back in one line.
 
 ### Step 2: Do the Mode
-Follow the reference file for the mode. Always tie advice to a specific check and a specific number ("bolt B3 tension 112% of Ft,Rd"), never "the connection is weak".
+Follow the reference file for the mode. For any calculation, **run `scripts/connection_calc.py`** rather than doing arithmetic in your head, and show the command and its output so the engineer can repeat it. For a new design, always size by hand (Mode 0) before recommending an IDEA StatiCa model (Mode 1). Always tie advice to a specific check and a specific number ("bolt B3 tension 112% of Ft,Rd"), never "the connection is weak".
 
 ### Step 3: Rank the Fixes
 For any failing design, give fixes in order of **fabrication cost**, cheapest first:
@@ -77,6 +80,9 @@ End every answer with a short "Check in IDEA StatiCa" list: the exact items to r
 
 | File | What It Contains | When to Read |
 |------|-----------------|--------------|
+| [references/calculation-and-design.md] | Design loop, joint selection, hand-calc formulas, detailing minimums, hand calc vs CBFEM | Calculate & Design |
+| `scripts/connection_calc.py` | EN 1993-1-8 + AISC 360-16 calculator: bolts, welds, T-stub, bolt-count sizing. `--help` per command | Every calculation |
+| `scripts/test_connection_calc.py` | 21 checks against published tables. Run after any edit to the calculator | Before trusting a changed calculator |
 | [references/checks-and-limits.md] | Every check CBFEM runs, its limit, and what drives it | Troubleshoot, Report |
 | [references/troubleshooting.md] | Symptom → cause → fix table for common failures and analysis errors | Troubleshoot |
 | [references/modelling-playbook.md] | Operation recipes for common joints, load setup, BIM links | Model, BIM link |
