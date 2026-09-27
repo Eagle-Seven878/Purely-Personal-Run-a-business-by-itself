@@ -1,6 +1,6 @@
 # Pillar Video Scripts v2 · Coach Gilbert + Daniel Paul · English + Taglish
 
-> **12 scripts.** 6 content pillars × 2 voices. Every script comes in **English** and **Taglish**, with **3 hook options** to choose from.
+> **13 scripts + a Testimonial Kit.** 6 content pillars × 2 voices, plus G7, a trust-building video for Coach Gilbert. Every script comes in **English** and **Taglish**, with **3 hook options** to choose from.
 > **Pillars:** Business Clarity · Cash Flow · Entrepreneurship · Leadership · Systems · AI & Business Growth
 > **Format:** vertical 9:16, 55–75 seconds. Film one line per take.
 > **Platforms:** Facebook/Instagram Reels · TikTok · YouTube Shorts · LinkedIn (English versions work best on LinkedIn)
@@ -1004,18 +1004,167 @@ For every script, choose:
 
 ---
 
-## Filming plan (batch all 12 in 2 sessions)
+# PART 3 · TRUST BUILDERS (COACH GILBERT)
+
+**The doubt this part answers:** *"I can learn break-even on Google. Why should I listen to you?"*
+
+**The answer:** the formula is free, but getting the right numbers into it and hearing the truth about them is not. G7 says this out loud. The Testimonial Kit then collects proof from clients, because a client's result is more believable than Gilbert's own claim.
+
+---
+
+## G7 · TRUST · "You can Google break-even. Here's what Google can't do."
+
+**Reader:** SME owner · **Runtime:** ~75s · **Proof:** 20+ companies' books every month; BRO Lending board seat · **Post:** week 2, after viewers have seen G1 and G2
+
+### Hook options
+| | English | Taglish |
+|---|---|---|
+| **A ⭐** | You can Google break-even in 5 minutes. So why do owners still guess? | Kaya mong i-Google ang breakeven in 5 minutes. Bakit nanghuhula pa rin ang owners? |
+| B | The break-even formula is free. Your real numbers are not. | Libre ang breakeven formula. Ang totoong numbers mo, hindi. |
+| C | Google can teach you the formula. It will never tell you "don't borrow yet." | Kaya kang turuan ng Google ng formula. Pero hindi ka nito sasabihan ng "huwag ka munang mangutang." |
+
+### English
+> **[0:00 · Hook]**
+> You can learn the break-even formula on Google in five minutes.
+> So let me give it to you for free, right now.
+>
+> **[0:06 · The formula]** *(On screen, big: FIXED COSTS ÷ (PRICE − COST PER UNIT))*
+> Fixed costs, divided by your price minus the cost of one unit.
+>
+> **[0:11 · Example]** *(On screen: "EXAMPLE ONLY" with the numbers written by hand on paper)*
+> Example only. Your rent, salaries and bills are ₱30,000 a month.
+> You sell at ₱100, and each one costs you ₱70.
+> So each sale leaves ₱30. ₱30,000 divided by ₱30 is 1,000 sales.
+> That is your break-even.
+>
+> **[0:26 · The turn]**
+> And yet, the financial statements of more than twenty companies crossed my desk every month, and the formula was never the problem.
+>
+> **[0:34 · The gap]**
+> The problem was the numbers going into it.
+> The ₱70 that was really ₱85, because nobody counted delivery and spoilage.
+> The owner's own salary, never written down.
+> The receivables that were sales on paper but not cash in hand.
+> And when ₱70 is really ₱85, each sale leaves only ₱15. Your break-even is not 1,000. It is 2,000.
+>
+> **[0:54 · Verdict]**
+> The formula is free. Your real numbers are not.
+>
+> **[0:58 · What Google can't do]**
+> And Google will never look at your books and tell you, "Don't borrow yet. Don't hire yet. Fix this first."
+> That is what I told a client who wanted to borrow up to ten million pesos at 5% a month. They opened their books to me, and they put me on their board.
+>
+> **[1:10 · CTA]**
+> Learn the formula anywhere. When you want your real number, message me and we find it together.
+
+### Taglish
+> **[0:00 · Hook]**
+> Kaya mong matutunan ang breakeven formula sa Google in five minutes.
+> Kaya ibibigay ko na sa'yo, libre, ngayon na.
+>
+> **[0:06 · The formula]**
+> Fixed costs, divided by ang presyo mo minus ang cost ng isang unit.
+>
+> **[0:11 · Example]**
+> Halimbawa lang. ₱30,000 a month ang renta, sweldo at bills mo.
+> Nagbebenta ka ng ₱100, at ₱70 ang puhunan sa bawat isa.
+> Kaya ₱30 ang naiiwan sa bawat benta. ₱30,000 divided by ₱30, 1,000 na benta.
+> 'Yan ang breakeven mo.
+>
+> **[0:26 · The turn]**
+> Pero mahigit dalawampung kumpanya ang libro na dumaan sa desk ko buwan-buwan, at kahit kailan, hindi ang formula ang problema.
+>
+> **[0:34 · The gap]**
+> Ang problema, ang numerong ipinapasok dito.
+> 'Yung ₱70 na ₱85 pala, kasi walang nagbilang ng delivery at ng mga nasisira.
+> 'Yung sweldo ng owner mismo, hindi kailanman isinulat.
+> 'Yung receivables na benta sa papel, pero hindi pa pera sa kamay.
+> At kapag ₱85 pala ang ₱70, ₱15 na lang ang naiiwan sa bawat benta. Ang breakeven mo, hindi 1,000. 2,000.
+>
+> **[0:54 · Verdict]**
+> Libre ang formula. Ang totoong numbers mo, hindi.
+>
+> **[0:58 · What Google can't do]**
+> At hindi kailanman titingnan ng Google ang libro mo para sabihing, "Huwag ka munang mangutang. Huwag ka munang mag-hire. Ayusin mo muna 'to."
+> 'Yan ang sinabi ko sa client na gustong mangutang ng hanggang sampung milyong piso sa 5% a month. Binuksan nila sa akin ang libro nila, at inimbita nila ako sa board nila.
+>
+> **[1:10 · CTA]**
+> Matutunan mo ang formula kahit saan. Kapag gusto mo na ang totoong numero mo, message mo ako, sabay nating hahanapin.
+
+**Caption P.S.:** The formula is free. The truth about your numbers is the work. / Libre ang formula. Ang katotohanan sa numbers mo, 'yan ang trabaho.
+
+**Math check:** ₱30,000 ÷ (₱100 − ₱70) = 1,000 sales. ₱30,000 ÷ (₱100 − ₱85) = 2,000 sales. Say "example only" on camera so no one takes it as their own number.
+
+---
+
+## Testimonial Kit · Get 3 real client stories
+
+**Why this matters most:** Gilbert's files have strong personal stories but **no client testimonials**. When someone asks *"Why should I believe you?"*, the strongest answer is another owner like them saying *"This worked for me."* Aim for 3 in the next 30 days.
+
+### Step 1 · Choose who to ask
+- Pick **3 people** who got a real number or made a real decision with Gilbert's help. They can be mentorship clients, BRO Lending clients, interns, or Cash Flow game players.
+- Ask **right after a win**, while the feeling is fresh: the week they found their break-even, avoided a bad loan, or saw cash settle for the first time.
+- **No clients yet?** Offer 3 owners a free "First Number" session in exchange for honest feedback. Tell them this upfront. That's a fair trade for both sides, not a trick.
+
+### Step 2 · Send the request (Messenger or Viber)
+
+**English**
+> Hi [Name], this is Gilbert. It's been [time] since we worked on your [break-even / cash flow / loan decision]. Thank you for trusting me with your numbers.
+>
+> Can I ask a small favor? I'm sharing real stories so other owners can see that knowing the numbers works. Would you answer 5 short questions? Text, voice note or a 30-second video, whatever is easiest for you.
+>
+> You decide how I use it: full name and photo, first name and type of business only, or no name at all. And if you'd rather not, that is completely fine. Salamat, [Name].
+
+**Taglish**
+> Hi [Name], si Gilbert 'to. [Time] na mula nung inayos natin ang [breakeven / cash flow / desisyon sa loan] mo. Salamat sa tiwala mo sa numbers mo.
+>
+> Pwede ba akong humingi ng maliit na pabor? Nagbabahagi ako ng totoong kwento para makita ng ibang owners na gumagana talaga ang pag-alam sa numbers. Pwede mo bang sagutin ang 5 maikling tanong? Text, voice note, o 30-second video, kung ano ang pinakamadali sa'yo.
+>
+> Ikaw ang bahala kung paano ko gagamitin: full name at photo, first name at klase ng negosyo lang, o walang pangalan. At kung ayaw mo, okay lang talaga. Salamat, [Name].
+
+### Step 3 · Ask these 5 questions
+
+| # | English | Taglish | Why it works |
+|---|---|---|---|
+| 1 | Before we worked together, what was going on with your numbers? | Bago tayo nagtrabaho, ano ang sitwasyon ng numbers mo? | Shows the "before" |
+| 2 | What made you hesitate before reaching out? | Ano ang nagpaalangan sa'yo bago ka lumapit? | Their doubt answers the next person's doubt |
+| 3 | What number did we find? Give the exact ₱ if you're comfortable. | Anong numero ang nahanap natin? Exact ₱ kung komportable ka. | Specific numbers build trust |
+| 4 | What decision did you make, or avoid, because of that number? | Anong desisyon ang ginawa mo, o hindi mo ginawa, dahil sa numerong 'yon? | Shows the "after" |
+| 5 | What would you tell an owner who is still guessing? | Ano ang sasabihin mo sa owner na nanghuhula pa rin? | Gives you a ready quote |
+
+**Question 2 is the most valuable one.** When a client says *"I was scared it was another hype program. It wasn't,"* that answers the doubt better than anything Gilbert can say himself.
+
+### Step 4 · If they send a video
+- Hold the phone **vertically**, at eye level, facing a window.
+- **30–45 seconds** is enough. They should answer questions 1, 3 and 4 out loud.
+- Their own words, their own language. Taglish is perfect.
+
+### Step 5 · The rules (protect trust)
+- **Never write the testimonial for them.** You may fix spelling only. Never change what they meant.
+- **Get permission in writing**, even a Messenger "yes" is enough. Save a screenshot. This also respects the Philippine Data Privacy Act.
+- **Only share figures they approved.** If they say "no exact numbers", use "found my break-even" without the ₱.
+- **No promises.** Never add "you'll earn ₱X too." Results differ by business.
+
+### Step 6 · Where to use them
+1. **Short video clip**: their 30-second answer, with captions, posted as its own Reel.
+2. **Proof card**: their best line and first name on a clean image. The `social-proof-card-studio` skill can design these.
+3. **Inside your videos**: add one line after a CTA, e.g. *"Like [Name], who found out their break-even was ₱___."*
+4. **Sales calls**: when someone says "I've been burned before," share the story from question 2.
+
+---
+
+## Filming plan (batch all 13 in 2 sessions)
 
 | Session | Scripts | Setup | Time |
 |---|---|---|---|
-| Gilbert | G1–G6, English + Taglish | Seated, warm window light, calm pace, collared shirt | ~2 hrs |
+| Gilbert | G1–G7, English + Taglish | Seated, warm window light, calm pace, collared shirt | ~2.5 hrs |
 | Daniel | D1–D6, English + Taglish | Standing or at a desk, brighter light, faster pace | ~1.5 hrs |
 
 **Tip:** Film each line in English, then straight away in Taglish, before you move to the next line. You'll only set up once, and both versions will match.
 
 **Posting order:** one pillar per week, both voices in the same week.
 1. Clarity
-2. Cash Flow
+2. Cash Flow, plus G7 (Trust) the same week
 3. Systems
 4. Leadership
 5. Entrepreneurship
