@@ -6,10 +6,30 @@ Calculator: `scripts/connection_calc.py` (standard library Python, no install). 
 
 ```bash
 python scripts/connection_calc.py <command> --help
-python -m unittest discover -s scripts   # 21 checks against published tables
+python -m unittest discover -s scripts   # 43 checks: published tables, hand calcs, behaviour
 ```
 
-All values: N, mm, MPa, kN, kNm. Eurocode functions use recommended factors (γM0 = 1.0, γM2 = 1.25, γM3 = 1.25). **National annexes change these and material strengths.** Example: the UK NA takes fu from the product standard, so S355 welds use fu = 470 MPa, not 510. Pass `--fu 470` (and `--fy`) to override.
+All values: N, mm, MPa, kN, kNm.
+
+## National Annex
+
+Pick the annex first. Every Eurocode command takes `--annex` before the command name, and the result echoes which annex and partial factors were used.
+
+| `--annex` | γM0 | γM1 | γM2 | γM3 | fy, fu source |
+|-----------|-----|-----|-----|-----|---------------|
+| `EN` (default) | 1.0 | 1.0 | 1.25 | 1.25 | EN 1993-1-1 Table 3.1 (t ≤ 40 / 40 < t ≤ 80 bands) |
+| `UK` | 1.0 | 1.0 | 1.25 | 1.25 | EN 10025-2 product standard: fy by thickness band (16/40/63/80/100), fu lower value (S355 = 470) |
+| `DE` | 1.0 | 1.1 | 1.25 | 1.25 | Table 3.1 |
+
+```bash
+python scripts/connection_calc.py --annex UK ec-weld --a 6 --L 200 --steel S355 --F 250 --t 12
+python scripts/connection_calc.py --annex EN --fu 470 ec-weld ...   # force a value
+```
+
+- The **thickness matters**: pass `--t` (or the plate/flange thickness is used automatically) so fy drops for thicker plates under the UK NA.
+- The UK table covers S235, S275 and S355 only (EN 10025-2). Other grades raise an error rather than guess.
+- Other annexes (Ireland, Netherlands, Nordic, etc.) are not built in. Use `--annex EN` with `--fy/--fu` overrides and check every γ against the annex document.
+- **US projects**: use the `aisc-*` commands (AISC 360-16 LRFD), not an annex.
 
 ## The Design Loop
 
@@ -71,7 +91,28 @@ Gives modes 1, 2, 3 and which governs. Reading the result:
 
 Without `--leff` it uses the individual-row, unstiffened pattern: leff = min(2πm, 4m + 1.25e) for mode 1 and 4m + 1.25e for mode 2. Rows next to a beam flange or stiffener, and rows acting as a group, need EN 1993-1-8 Tables 6.4 to 6.6 (α factor). Compute leff for those by hand and pass `--leff`.
 
-Moment resistance of an end plate joint (quick form): Mj,Rd ≈ Σ hr · Ftr,Rd over the bolt rows in tension, where hr is the lever arm to the centre of compression (beam compression flange centre). Also cap each row by column web in tension, beam web in tension, and the compression side (column web in compression, beam flange in compression). CBFEM checks all of these together. The hand calc tells you if you are in the right size range.
+### End plate moment resistance (full EN 1993-1-8 6.2.7.2)
+
+```bash
+python scripts/connection_calc.py --annex UK ec-end-plate --input examples/extended_end_plate.json
+```
+
+Input is a JSON file: beam, column, plate, bolts, welds, tension rows, optional `M_Ed` and `alpha`. Copy `examples/extended_end_plate.json` (IPE 400 to HEB 300, 20 mm plate, M24 10.9) and edit it. Rows are measured downward from the outer face of the beam tension flange; a negative value is the row in the extension. List **tension rows only**; shear rows near the compression flange are checked separately with `ec-bolt`.
+
+What it does:
+1. Each row, top down, limited by the lowest of: column flange bending, column web tension, end plate bending, beam web tension. Checked for the row alone **and** as part of every group of rows above it (Tables 6.4 and 6.6).
+2. T-stubs use method 1, with punching shear in Bt,Rd and the prying check (Lb vs Lb*). If prying cannot develop, the mode 1-2 resistance is used.
+3. Total tension capped by the weakest of column web compression (with web buckling ρ), beam flange compression, and column web panel shear; the excess is taken off the lowest rows first.
+4. The 1.9 Ft,Rd rule: rows below a row stronger than that are limited to a triangular distribution.
+5. Mj,Rd = Σ hr Ftr,Rd, compared with the beam's plastic moment and M_Ed.
+
+The output lists every component resistance per row, so you can see exactly what governs and what to change. Example result (UK NA): Mj,Rd = 303.6 kNm, 66% of the IPE 400 Mpl, governed by HEB 300 column web in compression. Row 4 contributes nothing. That tells you: add compression stiffeners to the column, or drop row 4.
+
+Assumptions and limits (also printed in `warnings` and `not_checked`):
+- One-sided joint (β = 1), continuous column, no stiffeners, no backing plates or web doublers.
+- α for the row next to the beam flange defaults to 4.45, the lower bound of Figure 6.11. The output gives λ1 and λ2: read α from the chart and pass `"alpha": ...` for a less conservative result.
+- kwc = 1.0 (column web axial stress not checked). The dispersion through the end plate sp is taken as tp (conservative).
+- Flange welds are assumed full strength. Rotational stiffness is not computed. Beam axial force must be ≤ 5% Npl,Rd.
 
 ### Fillet welds
 
@@ -115,6 +156,7 @@ Bolt: shear (J3.6), bearing/tearout (J3.10, deformation at service considered), 
 
 ## Limits of This Calculator
 
-- Does not do: block tearing, net section, column web panel shear, column web in compression, beam web in tension, eccentric bolt groups, long-joint reduction, preloaded bolt slip interaction for group design, base plates, anchors, seismic capacity design.
+- Does not do: block tearing, net section, eccentric bolt groups, long-joint reduction, stiffened column joints, rotational stiffness, preloaded bolt slip interaction for group design, base plates, anchors, seismic capacity design.
+- The end plate calculation has been checked against hand calculations and published section properties, not yet against a published worked example or an independent engineer. Treat its output as preliminary until it has been.
 - Tables cover common grades and diameters only; unknown inputs raise an error rather than guess.
 - Every output is a preliminary design for an engineer to verify in IDEA StatiCa and sign.

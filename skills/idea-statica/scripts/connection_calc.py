@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Hand-calculation and preliminary design for steel connections.
 
-Eurocode EN 1993-1-8 (recommended partial factors, no national annex) and
-AISC 360-16 LRFD for bolts and fillet welds. Units: N, mm, MPa, kN, kNm.
+Eurocode EN 1993-1-8 with a selectable national annex (EN recommended values,
+UK, DE: see ANNEXES / --annex) and AISC 360-16 LRFD for bolts and fillet welds.
+Units: N, mm, MPa, kN, kNm.
 
 Use it to size a joint before building it in IDEA StatiCa, and to sanity
 check CBFEM results. It is not a substitute for the CBFEM model or for the
@@ -12,6 +13,8 @@ Examples:
     python connection_calc.py ec-bolt --d 20 --grade 8.8 --t 12 --steel S355 \
         --e1 40 --e2 35 --p1 70 --p2 80 --Fv 60 --Ft 40
     python connection_calc.py ec-weld --a 6 --L 200 --steel S355 --F 250
+    python connection_calc.py --annex UK ec-weld --a 6 --L 200 --steel S355 --F 250 --t 12
+    python connection_calc.py --annex UK ec-end-plate --input ../examples/extended_end_plate.json
     python connection_calc.py ec-tstub --leff 180 --tf 20 --steel S355 \
         --m 40 --e 50 --bolts 2 --d 20 --grade 10.9 --Ft 300
     python connection_calc.py ec-design-bolts --V 450 --d 20 --grade 8.8 \
@@ -28,15 +31,24 @@ import math
 # Material and bolt data
 # ---------------------------------------------------------------------------
 
-# EN 1993-1-1 Table 3.1, t <= 40 mm: (fy, fu) in MPa
+# EN 1993-1-1 Table 3.1: {grade: ((fy, fu) t <= 40 mm, (fy, fu) 40 < t <= 80 mm)}
 STEEL_EC = {
-    "S235": (235, 360),
-    "S275": (275, 430),
-    "S355": (355, 510),
-    "S420": (420, 520),
-    "S450": (440, 550),
-    "S460": (460, 540),
+    "S235": ((235, 360), (215, 360)),
+    "S275": ((275, 430), (255, 410)),
+    "S355": ((355, 510), (335, 470)),
+    "S420": ((420, 520), (390, 520)),
+    "S450": ((440, 550), (410, 550)),
+    "S460": ((460, 540), (430, 540)),
 }
+
+# EN 10025-2 product standard: fy by nominal thickness band, fu for 3 <= t <= 100
+# bands: t <= 16, <= 40, <= 63, <= 80, <= 100
+STEEL_EN10025 = {
+    "S235": ((235, 225, 215, 215, 215), 360),
+    "S275": ((275, 265, 255, 245, 235), 410),
+    "S355": ((355, 345, 335, 325, 315), 470),
+}
+_BANDS = (16, 40, 63, 80, 100)
 
 # EN 1993-1-8 Table 4.1 correlation factor
 BETA_W = {"S235": 0.8, "S275": 0.85, "S355": 0.9, "S420": 1.0, "S450": 1.0, "S460": 1.0}
@@ -63,10 +75,76 @@ BOLT_GROUP_AISC = {
     "A490": (780, 469, 579),   # 113 / 68 / 84 ksi (Group B)
 }
 
-GAMMA_M0 = 1.0
-GAMMA_M2 = 1.25
-GAMMA_M3 = 1.25  # slip resistance at ULS
 PHI_AISC = 0.75
+
+
+# ---------------------------------------------------------------------------
+# National annexes
+# ---------------------------------------------------------------------------
+
+def _strength_table31(grade, t):
+    if grade not in STEEL_EC:
+        raise ValueError(f"Unknown steel grade {grade!r}; use one of {sorted(STEEL_EC)}")
+    if t is not None and t > 80:
+        raise ValueError(f"t = {t} mm is outside EN 1993-1-1 Table 3.1 (max 80 mm)")
+    return STEEL_EC[grade][0 if t is None or t <= 40 else 1]
+
+
+def _strength_product(grade, t):
+    if grade not in STEEL_EN10025:
+        raise ValueError(f"{grade!r} not in EN 10025-2 table; use one of {sorted(STEEL_EN10025)}")
+    fys, fu = STEEL_EN10025[grade]
+    t = 16 if t is None else t
+    for band, fy in zip(_BANDS, fys):
+        if t <= band:
+            return fy, fu
+    raise ValueError(f"t = {t} mm is outside the EN 10025-2 table (max 100 mm)")
+
+
+class Annex:
+    """Partial factors and material strength source for one national annex."""
+
+    def __init__(self, name, gM0, gM1, gM2, gM3, strength, note):
+        self.name, self.gM0, self.gM1, self.gM2, self.gM3 = name, gM0, gM1, gM2, gM3
+        self.strength, self.note = strength, note
+
+    def as_dict(self):
+        return {"annex": self.name, "gM0": self.gM0, "gM1": self.gM1,
+                "gM2": self.gM2, "gM3": self.gM3, "note": self.note}
+
+
+ANNEXES = {
+    "EN": Annex("EN (recommended values)", 1.0, 1.0, 1.25, 1.25, _strength_table31,
+                "fy, fu from EN 1993-1-1 Table 3.1."),
+    "UK": Annex("UK NA to BS EN 1993-1-1 / 1-8", 1.0, 1.0, 1.25, 1.25, _strength_product,
+                "fy by thickness and fu (lower value) from EN 10025-2, as the UK NA requires. "
+                "gM2 = 1.25 is the 1-8 value for bolts, welds and plates in bearing."),
+    "DE": Annex("DIN EN 1993-1-1/NA, 1-8/NA (Germany)", 1.0, 1.1, 1.25, 1.25, _strength_table31,
+                "gM1 = 1.1 for member/plate stability. fy, fu from Table 3.1."),
+}
+
+ANNEX = ANNEXES["EN"]
+_OVERRIDES = {}
+
+
+def set_annex(code):
+    """Select the national annex used by every Eurocode function: EN, UK or DE."""
+    global ANNEX
+    try:
+        ANNEX = ANNEXES[code.upper()]
+    except KeyError:
+        raise ValueError(f"Unknown annex {code!r}; use one of {sorted(ANNEXES)}")
+    return ANNEX
+
+
+def override_strength(grade, fy=None, fu=None):
+    """Force fy and/or fu for a grade (e.g. from a mill certificate spec or another NA)."""
+    base = ANNEX.strength(grade, None)
+    _OVERRIDES[grade] = (fy or base[0], fu or base[1])
+
+
+def clear_overrides():
+    _OVERRIDES.clear()
 
 
 def hole_d0(d):
@@ -78,11 +156,14 @@ def hole_d0(d):
     return d + 3
 
 
-def _steel(grade):
-    try:
-        return STEEL_EC[grade]
-    except KeyError:
-        raise ValueError(f"Unknown steel grade {grade!r}; use one of {sorted(STEEL_EC)}")
+def steel_strength(grade, t=None):
+    """(fy, fu) in MPa for the active annex and nominal thickness t (mm)."""
+    if grade in _OVERRIDES:
+        return _OVERRIDES[grade]
+    return ANNEX.strength(grade, t)
+
+
+_steel = steel_strength
 
 
 def _bolt(d, grade):
@@ -110,14 +191,14 @@ def ec_bolt_shear(d, grade, planes=1, threads_in_plane=True):
     else:
         alpha_v = 0.6
         area = math.pi * d ** 2 / 4
-    return planes * alpha_v * fub * area / GAMMA_M2 / 1000
+    return planes * alpha_v * fub * area / ANNEX.gM2 / 1000
 
 
 def ec_bolt_tension(d, grade, countersunk=False):
     """Ft,Rd, kN."""
     As, fub = _bolt(d, grade)
     k2 = 0.63 if countersunk else 0.9
-    return k2 * fub * As / GAMMA_M2 / 1000
+    return k2 * fub * As / ANNEX.gM2 / 1000
 
 
 def ec_bolt_bearing(d, grade, t, steel, e1, e2, p1=None, p2=None,
@@ -127,7 +208,7 @@ def ec_bolt_bearing(d, grade, t, steel, e1, e2, p1=None, p2=None,
     p1/p2 may be None for a single bolt in that direction.
     """
     _, fub = _bolt(d, grade)
-    _, fu = _steel(steel)
+    _, fu = _steel(steel, t)
     d0 = hole_d0(d)
     if end_bolt:
         alpha_d = e1 / (3 * d0)
@@ -147,21 +228,21 @@ def ec_bolt_bearing(d, grade, t, steel, e1, e2, p1=None, p2=None,
     k1 = min(k1_terms)
     if k1 <= 0 or alpha_b <= 0:
         return 0.0
-    return k1 * alpha_b * fu * d * t / GAMMA_M2 / 1000
+    return k1 * alpha_b * fu * d * t / ANNEX.gM2 / 1000
 
 
 def ec_punching(d, tp, steel, dm=None):
     """Bp,Rd, kN. dm defaults to 1.7 d (mean of head across flats/points)."""
-    _, fu = _steel(steel)
+    _, fu = _steel(steel, tp)
     dm = dm or 1.7 * d
-    return 0.6 * math.pi * dm * tp * fu / GAMMA_M2 / 1000
+    return 0.6 * math.pi * dm * tp * fu / ANNEX.gM2 / 1000
 
 
 def ec_slip(d, grade, mu=0.3, n_surfaces=1, ks=1.0, Ft_Ed=0.0):
     """Fs,Rd at ULS, kN (Category C), reduced for applied tension."""
     As, fub = _bolt(d, grade)
     Fp_C = 0.7 * fub * As / 1000
-    return ks * n_surfaces * mu * (Fp_C - 0.8 * Ft_Ed) / GAMMA_M3
+    return ks * n_surfaces * mu * (Fp_C - 0.8 * Ft_Ed) / ANNEX.gM3
 
 
 def ec_bolt_check(d, grade, t, steel, e1, e2, p1=None, p2=None, Fv=0.0, Ft=0.0,
@@ -196,10 +277,11 @@ def ec_bolt_check(d, grade, t, steel, e1, e2, p1=None, p2=None, Fv=0.0, Ft=0.0,
 # Eurocode EN 1993-1-8: fillet welds (4.5.3)
 # ---------------------------------------------------------------------------
 
-def ec_weld_simplified(a, L, steel, F):
-    """Simplified method (4.5.3.3): resultant force F (kN) on throat a x length L."""
-    _, fu = _steel(steel)
-    fvw_d = fu / (math.sqrt(3) * BETA_W[steel] * GAMMA_M2)
+def ec_weld_simplified(a, L, steel, F, t=None):
+    """Simplified method (4.5.3.3): resultant force F (kN) on throat a x length L.
+    t: thickness of the weaker connected part (sets fu under the UK NA)."""
+    _, fu = _steel(steel, t)
+    fvw_d = fu / (math.sqrt(3) * BETA_W[steel] * ANNEX.gM2)
     Fw_Rd = fvw_d * a * L / 1000
     checks = {"weld": {"Ed": F, "Rd": round(Fw_Rd, 1), "util_%": _util(F, Fw_Rd),
                        "fvw_d_MPa": round(fvw_d, 1)}}
@@ -212,11 +294,11 @@ def ec_weld_simplified(a, L, steel, F):
                       {"detailing_failures": detailing})
 
 
-def ec_weld_directional(steel, sigma_perp, tau_perp, tau_par):
+def ec_weld_directional(steel, sigma_perp, tau_perp, tau_par, t=None):
     """Directional method (4.5.3.2), stresses on throat in MPa."""
-    _, fu = _steel(steel)
-    lim1 = fu / (BETA_W[steel] * GAMMA_M2)
-    lim2 = 0.9 * fu / GAMMA_M2
+    _, fu = _steel(steel, t)
+    lim1 = fu / (BETA_W[steel] * ANNEX.gM2)
+    lim2 = 0.9 * fu / ANNEX.gM2
     sigma_eq = math.sqrt(sigma_perp ** 2 + 3 * (tau_perp ** 2 + tau_par ** 2))
     checks = {
         "equivalent": {"Ed": round(sigma_eq, 1), "Rd": round(lim1, 1), "util_%": _util(sigma_eq, lim1)},
@@ -225,10 +307,10 @@ def ec_weld_directional(steel, sigma_perp, tau_perp, tau_par):
     return _summarise("EN 1993-1-8 fillet weld (directional)", checks, {})
 
 
-def ec_fillet_throat_required(F, L, steel, step=1.0):
+def ec_fillet_throat_required(F, L, steel, step=1.0, t=None):
     """Smallest throat a (mm, rounded up to `step`) for resultant F (kN) over L (mm)."""
-    _, fu = _steel(steel)
-    fvw_d = fu / (math.sqrt(3) * BETA_W[steel] * GAMMA_M2)
+    _, fu = _steel(steel, t)
+    fvw_d = fu / (math.sqrt(3) * BETA_W[steel] * ANNEX.gM2)
     a = F * 1000 / (fvw_d * L)
     a = max(3.0, math.ceil(a / step - 1e-9) * step)
     return {"a_required_mm": a, "leg_mm": round(a * math.sqrt(2), 1), "fvw_d_MPa": round(fvw_d, 1)}
@@ -258,9 +340,9 @@ def ec_tstub(leff_1, leff_2, tf, steel, m, e, n_bolts, d, grade, Ft=0.0):
     tf: flange / end plate thickness (mm); m, e per Figure 6.2 (mm)
     n_bolts: bolts in the row (usually 2); Ft: applied tension on the row (kN)
     """
-    fy, _ = _steel(steel)
-    Mpl_1 = 0.25 * leff_1 * tf ** 2 * fy / GAMMA_M0 / 1e6  # kNm
-    Mpl_2 = 0.25 * leff_2 * tf ** 2 * fy / GAMMA_M0 / 1e6
+    fy, _ = _steel(steel, tf)
+    Mpl_1 = 0.25 * leff_1 * tf ** 2 * fy / ANNEX.gM0 / 1e6  # kNm
+    Mpl_2 = 0.25 * leff_2 * tf ** 2 * fy / ANNEX.gM0 / 1e6
     sum_Ft_Rd = n_bolts * ec_bolt_tension(d, grade)
     n = min(e, 1.25 * m)
     F1 = 4 * Mpl_1 / (m / 1000)
@@ -362,6 +444,7 @@ def _summarise(method, checks, extra):
 
 def _cli():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    p.add_argument("--annex", default="EN", help="Eurocode national annex: EN (recommended), UK, DE")
     p.add_argument("--fy", type=float, help="override fy of the chosen steel grade, MPa")
     p.add_argument("--fu", type=float,
                    help="override fu of the chosen steel grade, MPa (e.g. 470 for S355 under UK NA)")
@@ -387,11 +470,16 @@ def _cli():
     w.add_argument("--L", type=float, required=True, help="effective length, mm")
     w.add_argument("--steel", required=True)
     w.add_argument("--F", type=float, required=True, help="resultant force, kN")
+    w.add_argument("--t", type=float, help="thickness of weaker connected part, mm")
 
     wa = sub.add_parser("ec-weld-size", help="EN 1993-1-8 required fillet throat")
     wa.add_argument("--F", type=float, required=True)
     wa.add_argument("--L", type=float, required=True)
     wa.add_argument("--steel", required=True)
+    wa.add_argument("--t", type=float, help="thickness of weaker connected part, mm")
+
+    ep = sub.add_parser("ec-end-plate", help="EN 1993-1-8 6.2.7.2 end plate moment resistance")
+    ep.add_argument("--input", required=True, help="JSON joint definition (see examples/)")
 
     ts = sub.add_parser("ec-tstub", help="EN 1993-1-8 T-stub (end plate / column flange row)")
     ts.add_argument("--leff", type=float, help="use one leff for modes 1 and 2 (mm)")
@@ -430,16 +518,22 @@ def _cli():
     aw.add_argument("--theta", type=float, default=0.0)
 
     a = p.parse_args()
-    if (a.fy or a.fu) and getattr(a, "steel", None):
-        fy, fu = _steel(a.steel)
-        STEEL_EC[a.steel] = (a.fy or fy, a.fu or fu)
+    set_annex(a.annex)
+    if a.fy or a.fu:
+        if not getattr(a, "steel", None):
+            p.error("--fy/--fu need a command with --steel")
+        override_strength(a.steel, a.fy, a.fu)
     if a.cmd == "ec-bolt":
         r = ec_bolt_check(a.d, a.grade, a.t, a.steel, a.e1, a.e2, a.p1, a.p2, a.Fv, a.Ft,
                           a.planes, not a.shank, not a.inner, not a.inner)
     elif a.cmd == "ec-weld":
-        r = ec_weld_simplified(a.a, a.L, a.steel, a.F)
+        r = ec_weld_simplified(a.a, a.L, a.steel, a.F, a.t)
     elif a.cmd == "ec-weld-size":
-        r = ec_fillet_throat_required(a.F, a.L, a.steel)
+        r = ec_fillet_throat_required(a.F, a.L, a.steel, t=a.t)
+    elif a.cmd == "ec-end-plate":
+        from end_plate_moment import end_plate_moment_resistance
+        with open(a.input) as f:
+            r = end_plate_moment_resistance(json.load(f))
     elif a.cmd == "ec-tstub":
         if a.leff:
             l1 = l2 = a.leff
@@ -453,8 +547,13 @@ def _cli():
         r = aisc_bolt_check(a.d, a.group, a.threads, a.t, a.Fu, a.lc, a.Vu, a.Tu)
     else:
         r = aisc_weld_check(a.w, a.L, a.FEXX, a.Pu, a.theta)
+    if a.cmd.startswith("ec-"):
+        r["annex"] = ANNEX.as_dict()
     print(json.dumps(r, indent=2))
 
 
 if __name__ == "__main__":
-    _cli()
+    # Run the CLI from the imported module so that end_plate_moment (which
+    # imports connection_calc) sees the same annex and overrides.
+    import connection_calc
+    connection_calc._cli()

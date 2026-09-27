@@ -1,0 +1,10 @@
+{
+  "_comment": "IPE 400 to HEB 300, extended end plate, 4 tension rows of M24 10.9. Dimensions in mm, Wpl in cm3, A in cm2, M_Ed in kNm.",
+  "beam":   {"h": 400, "b": 180, "tf": 13.5, "tw": 8.6, "r": 21, "Wpl": 1307, "steel": "S355"},
+  "column": {"h": 300, "b": 300, "tf": 19, "tw": 11, "r": 27, "A": 149.1, "steel": "S355"},
+  "plate":  {"tp": 20, "bp": 200, "extension": 90, "steel": "S355"},
+  "bolts":  {"d": 24, "grade": "10.9", "gauge": 110},
+  "welds":  {"flange_throat": 10, "web_throat": 6},
+  "rows":   [-45, 65, 155, 245],
+  "M_Ed": 250
+}

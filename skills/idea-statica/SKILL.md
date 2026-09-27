@@ -1,6 +1,6 @@
 ---
 name: idea-statica
-description: Structural engineering co-pilot for IDEA StatiCa (Connection, Member, Detail, Checkbot). Calculates and designs steel connections by hand (EN 1993-1-8 and AISC 360 bolts, welds, T-stub end plates) with a tested Python calculator, sets up steel connection models, reads CBFEM results, diagnoses failing checks (plates, bolts, welds, anchors, buckling), writes client-ready calculation summaries, and scripts batch runs through the IDEA StatiCa Connection API. Triggers on "IDEA StatiCa", "IDEA Statica", "Statica", "CBFEM", "calculation and design", "hand calc", "size the bolts", "how many bolts", "weld size", "end plate thickness", "T-stub", "EN 1993-1-8", "AISC 360", "steel connection check", "connection design", "my bolts fail", "plastic strain over 5%", "buckling factor", "Checkbot", "export from Tekla/SAP2000/ETABS/RFEM/Robot to IDEA", "idea connection api", "batch connections", "connection report", or any request to design, check, troubleshoot, report, or automate a steel or concrete detail in IDEA StatiCa.
+description: Structural engineering co-pilot for IDEA StatiCa (Connection, Member, Detail, Checkbot). Calculates and designs steel connections by hand (EN 1993-1-8 with EN/UK/DE national annexes, and AISC 360: bolts, welds, T-stubs, full end plate moment resistance) with a tested Python calculator, sets up steel connection models, reads CBFEM results, diagnoses failing checks (plates, bolts, welds, anchors, buckling), writes client-ready calculation summaries, and scripts batch runs through the IDEA StatiCa Connection API. Triggers on "IDEA StatiCa", "IDEA Statica", "Statica", "CBFEM", "calculation and design", "hand calc", "size the bolts", "how many bolts", "weld size", "end plate thickness", "T-stub", "moment resistance", "Mj,Rd", "end plate moment", "national annex", "UK NA", "EN 1993-1-8", "AISC 360", "steel connection check", "connection design", "my bolts fail", "plastic strain over 5%", "buckling factor", "Checkbot", "export from Tekla/SAP2000/ETABS/RFEM/Robot to IDEA", "idea connection api", "batch connections", "connection report", or any request to design, check, troubleshoot, report, or automate a steel or concrete detail in IDEA StatiCa.
 ---
 
 # IDEA StatiCa
@@ -42,7 +42,8 @@ Pick the mode from the request. If unclear, ask one question: "Are you calculati
 ### Step 1: Lock the Inputs
 Before any advice, confirm or ask for:
 
-1. **Design code** and national annex (EN 1993-1-8 + NA, AISC 360-16/22, CSA S16, AS 4100, etc.)
+1. **Design code** and national annex (sets `--annex`; if the annex is not EN/UK/DE, say so and use overrides)
+   Codes seen in IDEA StatiCa: EN 1993-1-8 + NA, AISC 360-16/22, CSA S16, AS 4100.
 2. **IDEA StatiCa version** (API and settings changed across 21.x to 25.x)
 3. **Materials**: steel grade, bolt grade, weld electrode, concrete class for base plates
 4. **Load source**: manual, imported from FEA, or "loads in equilibrium"
@@ -81,8 +82,10 @@ End every answer with a short "Check in IDEA StatiCa" list: the exact items to r
 | File | What It Contains | When to Read |
 |------|-----------------|--------------|
 | [references/calculation-and-design.md] | Design loop, joint selection, hand-calc formulas, detailing minimums, hand calc vs CBFEM | Calculate & Design |
-| `scripts/connection_calc.py` | EN 1993-1-8 + AISC 360-16 calculator: bolts, welds, T-stub, bolt-count sizing. `--help` per command | Every calculation |
-| `scripts/test_connection_calc.py` | 21 checks against published tables. Run after any edit to the calculator | Before trusting a changed calculator |
+| `scripts/connection_calc.py` | EN 1993-1-8 (`--annex EN/UK/DE`) + AISC 360-16 calculator: bolts, welds, T-stub, bolt-count sizing, `ec-end-plate` moment resistance. `--help` per command | Every calculation |
+| `scripts/end_plate_moment.py` | EN 1993-1-8 6.2.7.2 end plate Mj,Rd with row groups, compression cap, 1.9 Ft,Rd rule | Moment joints |
+| `examples/extended_end_plate.json` | Input template for `ec-end-plate` | Moment joints |
+| `scripts/test_*.py` | 43 checks against published tables, hand calcs and expected behaviour. `python -m unittest discover -s scripts` | Before trusting a changed calculator |
 | [references/checks-and-limits.md] | Every check CBFEM runs, its limit, and what drives it | Troubleshoot, Report |
 | [references/troubleshooting.md] | Symptom → cause → fix table for common failures and analysis errors | Troubleshoot |
 | [references/modelling-playbook.md] | Operation recipes for common joints, load setup, BIM links | Model, BIM link |
