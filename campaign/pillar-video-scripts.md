@@ -389,7 +389,12 @@ For every script, choose:
 
 ## G6 · AI & BUSINESS GROWTH · "AI makes you faster. Even when you're wrong."
 
-**Reader:** SME owner · **Runtime:** ~60s · **Proof:** NOVAREIGN AI ecosystem, numbers-first conviction · `[CONFIRM]` which AI tools Gilbert wants named, if any
+**Reader:** SME owner · **Runtime:** ~60s · **Proof:** NOVAREIGN AI ecosystem, numbers-first conviction
+
+> **✅ AI tool names: decided. Film as written.**
+> - **Why this was flagged:** Gilbert's voice files never say which AI tools he uses. Naming one on camera works like a public endorsement. It can go out of date quickly, and it pulls attention away from his real message: numbers first.
+> - **Decision:** name no brands. The script says "the chatbot, the auto-poster, the ads" and names only **NOVAREIGN**. That keeps Gilbert in his own category (financial clarity), not in the "AI tool reviewer" crowd.
+> - **Only change this if** Gilbert uses a tool daily and is happy to be seen recommending it. Then swap "the chatbot" for that name, e.g. "ChatGPT" or "Claude". Never name a tool he hasn't used himself.
 
 ### Hook options
 | | English | Taglish |
