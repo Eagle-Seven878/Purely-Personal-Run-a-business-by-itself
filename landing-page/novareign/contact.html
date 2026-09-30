@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Contact · NOVAREIGN</title>
+  <meta name="description" content="Order NOVAREIGN products, ask about the 30-day guarantee, book a financial clarity conversation or start a partnership.">
+  <meta property="og:title" content="Contact · NOVAREIGN">
+  <meta property="og:description" content="Order NOVAREIGN products, ask about the 30-day guarantee, book a financial clarity conversation or start a partnership.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Poppins:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="index.html" aria-label="NOVAREIGN home"><svg class="brand-mark" viewBox="0 0 26 26" aria-hidden="true"><rect x="5" y="5" width="16" height="16" transform="rotate(45 13 13)" style="fill:none;stroke:var(--gold);stroke-width:1.6"/><text x="13" y="17.6" text-anchor="middle" style="font-family:var(--display);font-weight:700;font-size:13px;fill:currentColor">N</text></svg><span class="brand-word">NOVAREIGN</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav id="nav" class="nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="founder.html">Our Founder</a>
+        <a href="financial-clarity.html">Financial Clarity</a>
+        <a href="ecosystem.html">Partners</a>
+        <a class="btn btn-small" href="contact.html" aria-current="page">Contact us</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+
+    <section class="page-hero">
+      <div class="wrap stack">
+        <p class="eyebrow">Contact</p>
+        <h1>Tell us what you need.</h1>
+        <p class="lede">Order a product, ask about the 30-day guarantee, book a financial clarity conversation, or start a partnership. Coach Gilbert and the team read every message.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap split split-top">
+        <div class="stack-lg">
+          <form id="contact-form" class="stack" novalidate>
+            <div class="field">
+              <label for="f-name">Your name</label>
+              <input id="f-name" name="f-name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="f-city">City or province</label>
+              <input id="f-city" name="f-city" type="text" autocomplete="address-level2">
+            </div>
+            <div class="field">
+              <label for="f-topic">What is this about?</label>
+              <select id="f-topic" name="f-topic">
+                <option value="ordering VERDEN Reserve" data-key="verden">Order VERDEN Reserve (₱1,299)</option>
+                <option value="ordering Aura Cellular" data-key="aura">Order Aura Cellular (₱7,499)</option>
+                <option value="ordering Mahestra Voix" data-key="voix">Order Mahestra Voix (₱987)</option>
+                <option value="the 30-day guarantee" data-key="guarantee">The 30-day guarantee</option>
+                <option value="financial clarity mentorship" data-key="mentorship">Financial clarity mentorship</option>
+                <option value="the next Financial Awakening event" data-key="awakening">Financial Awakening events</option>
+                <option value="becoming a distributor" data-key="distributor">Becoming a distributor</option>
+                <option value="a brand partnership" data-key="partner">Brand partnership</option>
+                <option value="something else" data-key="other">Something else</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-message">Your message</label>
+              <textarea id="f-message" name="f-message" required placeholder="For orders: which product, how many, and where to deliver. For mentorship: your business, and your monthly sales and costs if you know them."></textarea>
+            </div>
+            <div><button class="btn" type="submit">Prepare my message</button></div>
+          </form>
+          <div id="result" class="result" hidden>
+            <p><strong>Your message is ready.</strong> Copy it and send it to us through any channel on the right.</p>
+            <pre id="result-text"></pre>
+            <div class="actions"><button id="copy-btn" type="button" class="btn btn-small">Copy message</button></div>
+            <p id="copy-status" class="status" aria-live="polite"></p>
+          </div>
+        </div>
+        <div class="stack-lg">
+          <div class="stack">
+            <h3>Reach us directly</h3>
+            <dl class="facts" id="channels">
+              <div><dt>Facebook</dt><dd>Search <strong>Cash Flow Clarity PH</strong> on Facebook and send us a message.</dd></div>
+              <div><dt>Office</dt><dd>NOVAREIGN Global Health Ventures Inc.<br>Makati City, Metro Manila</dd></div>
+            </dl>
+          </div>
+          <div class="card">
+            <h3>Before you buy</h3>
+            <p class="muted">Every product carries our 30-day money-back guarantee. Use it for thirty days. If you do not feel a real difference, message us and we return your money.</p>
+            <a href="products.html#guarantee">Read the guarantee →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tint">
+      <div class="wrap split split-top">
+        <div class="stack">
+          <p class="eyebrow">Questions</p>
+          <h2>What people ask us first</h2>
+        </div>
+        <div class="faq">
+          <details open>
+            <summary>How does the 30-day guarantee work?</summary>
+            <p>Use the product as directed for thirty days. If you do not feel or see a real difference, message us within that window and we will return your money. No questions asked.</p>
+          </details>
+          <details>
+            <summary>I have tried many brands and nothing worked. Why would this be different?</summary>
+            <p>You are right to be careful. We name our ingredient sources, work only with licensed manufacturers, and revise formulas until the founder would stake his name on the result. And if it still does not work for you, the guarantee means you lose nothing.</p>
+          </details>
+          <details>
+            <summary>Why don't you lower your prices?</summary>
+            <p>Because the price is what it costs to make a product that works. Competing on the lowest price is how ingredients get cut. We would rather give you a guarantee than a discount.</p>
+          </details>
+          <details>
+            <summary>Is NOVAREIGN a network marketing company?</summary>
+            <p>No. There is no recruitment ladder. Distributors sell products to customers, and partner brands run their own businesses with NOVAREIGN as their operating backbone.</p>
+          </details>
+          <details>
+            <summary>Where do you deliver?</summary>
+            <p>We are based in Makati City and serve Metro Manila first, with nationwide delivery as our online store opens. Tell us your location in your message and we will confirm.</p>
+          </details>
+          <details>
+            <summary>Who is the financial clarity mentorship for?</summary>
+            <p>Filipino SME owners and coaches who are already earning but do not know their breakeven, net income percentage or survival months. If you only need a quick answer, Coach Gilbert will tell you, and he may simply compute your breakeven with you.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <div class="foot-brand">NOVAREIGN</div>
+          <p class="foot-tag">Built from the heart. Guaranteed in thirty days.</p>
+          <p style="margin-top:1rem">NOVAREIGN Global Health Ventures Inc.<br>Makati City, Metro Manila, Philippines</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="products.html#guarantee">The 30-day guarantee</a></li>
+            <li><a href="founder.html">Our founder</a></li>
+            <li><a href="financial-clarity.html">Financial clarity</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Work with us</h4>
+          <ul>
+            <li><a href="ecosystem.html">Partner brands</a></li>
+            <li><a href="ecosystem.html#distributors">Become a distributor</a></li>
+            <li><a href="financial-clarity.html#awakening">Financial Awakening events</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-base">
+        <span>© 2026 NOVAREIGN Global Health Ventures Inc. All rights reserved.</span>
+        <span>Healthy people build a healthy society.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>

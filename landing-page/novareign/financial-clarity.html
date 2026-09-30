@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Financial Clarity · NOVAREIGN</title>
+  <meta name="description" content="Numbers before hustle. Financial clarity mentorship and a breakeven calculator for Filipino SME owners and coaches.">
+  <meta property="og:title" content="Financial Clarity · NOVAREIGN">
+  <meta property="og:description" content="Numbers before hustle. Financial clarity mentorship and a breakeven calculator for Filipino SME owners and coaches.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Poppins:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="index.html" aria-label="NOVAREIGN home"><svg class="brand-mark" viewBox="0 0 26 26" aria-hidden="true"><rect x="5" y="5" width="16" height="16" transform="rotate(45 13 13)" style="fill:none;stroke:var(--gold);stroke-width:1.6"/><text x="13" y="17.6" text-anchor="middle" style="font-family:var(--display);font-weight:700;font-size:13px;fill:currentColor">N</text></svg><span class="brand-word">NOVAREIGN</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav id="nav" class="nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="founder.html">Our Founder</a>
+        <a href="financial-clarity.html" aria-current="page">Financial Clarity</a>
+        <a href="ecosystem.html">Partners</a>
+        <a class="btn btn-small" href="contact.html">Contact us</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+
+    <section class="page-hero">
+      <div class="wrap split">
+        <div class="stack">
+          <p class="eyebrow">Financial clarity mentorship</p>
+          <h1>Numbers before hustle.</h1>
+          <p class="lede">For Filipino SME owners and coaches who are already earning but flying blind on their numbers. Find your breakeven and your profitability before you spend, borrow or scale.</p>
+          <div class="actions"><a class="btn" href="#calculator">Find your breakeven</a><a class="btn btn-ghost" href="contact.html?topic=mentorship">Talk to Coach Gilbert</a></div>
+        </div>
+        <div class="stack">
+          <blockquote class="pull">“The grinding, the hustling is there because they don't know their figures.”</blockquote>
+          <p class="pull-cite">Coach Gilbert</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap split split-top">
+        <div class="stack">
+          <p class="eyebrow">What we see every week</p>
+          <h2>Big revenue. No idea of the net.</h2>
+        </div>
+        <div class="stack">
+          <p>Founders announce ₱1.2 billion in gross sales and cannot tell you their net income percentage. Then they ask where to borrow ₱100 million. Business owners borrow at 5% a month because they want to, not because the numbers said so. Owners grind for years without knowing why, for how long, or for how much.</p>
+          <p>Gilbert headed the accounting of 20+ companies. When a lending client asked to borrow ₱5 to ₱10 million at 5% a month, he asked to see their financial statements first and talked them down to a lower rate. They opened their books to him and invited him onto their board.</p>
+          <p><strong>Clarity comes first. Then options. Then execution.</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="tint" id="calculator">
+      <div class="wrap stack-lg">
+        <div class="stack">
+          <p class="eyebrow">The number that decides everything</p>
+          <h2>Breakeven calculator</h2>
+          <p class="lede">Your breakeven quantity tells you whether to keep a product, how fast to scale, and how many months you can survive. Replace the example figures with your own.</p>
+        </div>
+        <form id="calc" class="calc" onsubmit="return false">
+          <div class="calc-in">
+            <p class="example-flag">Example figures: a ₱1,299 product</p>
+            <div class="field">
+              <label for="c-price">Selling price per unit</label>
+              <div class="input-peso"><span>₱</span><input id="c-price" type="number" inputmode="decimal" min="0" step="any" value="1299"></div>
+            </div>
+            <div class="field">
+              <label for="c-variable">Cost per unit</label>
+              <div class="input-peso"><span>₱</span><input id="c-variable" type="number" inputmode="decimal" min="0" step="any" value="520"></div>
+              <span class="hint">Product cost, packaging, shipping, fees and commissions per unit sold</span>
+            </div>
+            <div class="field">
+              <label for="c-fixed">Fixed costs per month</label>
+              <div class="input-peso"><span>₱</span><input id="c-fixed" type="number" inputmode="decimal" min="0" step="any" value="180000"></div>
+              <span class="hint">Rent, salaries, subscriptions, loan payments: what you pay even if you sell nothing</span>
+            </div>
+            <div class="field">
+              <label for="c-cash">Cash available</label>
+              <div class="input-peso"><span>₱</span><input id="c-cash" type="number" inputmode="decimal" min="0" step="any" value="600000"></div>
+            </div>
+            <div class="field">
+              <label for="c-units">Units you sell in a month</label>
+              <input id="c-units" type="number" inputmode="numeric" min="0" step="1" value="260">
+            </div>
+            <div><button id="c-reset" type="button" class="btn btn-ghost btn-small">Reset example</button></div>
+          </div>
+          <div class="calc-out" aria-live="polite">
+            <div class="out-row out-key"><span>Breakeven quantity per month</span><strong id="o-beq">—</strong></div>
+            <div class="out-row"><span>Breakeven sales per month</span><strong id="o-bes">—</strong></div>
+            <div class="out-row"><span>Margin per unit</span><strong id="o-margin">—</strong></div>
+            <div class="out-row"><span>Net income this month</span><strong id="o-net">—</strong></div>
+            <div class="out-row"><span>Time to clear breakeven</span><strong id="o-days">—</strong></div>
+            <div class="out-row"><span>Survival months (cash ÷ fixed costs)</span><strong id="o-runway">—</strong></div>
+            <p class="verdict" id="o-verdict"></p>
+          </div>
+        </form>
+        <p class="small muted">This calculator is a starting point for a conversation, not financial advice. Mentorship goes further: pro forma statements, cash-flow timing, cost per employee, and your financial independence and freedom numbers.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap stack-lg">
+        <div class="stack">
+          <p class="eyebrow">How Coach Gilbert teaches it</p>
+          <h2>Three rules he lives by</h2>
+        </div>
+        <div class="grid-3">
+          <div class="stack">
+            <hr class="gold-rule">
+            <h3>Breakeven first</h3>
+            <p class="muted">Before any campaign, find the breakeven quantity and make it a KPI. From it you see your real strength, and you decide whether to keep a product or cancel it.</p>
+          </div>
+          <div class="stack">
+            <hr class="gold-rule">
+            <h3>Let the speed of breakeven set the speed of scaling</h3>
+            <p class="muted">If you clear breakeven fast, scale faster and bigger. If it takes a long time, scale slowly and in smaller volume. Not appetite. Not ego. The number.</p>
+          </div>
+          <div class="stack">
+            <hr class="gold-rule">
+            <h3>Know your survival line</h3>
+            <p class="muted">Breakeven is the level where you can say “we are surviving.” Know how many months your cash can hold you there, and you can plan the next six months on purpose.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap split split-top">
+        <div class="stack">
+          <p class="eyebrow">What you leave with</p>
+          <h2>You stop guessing and start deciding from real figures.</h2>
+        </div>
+        <ul class="checks">
+          <li>Read your own income statement and cash-flow statement without a translator</li>
+          <li>Your breakeven quantity, breakeven sales and survival months</li>
+          <li>Your financial independence number and your financial freedom number</li>
+          <li>A clear view of when to borrow, when to scale and when to wait</li>
+          <li>The same launch mechanics Gilbert uses: pro forma statements, market research and KPI-first campaigns</li>
+          <li>For interns and partners who can execute: a path to run a business of your own under NOVAREIGN</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="awakening">
+      <div class="wrap split">
+        <div class="stack">
+          <p class="eyebrow">Live events · six times a year</p>
+          <h2>Financial Awakening</h2>
+          <p>A live CASHFLOW board game experience, built on Robert Kiyosaki's cash flow philosophy, that shows you your numbers before you take another step. You play, you see where the money goes, and you leave knowing what your next decision should be. One Filipino at a time.</p>
+          <p class="muted">Run with the Alpha Cash Flow Club Philippines community. Follow <strong>Cash Flow Clarity PH</strong> on Facebook for schedules.</p>
+          <div class="actions"><a class="btn" href="contact.html?topic=awakening">Ask about the next event</a></div>
+        </div>
+        <div class="stack">
+          <blockquote class="pull">“Money is available twenty-four seven. It is right in front of us. The work is learning to see it.”</blockquote>
+          <p class="pull-cite">Coach Gilbert</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="tint">
+      <div class="wrap split">
+        <div class="stack">
+          <h2>Not sure you need a mentor yet?</h2>
+          <p class="lede">Send your numbers and we will compute your breakeven together. If you do not need help, Coach Gilbert will tell you so. That is for both of us.</p>
+        </div>
+        <div class="actions"><a class="btn" href="contact.html?topic=mentorship">Compute it with Coach Gilbert</a></div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <div class="foot-brand">NOVAREIGN</div>
+          <p class="foot-tag">Built from the heart. Guaranteed in thirty days.</p>
+          <p style="margin-top:1rem">NOVAREIGN Global Health Ventures Inc.<br>Makati City, Metro Manila, Philippines</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="products.html#guarantee">The 30-day guarantee</a></li>
+            <li><a href="founder.html">Our founder</a></li>
+            <li><a href="financial-clarity.html">Financial clarity</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Work with us</h4>
+          <ul>
+            <li><a href="ecosystem.html">Partner brands</a></li>
+            <li><a href="ecosystem.html#distributors">Become a distributor</a></li>
+            <li><a href="financial-clarity.html#awakening">Financial Awakening events</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-base">
+        <span>© 2026 NOVAREIGN Global Health Ventures Inc. All rights reserved.</span>
+        <span>Healthy people build a healthy society.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>
