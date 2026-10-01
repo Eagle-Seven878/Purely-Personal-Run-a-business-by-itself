@@ -19,3 +19,11 @@ The Clarity Scoreboard. Ten questions, five choices each, and it tells them thei
 - Daily target: 10
 - Sending slot: 7:30 to 8:15 am
 - Follow-up rhythm: Day 1: reply the same day, always, even if it is one line. Day 3: send the Five Line Check with one sentence about what they said. Day 7: one fresh thought about their business, no ask, no link.
+
+## Notion sync
+
+- Notion scoreboard database: Chat Scoreboard · id fc01a063775c4b0a9b4ebed5e3d12111 · data source collection://10241f66-565f-436a-aa90-37dac168f2e0 · https://app.notion.com/p/fc01a063775c4b0a9b4ebed5e3d12111
+  - Columns: Day (title, YYYY-MM-DD), Date, Sent, Replies, Calls, Note
+- Notion pipeline database: Chat Pipeline · id ba3cbc162516476fb196ab43eec5fc1c · data source collection://cc60afb8-5f1e-4ce3-bba5-fdeb8720b7b6 · https://app.notion.com/p/ba3cbc162516476fb196ab43eec5fc1c
+  - Columns: Name (title), Stage (New / Awaiting reply / In conversation / Call booked / Done), Platform, Last touch, Next follow-up, Notes
+- chat-scoreboard.csv and chat-pipeline.md stay the source of truth; Notion mirrors them.
