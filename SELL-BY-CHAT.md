@@ -3,7 +3,7 @@
 Built in Sell By Chat on 10/1/2026. Read by every sell-by-chat plugin skill.
 
 - Voice DNA file: VOICE-DNA.md (same folder)
-- ICP file: my ICP / business brain file (same folder)
+- ICP file: ICP.md (same folder)
 - Platform: Facebook
 - A raised hand there: Paying everything first, then treating whatever is left as profit. No breakeven, no net income figure, and often the owner is the only one not drawing a salary.
 - Niche sentence: I help business owners who are earning but flying blind on their numbers find clarity.
