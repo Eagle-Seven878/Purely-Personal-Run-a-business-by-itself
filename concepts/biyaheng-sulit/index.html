@@ -1,0 +1,715 @@
+<title>Biyaheng Sulit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: a travel-ticket motif. The trip calculator prints a "boarding pass" with the real total; everything else supports it. */
+:root {
+  --bg: #F2F6F7;            /* pale sea-mist */
+  --surface: #FFFFFF;
+  --ink: #0E2A36;           /* deep reef */
+  --muted: #557080;
+  --line: #D3E0E4;
+  --sea: #0A6E8A;           /* primary */
+  --sea-soft: #DCEFF4;
+  --flower: #C62F67;        /* bougainvillea: CTAs only */
+  --flower-ink: #FFFFFF;
+  --sun-soft: #FFF1D6;      /* warnings / hidden fees */
+  --font-display: "DM Serif Display", Georgia, "Times New Roman", serif;
+  --font-body: "Nunito Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --radius: 14px;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #08171F; --surface: #102833; --ink: #E6F1F4; --muted: #93AFBB; --line: #1F3E4B;
+    --sea: #4CC3DE; --sea-soft: #123947; --flower: #F0628F; --flower-ink: #1A0710; --sun-soft: #3A2E14;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #08171F; --surface: #102833; --ink: #E6F1F4; --muted: #93AFBB; --line: #1F3E4B;
+  --sea: #4CC3DE; --sea-soft: #123947; --flower: #F0628F; --flower-ink: #1A0710; --sun-soft: #3A2E14;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.6; }
+.wrap { max-width: 1100px; margin-inline: auto; padding-inline: 20px; }
+h1, h2, h3 { margin: 0; text-wrap: balance; line-height: 1.12; }
+h1, h2 { font-family: var(--font-display); font-weight: 400; }
+h2 { font-size: clamp(1.7rem, 3.6vw, 2.5rem); }
+h3 { font-size: 1.15rem; font-weight: 800; }
+p { margin: 0; }
+a { color: inherit; }
+.eyebrow { font-family: var(--font-mono); font-size: 0.74rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--sea); font-weight: 600; }
+.muted { color: var(--muted); }
+.mono { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+:focus-visible { outline: 3px solid var(--flower); outline-offset: 2px; border-radius: 6px; }
+
+/* Concept bar */
+.concept-bar { background: var(--ink); color: var(--bg); font-size: 0.85rem; }
+.concept-bar .wrap { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; justify-content: space-between; padding-block: 10px; }
+.tabs { display: flex; gap: 6px; }
+.tab { font: 700 0.85rem var(--font-body); padding: 6px 14px; border-radius: 999px; border: 1px solid color-mix(in srgb, var(--bg) 40%, transparent); background: transparent; color: var(--bg); cursor: pointer; }
+.tab[aria-selected="true"] { background: var(--bg); color: var(--ink); border-color: var(--bg); }
+
+/* Nav */
+.nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 18px; flex-wrap: wrap; }
+.logo { font-family: var(--font-display); font-size: 1.5rem; text-decoration: none; display: flex; align-items: center; gap: 10px; }
+.logo svg { width: 34px; height: 34px; }
+.nav ul { list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; flex-wrap: wrap; font-weight: 600; font-size: 0.95rem; }
+.nav ul a { text-decoration: none; color: var(--muted); }
+.nav ul a:hover { color: var(--ink); }
+
+/* Buttons */
+.btn { display: inline-flex; align-items: center; gap: 8px; font: 800 1rem var(--font-body); padding: 13px 22px; border-radius: 999px; border: 2px solid transparent; text-decoration: none; cursor: pointer; }
+.btn-primary { background: var(--flower); color: var(--flower-ink); }
+.btn-primary:hover { filter: brightness(1.07); }
+.btn-ghost { border-color: var(--line); color: var(--ink); background: transparent; }
+.btn-ghost:hover { border-color: var(--ink); }
+
+/* Hero */
+.hero { padding-block: 28px 40px; }
+.hero-copy { display: grid; gap: 18px; max-width: 760px; }
+.hero h1 { font-size: clamp(2.5rem, 6.4vw, 4.6rem); letter-spacing: -0.01em; }
+.hero h1 span { color: var(--sea); font-style: italic; }
+.hero .lede { font-size: 1.15rem; color: var(--muted); max-width: 58ch; }
+.hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+.trust-row { display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 0.9rem; color: var(--muted); }
+.trust-row b { color: var(--ink); }
+
+/* Planner */
+.planner { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 28px; align-items: start; padding-block: 8px 56px; }
+.form-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; display: grid; gap: 18px; min-width: 0; }
+.field { display: grid; gap: 6px; }
+.field label, .field .label { font-weight: 800; font-size: 0.92rem; }
+select, input[type="number"] { font: 600 1rem var(--font-body); padding: 11px 12px; border-radius: 10px; border: 2px solid var(--line); background: var(--bg); color: var(--ink); width: 100%; }
+select:focus, input:focus { outline: none; border-color: var(--sea); }
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.stepper { display: flex; align-items: center; border: 2px solid var(--line); border-radius: 10px; background: var(--bg); overflow: hidden; }
+.stepper button { width: 42px; height: 44px; border: 0; background: transparent; color: var(--ink); font: 800 1.2rem var(--font-body); cursor: pointer; }
+.stepper button:hover { background: var(--sea-soft); }
+.stepper input { border: 0; text-align: center; padding: 0; height: 44px; border-radius: 0; background: transparent; -moz-appearance: textfield; }
+.stepper input::-webkit-inner-spin-button { -webkit-appearance: none; }
+.seg { display: grid; grid-template-columns: 1fr 1fr; border: 2px solid var(--line); border-radius: 10px; overflow: hidden; }
+.seg button { font: 700 0.95rem var(--font-body); padding: 10px; border: 0; background: var(--bg); color: var(--muted); cursor: pointer; display: grid; gap: 0; }
+.seg button small { font-weight: 600; font-size: 0.76rem; }
+.seg button[aria-pressed="true"] { background: var(--sea); color: var(--surface); }
+.hint { font-size: 0.82rem; color: var(--muted); }
+
+/* Ticket */
+.ticket { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); display: grid; grid-template-columns: 1fr; min-width: 0; position: relative; box-shadow: 0 22px 44px -30px color-mix(in srgb, var(--ink) 55%, transparent); }
+.ticket-head { background: var(--sea); color: var(--surface); border-radius: var(--radius) var(--radius) 0 0; padding: 16px 22px; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.ticket-head .mono { font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; }
+.route { display: flex; align-items: center; gap: 14px; padding: 20px 22px 4px; flex-wrap: wrap; }
+.route .code { font-family: var(--font-mono); font-weight: 600; font-size: 2rem; letter-spacing: 0.02em; }
+.route .place { font-size: 0.82rem; color: var(--muted); display: block; font-family: var(--font-body); font-weight: 600; letter-spacing: 0; }
+.route .line { flex: 1; min-width: 40px; border-top: 2px dashed var(--line); position: relative; }
+.meta { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; padding: 14px 22px; }
+.meta div { display: grid; }
+.meta span:first-child { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.meta span:last-child { font-weight: 800; }
+.perf { height: 0; border-top: 2px dashed var(--line); margin-inline: 22px; position: relative; }
+.perf::before, .perf::after { content: ""; position: absolute; top: -13px; width: 24px; height: 24px; border-radius: 50%; background: var(--bg); border: 1px solid var(--line); }
+.perf::before { left: -35px; clip-path: inset(0 0 0 50%); }
+.perf::after { right: -35px; clip-path: inset(0 50% 0 0); }
+.breakdown { padding: 18px 22px 6px; display: grid; gap: 0; }
+.bd-row { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; padding-block: 8px; border-bottom: 1px solid var(--line); }
+.bd-row:last-child { border-bottom: 0; }
+.bd-row .note { grid-column: 1 / -1; font-size: 0.8rem; color: var(--muted); }
+.bd-row .amt { font-family: var(--font-mono); font-weight: 600; font-variant-numeric: tabular-nums; }
+.bd-row.fee { background: var(--sun-soft); margin-inline: -10px; padding-inline: 10px; border-radius: 8px; border-bottom: 0; }
+.totals { display: flex; justify-content: space-between; align-items: end; gap: 16px; flex-wrap: wrap; padding: 16px 22px 22px; }
+.total-big { font-family: var(--font-mono); font-weight: 600; font-size: clamp(1.8rem, 4vw, 2.4rem); line-height: 1; font-variant-numeric: tabular-nums; }
+.per-head { text-align: right; }
+.per-head .mono { font-size: 1.3rem; font-weight: 600; color: var(--sea); }
+.ticket-foot { border-top: 1px solid var(--line); padding: 14px 22px; display: flex; flex-wrap: wrap; gap: 10px 16px; justify-content: space-between; align-items: center; font-size: 0.85rem; }
+.ticket-foot a { font-weight: 800; color: var(--sea); }
+
+/* Sections */
+section.block { padding-block: 56px; border-top: 1px solid var(--line); }
+.section-head { display: grid; gap: 10px; margin-bottom: 28px; max-width: 64ch; }
+
+.dests { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.dest { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; display: grid; grid-template-rows: auto auto 1fr auto auto; gap: 10px; min-width: 0; }
+.dest-top { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; }
+.dest-top .code { font-family: var(--font-mono); font-weight: 600; color: var(--muted); font-size: 0.85rem; }
+.dest h3 { font-family: var(--font-display); font-weight: 400; font-size: 1.6rem; }
+.pills { display: flex; flex-wrap: wrap; gap: 6px; }
+.pill { font-size: 0.75rem; font-weight: 700; padding: 3px 10px; border-radius: 999px; background: var(--sea-soft); color: var(--sea); }
+.watch { font-size: 0.88rem; background: var(--sun-soft); border-radius: 8px; padding: 8px 10px; }
+.dest-price { display: flex; justify-content: space-between; align-items: end; border-top: 1px dashed var(--line); padding-top: 12px; gap: 8px; }
+.dest-price .mono { font-size: 1.25rem; font-weight: 600; }
+.dest-price small { color: var(--muted); font-size: 0.78rem; display: block; }
+.dest-actions { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; font-size: 0.88rem; }
+.linkbtn { font: 800 0.88rem var(--font-body); color: var(--sea); background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; }
+
+.fees { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 40px; }
+.fee-item { display: grid; grid-template-columns: auto 1fr; gap: 4px 14px; padding-block: 16px; border-bottom: 1px solid var(--line); min-width: 0; }
+.fee-item .tick { width: 22px; height: 22px; border-radius: 6px; border: 2px solid var(--sea); margin-top: 2px; }
+.fee-item p { grid-column: 2; font-size: 0.9rem; color: var(--muted); }
+
+.compare { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.compare-col { display: grid; gap: 8px; align-content: start; padding-top: 14px; border-top: 3px solid var(--sea); }
+.compare-col:nth-child(2) { border-top-color: var(--flower); }
+.compare-col:nth-child(3) { border-top-color: var(--muted); }
+
+.guides { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+.guide { display: grid; gap: 8px; padding: 20px; border-radius: var(--radius); border: 1px solid var(--line); text-decoration: none; background: var(--surface); }
+.guide:hover { border-color: var(--sea); }
+.guide-meta { font-family: var(--font-mono); font-size: 0.74rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+
+.signup { background: var(--sea); color: var(--surface); border-radius: 22px; padding: 36px; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 32px; align-items: center; }
+.signup .eyebrow { color: var(--surface); opacity: 0.85; }
+.signup ul { margin: 12px 0 0; padding-left: 20px; display: grid; gap: 4px; }
+.signup form { display: grid; gap: 10px; }
+.signup label { font-weight: 800; font-size: 0.9rem; }
+.signup input[type="email"] { font: 600 1rem var(--font-body); padding: 13px 14px; border-radius: 10px; border: 2px solid transparent; background: var(--surface); color: var(--ink); width: 100%; }
+.signup input[type="email"]:focus { outline: none; border-color: var(--flower); }
+.chk { display: flex; gap: 8px; align-items: start; font-size: 0.88rem; font-weight: 600; }
+.chk input { margin-top: 4px; accent-color: var(--flower); }
+.form-msg { font-size: 0.9rem; min-height: 1.4em; font-weight: 700; }
+.signup small { opacity: 0.85; }
+
+.about { display: grid; grid-template-columns: auto 1fr; gap: 28px; align-items: start; }
+.avatars { display: flex; }
+.av { width: 80px; height: 80px; border-radius: 50%; display: grid; place-items: center; font: 400 1.7rem var(--font-display); border: 3px solid var(--bg); }
+.av:first-child { background: var(--sea-soft); color: var(--sea); }
+.av:last-child { background: var(--sun-soft); color: var(--ink); margin-left: -18px; }
+.about-body { display: grid; gap: 12px; max-width: 66ch; }
+.disclosure { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 22px; display: grid; gap: 8px; max-width: 780px; margin-top: 32px; }
+footer { padding-block: 32px 48px; font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--line); }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+
+/* Brief */
+.brief { padding-block: 40px 64px; }
+.brief-head { display: grid; gap: 12px; max-width: 72ch; margin-bottom: 32px; }
+.brief-head h1 { font-size: clamp(2.2rem, 5vw, 3.2rem); }
+.brief-sec { display: grid; grid-template-columns: 220px 1fr; gap: 28px; padding-block: 28px; border-top: 1px solid var(--line); }
+.brief-sec > h2 { font-family: var(--font-body); font-weight: 800; font-size: 1.15rem; }
+.brief-sec > div { min-width: 0; display: grid; gap: 14px; }
+.kv { display: grid; grid-template-columns: 180px 1fr; gap: 10px 20px; margin: 0; }
+.kv dt { font-weight: 800; }
+.kv dd { margin: 0; }
+.swatches { display: flex; flex-wrap: wrap; gap: 10px; }
+.sw { display: grid; gap: 4px; font-size: 0.8rem; }
+.sw i { width: 64px; height: 44px; border-radius: 8px; border: 1px solid var(--line); display: block; }
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; }
+table { border-collapse: collapse; width: 100%; font-size: 0.92rem; min-width: 640px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); background: var(--surface); }
+tr:last-child td { border-bottom: 0; }
+.brief ol, .brief ul { margin: 0; padding-left: 22px; display: grid; gap: 6px; }
+
+@media (max-width: 900px) {
+  .planner, .signup { grid-template-columns: 1fr; }
+  .dests, .compare { grid-template-columns: repeat(2, 1fr); }
+  .brief-sec { grid-template-columns: 1fr; gap: 12px; }
+}
+@media (max-width: 620px) {
+  .dests, .fees, .guides, .compare { grid-template-columns: 1fr; }
+  .about { grid-template-columns: 1fr; }
+  .kv { grid-template-columns: 1fr; gap: 2px; }
+  .kv dd { margin-bottom: 10px; }
+  .signup { padding: 24px; }
+  .meta { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .route .code { font-size: 1.5rem; }
+  .per-head { text-align: left; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+</style>
+
+<div class="concept-bar">
+  <div class="wrap">
+    <span><strong>Concept mockup.</strong> The brand and people are fictional. Prices are sample estimates.</span>
+    <div class="tabs" role="tablist" aria-label="View">
+      <button class="tab" role="tab" id="tab-site" aria-selected="true" aria-controls="view-site">Website</button>
+      <button class="tab" role="tab" id="tab-brief" aria-selected="false" aria-controls="view-brief">Brand brief</button>
+    </div>
+  </div>
+</div>
+
+<!-- ================= WEBSITE ================= -->
+<main id="view-site" role="tabpanel" aria-labelledby="tab-site">
+  <nav class="nav" aria-label="Site">
+    <div class="wrap">
+      <a class="logo" href="#top">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="var(--sea)"/><path d="M6 25c4-3 8-3 12 0s8 3 12 0 6-2 6-2v6c-2 0-3 1-6 2-4 2-8 1-12-1s-8-2-12 0z" fill="var(--surface)"/><circle cx="26" cy="14" r="5" fill="var(--flower)"/></svg>
+        Biyaheng Sulit
+      </a>
+      <ul>
+        <li><a href="#planner">Trip calculator</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#fees">Hidden fees</a></li>
+        <li><a href="#guides">Guides</a></li>
+        <li><a href="#about">About us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="wrap hero-copy">
+      <span class="eyebrow">Budget local travel for families &amp; barkadas</span>
+      <h1>Know the <span>real cost</span> of your trip before you book.</h1>
+      <p class="lede">Fares, rooms, food, tricycles, and every terminal and environmental fee, added up in one place. So the only surprise on your trip is the view.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#planner">Compute my trip</a>
+        <a class="btn btn-ghost" href="#signup">Get seat sale alerts</a>
+      </div>
+      <div class="trust-row">
+        <span><b>Fees checked</b> before every peak season</span>
+        <span><b>Book direct</b> when it's cheaper, and we'll tell you</span>
+        <span><b>No sponsored rankings</b></span>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap planner" id="planner">
+    <form class="form-card" id="trip-form" aria-label="Trip cost calculator">
+      <div class="field">
+        <label for="dest">Where are you going?</label>
+        <select id="dest"></select>
+        <span class="hint">All trips start from Metro Manila.</span>
+      </div>
+      <div class="row2">
+        <div class="field">
+          <span class="label" id="pax-label">Travelers</span>
+          <div class="stepper" role="group" aria-labelledby="pax-label">
+            <button type="button" data-step="pax" data-d="-1" aria-label="Fewer travelers">−</button>
+            <input id="pax" type="number" min="1" max="12" value="4" aria-labelledby="pax-label">
+            <button type="button" data-step="pax" data-d="1" aria-label="More travelers">+</button>
+          </div>
+        </div>
+        <div class="field">
+          <span class="label" id="nights-label">Nights</span>
+          <div class="stepper" role="group" aria-labelledby="nights-label">
+            <button type="button" data-step="nights" data-d="-1" aria-label="Fewer nights">−</button>
+            <input id="nights" type="number" min="1" max="7" value="2" aria-labelledby="nights-label">
+            <button type="button" data-step="nights" data-d="1" aria-label="More nights">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <span class="label">Travel style</span>
+        <div class="seg" role="group" aria-label="Travel style">
+          <button type="button" data-style="tipid" aria-pressed="true">Tipid<small>3 per room, carinderia meals</small></button>
+          <button type="button" data-style="comfy" aria-pressed="false">Comfy<small>2 per room, sit-down meals</small></button>
+        </div>
+      </div>
+      <p class="hint">Sample estimates for planning, with a 10% buffer for the unexpected. Always check the latest fares and fees before you book.</p>
+    </form>
+
+    <article class="ticket" aria-live="polite" aria-label="Your trip estimate">
+      <div class="ticket-head"><span class="mono">Trip estimate · Pre-booking</span><span class="mono" id="t-style">Tipid</span></div>
+      <div class="route">
+        <span class="code">MNL<span class="place">Metro Manila</span></span>
+        <span class="line" aria-hidden="true"></span>
+        <span class="code" id="t-code">BHL<span class="place" id="t-place">Bohol</span></span>
+      </div>
+      <div class="meta">
+        <div><span>Pax</span><span id="t-pax">4</span></div>
+        <div><span>Nights</span><span id="t-nights">2</span></div>
+        <div><span>Rooms</span><span id="t-rooms">2</span></div>
+      </div>
+      <div class="perf" aria-hidden="true"></div>
+      <div class="breakdown" id="t-breakdown"></div>
+      <div class="totals">
+        <div><span class="eyebrow">Total for the group</span><div class="total-big" id="t-total">₱0</div></div>
+        <div class="per-head"><span class="eyebrow">Each person pays</span><div class="mono" id="t-each">₱0</div></div>
+      </div>
+      <div class="ticket-foot">
+        <span class="muted" id="t-tip">Tip</span>
+        <a href="#destinations">Compare rooms →</a>
+      </div>
+    </article>
+  </div>
+
+  <section class="block" id="destinations">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Destinations</span>
+        <h2>Six trips, priced the honest way</h2>
+        <p class="muted">Sample cost per person for 2 travelers, 2 nights, tipid style, including fees and the 10% buffer. Tap "Load into calculator" to adjust it for your group.</p>
+      </div>
+      <div class="dests" id="dests"></div>
+    </div>
+  </section>
+
+  <section class="block" id="fees">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">The fees that ruin budgets</span>
+        <h2>What first-timers forget to count</h2>
+        <p class="muted">These rarely show up on a booking site's total. Check each one for your destination.</p>
+      </div>
+      <div class="fees">
+        <div class="fee-item"><span class="tick" aria-hidden="true"></span><strong>Terminal fees at ports and some airports</strong><p>Often cash only and paid on the day. Keep small bills ready.</p></div>
+        <div class="fee-item"><span class="tick" aria-hidden="true"></span><strong>Environmental and eco-tourism fees</strong><p>Many islands and protected areas charge one per person, sometimes per visit.</p></div>
+        <div class="fee-item"><span class="tick" aria-hidden="true"></span><strong>Checked baggage on promo fares</strong><p>A ₱999 seat sale can double once you add a 20 kg bag at the airport.</p></div>
+        <div class="fee-item"><span class="tick" aria-hidden="true"></span><strong>Tricycle and habal-habal rides</strong><p>Short rides add up fast for a group of four. Agree on the price before you ride.</p></div>
+        <div class="fee-item"><span class="tick" aria-hidden="true"></span><strong>Island-hopping add-ons</strong><p>Snorkel rental, lunch, and boat entrance fees are often on top of the tour price.</p></div>
+        <div class="fee-item"><span class="tick" aria-hidden="true"></span><strong>ATM fees and cash shortages</strong><p>Some islands have few ATMs and frequent outages. Bring enough cash for 2 days.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Where to book</span>
+        <h2>We'll tell you when booking direct is cheaper</h2>
+        <p class="muted">Booking sites pay us a small commission. Small inns often give a better rate if you message them, and we say so.</p>
+      </div>
+      <div class="compare">
+        <div class="compare-col"><h3>Booking site</h3><p class="muted">Best for free cancellation, paying by card, and reading many reviews in one place.</p></div>
+        <div class="compare-col"><h3>Direct (Facebook page or call)</h3><p class="muted">Often 5–15% cheaper at small inns. Ask for a written confirmation and pay only a deposit.</p></div>
+        <div class="compare-col"><h3>Walk-in</h3><p class="muted">Only off-peak, and only with a backup booked. Never during Holy Week or Christmas.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="guides">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Guides</span>
+        <h2>Start here</h2>
+      </div>
+      <div class="guides">
+        <a class="guide" href="#guides"><span class="guide-meta">Family trip · 9 min</span><h3>Bohol for a family of 4 on ₱25,000: our full receipt</h3><p class="muted">Every fare, room, meal and tricycle ride from our April trip.</p></a>
+        <a class="guide" href="#guides"><span class="guide-meta">How-to · 6 min</span><h3>How to actually catch a seat sale (and not lose it at checkout)</h3><p class="muted">Timing, baggage traps, and when a "promo" isn't one.</p></a>
+        <a class="guide" href="#guides"><span class="guide-meta">Barkada · 7 min</span><h3>The fair way to split a barkada trip without the awkward GCash chase</h3><p class="muted">Shared costs vs personal costs, and a simple split sheet.</p></a>
+        <a class="guide" href="#guides"><span class="guide-meta">Calendar · 5 min</span><h3>The cheapest months to visit 10 favorite spots</h3><p class="muted">Off-peak months that still have good weather.</p></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="signup">
+    <div class="wrap">
+      <div class="signup">
+        <div>
+          <span class="eyebrow">Free for subscribers</span>
+          <h2>Seat sale alerts + the Hidden Fee Cheat Sheet</h2>
+          <ul>
+            <li>An alert when a real promo fare drops, with our baggage-included math</li>
+            <li>A one-page list of fees per destination, updated each season</li>
+            <li>One "Biyahe Budget" email every Thursday. That's it.</li>
+          </ul>
+        </div>
+        <form id="signup-form" novalidate>
+          <label for="email">Your email</label>
+          <input id="email" type="email" placeholder="you@example.com" autocomplete="email">
+          <label class="chk"><input id="consent" type="checkbox"> I agree to receive emails from Biyaheng Sulit. Unsubscribe anytime.</label>
+          <button class="btn btn-primary" type="submit">Send me the cheat sheet</button>
+          <p class="form-msg" id="form-msg" role="status"></p>
+          <small>We never sell or share your email.</small>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="about">
+    <div class="wrap">
+      <div class="about">
+        <div class="avatars" aria-hidden="true"><span class="av">M</span><span class="av">T</span></div>
+        <div class="about-body">
+          <span class="eyebrow">Hi, we're Migs &amp; Tin</span>
+          <h2>A teacher and a VA who travel with two kids on a careful budget</h2>
+          <p>Our first family trip to Bohol went ₱6,800 over budget, mostly from fees we never saw coming. So we started a spreadsheet for every trip: every fare, fee, and tricycle ride.</p>
+          <p>Biyaheng Sulit is that spreadsheet, shared. We pay for our own trips, keep our receipts, and update our numbers before each peak season.</p>
+        </div>
+      </div>
+      <div class="disclosure">
+        <h3>How this site earns</h3>
+        <p class="muted">Some links to booking and tour sites are affiliate links. If you book through them, we may earn a small commission at no extra cost to you. It never changes our rankings, and we tell you when booking direct is cheaper. We don't accept free stays in exchange for reviews.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Biyaheng Sulit (concept). Fictional brand for planning purposes.</span>
+      <span>Trip calculator · Destinations · Hidden fees · Disclosure</span>
+    </div>
+  </footer>
+</main>
+
+<!-- ================= BRAND BRIEF ================= -->
+<main id="view-brief" role="tabpanel" aria-labelledby="tab-brief" hidden>
+  <div class="wrap brief">
+    <div class="brief-head">
+      <span class="eyebrow">Brand brief · fictional concept</span>
+      <h1>Biyaheng Sulit</h1>
+      <p class="muted">A budget local-travel site for Filipino families and barkadas. It earns from hotel, tour and travel-gear affiliate links, plus a small trip-planning service, and builds trust by showing the full cost of a trip, fees included.</p>
+    </div>
+
+    <div class="brief-sec">
+      <h2>Brand identity</h2>
+      <div>
+        <dl class="kv">
+          <dt>Name</dt><dd>Biyaheng Sulit ("a trip that's worth it")</dd>
+          <dt>Tagline</dt><dd>Know the real cost of your trip before you book.</dd>
+          <dt>Faces</dt><dd>Migs &amp; Tin (fictional): a public school teacher and a virtual assistant, two kids, based in Laguna</dd>
+          <dt>Personality</dt><dd>The kuya and ate who always have the spreadsheet. Warm, organized, a little kuripot, and proud of it.</dd>
+          <dt>Voice</dt><dd>Plain English with natural Taglish. Exact peso figures. Funny about mistakes, serious about fees.</dd>
+          <dt>Never say</dt><dd>"Hidden gem you must visit," "travel hack," "book now before it's gone," "luxury for less"</dd>
+          <dt>Visual motif</dt><dd>The boarding pass and the receipt: every price shown like a ticket stub</dd>
+        </dl>
+        <div class="swatches">
+          <span class="sw"><i style="background:#0A6E8A"></i>Sea</span>
+          <span class="sw"><i style="background:#C62F67"></i>Bougainvillea</span>
+          <span class="sw"><i style="background:#0E2A36"></i>Reef ink</span>
+          <span class="sw"><i style="background:#F2F6F7"></i>Sea mist</span>
+          <span class="sw"><i style="background:#FFF1D6"></i>Sun (fees)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="brief-sec">
+      <h2>Audience</h2>
+      <div>
+        <dl class="kv">
+          <dt>Primary</dt><dd>Working parents (28–45) planning 1–2 family trips a year on a fixed income</dd>
+          <dt>Secondary</dt><dd>Barkadas of young professionals (22–30) planning a long-weekend trip</dd>
+          <dt>Their worry</dt><dd>"How much do we really need?" and "Ayaw naming mabitin sa budget." (We don't want to run short.)</dd>
+          <dt>Where they are</dt><dd>Facebook travel groups, TikTok, Google searches like "Bohol itinerary budget 3D2N"</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="brief-sec">
+      <h2>How it earns</h2>
+      <div>
+        <p class="muted">Rates below are placeholders. Check each program's current terms before joining.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Stream</th><th>Example</th><th>How it pays</th><th>Role</th></tr></thead>
+            <tbody>
+              <tr><td><b>Hotel bookings</b></td><td>Booking-site affiliate programs</td><td>A small % of completed stays</td><td>Main income</td></tr>
+              <tr><td><b>Tours &amp; activities</b></td><td>Island hopping, transfers via activity-booking sites</td><td>% of each booking</td><td>Main income</td></tr>
+              <tr><td><b>Travel gear</b></td><td>Dry bags, power banks, packing cubes via Shopee/Lazada</td><td>% per sale</td><td>Small, steady</td></tr>
+              <tr><td><b>Travel insurance</b></td><td>Local and regional insurers with partner programs</td><td>Flat fee or % per policy</td><td>Later, once trusted</td></tr>
+              <tr><td><b>Itinerary service</b></td><td>Custom day-by-day plan + budget sheet</td><td>₱499–1,500 per trip</td><td>Fastest early income</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="brief-sec">
+      <h2>Trust rules</h2>
+      <div>
+        <ul>
+          <li>Every guide shows a full receipt, fees included</li>
+          <li>Say when booking direct is cheaper, even with no commission</li>
+          <li>No free stays in exchange for reviews; pay for our own trips</li>
+          <li>Date every price and refresh before summer, Holy Week, and Christmas</li>
+          <li>Disclosure next to booking links, not only in the footer</li>
+          <li>Clear email consent and easy unsubscribe (Data Privacy Act)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="brief-sec">
+      <h2>Never promote</h2>
+      <div>
+        <ul>
+          <li>Casino resorts or betting packages</li>
+          <li>"Travel club" MLMs and pay-to-join booking memberships</li>
+          <li>Timeshare presentations or "free vacation" sales pitches</li>
+          <li>Travel loans or "buy now, pay later" pushed as a way to afford a trip</li>
+          <li>Tour operators without a DOT accreditation we can verify</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="brief-sec">
+      <h2>First 10 pieces of content</h2>
+      <div>
+        <ol>
+          <li>Bohol for a family of 4 on ₱25,000: our full receipt</li>
+          <li>How to actually catch a seat sale (and not lose it at checkout)</li>
+          <li>The fair way to split a barkada trip</li>
+          <li>Baguio 3D2N by bus: the real cost for 2, 4, and 6 people</li>
+          <li>La Union on a weekend: surf lessons, rooms and fares added up</li>
+          <li>Every fee you'll pay going to El Nido, in order</li>
+          <li>Booking site vs messaging the resort: we tested 10 inns</li>
+          <li>The cheapest months to visit 10 favorite spots</li>
+          <li>What to pack so you don't buy it at tourist prices</li>
+          <li>Siargao on a budget: what's worth paying for, what isn't</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="brief-sec">
+      <h2>Channels</h2>
+      <div>
+        <dl class="kv">
+          <dt>TikTok / Reels</dt><dd>"Our trip receipt" videos: 30 seconds, every peso on screen</dd>
+          <dt>Facebook</dt><dd>Helpful answers in travel groups, plus a page for full receipts</dd>
+          <dt>Website</dt><dd>The calculator and full guides, built to rank for "budget 3D2N" searches</dd>
+          <dt>Email</dt><dd>Seat sale alerts and the Thursday "Biyahe Budget" email</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="brief-sec">
+      <h2>90-day plan</h2>
+      <div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Month</th><th>Focus</th><th>Realistic target</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td>Launch site + calculator, publish guides 1–3, post 3 receipt videos a week</td><td class="mono">100 subscribers · 2 itinerary clients</td></tr>
+              <tr><td>2</td><td>Guides 4–7, start seat sale alerts, answer in 5 Facebook groups weekly</td><td class="mono">250 subscribers · first booking commissions</td></tr>
+              <tr><td>3</td><td>Guides 8–10, refresh prices before the next peak season</td><td class="mono">500 subscribers · ₱3,000–8,000/mo combined</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="muted">Expect most early income from the itinerary service. Booking commissions grow as search traffic builds over 6–12 months, with peaks before summer and the holidays.</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script>
+(function () {
+  // Tabs
+  var tabs = { site: document.getElementById('tab-site'), brief: document.getElementById('tab-brief') };
+  var views = { site: document.getElementById('view-site'), brief: document.getElementById('view-brief') };
+  function show(which) {
+    Object.keys(tabs).forEach(function (k) {
+      tabs[k].setAttribute('aria-selected', k === which ? 'true' : 'false');
+      views[k].hidden = k !== which;
+    });
+  }
+  tabs.site.addEventListener('click', function () { show('site'); window.scrollTo(0, 0); });
+  tabs.brief.addEventListener('click', function () { show('brief'); window.scrollTo(0, 0); });
+  if (location.hash === '#brief') show('brief');
+
+  // Sample estimates (PHP). transport = round trip per person; room = per room per night;
+  // food & local = per person per day; fees = per person per trip.
+  var D = [
+    { id: 'bohol', name: 'Bohol', code: 'BHL', via: 'Flight', best: 'Mar–May', tags: ['Family', 'Nature'],
+      transport: 5200, room: { tipid: 1800, comfy: 4200 }, food: { tipid: 600, comfy: 1200 }, local: 700, fees: 250,
+      watch: 'Countryside tour prices vary a lot. Agree on stops and total price before you leave.',
+      tip: 'Share one countryside tour van across the whole group to cut local transport.' },
+    { id: 'baguio', name: 'Baguio', code: 'BAG', via: 'Bus', best: 'Nov–Feb', tags: ['Bus trip', 'Cool weather'],
+      transport: 1800, room: { tipid: 1500, comfy: 3500 }, food: { tipid: 550, comfy: 1100 }, local: 300, fees: 0,
+      watch: 'Weekend traffic is heavy. A Sunday-night bus home can take hours longer.',
+      tip: 'Book the bus early on long weekends. Seats sell out before rooms do.' },
+    { id: 'launion', name: 'La Union', code: 'LUN', via: 'Bus', best: 'Oct–Mar', tags: ['Barkada', 'Surf'],
+      transport: 1600, room: { tipid: 1800, comfy: 4000 }, food: { tipid: 650, comfy: 1200 }, local: 500, fees: 0,
+      watch: 'Surf lessons are per hour. Two short sessions often beat one long one.',
+      tip: 'Stay a block back from the beach. Rooms are often much cheaper for a 3-minute walk.' },
+    { id: 'siargao', name: 'Siargao', code: 'IAO', via: 'Flight', best: 'Mar–Oct', tags: ['Islands', 'Barkada'],
+      transport: 8000, room: { tipid: 2000, comfy: 5000 }, food: { tipid: 700, comfy: 1300 }, local: 900, fees: 300,
+      watch: 'Flights are the biggest cost. Watch for seat sales 3–6 months ahead.',
+      tip: 'Rent one motorbike per two people instead of hiring tricycles every day.' },
+    { id: 'elnido', name: 'El Nido', code: 'ENI', via: 'Flight + van', best: 'Jan–May', tags: ['Islands', 'Splurge-worthy'],
+      transport: 9000, room: { tipid: 2200, comfy: 5500 }, food: { tipid: 700, comfy: 1400 }, local: 1300, fees: 400,
+      watch: 'Island tours, the eco-tourism fee and the van from Puerto Princesa are all separate costs.',
+      tip: 'Join a shared island tour. Private boats only make sense for groups of 8 or more.' },
+    { id: 'boracay', name: 'Boracay', code: 'MPH', via: 'Flight + boat', best: 'Nov–May', tags: ['Beach', 'Family'],
+      transport: 6000, room: { tipid: 2500, comfy: 6000 }, food: { tipid: 800, comfy: 1500 }, local: 400, fees: 450,
+      watch: 'Environmental fee, terminal fee and boat fare are paid separately at the jetty.',
+      tip: 'Stay in Station 3 or inland for the lowest rates. Walk to the beach.' }
+  ];
+
+  var state = { dest: 'bohol', pax: 4, nights: 2, style: 'tipid' };
+  var peso = function (n) { return '₱' + Math.round(n).toLocaleString('en-PH'); };
+
+  function calc(d, pax, nights, style) {
+    var perRoom = style === 'tipid' ? 3 : 2;
+    var rooms = Math.ceil(pax / perRoom);
+    var days = nights + 1;
+    var items = [
+      { k: 'Fares (round trip)', v: pax * d.transport, note: d.via + ' from Metro Manila, ' + peso(d.transport) + ' per person' },
+      { k: 'Rooms', v: rooms * d.room[style] * nights, note: rooms + (rooms === 1 ? ' room' : ' rooms') + ' × ' + nights + (nights === 1 ? ' night' : ' nights') + ' × ' + peso(d.room[style]) },
+      { k: 'Food', v: pax * d.food[style] * days, note: peso(d.food[style]) + ' per person per day, ' + days + ' days' },
+      { k: 'Local rides & tours', v: pax * d.local * days, note: 'Tricycles, vans, tour shares' },
+      { k: 'Terminal & environmental fees', v: pax * d.fees, note: d.fees ? peso(d.fees) + ' per person, often cash only' : 'None expected for this trip', fee: true }
+    ];
+    var sub = items.reduce(function (s, i) { return s + i.v; }, 0);
+    items.push({ k: 'Buffer (10%)', v: sub * 0.1, note: 'For delays, pasalubong and surprises' });
+    var total = sub * 1.1;
+    return { rooms: rooms, items: items, total: total, each: total / pax };
+  }
+
+  var destSel = document.getElementById('dest');
+  destSel.innerHTML = D.map(function (d) { return '<option value="' + d.id + '">' + d.name + ' (' + d.via + ')</option>'; }).join('');
+
+  function render() {
+    var d = D.filter(function (x) { return x.id === state.dest; })[0];
+    var r = calc(d, state.pax, state.nights, state.style);
+    document.getElementById('t-code').firstChild.nodeValue = d.code;
+    document.getElementById('t-place').textContent = d.name;
+    document.getElementById('t-pax').textContent = state.pax;
+    document.getElementById('t-nights').textContent = state.nights;
+    document.getElementById('t-rooms').textContent = r.rooms;
+    document.getElementById('t-style').textContent = state.style === 'tipid' ? 'Tipid' : 'Comfy';
+    document.getElementById('t-breakdown').innerHTML = r.items.map(function (i) {
+      return '<div class="bd-row' + (i.fee && i.v ? ' fee' : '') + '"><span>' + i.k + '</span><span class="amt">' + peso(i.v) + '</span><span class="note">' + i.note + '</span></div>';
+    }).join('');
+    document.getElementById('t-total').textContent = peso(r.total);
+    document.getElementById('t-each').textContent = peso(r.each);
+    document.getElementById('t-tip').textContent = 'Tip: ' + d.tip;
+  }
+
+  function renderDests() {
+    document.getElementById('dests').innerHTML = D.map(function (d) {
+      var r = calc(d, 2, 2, 'tipid');
+      return '<article class="dest">' +
+        '<div class="dest-top"><h3>' + d.name + '</h3><span class="code">' + d.code + '</span></div>' +
+        '<div class="pills"><span class="pill">' + d.via + '</span><span class="pill">Best: ' + d.best + '</span>' + d.tags.map(function (t) { return '<span class="pill">' + t + '</span>'; }).join('') + '</div>' +
+        '<p class="watch"><b>Watch out:</b> ' + d.watch + '</p>' +
+        '<div class="dest-price"><div><small>Per person · 3D2N tipid</small><span class="mono">' + peso(r.each) + '</span></div><small>Sample estimate</small></div>' +
+        '<div class="dest-actions"><button type="button" class="linkbtn" data-load="' + d.id + '">Load into calculator</button><a href="#destinations">See rooms <span class="muted">(affiliate)</span></a></div>' +
+        '</article>';
+    }).join('');
+  }
+
+  function clamp(v, lo, hi) { v = parseInt(v, 10); if (isNaN(v)) v = lo; return Math.min(hi, Math.max(lo, v)); }
+  destSel.addEventListener('change', function () { state.dest = destSel.value; render(); });
+  ['pax', 'nights'].forEach(function (id) {
+    var el = document.getElementById(id);
+    el.addEventListener('input', function () { if (el.value === '') return; state[id] = clamp(el.value, +el.min, +el.max); render(); });
+    el.addEventListener('blur', function () { el.value = state[id]; });
+  });
+  document.querySelectorAll('[data-step]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var id = b.getAttribute('data-step'); var el = document.getElementById(id);
+      state[id] = clamp(state[id] + (+b.getAttribute('data-d')), +el.min, +el.max);
+      el.value = state[id]; render();
+    });
+  });
+  document.querySelectorAll('[data-style]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      state.style = b.getAttribute('data-style');
+      document.querySelectorAll('[data-style]').forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+      render();
+    });
+  });
+  document.getElementById('dests').addEventListener('click', function (e) {
+    var b = e.target.closest('[data-load]'); if (!b) return;
+    state.dest = b.getAttribute('data-load'); destSel.value = state.dest; render();
+    document.getElementById('planner').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+  document.getElementById('trip-form').addEventListener('submit', function (e) { e.preventDefault(); });
+
+  document.getElementById('signup-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var v = document.getElementById('email').value.trim();
+    var ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+    var c = document.getElementById('consent').checked;
+    var msg = document.getElementById('form-msg');
+    msg.textContent = !ok ? 'Enter an email like name@example.com.'
+      : !c ? 'Tick the box to agree to receive emails.'
+      : 'Done. On the real site, the cheat sheet would arrive in your inbox. (Concept: nothing was sent.)';
+  });
+
+  renderDests();
+  render();
+})();
+</script>
