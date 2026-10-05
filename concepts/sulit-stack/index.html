@@ -1,0 +1,595 @@
+<title>Sulit Stack</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* Layout: a single-column storefront with a working "payback" calculator as the centerpiece; the brief lives in a second tab. */
+:root {
+  --bg: #F3F6F5;
+  --surface: #FFFFFF;
+  --ink: #12233F;
+  --muted: #55657A;
+  --line: #D7DFE2;
+  --accent: #F2A900;        /* mango: CTAs and highlights */
+  --accent-ink: #1B1400;
+  --save: #0F766E;          /* teal: money and time saved */
+  --save-soft: #DDF1EE;
+  --warn-soft: #FFF2CC;
+  --font-display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Public Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --radius: 14px;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0D1626; --surface: #15213A; --ink: #E8EEF6; --muted: #9AABC2; --line: #263552;
+    --accent: #FFBE2E; --accent-ink: #1B1400; --save: #4FD1C1; --save-soft: #12363A; --warn-soft: #3A3115;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0D1626; --surface: #15213A; --ink: #E8EEF6; --muted: #9AABC2; --line: #263552;
+  --accent: #FFBE2E; --accent-ink: #1B1400; --save: #4FD1C1; --save-soft: #12363A; --warn-soft: #3A3115;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.6; }
+.wrap { max-width: 1080px; margin-inline: auto; padding-inline: 20px; }
+h1, h2, h3 { font-family: var(--font-display); line-height: 1.1; text-wrap: balance; margin: 0; }
+h2 { font-size: clamp(1.6rem, 3.4vw, 2.3rem); font-weight: 800; letter-spacing: -0.01em; }
+h3 { font-size: 1.2rem; font-weight: 700; }
+p { margin: 0; }
+a { color: inherit; }
+.eyebrow { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--save); font-weight: 700; }
+.muted { color: var(--muted); }
+.mono { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
+
+/* Concept bar + tabs */
+.concept-bar { background: var(--ink); color: var(--bg); font-size: 0.85rem; }
+.concept-bar .wrap { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; justify-content: space-between; padding-block: 10px; }
+.tabs { display: flex; gap: 6px; }
+.tab { font: 600 0.85rem var(--font-body); padding: 6px 14px; border-radius: 999px; border: 1px solid color-mix(in srgb, var(--bg) 40%, transparent); background: transparent; color: var(--bg); cursor: pointer; }
+.tab[aria-selected="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+
+/* Site nav */
+.nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 18px; flex-wrap: wrap; }
+.logo { font-family: var(--font-display); font-weight: 800; font-size: 1.35rem; text-decoration: none; display: flex; align-items: center; gap: 8px; }
+.logo-mark { width: 30px; height: 30px; border-radius: 8px; background: var(--accent); color: var(--accent-ink); display: grid; place-items: center; font-family: var(--font-mono); font-size: 0.95rem; }
+.nav ul { list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; flex-wrap: wrap; font-weight: 500; font-size: 0.95rem; }
+.nav ul a { text-decoration: none; color: var(--muted); }
+.nav ul a:hover { color: var(--ink); }
+
+/* Buttons */
+.btn { display: inline-flex; align-items: center; gap: 8px; font: 700 1rem var(--font-body); padding: 13px 22px; border-radius: 10px; border: 2px solid transparent; text-decoration: none; cursor: pointer; }
+.btn-primary { background: var(--accent); color: var(--accent-ink); }
+.btn-primary:hover { filter: brightness(1.05); }
+.btn-ghost { border-color: var(--line); color: var(--ink); background: transparent; }
+.btn-ghost:hover { border-color: var(--ink); }
+
+/* Hero */
+.hero { padding-block: 40px 56px; }
+.hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 40px; align-items: center; }
+.hero h1 { font-size: clamp(2.4rem, 6vw, 4.2rem); font-weight: 800; letter-spacing: -0.02em; }
+.hero h1 em { font-style: normal; background: linear-gradient(transparent 62%, color-mix(in srgb, var(--accent) 70%, transparent) 62%); }
+.hero-copy { display: grid; gap: 20px; min-width: 0; }
+.hero-copy .lede { font-size: 1.15rem; color: var(--muted); max-width: 54ch; }
+.hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+.hero-note { font-size: 0.9rem; color: var(--muted); }
+
+.receipt { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px 22px 18px; font-family: var(--font-mono); font-size: 0.88rem; box-shadow: 0 18px 40px -24px color-mix(in srgb, var(--ink) 45%, transparent); transform: rotate(1.2deg); min-width: 0; }
+.receipt-title { text-align: center; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding-bottom: 10px; border-bottom: 1px dashed var(--line); }
+.receipt-row { display: flex; justify-content: space-between; gap: 12px; padding-block: 6px; }
+.receipt-row s { color: var(--muted); }
+.receipt-total { border-top: 1px dashed var(--line); margin-top: 6px; padding-top: 10px; font-weight: 700; }
+.receipt-save { color: var(--save); }
+.receipt-foot { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 10px; }
+
+/* Sections */
+section.block { padding-block: 56px; border-top: 1px solid var(--line); }
+.section-head { display: grid; gap: 10px; margin-bottom: 28px; max-width: 62ch; }
+
+.rules { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.rule { display: grid; gap: 8px; align-content: start; }
+.rule-num { font-family: var(--font-mono); font-weight: 700; color: var(--save); font-size: 0.85rem; }
+
+/* Calculator */
+.calc-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 20px; margin-bottom: 20px; }
+.calc-bar label { font-weight: 600; }
+.rate-input { display: flex; align-items: center; border: 2px solid var(--line); border-radius: 10px; background: var(--bg); overflow: hidden; }
+.rate-input span { padding-inline: 12px; font-family: var(--font-mono); color: var(--muted); }
+.rate-input input { width: 7ch; border: 0; background: transparent; color: var(--ink); font: 700 1.1rem var(--font-mono); padding: 10px 10px 10px 0; }
+.rate-input input:focus { outline: none; }
+.rate-input:focus-within { border-color: var(--accent); }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin-left: auto; }
+.chip-btn { font: 600 0.85rem var(--font-body); padding: 6px 12px; border-radius: 999px; border: 1px solid var(--line); background: transparent; color: var(--muted); cursor: pointer; }
+.chip-btn[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+
+.tools { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.tool { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; display: grid; grid-template-rows: auto auto 1fr auto auto; gap: 12px; min-width: 0; }
+.tool-top { display: flex; justify-content: space-between; align-items: start; gap: 10px; }
+.tool-cat { font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+.tag { font-size: 0.75rem; font-weight: 700; padding: 3px 9px; border-radius: 999px; background: var(--save-soft); color: var(--save); white-space: nowrap; }
+.tool p { font-size: 0.95rem; }
+.skip { font-size: 0.88rem; background: var(--warn-soft); border-radius: 8px; padding: 8px 10px; }
+.skip b { font-weight: 700; }
+.payback { border-top: 1px dashed var(--line); padding-top: 12px; display: grid; gap: 2px; }
+.payback-main { font-family: var(--font-mono); font-weight: 700; font-size: 1.05rem; color: var(--save); }
+.payback-sub { font-size: 0.82rem; color: var(--muted); }
+.tool-cta { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+.tool-cta a { font-weight: 700; font-size: 0.92rem; }
+.aff { font-size: 0.72rem; color: var(--muted); }
+.calc-note { margin-top: 16px; font-size: 0.85rem; color: var(--muted); max-width: 70ch; }
+
+/* Free alternatives */
+.alts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 40px; }
+.alt { display: grid; grid-template-columns: 1fr auto; gap: 4px 16px; padding-block: 16px; border-bottom: 1px solid var(--line); min-width: 0; }
+.alt-instead { font-size: 0.85rem; color: var(--muted); grid-column: 1 / -1; }
+.free { font-family: var(--font-mono); font-weight: 700; color: var(--save); }
+
+/* Guides */
+.guides { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+.guide { display: grid; gap: 8px; padding: 20px; border-radius: var(--radius); border: 1px solid var(--line); text-decoration: none; background: var(--surface); }
+.guide:hover { border-color: var(--ink); }
+.guide-meta { font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+
+/* Signup */
+.signup { background: var(--ink); color: var(--bg); border-radius: 20px; padding: 36px; display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center; }
+.signup .eyebrow { color: var(--accent); }
+.signup ul { margin: 12px 0 0; padding-left: 20px; display: grid; gap: 4px; }
+.signup form { display: grid; gap: 10px; }
+.signup label { font-weight: 600; font-size: 0.9rem; }
+.signup input { font: 500 1rem var(--font-body); padding: 13px 14px; border-radius: 10px; border: 2px solid transparent; background: var(--bg); color: var(--ink); width: 100%; }
+.signup input:focus { outline: none; border-color: var(--accent); }
+.form-msg { font-size: 0.9rem; min-height: 1.4em; color: var(--accent); }
+.signup small { opacity: 0.75; }
+
+/* About + disclosure */
+.about { display: grid; grid-template-columns: auto 1fr; gap: 28px; align-items: start; }
+.avatar { width: 96px; height: 96px; border-radius: 50%; background: var(--save-soft); color: var(--save); display: grid; place-items: center; font: 800 2rem var(--font-display); }
+.about-body { display: grid; gap: 12px; max-width: 65ch; }
+.disclosure { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 22px; display: grid; gap: 8px; max-width: 760px; }
+footer { padding-block: 32px 48px; font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--line); }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+
+/* Brief tab */
+.brief { padding-block: 40px 64px; }
+.brief-head { display: grid; gap: 12px; max-width: 70ch; margin-bottom: 36px; }
+.brief-head h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; }
+.brief-sec { display: grid; grid-template-columns: 220px 1fr; gap: 28px; padding-block: 28px; border-top: 1px solid var(--line); }
+.brief-sec > h2 { font-size: 1.25rem; }
+.brief-sec > div { min-width: 0; display: grid; gap: 14px; }
+.kv { display: grid; grid-template-columns: 180px 1fr; gap: 10px 20px; margin: 0; }
+.kv dt { font-weight: 700; }
+.kv dd { margin: 0; }
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; }
+table { border-collapse: collapse; width: 100%; font-size: 0.92rem; min-width: 640px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); background: var(--surface); }
+tr:last-child td { border-bottom: 0; }
+.brief ol, .brief ul { margin: 0; padding-left: 22px; display: grid; gap: 6px; }
+.no-list li::marker { content: "✕  "; color: #C2410C; }
+
+@media (max-width: 860px) {
+  .hero-grid, .signup { grid-template-columns: 1fr; }
+  .receipt { transform: none; }
+  .tools { grid-template-columns: repeat(2, 1fr); }
+  .rules { grid-template-columns: 1fr; }
+  .brief-sec { grid-template-columns: 1fr; gap: 12px; }
+}
+@media (max-width: 600px) {
+  .tools, .alts, .guides { grid-template-columns: 1fr; }
+  .about { grid-template-columns: 1fr; }
+  .kv { grid-template-columns: 1fr; gap: 2px; }
+  .kv dd { margin-bottom: 10px; }
+  .signup { padding: 24px; }
+  .filters { margin-left: 0; }
+  .nav ul { gap: 14px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+</style>
+
+<div class="concept-bar">
+  <div class="wrap">
+    <span><strong>Concept mockup.</strong> The brand, person, tools and numbers are fictional.</span>
+    <div class="tabs" role="tablist" aria-label="View">
+      <button class="tab" role="tab" id="tab-site" aria-selected="true" aria-controls="view-site">Website preview</button>
+      <button class="tab" role="tab" id="tab-brief" aria-selected="false" aria-controls="view-brief">Concept brief</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ WEBSITE PREVIEW ============ -->
+<main id="view-site" role="tabpanel" aria-labelledby="tab-site">
+  <nav class="nav" aria-label="Site">
+    <div class="wrap">
+      <a class="logo" href="#top"><span class="logo-mark">₱</span>Sulit Stack</a>
+      <ul>
+        <li><a href="#toolkit">Toolkit</a></li>
+        <li><a href="#free">Free alternatives</a></li>
+        <li><a href="#guides">Guides</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">For freelancers, side-hustlers &amp; small business owners</span>
+        <h1>Only pay for tools that <em>pay you back.</em></h1>
+        <p class="lede">I test every tool in my own freelance work for 30 days. If it doesn't save you time or money, it doesn't make the list. And if a free option does the job, I'll tell you that first.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#toolkit">Check what pays for itself</a>
+          <a class="btn btn-ghost" href="#signup">Get the ₱0 Starter Stack</a>
+        </div>
+        <p class="hero-note">No hype, no "get rich" promises. Just tools I actually use, with the parts I don't like included.</p>
+      </div>
+      <aside class="receipt" aria-label="Example: my monthly software bill">
+        <div class="receipt-title">My software bill · before → after</div>
+        <div class="receipt-row"><span>Design app (2 seats)</span><span><s>₱1,290</s> ₱249</span></div>
+        <div class="receipt-row"><span>Course subscription ×2</span><span><s>₱1,100</s> ₱0</span></div>
+        <div class="receipt-row"><span>Invoicing + reminders</span><span><s>₱650</s> ₱299</span></div>
+        <div class="receipt-row"><span>Scheduling app</span><span><s>₱590</s> ₱0</span></div>
+        <div class="receipt-row"><span>Unused "all-in-one" suite</span><span><s>₱570</s> ₱0</span></div>
+        <div class="receipt-row"><span>Budget tracker</span><span>₱149</span></div>
+        <div class="receipt-row"><span>Password manager</span><span>₱99</span></div>
+        <div class="receipt-row receipt-total"><span>Per month</span><span><s>₱4,200</s> ₱796</span></div>
+        <div class="receipt-row receipt-save"><span>Saved per year</span><span>₱40,848</span></div>
+        <div class="receipt-foot">The full breakdown is in Guide #1 below</div>
+      </aside>
+    </div>
+  </header>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">How a tool gets on this list</span>
+        <h2>Three rules, no exceptions</h2>
+      </div>
+      <div class="rules">
+        <div class="rule"><span class="rule-num">RULE 1</span><h3>30 days of real use</h3><p class="muted">I use it for paid client work for a full month before I write a single word about it.</p></div>
+        <div class="rule"><span class="rule-num">RULE 2</span><h3>Free plan or trial first</h3><p class="muted">You should be able to try it without paying. If a tool hides its pricing, it's out.</p></div>
+        <div class="rule"><span class="rule-num">RULE 3</span><h3>I'd recommend it without a commission</h3><p class="muted">Some links earn me a small fee. Tools without an affiliate program still get listed if they're the best pick.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="toolkit">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">The toolkit</span>
+        <h2>How fast does each tool pay for itself?</h2>
+        <p class="muted">Enter what an hour of your work is worth. Each card works out how many days the tool takes to earn back its price, from the time and money it saves you.</p>
+      </div>
+
+      <div class="calc-bar">
+        <label for="rate">My time is worth</label>
+        <div class="rate-input"><span>₱</span><input id="rate" type="number" inputmode="numeric" min="0" step="10" value="250" aria-describedby="rate-unit"></div>
+        <span id="rate-unit" class="muted">per hour</span>
+        <div class="filters" role="group" aria-label="Filter tools">
+          <button class="chip-btn" aria-pressed="true" data-cat="all">All</button>
+          <button class="chip-btn" aria-pressed="false" data-cat="Save money">Save money</button>
+          <button class="chip-btn" aria-pressed="false" data-cat="Earn more">Earn more</button>
+          <button class="chip-btn" aria-pressed="false" data-cat="Learn">Learn</button>
+          <button class="chip-btn" aria-pressed="false" data-cat="Stay safe">Stay safe</button>
+        </div>
+      </div>
+
+      <div class="tools" id="tools"></div>
+      <p class="calc-note">How it's calculated: (hours saved per month × your hourly rate + money saved per month) compared with the monthly price. The hours and savings are my own averages from 30-day tests, so yours will be different. Prices are in pesos per month on the paid plan.</p>
+    </div>
+  </section>
+
+  <section class="block" id="free">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Before you pay anything</span>
+        <h2>Free options that are good enough</h2>
+        <p class="muted">Just starting out? Use these until a paid tool clearly earns its place.</p>
+      </div>
+      <div class="alts">
+        <div class="alt"><strong>A shared spreadsheet budget</strong><span class="free">₱0</span><span class="alt-instead">Instead of a budget app, if you'll update it every Sunday</span></div>
+        <div class="alt"><strong>Your phone's built-in password manager</strong><span class="free">₱0</span><span class="alt-instead">Instead of a paid one, if you only use one device brand</span></div>
+        <div class="alt"><strong>TESDA Online Program courses</strong><span class="free">₱0</span><span class="alt-instead">Instead of paid courses, for job-ready basics with a certificate</span></div>
+        <div class="alt"><strong>A free calendar booking page</strong><span class="free">₱0</span><span class="alt-instead">Instead of a scheduling app, if you take fewer than 10 calls a month</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="guides">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Guides</span>
+        <h2>Start here</h2>
+      </div>
+      <div class="guides">
+        <a class="guide" href="#guides"><span class="guide-meta">Guide #1 · 8 min</span><h3>How I cut my software bill from ₱4,200 to ₱796 a month</h3><p class="muted">Every tool I cancelled, downgraded, or kept, and why.</p></a>
+        <a class="guide" href="#guides"><span class="guide-meta">Comparison · 6 min</span><h3>Pesoflow vs a free spreadsheet: which one do people actually keep using?</h3><p class="muted">I tracked both for 60 days. The spreadsheet nearly won.</p></a>
+        <a class="guide" href="#guides"><span class="guide-meta">Tutorial · 12 min</span><h3>The ₱0 freelancer setup: land your first client with free tools only</h3><p class="muted">Portfolio, proposal, invoice and follow-up, step by step.</p></a>
+        <a class="guide" href="#guides"><span class="guide-meta">Honest review · 7 min</span><h3>Do you really need a paid design tool? My 30-day test</h3><p class="muted">The free plan covered 80% of what I needed. Here's the other 20%.</p></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="signup">
+    <div class="wrap">
+      <div class="signup">
+        <div>
+          <span class="eyebrow">Free checklist</span>
+          <h2>The ₱0 Starter Stack</h2>
+          <ul>
+            <li>7 free tools to run a one-person business</li>
+            <li>A 15-minute "subscription audit" worksheet</li>
+            <li>One short email each Sunday: one tool, one honest verdict</li>
+          </ul>
+        </div>
+        <form id="signup-form" novalidate>
+          <label for="email">Your email</label>
+          <input id="email" type="email" placeholder="you@example.com" autocomplete="email">
+          <button class="btn btn-primary" type="submit">Send me the checklist</button>
+          <p class="form-msg" id="form-msg" role="status"></p>
+          <small>Unsubscribe in one click. I never sell your email.</small>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="about">
+    <div class="wrap">
+      <div class="about">
+        <div class="avatar" aria-hidden="true">LR</div>
+        <div class="about-body">
+          <span class="eyebrow">Hi, I'm Lia</span>
+          <h2>A freelancer who got tired of paying for apps she didn't use</h2>
+          <p>In 2024 I added up my subscriptions and found I was spending ₱4,200 a month, about a full day of my income, on tools I opened maybe twice a week. I cancelled most of them, kept what actually earned its keep, and started writing down what I learned.</p>
+          <p>Sulit Stack is that notebook, made public. Everything here is tested on my own design and virtual-assistant work, with real pesos.</p>
+        </div>
+      </div>
+      <div class="disclosure" style="margin-top:32px">
+        <h3>How this site makes money</h3>
+        <p class="muted">Some links are affiliate links. If you sign up for a paid plan through them, I may earn a commission at no extra cost to you. It never changes my verdict. Tools that pay me nothing are listed whenever they're the better choice, and every review includes what I don't like.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Sulit Stack (concept). Fictional brand for planning purposes.</span>
+      <span>Toolkit · Free alternatives · Guides · Disclosure</span>
+    </div>
+  </footer>
+</main>
+
+<!-- ============ CONCEPT BRIEF ============ -->
+<main id="view-brief" role="tabpanel" aria-labelledby="tab-brief" hidden>
+  <div class="wrap brief">
+    <div class="brief-head">
+      <span class="eyebrow">Concept brief · fictional example</span>
+      <h1>Sulit Stack</h1>
+      <p class="muted">An affiliate website that recommends digital tools to Filipino freelancers and small business owners. It's built on trust: it helps people spend less and earn more, and it only earns when a recommendation actually helps.</p>
+    </div>
+
+    <div class="brief-sec">
+      <h2>1. Positioning</h2>
+      <div>
+        <dl class="kv">
+          <dt>Audience</dt><dd>Filipino freelancers, side-hustlers and solo or small business owners (VAs, designers, online sellers, coaches) who are watching every peso</dd>
+          <dt>Their problem</dt><dd>"I pay for too many apps, I don't know which are worth it, and I can't afford to waste money right now."</dd>
+          <dt>Why now</dt><dd>Costs are rising, more people are freelancing or starting side income, and subscription costs add up quietly</dd>
+          <dt>Promise</dt><dd>Only pay for tools that pay you back</dd>
+          <dt>Unique angle</dt><dd>A "payback" number for every tool, plus a free alternative listed next to each paid pick</dd>
+          <dt>Transformation</dt><dd>From a ₱4,000+ monthly app bill and tool chaos to a lean setup that saves time and earns more</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="brief-sec">
+      <h2>2. Brand</h2>
+      <div>
+        <dl class="kv">
+          <dt>Name</dt><dd>Sulit Stack ("sulit" means good value, worth the money)</dd>
+          <dt>Tagline</dt><dd>Only pay for tools that pay you back.</dd>
+          <dt>Face of the brand</dt><dd>Lia Ramos (fictional), a freelance designer and VA, 6 years in the work</dd>
+          <dt>Voice</dt><dd>Friendly older-sibling energy. Practical, honest, numbers-first, a little Taglish in emails</dd>
+          <dt>Never say</dt><dd>"Game-changer," "passive income secret," "limited slots," "guaranteed earnings"</dd>
+          <dt>Visual</dt><dd>Navy ink, mango accent, teal for money saved, and receipts as a recurring motif</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="brief-sec">
+      <h2>3. Tool roster</h2>
+      <div>
+        <p class="muted">All tools and commission figures are fictional placeholders. In the real version, check each program's terms before joining.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Tool</th><th>Job</th><th>Price / mo</th><th>Free plan</th><th>Skip it if</th><th>Commission</th></tr></thead>
+            <tbody>
+              <tr><td><b>Pesoflow</b></td><td>Budget &amp; expense tracking</td><td class="mono">₱149</td><td>Yes</td><td>You already keep a spreadsheet up to date</td><td>30% recurring, 12 mo</td></tr>
+              <tr><td><b>Tallyhouse</b></td><td>Invoicing &amp; payment reminders</td><td class="mono">₱299</td><td>Up to 3 clients</td><td>You have one client on a fixed retainer</td><td>₱500 per paid signup</td></tr>
+              <tr><td><b>Paletto</b></td><td>Social graphics &amp; design</td><td class="mono">₱249</td><td>Yes</td><td>You post less than once a week</td><td>25% first year</td></tr>
+              <tr><td><b>Slotwise</b></td><td>Client call booking</td><td class="mono">₱199</td><td>Yes</td><td>You take fewer than 10 calls a month</td><td>20% recurring</td></tr>
+              <tr><td><b>SkillLadder</b></td><td>Online courses with certificates</td><td class="mono">₱399</td><td>7-day trial</td><td>Free TESDA courses cover your skill</td><td>₱300 per signup</td></tr>
+              <tr><td><b>Vaultkey</b></td><td>Password manager</td><td class="mono">₱99</td><td>1 device</td><td>You use one phone brand only</td><td>None (listed anyway)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="brief-sec">
+      <h2>4. Site map</h2>
+      <div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Page</th><th>Job</th><th>Key content</th></tr></thead>
+            <tbody>
+              <tr><td><b>Home</b></td><td>Earn trust, send people to the toolkit</td><td>Promise, before/after receipt, the 3 rules, payback calculator, free checklist</td></tr>
+              <tr><td><b>Toolkit</b></td><td>Main money page</td><td>Every tool grouped by job, with payback, "skip it if," and free alternative</td></tr>
+              <tr><td><b>Reviews</b></td><td>Capture people close to buying</td><td>30-day test, pros, cons, pricing, alternatives, verdict</td></tr>
+              <tr><td><b>Comparisons</b></td><td>Help people decide</td><td>"X vs Y," "X vs free spreadsheet"</td></tr>
+              <tr><td><b>Free alternatives</b></td><td>Trust and goodwill</td><td>₱0 options for every category</td></tr>
+              <tr><td><b>About + How I choose</b></td><td>Credibility</td><td>Story, rules, how the site earns money</td></tr>
+              <tr><td><b>Disclosure</b></td><td>Legal requirement and trust</td><td>Plain-language affiliate disclosure, also placed near every link</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="brief-sec">
+      <h2>5. First 10 pieces of content</h2>
+      <div>
+        <ol>
+          <li>How I cut my software bill from ₱4,200 to ₱796 a month</li>
+          <li>The ₱0 freelancer setup: land your first client with free tools only</li>
+          <li>Pesoflow vs a free spreadsheet: which one do people keep using?</li>
+          <li>Do you really need a paid design tool? My 30-day test</li>
+          <li>How to get paid on time: the invoice reminder setup that works</li>
+          <li>The 15-minute subscription audit (with free worksheet)</li>
+          <li>Free certificate courses that clients actually ask for</li>
+          <li>Tallyhouse review: what I love, what annoys me</li>
+          <li>Protect your client accounts: password basics for freelancers</li>
+          <li>My full 2026 toolkit, and what it costs me each month</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="brief-sec">
+      <h2>6. Email list</h2>
+      <div>
+        <dl class="kv">
+          <dt>Lead magnet</dt><dd>The ₱0 Starter Stack checklist + subscription audit worksheet</dd>
+          <dt>Welcome emails</dt><dd>Day 0: checklist + Lia's story · Day 2: the subscription audit · Day 4: the free setup · Day 7: the one paid tool worth it first, and why</dd>
+          <dt>Ongoing</dt><dd>"Sulit Sunday": one tool, one honest verdict, one free tip</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="brief-sec">
+      <h2>7. Trust &amp; compliance</h2>
+      <div>
+        <ul>
+          <li>Disclosure next to every affiliate link, not only in the footer</li>
+          <li>Every review has a "What I don't like" section and a "Skip it if" line</li>
+          <li>Show the date on every review and update prices every quarter</li>
+          <li>List a free alternative next to every paid pick</li>
+          <li>Read each program's rules (some ban brand-name ads or links in email)</li>
+          <li>Follow the Data Privacy Act for email signups: clear consent and easy unsubscribe</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="brief-sec">
+      <h2>8. What we never promote</h2>
+      <div>
+        <ul class="no-list">
+          <li>Online casinos, betting, e-sabong, or "color game" apps</li>
+          <li>Crypto trading signals, forex bots, or "guaranteed return" schemes</li>
+          <li>MLM, recruitment-based programs, or "pay to join" ecosystems</li>
+          <li>Online lending or payday loan apps</li>
+          <li>Get-rich-quick courses or any tool that hides its pricing</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="brief-sec">
+      <h2>9. 90-day goals</h2>
+      <div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Month</th><th>Focus</th><th>Target</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td>Build site, publish guides 1–4, launch lead magnet</td><td class="mono">50 subscribers</td></tr>
+              <tr><td>2</td><td>Publish 5–8, share on Facebook groups &amp; LinkedIn with value-first posts</td><td class="mono">150 subscribers · first commission</td></tr>
+              <tr><td>3</td><td>Publish 9–10, update reviews, look at which tools get clicks</td><td class="mono">300 subscribers · 10 paid referrals</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="muted">Track each month: visitors, email signups, affiliate clicks per tool, commissions per tool, and refund or cancel rates.</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script>
+(function () {
+  // Tab switching (deep-linkable with #brief)
+  var tabs = { site: document.getElementById('tab-site'), brief: document.getElementById('tab-brief') };
+  var views = { site: document.getElementById('view-site'), brief: document.getElementById('view-brief') };
+  function show(which) {
+    Object.keys(tabs).forEach(function (k) {
+      var on = k === which;
+      tabs[k].setAttribute('aria-selected', on ? 'true' : 'false');
+      views[k].hidden = !on;
+    });
+  }
+  tabs.site.addEventListener('click', function () { show('site'); window.scrollTo(0, 0); });
+  tabs.brief.addEventListener('click', function () { show('brief'); window.scrollTo(0, 0); });
+  if (location.hash === '#brief') show('brief');
+
+  // Fictional tools: hours = hours saved / month, saved = pesos saved / month
+  var TOOLS = [
+    { name: 'Pesoflow', cat: 'Save money', desc: 'Tracks every expense from your bank and e-wallets and flags subscriptions you forgot about.', price: 149, free: 'Free plan', hours: 1, saved: 800, skip: 'you already update a budget spreadsheet every week.' },
+    { name: 'Tallyhouse', cat: 'Earn more', desc: 'Sends invoices with GCash and bank links, then follows up on late payments for you.', price: 299, free: 'Free for 3 clients', hours: 4, saved: 0, skip: 'you have one client paying a fixed monthly retainer.' },
+    { name: 'Paletto', cat: 'Earn more', desc: 'Makes on-brand social graphics fast, with templates sized for Facebook, IG and Shopee.', price: 249, free: 'Free plan', hours: 5, saved: 0, skip: 'you post less than once a week. The free plan is enough.' },
+    { name: 'Slotwise', cat: 'Earn more', desc: 'A booking page that handles time zones and reminders, so clients stop no-showing.', price: 199, free: 'Free plan', hours: 3, saved: 0, skip: 'you take fewer than 10 calls a month.' },
+    { name: 'SkillLadder', cat: 'Learn', desc: 'Short, practical courses with certificates in VA work, bookkeeping and design.', price: 399, free: '7-day trial', hours: 0, saved: 0, longterm: true, skip: 'a free TESDA course already covers the skill you need.' },
+    { name: 'Vaultkey', cat: 'Stay safe', desc: 'Stores client logins safely and lets you share access without sending passwords in chat.', price: 99, free: 'Free on 1 device', hours: 1, saved: 0, skip: 'you only use one phone brand. Its built-in manager is fine.' }
+  ];
+
+  var grid = document.getElementById('tools');
+  var rateEl = document.getElementById('rate');
+  var activeCat = 'all';
+  var peso = function (n) { return '₱' + Math.round(n).toLocaleString('en-PH'); };
+
+  function payback(t, rate) {
+    if (t.longterm) return { main: 'Long-term investment', sub: 'Pays back through new skills and better clients, so I don\'t count it here.' };
+    var monthlyValue = t.hours * rate + t.saved;
+    if (monthlyValue <= 0) return { main: 'Doesn\'t pay back at this rate', sub: 'Stick with the free plan for now.' };
+    var days = t.price / (monthlyValue / 30);
+    var net = monthlyValue - t.price;
+    var when = days < 1 ? 'in under a day' : 'in ' + Math.ceil(days) + (Math.ceil(days) === 1 ? ' day' : ' days');
+    if (days > 30) return { main: 'Takes ' + Math.ceil(days) + ' days', sub: 'Longer than a month. Use the free plan until you earn more.' };
+    return { main: 'Pays for itself ' + when, sub: 'Worth about ' + peso(net) + ' more than it costs each month' };
+  }
+
+  function render() {
+    var rate = Math.max(0, parseFloat(rateEl.value) || 0);
+    grid.innerHTML = TOOLS.filter(function (t) { return activeCat === 'all' || t.cat === activeCat; }).map(function (t) {
+      var p = payback(t, rate);
+      return '<article class="tool">' +
+        '<div class="tool-top"><div><div class="tool-cat">' + t.cat + '</div><h3>' + t.name + '</h3></div><span class="tag">' + t.free + '</span></div>' +
+        '<p>' + t.desc + '</p>' +
+        '<p class="skip"><b>Skip it if</b> ' + t.skip + '</p>' +
+        '<div class="payback"><span class="payback-main">' + p.main + '</span><span class="payback-sub">' + p.sub + '</span></div>' +
+        '<div class="tool-cta"><span class="mono">' + peso(t.price) + '/mo</span><a href="#toolkit">Read my review →</a></div>' +
+        '<span class="aff">' + (t.name === 'Vaultkey' ? 'No affiliate link. I just like it.' : 'Affiliate link · no extra cost to you') + '</span>' +
+        '</article>';
+    }).join('');
+  }
+
+  rateEl.addEventListener('input', render);
+  document.querySelectorAll('.chip-btn').forEach(function (b) {
+    b.addEventListener('click', function () {
+      activeCat = b.getAttribute('data-cat');
+      document.querySelectorAll('.chip-btn').forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+      render();
+    });
+  });
+  render();
+
+  // Signup (concept only, nothing is sent)
+  document.getElementById('signup-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var v = document.getElementById('email').value.trim();
+    var msg = document.getElementById('form-msg');
+    msg.textContent = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)
+      ? 'Looks good. In the real site, the checklist would arrive in your inbox. (Concept: nothing was sent.)'
+      : 'Enter an email like name@example.com.';
+  });
+})();
+</script>
