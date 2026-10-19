@@ -1,0 +1,66 @@
+<title>Money Table Poster Kit</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+/* Layout: narrow centered column, poster preview on top, download actions and usage specs below. Dark gold, one look. */
+:root{--bg:#120c05;--panel:#1d1409;--line:#3a2a12;--fg:#fff3d6;--muted:#c9b48a;--gold:#f2c14e;--gold-ink:#1a1004;--display:"Montserrat",system-ui,sans-serif;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--display);font-size:16px;line-height:1.5;padding-inline:max(16px,env(safe-area-inset-left,0px)) max(16px,env(safe-area-inset-right,0px));padding-block:32px 56px}
+main{max-width:960px;margin:0 auto;display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:40px;align-items:start}
+@media(max-width:760px){main{grid-template-columns:minmax(0,1fr)}}
+.poster{display:block;width:100%;height:auto;border-radius:6px;border:1px solid var(--line);box-shadow:0 24px 60px rgba(0,0,0,.6)}
+h1{font-size:clamp(28px,5vw,40px);font-weight:800;line-height:1.1;margin:0 0 8px;text-wrap:balance}
+.lede{color:var(--muted);margin:0 0 24px;max-width:46ch}
+.btn{appearance:none;border:0;cursor:pointer;font:800 17px/1 var(--display);background:var(--gold);color:var(--gold-ink);padding:18px 26px;border-radius:10px;width:100%;max-width:360px}
+.btn:hover{filter:brightness(1.07)}.btn:focus-visible{outline:3px solid var(--fg);outline-offset:3px}.btn[disabled]{opacity:.6;cursor:wait}
+#status{min-height:1.5em;margin:12px 0 0;color:var(--muted);font-size:14px}
+h2{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin:32px 0 10px;font-weight:700}
+dl{margin:0;display:grid;grid-template-columns:max-content 1fr;gap:8px 20px;border-top:1px solid var(--line);padding-top:14px}
+dt{color:var(--muted)}dd{margin:0;font-variant-numeric:tabular-nums}
+.facts{margin:0;padding-left:1.1em;color:var(--fg)}.facts li{margin-bottom:6px}
+.fallback{font-size:14px;color:var(--muted);margin-top:24px}
+</style>
+<main>
+  <img class="poster" id="poster" src="the-money-table-poster-hd.png" alt="The Money Table poster: Your Access Includes. Earlybird ticket ₱2,499, regular ₱4,499, until October 31, 2026." width="2160" height="2700">
+  <section>
+    <h1>The Money Table poster</h1>
+    <p class="lede">Full-resolution artwork, ready to post. Download the original file so nothing gets recompressed.</p>
+    <button class="btn" id="dl" type="button" hidden>Download HD PNG</button>
+    <p id="status" role="status"></p>
+    <h2>File</h2>
+    <dl>
+      <dt>Size</dt><dd>2160 × 2700 px</dd>
+      <dt>Ratio</dt><dd>4:5 (Facebook and Instagram feed)</dd>
+      <dt>Format</dt><dd>PNG, lossless</dd>
+    </dl>
+    <h2>Offer on the poster</h2>
+    <ul class="facts">
+      <li>Earlybird ₱2,499, regular ₱4,499 (44% off)</li>
+      <li>Earlybird ends October 31, 2026</li>
+      <li>Total indicative value ₱39,500</li>
+      <li>Live facilitation by Ron Salvador, International Master Facilitator of Robert Kiyosaki</li>
+    </ul>
+    <p class="fallback">If the button does not appear, open the poster and save the image directly (right-click, or press and hold on a phone).</p>
+  </section>
+</main>
+<script>
+(async function(){
+  var btn=document.getElementById('dl'),st=document.getElementById('status');
+  var downloads=null;
+  try{downloads=await window.claude.use('downloads')}catch(e){}
+  if(!downloads)return;
+  btn.hidden=false;
+  btn.addEventListener('click',async function(){
+    btn.disabled=true;st.textContent='Preparing the file…';
+    try{
+      var res=await fetch('the-money-table-poster-hd.png');
+      if(!res.ok)throw new Error('fetch');
+      var blob=await res.blob();
+      await downloads.save({filename:'the-money-table-poster-hd.png',data:blob});
+      st.textContent='Saved. This is the original full-resolution file.';
+    }catch(e){
+      st.textContent=(e&&e.code==='declined')?'Download cancelled.':'Could not save the file. Save the image from the poster instead.';
+    }
+    btn.disabled=false;
+  });
+})();
+</script>
