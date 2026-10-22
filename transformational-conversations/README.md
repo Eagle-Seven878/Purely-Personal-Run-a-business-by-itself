@@ -9,6 +9,13 @@
 3. Developing People Instead of Taking Over
 4. Empowering Team Members to Take Ownership
 
+## Origin and Positioning
+The topic comes from an observation about Gilbert's own strength: he **activates people** (the Norte Street team and the other Alpha chapter leaders) to carry cash-generating activities, instead of doing it all himself. The session repackages that lived skill into a teachable method.
+
+**Working positioning line:** *"How to orchestrate a team so the people around you generate the results, because you activated them, not because you did it for them."*
+
+**Signature story slot:** Gilbert opens with 1 real Norte Street / Alpha chapter example: who was activated, what question or hand-back unlocked them, what cash-generating result followed. Replace the placeholder in run-of-show.md (Open) with the real story.
+
 ## Package
 | File | Use |
 |---|---|

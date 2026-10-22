@@ -20,6 +20,8 @@
 **Say:**
 > "Think of the last time someone brought you a problem and you solved it in under 60 seconds. It felt helpful. It was also a small withdrawal from that person's confidence. Today is about making deposits."
 
+**Signature story (2 min, Gilbert):** [Insert real Norte Street / Alpha chapter example: how you activated others to run cash-generating activities, and what changed.]
+
 **Do (poll, hands up):** "Who has said 'just let me do it' this week?" Expect most hands. Normalise it.
 **State the shift:** *Tell → Ask. Fix → Develop. Own it for them → Own it with them.*
 **Rule:** Practice with real situations, not hypotheticals. Confidentiality in triads.
