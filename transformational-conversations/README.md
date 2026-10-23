@@ -1,5 +1,5 @@
 # Leading Transformational Conversations
-### November 10 · 90 minutes · Mixed team · Facilitator: Gilbert
+### November 10, 7:00-8:30 PM · 90 minutes · Mixed team · Facilitator: Gilbert
 
 **Outcome:** Every participant leaves able to turn a "just tell me what to do" moment into a coaching conversation, with one real conversation scheduled and one real task handed back for ownership.
 
