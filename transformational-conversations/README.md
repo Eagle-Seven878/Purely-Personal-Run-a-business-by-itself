@@ -1,5 +1,5 @@
 # Leading Transformational Conversations
-### November 10, 7:00-8:30 PM · 90 minutes · Mixed team · Facilitator: Gilbert
+### November 10, 7:00-8:30 PM PHT (UTC+8) · Zoom · 90 minutes · Mixed team · Facilitator: Gilbert
 
 **Outcome:** Every participant leaves able to turn a "just tell me what to do" moment into a coaching conversation, with one real conversation scheduled and one real task handed back for ownership.
 
@@ -21,6 +21,7 @@ The topic comes from an observation about Gilbert's own strength: he **activates
 |---|---|
 | [run-of-show.md](run-of-show.md) | Minute-by-minute facilitator guide for Gilbert |
 | [slide-deck.md](slide-deck.md) | Slide-by-slide outline (build in Keynote / Slides) |
+| [signature-stories.md](signature-stories.md) | Two draft opening stories for Gilbert to analyse and choose from |
 | [participant-workbook.md](participant-workbook.md) | In-session worksheet; print or share digitally |
 
 ## Design Principles

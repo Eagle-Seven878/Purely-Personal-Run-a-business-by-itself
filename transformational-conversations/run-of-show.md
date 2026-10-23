@@ -1,7 +1,13 @@
 # Run-of-Show · Leading Transformational Conversations
-**Nov 10 · 7:00-8:30 PM · 90 min · Facilitator: Gilbert · Mixed team**
+**Nov 10 · 7:00-8:30 PM Philippine Time (PHT, UTC+8) · Zoom · 90 min · Facilitator: Gilbert · Mixed team**
 
-**Room setup:** Chairs in clusters of 3 (triads). Flipchart. Timer visible. Workbooks on seats.
+**Zoom setup:**
+- Share the workbook link 30 min before; ask participants to have it open or printed.
+- Pre-create breakout rooms of 3 (triads), auto-assign, and keep the same rooms all session. Set rooms to open automatically and a 30-second close warning.
+- Co-host/producer handles rooms, timer and chat so Gilbert can facilitate. Use a visible countdown on the shared screen.
+- Use a shared whiteboard or Google Doc in place of the flipchart. Cameras on for triads.
+- Chat is for one-word answers and "best question" captures. Use the poll feature for the "who said 'just let me do it'" opener.
+- Open the room at 6:45 PM with music and a chat prompt ("Name + one person you want to develop").
 **Roles in every triad:** Coach · Coachee · Observer. Rotate each round.
 
 | Time | Min | Block |
@@ -22,7 +28,7 @@
 
 **Signature story (2 min, Gilbert):** [Insert real Norte Street / Alpha chapter example: how you activated others to run cash-generating activities, and what changed.]
 
-**Do (poll, hands up):** "Who has said 'just let me do it' this week?" Expect most hands. Normalise it.
+**Do (Zoom poll or hands):** "Who has said 'just let me do it' this week?" Expect most hands. Normalise it.
 **State the shift:** *Tell → Ask. Fix → Develop. Own it for them → Own it with them.*
 **Rule:** Practice with real situations, not hypotheticals. Confidentiality in triads.
 
@@ -74,6 +80,9 @@ Send the workbook photo and the 3-question cheat card within 24 hours.
 ---
 
 ## Facilitator Notes
+- **Breakouts:** Budget 1 min each time for moving in and out; the minutes in each block already include it. Send the "ask one more question" prompt in the chat before rooms close.
+- **Evening energy (7 PM):** Start with a 1-minute stand-up stretch and keep input segments under 7 min.
+- **Connectivity:** If someone drops, the other two continue as a pair and the Observer role is skipped.
 - **If the room goes quiet in triads:** Walk over and give the Coach one starter question from the workbook bank.
 - **If someone says "this takes too long":** Reply, "Faster this week, slower for you next quarter. Which would you rather?"
 - **If time runs short:** Cut the fish-bowl demo to 2 min and merge Block 4's input into the practice round. Never cut the practice rounds.
