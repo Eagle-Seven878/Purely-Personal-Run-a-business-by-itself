@@ -10,7 +10,9 @@
 - ICP: [to fill: industry, size, monthly revenue, location, problem in their own words]
 
 ## PRIMARY OFFER
-- Name: Business coaching program
+- Name (handle): Profit in 90
+- Full handle line: Profit in 90: grow your monthly profit by 20% in 90 days
+- Description: Business coaching program
 - Price: PHP 148,000
 - Length: 3 months (90 days)
 - Next step offers: REIGN OS transformation (PHP 850,000); Cashflow education program
@@ -33,6 +35,12 @@
 | 3 | Runs Without You | 3 recurring tasks handled by team, not the owner | Freedom |
 
 Owners want: more money, a growing business, freedom. Lead with the growing business (profit); money and freedom are carried by the Greens.
+
+## HANDLE (program name)
+- Chosen: **Profit in 90** (provisional)
+- Why: states result and time in three words; no percentage in the name, so it survives a change to the 20%; distinct from REIGN OS
+- Rejected: REIGN 90 (needs explaining), The Profit Reset (not pointable)
+- Test: say it to 2 prospects; do they restate it without being told?
 
 ## TO VALIDATE
 - [ ] Has any client actually hit +20%? Best real result: [to fill]
