@@ -1,0 +1,277 @@
+{
+  "mode": "blueprint",
+  "title": "The Business Foundations Webinar",
+  "titleLines": ["Business", "Foundations"],
+  "badge": "Four pillars for new entrepreneurs · 60 minutes",
+  "promise": "Documentation, profitability, stability and adaptability. By the end you hold a one-page Business Foundations Blueprint.",
+  "theme": "simple",
+  "length": 60,
+  "panels": [
+    {
+      "type": "story", "id": "open", "kicker": "Warm the Room", "label": "Welcome", "light": true, "center": true,
+      "title": "Build the business before the business builds you.",
+      "lines": ["Four pillars.", "One hour.", "One ==blueprint== in your hands."],
+      "cue": "Cameras on, please",
+      "notes": "[Smile. Slow.] SAY \"Welcome. In the next 60 minutes you will draft the foundation of your business. Cameras on if you can. My team screenshots you, and you get something valuable at the end.\" [1 min]"
+    },
+    {
+      "type": "statement", "id": "where", "role": "problem", "kicker": "Warm the Room", "label": "Where are you from",
+      "over": "Warm up", "title": "Write your city and your business idea in the chat.",
+      "notes": "MOVES \"Where are you from? Write your city and what you want to build.\" (10) Read three names out loud and thank each person by name. \"Can anybody else relate to starting from zero?\" (8) Write RELATE. [2 min]"
+    },
+    {
+      "type": "cards", "id": "rules", "kicker": "Warm the Room · the rules", "label": "The rules", "cardLabel": "RULE",
+      "title": "Three rules for the next hour.",
+      "cards": [
+        {"title": "Bring a pen", "body": "You will fill in your own blueprint as we go."},
+        {"title": "This is not television", "body": "Write in the chat. I read everything."},
+        {"title": "An offer is coming", "body": "At the end I will share one small offer. Take it or leave it."}
+      ],
+      "notes": "SAY the rules out loud, slowly. Say the third rule twice. \"An offer is coming at the end. Does that sound fair?\" (7) Write FAIR. [1 min]"
+    },
+    {
+      "type": "statement", "id": "promise", "role": "promise", "kicker": "Warm the Room · the promise", "label": "The promise",
+      "over": "By the end", "title": "You hold your one-page ==Foundations Blueprint==.",
+      "sub": "Four pillars. One page.",
+      "notes": "SAY the promise twice in different words. \"In 60 minutes you leave with one page that tells you what to write down, what to earn, what to protect and what to adjust.\" [1 min]\nNEED: group photo slide is skipped, add one if you want it."
+    },
+    {
+      "type": "statement", "id": "earn-1", "kicker": "Earn the Right", "label": "The problem", "over": "Here is the truth",
+      "title": "Good ideas die from missing basics.",
+      "sub": "Not from bad luck.",
+      "notes": "SAY \"Most new founders spend months on the idea and ten minutes on the basics.\" Keep it your own voice. \"How many of you have started something without writing down the numbers?\" (10) Write ME. [1 min]\nNEED: add your own credentials in 30 seconds. They are left off the slides until you give me sourced facts (numbers, places, names)."
+    },
+    {
+      "type": "statement", "id": "low-point", "kicker": "Earn the Right · the low point", "label": "The low point", "breath": 2,
+      "title": "I once ran a business on hope.", "sub": "No records. No margin. No plan B.",
+      "notes": "[PAUSE] [Lower your voice. Look into the camera.] SAY your real low moment here in 60 to 90 seconds.\nNEED: replace this line with your true story. Keep the slide as it is if it is true for you. [2 min]"
+    },
+    {
+      "type": "statement", "id": "decision", "kicker": "Earn the Right · the decision", "label": "The decision",
+      "over": "Two options", "title": "Keep guessing. Or build the ==foundation==.",
+      "notes": "SAY \"I had two options. I took the second.\" [1 min]"
+    },
+    {
+      "type": "statement", "id": "word", "kicker": "Earn the Right · one word", "label": "One word", "big": true,
+      "over": "Say it with me", "title": "Foundation.",
+      "notes": "MOVES \"Foundation. Say that with me.\" (3) \"Write FOUNDATION in the chat.\" Thank everyone who writes. You can be fast, or you can be what? Solid. (6) [1 min]"
+    },
+    {
+      "type": "cards", "id": "pillars", "kicker": "Teach One Win · the map", "label": "The four pillars", "cardLabel": "PILLAR",
+      "title": "Four pillars hold every business up.",
+      "cards": [
+        {"title": "1 · Documentation", "body": "What is written down is yours."},
+        {"title": "2 · Profitability", "body": "Money in must beat money out."},
+        {"title": "3 · Stability", "body": "Survive the bad month."},
+        {"title": "4 · Adaptability", "body": "Change before you are forced to."}
+      ],
+      "notes": "SAY \"Four pillars. Learn one, write one line. We do this four times.\" Hand out: ask them to draw four boxes on a page. [2 min]"
+    },
+    {
+      "type": "why", "id": "hidden-cost", "kicker": "Teach One Win · the hidden cost", "label": "The hidden cost",
+      "title": "Why the basics come first.",
+      "because": "A business without a foundation is a hobby with expenses.",
+      "without": ["No record of what you earned", "Prices set by guessing", "One bad month ends everything"],
+      "with": ["Every number on one page", "Prices set by math", "A cushion and a plan"],
+      "notes": "SAY the because line slowly. \"How many of you recognise one of the left column?\" (10) Write LEFT. [1 min]\nNEED: add your own cost number (hours or money) only when you have a true one."
+    },
+    {
+      "type": "statement", "id": "p1", "kicker": "Pillar 1 · Documentation", "label": "Pillar 1", "over": "Pillar 1 · Documentation",
+      "title": "If it is not written down, it is not yours.",
+      "notes": "SAY \"Writing it down is how you own it, protect it and hand it over.\" [1 min]"
+    },
+    {
+      "type": "cards", "id": "p1-papers", "kicker": "Pillar 1 · the four papers", "label": "The four papers", "cardLabel": "PAPER",
+      "title": "Four papers every new business needs.",
+      "cards": [
+        {"title": "Legal basics", "body": "Registration, licences and tax number where you live."},
+        {"title": "Simple agreements", "body": "Who delivers what, by when, for how much."},
+        {"title": "Money records", "body": "Invoices, receipts, a separate business account."},
+        {"title": "Process notes", "body": "Trigger, inputs, steps, outputs, check."}
+      ],
+      "notes": "SAY each paper in one sentence. Remind them: rules differ by country, so check your local registry and a local accountant. The fifth section of a process note is the check: how do you know it worked? \"If you do a task three times, write it down.\" \"Does that make sense?\" (7) [3 min]"
+    },
+    {
+      "type": "statement", "id": "p1-do", "kicker": "Pillar 1 · your turn", "label": "Your turn 1", "over": "Your turn · 3 minutes",
+      "title": "Which paper do you not have yet?", "sub": "Write it in box 1 of your page.",
+      "notes": "SAY \"Three minutes. Write the one paper you will create this week.\" Wait in silence. Then: \"Write DONE in the chat when your line is written.\" (5) [3 min]"
+    },
+    {
+      "type": "statement", "id": "p2", "kicker": "Pillar 2 · Profitability", "label": "Pillar 2", "over": "Pillar 2 · Profitability",
+      "title": "Revenue is a number. ==Profit== is a decision.",
+      "notes": "SAY \"You can be busy, loved and broke at the same time.\" [1 min]"
+    },
+    {
+      "type": "swap", "id": "p2-formula", "kicker": "Pillar 2 · flip the formula", "label": "The formula",
+      "title": "Pay yourself ==first==, then spend.",
+      "oldLabel": "What most people do", "newLabel": "What strong founders do",
+      "old": ["Revenue - Expenses = Profit", "Profit is what is left", "Hope"],
+      "new": ["Revenue - Profit = Expenses", "Profit is set aside first", "A system"],
+      "notes": "SAY \"Take a small percentage of every sale into a separate account first. Live on the rest.\" Do not give tax or legal advice; tell them to confirm with a local accountant. \"If you only have the rest, you find a way.\" [3 min]"
+    },
+    {
+      "type": "cards", "id": "p2-numbers", "kicker": "Pillar 2 · three numbers", "label": "Three numbers", "cardLabel": "NUMBER",
+      "title": "Know these three numbers.",
+      "cards": [
+        {"title": "Gross margin", "body": "What each sale keeps after its direct cost."},
+        {"title": "Break-even", "body": "Sales you need each month to cover fixed costs."},
+        {"title": "Cash on hand", "body": "Profit on paper is not money in the bank."}
+      ],
+      "notes": "SAY \"Break-even equals your monthly fixed costs divided by the margin on one sale.\" Example (illustrative, say so): fixed costs 1,000, margin per sale 50, break-even is 20 sales. \"Quizzer: break-even is how many sales? 20.\" (5) [4 min]"
+    },
+    {
+      "type": "statement", "id": "p2-do", "kicker": "Pillar 2 · your turn", "label": "Your turn 2", "over": "Your turn · 3 minutes",
+      "title": "Write your break-even in box 2.", "sub": "Fixed costs divided by margin per sale.",
+      "notes": "SAY \"Three minutes. A rough number is fine. Write the number in the chat only if you want to.\" Thank everyone who shares. [3 min]"
+    },
+    {
+      "type": "statement", "id": "p3", "kicker": "Pillar 3 · Stability", "label": "Pillar 3", "over": "Pillar 3 · Stability",
+      "title": "Build so one bad month is a ==bruise==, not a break.",
+      "notes": "SAY \"Growth gets the attention. Stability keeps you in business.\" [1 min]"
+    },
+    {
+      "type": "cards", "id": "p3-four", "kicker": "Pillar 3 · four protections", "label": "Four protections", "cardLabel": "PROTECT",
+      "title": "Four things that keep you standing.",
+      "cards": [
+        {"title": "A cash cushion", "body": "Start with one month of costs. Build toward three."},
+        {"title": "More than one client", "body": "No single customer should be your whole income."},
+        {"title": "Systems, not you", "body": "If you are sick, the work still ships."},
+        {"title": "A money rhythm", "body": "Daily glance, weekly check, monthly review."}
+      ],
+      "notes": "SAY each in one sentence. Money rhythm: 60 seconds daily on balances, 20 minutes weekly, 60 minutes monthly, 3 hours quarterly. \"You can be right, or you can be... ready.\" (6) [4 min]"
+    },
+    {
+      "type": "statement", "id": "p3-do", "kicker": "Pillar 3 · your turn", "label": "Your turn 3", "over": "Your turn · 2 minutes",
+      "title": "Which protection are you missing most?", "sub": "Write it in box 3.",
+      "notes": "SAY \"Two minutes. One protection. One first step.\" [2 min]"
+    },
+    {
+      "type": "statement", "id": "p4", "kicker": "Pillar 4 · Adaptability", "label": "Pillar 4", "over": "Pillar 4 · Adaptability",
+      "title": "Your plan will be wrong. Be ready to ==change== it.",
+      "notes": "SAY \"Not if. When. The winners are not the ones who guess right. They are the ones who adjust fast.\" [1 min]"
+    },
+    {
+      "type": "route", "id": "p4-loop", "kicker": "Pillar 4 · the 90-day loop", "label": "The 90-day loop",
+      "title": "Review, decide, test small, repeat.",
+      "steps": [
+        {"title": "Review", "body": "Look at the numbers and the feedback."},
+        {"title": "Decide", "body": "Keep, change or stop."},
+        {"title": "Test small", "body": "One small experiment, not a big bet."},
+        {"title": "Repeat", "body": "Every 90 days."}
+      ],
+      "notes": "SAY \"Every 90 days, sit down and ask four questions.\" \"What worked? What did not? What will I change? What will I stop?\" [3 min]"
+    },
+    {
+      "type": "statement", "id": "interrupt", "kicker": "Teach One Win · wake up", "label": "Wake up", "over": "Quick poll",
+      "title": "Which pillar is your weakest today?", "sub": "Write 1, 2, 3 or 4 in the chat.",
+      "notes": "MOVES \"Which pillar is your weakest? Write 1, 2, 3 or 4.\" (10) Read the count out loud and thank people by name. Tie back: \"This is why we need all four.\" [2 min]"
+    },
+    {
+      "type": "finish", "id": "blueprint", "kicker": "Teach One Win · the result", "label": "Your blueprint",
+      "title": "Your one-page Foundations Blueprint.",
+      "artifact": {"name": "foundations-blueprint.md", "items": ["1 · One paper to create this week", "2 · My break-even number", "3 · My first protection", "4 · My next 90-day review date"]},
+      "lede": "Read your page out loud to yourself. That is the win.",
+      "notes": "SAY \"Read your four lines out loud. That page is worth more than most business plans.\" \"Write DONE if you have four lines.\" (5) [3 min]"
+    },
+    {
+      "type": "question", "id": "permission", "kicker": "The Bridge · permission", "label": "Permission",
+      "ask": "Would it be okay if I shared a small offer with you?",
+      "not": ["No pressure.", "It takes ten minutes."],
+      "answer": "Write OK in the chat.",
+      "notes": "SAY \"Thank you for staying. Would it be okay if I shared a small offer?\" (1) Wait. Thank each person who writes OK by name. [1 min]"
+    },
+    {
+      "type": "swap", "id": "two-paths", "kicker": "The Bridge · two paths", "bgword": "TWO PATHS", "label": "Two paths",
+      "title": "You can keep guessing.\nOr you can build it ==properly==.",
+      "oldLabel": "The old way", "newLabel": "The new way",
+      "old": ["Records in your head", "Prices by feeling", "Hoping next month is better"],
+      "new": ["One page, four pillars", "Prices by math", "A review every 90 days"],
+      "notes": "SAY \"Business owners who wing it, write 1. Business owners who want a system, write 2.\" (split the room) [2 min]\nNEED: add one real client or student result here only when you have one with their words and permission."
+    },
+    {
+      "type": "statement", "id": "bridge-line", "role": "turn", "kicker": "The Bridge · the turn", "label": "The turn", "breath": 1.5,
+      "title": "What if your whole foundation was built for you in a week?",
+      "notes": "[Slow down. This is the turn.] SAY \"That is why I created this.\" [1 min]"
+    },
+    {
+      "type": "offer", "id": "offer", "kicker": "Pieces 1 and 2 · the name, where and when", "label": "The offer",
+      "name": "The ==Business Foundations== Blueprint",
+      "tagline": "4 Pillars. 1 Blueprint. 7 Days.",
+      "problem": "How many of you are starting a business with no records, no margin math and no plan B?",
+      "benefit": "How to build a one-page foundation across all four pillars in seven days",
+      "when": ["Start today, the moment you join", "7 days · about 30 minutes a day", "Self-paced, at your own speed"],
+      "where": "Online, from wherever you are.",
+      "format": "Guided journey plus templates. You build, I guide.",
+      "notes": "SAY piece 1: the question, then the name, then the one thing that matters most. Then where and when. [2 min]\nNEED: confirm the Live Q&A date and tell the room before you press cta."
+    },
+    {"type": "statement", "id": "learn-1", "role": "learn", "kicker": "What you'll learn", "label": "What you'll learn", "over": "Days 1 and 2", "title": "Document it: the four papers, ready to use."},
+    {"type": "statement", "id": "learn-2", "role": "learn", "kicker": "What you'll learn", "label": "What you'll learn", "over": "Days 3 and 4", "title": "Profit it: your margin and break-even, worked out."},
+    {"type": "statement", "id": "learn-3", "role": "learn", "kicker": "What you'll learn", "label": "What you'll learn", "over": "Days 5 to 7", "title": "Protect it and adjust it: cushion, rhythm, 90-day review."},
+    {"type": "item", "id": "stack-item-1", "kicker": "Piece 3 · everything you get", "label": "Foundations Blueprint Journey", "heading": "Everything you get", "n": 1, "of": 6,
+      "name": "Foundations Blueprint Journey", "desc": "A guided question-by-question journey that writes your one-page blueprint with you.", "value": 497,
+      "notes": "SAY what it is, one sentence. Value $497. Say: this is built the way my Ikigai journey is built: one question at a time, mirrored back."},
+    {"type": "item", "id": "stack-item-2", "kicker": "Piece 3 · everything you get", "label": "Documentation Starter Pack", "heading": "Everything you get", "n": 2, "of": 6,
+      "name": "Documentation Starter Pack", "desc": "Checklists and templates for agreements, invoices, records and process notes.", "value": 297},
+    {"type": "item", "id": "stack-item-3", "kicker": "Piece 3 · everything you get", "label": "Profit and Break-Even Workbook", "heading": "Everything you get", "n": 3, "of": 6,
+      "name": "Profit and Break-Even Workbook", "desc": "Set your prices, margin and break-even with your own numbers.", "value": 397},
+    {"type": "item", "id": "stack-item-4", "kicker": "Piece 3 · everything you get", "label": "Stability and Cash Cushion Planner", "heading": "Everything you get", "n": 4, "of": 6,
+      "name": "Stability and Cash Cushion Planner", "desc": "Your cushion target, money rhythm and one-client risk check.", "value": 297},
+    {"type": "item", "id": "stack-item-5", "kicker": "Piece 3 · everything you get", "label": "90-Day Adaptability Review Kit", "heading": "Everything you get", "n": 5, "of": 6,
+      "name": "90-Day Adaptability Review Kit", "desc": "A simple quarterly review so you adjust before you are forced to.", "value": 197},
+    {"type": "item", "id": "stack-item-6", "kicker": "Piece 3 · everything you get", "label": "Live Q&A With Me", "heading": "Everything you get", "n": 6, "of": 6,
+      "name": "Live Q&A With Me", "desc": "Bring your page and your questions. I answer them live.", "value": 297,
+      "notes": "NEED: confirm the date and time of the live Q&A before you present."},
+    {
+      "type": "stacklist", "id": "stack-list", "build": true, "kicker": "Piece 3 · everything you get", "label": "Everything you get", "title": "Everything you get",
+      "items": [
+        {"name": "Foundations Blueprint Journey", "value": 497},
+        {"name": "Documentation Starter Pack", "value": 297},
+        {"name": "Profit and Break-Even Workbook", "value": 397},
+        {"name": "Stability and Cash Cushion Planner", "value": 297},
+        {"name": "90-Day Adaptability Review Kit", "value": 197},
+        {"name": "Live Q&A With Me", "value": 297}
+      ],
+      "totalLabel": "Total value"
+    },
+    {"type": "struck", "id": "price-struck", "kicker": "Pieces 4, 5 and 6 · the anchor, the reason, the drop", "label": "The total", "amount": 1982},
+    {
+      "type": "statement", "id": "price-reason", "role": "reason", "kicker": "Pieces 4, 5 and 6 · the anchor, the reason, the drop", "label": "Why today",
+      "title": "I want every new founder to start with the basics right.", "sub": "So today it is not going to be $1,982.",
+      "notes": "[Slow down. This is the turn.] SAY your own true reason here in your own story.\nNEED: replace with your real reason and, ideally, add your photo."
+    },
+    {
+      "type": "price", "id": "price", "kicker": "Pieces 4, 5 and 6 · the anchor, the reason, the drop", "label": "The price",
+      "anchor": 1982, "drops": [1000, 500, 297], "price": 97, "reframe": "About the cost of one dinner out.",
+      "todayLabel": "For today only", "was": true, "hold": 3,
+      "notes": "SAY \"Not $1,982. Not $1,000. Not $500. Not even $297. Today, $97.\" [STAR MOMENT] Say nothing. Three seconds.\nNEED: confirm the $97 price and the stack values are yours. They are drafted by me and illustrative until you confirm."
+    },
+    {
+      "type": "limiter", "id": "limiter", "kicker": "Piece 7 · the limiter", "label": "The limiter",
+      "title": "The live Q&A is only for people who join today.", "kind": "bonus",
+      "bonus": "Live Q&A with me, for everyone who joins today.",
+      "line": "I keep it small because I answer every question myself.",
+      "notes": "NEED: only keep this limit if you will really honour it. Edit the line if you change it."
+    },
+    {
+      "type": "cta", "id": "cta", "kicker": "Piece 8 · the call to action", "label": "Join now",
+      "title": "Here is exactly what to do now.",
+      "steps": ["Click the link my team drops in the chat", "Join the Blueprint for $97", "Write BUILD in the chat"],
+      "chatWord": "BUILD", "link": "Link in the chat", "price": 97,
+      "help": "Payment issue? Write TEAM in the chat.",
+      "notes": "SAY the three steps. \"Write BUILD in the chat once you are in.\" Thank people by name. Add the payment link in the chat. NEED: add the checkout url to this panel to show a QR code."
+    },
+    {
+      "type": "route", "id": "thank-you", "kicker": "Thank you", "bgword": "THANK YOU", "label": "Thank you",
+      "title": "My selling is done. Now I serve.",
+      "lede": "Everyone who is in, welcome. Everyone else, thank you for your hour.",
+      "steps": [
+        {"title": "Click the link", "body": "In the chat"},
+        {"title": "Write BUILD", "body": "So we can welcome you"},
+        {"title": "Start today", "body": "Day 1: your four papers"},
+        {"title": "Read your page", "body": "Out loud, every week"},
+        {"title": "Build it", "body": "Four pillars, one blueprint"}
+      ],
+      "notes": "SAY thank you. Deliver the gift you promised: share the one-page blueprint worksheet with everyone, buyers or not. [1 min]"
+    }
+  ]
+}
