@@ -342,9 +342,9 @@
    "n": 3,
    "of": 11,
    "name": "RELM",
-   "desc": "Training before graduation.",
+   "desc": "Completed before graduation.",
    "currency": "P",
-   "notes": "SAY: \"Number three: RELM, valued at 15,000 pesos. Training before graduation.\"\n«PRIVATE: do not explain RELM. If asked: \"You will discover why as you play.\"»\n[30 sec]",
+   "notes": "SAY: \"Number three: RELM, valued at 15,000 pesos. You complete it before your Graduation Game.\"\n«PRIVATE: do not explain RELM. It is completed before Graduation, as part of the journey. If asked: \"You will discover why as you play.\"»\n[30 sec]",
    "value": 15000
   },
   {

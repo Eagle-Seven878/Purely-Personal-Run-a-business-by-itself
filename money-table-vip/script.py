@@ -485,3 +485,8 @@ S["item-2"]="""SAY: "Number two: 3 SRT Games, valued at 15,000 pesos. We recomme
 S["item-4"]="""SAY: "Number four: the Graduation Game, where the rules change. Valued at 25,000 pesos. Our games now run daily, so your pace is yours. You graduate as soon as you have the basics."
 «CONFIRM: say "games run daily" only if the daily schedule is live. Do not explain what SRT or RELM are for. If asked "when do I graduate?", use the answer in the Q&A at the end of this script.»
 [30 sec]"""
+
+# ===== RELM is completed before graduation (confirmed) =====
+S["item-3"]="""SAY: "Number three: RELM, valued at 15,000 pesos. You complete it before your Graduation Game."
+«PRIVATE: do not explain RELM. It is completed before Graduation, as part of the journey. If asked: "You will discover why as you play."»
+[30 sec]"""
