@@ -148,7 +148,7 @@ SAY: "You start on the day your payment is verified, your Official Joining Date.
 [2 min]"""
 S["item-1"]="""SAY: "Let me show you everything you get, tier by tier. We start with VIP. Number one: 10 Cashflow Games. Regular games at 1,500 pesos each, so 15,000 pesos."
 [Pause after the number.] [30 sec]"""
-S["item-2"]="""SAY: "Number two: 3 STR Games. Additional games at 5,000 pesos each. That is 15,000 pesos."
+S["item-2"]="""SAY: "Number two: 3 SRT Games. Additional games at 5,000 pesos each. That is 15,000 pesos."
 [30 sec]"""
 S["item-3"]="""SAY: "Number three: the Graduation Game, where the rules change. Worth 25,000 pesos."
 [30 sec]"""
@@ -170,7 +170,7 @@ S["item-11"]="""SAY: "And Leadership and Global Impact: advanced leadership deve
 [30 sec]"""
 STACK=[
  "SAY: 'Let us put it together. 10 Cashflow Games, 15,000.'",
- "SAY: 'Plus 3 STR Games, 15,000.'",
+ "SAY: 'Plus 3 SRT Games, 15,000.'",
  "SAY: 'Plus the Graduation Game, 25,000.'",
  "SAY: 'Plus the VIP Game, 25,000.'",
  "SAY: 'Plus RELM, 10,000. That is VIP: 90,000 pesos.'",
@@ -242,7 +242,7 @@ S["item-10"]="""SAY: "At the top of the journey is Platinum: the highest members
 for k in ["item-11"]: S.pop(k,None)
 STACK=[
  "SAY: 'Let us put it together. 10 Cashflow Games, 15,000.'",
- "SAY: 'Plus 3 STR Games, 15,000.'",
+ "SAY: 'Plus 3 SRT Games, 15,000.'",
  "SAY: 'Plus the Graduation Game, 25,000.'",
  "SAY: 'Plus the VIP Game, 25,000.'",
  "SAY: 'Plus RELM, 10,000. That is VIP: 90,000 pesos.'",
@@ -285,9 +285,9 @@ S["bonuses"]="""SAY: "And remember where this leads: Gold after the VIP Game, an
 «CONFIRM: add any extra bonus for people who join in the room today. Only add what is truly extra.»
 [1 min]"""
 
-# ===== STR and RELM: qualifications the Club observes. Do not explain them. =====
-S["item-2"]="""SAY: "Number two: 3 STR Games. Additional games, part of your games and training before graduation. 15,000 pesos."
-«PRIVATE: do not explain what STR is for. These are qualifications the Club observes, and players are meant to discover them as they play. If asked, say: "You will discover why as you play."»
+# ===== SRT and RELM: qualifications the Club observes. Do not explain them. =====
+S["item-2"]="""SAY: "Number two: 3 SRT Games. Additional games, part of your games and training before graduation. 15,000 pesos."
+«PRIVATE: SRT stands for Sir Ron's Table. Do not explain what it is for. These are qualifications the Club observes, and players are meant to discover them as they play. If asked, say: "You will discover why as you play."»
 [30 sec]"""
 S["item-3"]="""SAY: "Number three: RELM, 10,000 pesos. Training before graduation."
 «PRIVATE: do not explain RELM. Same rule: players discover it as they play. If asked: "You will discover why as you play."»
@@ -296,7 +296,7 @@ S["item-4"]="""SAY: "Number four: the Graduation Game, where the rules change. W
 [30 sec]"""
 S["item-5"]="""SAY: "Number five: the VIP Game, your game on the way to Gold. Worth 25,000 pesos. And that completes VIP: 90,000 pesos of value."
 [30 sec]"""
-STACK[1]="SAY: 'Plus 3 STR Games, 15,000.'"
+STACK[1]="SAY: 'Plus 3 SRT Games, 15,000.'"
 STACK[2]="SAY: 'Plus RELM, 10,000.'"
 STACK[3]="SAY: 'Plus the Graduation Game, 25,000.'"
 STACK[4]="SAY: 'Plus the VIP Game, 25,000. That is VIP: 90,000 pesos.'"

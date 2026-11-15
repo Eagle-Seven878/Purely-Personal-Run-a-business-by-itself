@@ -86,7 +86,7 @@ add(type="slide",id="journey",kicker="Your membership journey",label="Your journ
 # stack items (values from the Club's VIP Package value stack, structure from the official journey graphic)
 seq=[
  ("10 Cashflow Games","Regular games at P1,500 each.",15000,None,"VIP · Piece 3 · everything you get","Real value from the VIP Package value stack."),
- ("3 STR Games","Games and training before graduation.",15000,None,"VIP · Piece 3 · everything you get","Real value from the VIP Package value stack. Do not explain STR."),
+ ("3 SRT Games","Games and training before graduation.",15000,None,"VIP · Piece 3 · everything you get","Real value from the VIP Package value stack. Do not explain SRT."),
  ("RELM","Training before graduation.",10000,None,"VIP · Piece 3 · everything you get","Real value from the VIP Package value stack. Do not explain RELM."),
  ("The Graduation Game","The game where the rules change.",25000,None,"VIP · Piece 3 · everything you get","Real value from the VIP Package value stack."),
  ("The VIP Game","Your game on the way to Gold.",25000,None,"VIP · Piece 3 · everything you get","Real value from the VIP Package value stack."),

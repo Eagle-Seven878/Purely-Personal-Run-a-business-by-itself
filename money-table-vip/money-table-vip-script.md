@@ -12,7 +12,7 @@ Each item is marked «CONFIRM» in the script below. None appear on the slides.
 - [ ] Exact cut-off date for the 2026 rate (for example December 31, 2026).
 - [ ] Exact Platinum qualification: what counts as a real-life deal, and whether the invitation follows qualification.
 - [ ] Your personal reason for rewarding early members.
-- [ ] STR Games and RELM are qualifications the Club observes. The script never explains them. If asked, say: "You will discover why as you play."
+- [ ] SRT (Sir Ron's Table) Games and RELM are qualifications the Club observes. The script never explains them. If asked, say: "You will discover why as you play."
 - [ ] Regular Family Member price, if you have one.
 - [ ] Membership validity and renewal terms (still awaiting Board approval in the manual).
 - [ ] Payment methods and any installment plan.
@@ -212,12 +212,12 @@ SAY: "Everything starts with one step. Begin your VIP journey."
 SAY: "Let me show you everything you get, tier by tier. We start with VIP. Number one: 10 Cashflow Games. Regular games at 1,500 pesos each, so 15,000 pesos."
 [Pause after the number.] [30 sec]
 
-## Slide 23 · 3 STR Games
+## Slide 23 · 3 SRT Games
 
 *On screen: item*
 
-SAY: "Number two: 3 STR Games. Additional games, part of your games and training before graduation. 15,000 pesos."
-«PRIVATE: do not explain what STR is for. These are qualifications the Club observes, and players are meant to discover them as they play. If asked, say: "You will discover why as you play."»
+SAY: "Number two: 3 SRT Games. Additional games, part of your games and training before graduation. 15,000 pesos."
+«PRIVATE: SRT stands for Sir Ron's Table. Do not explain what it is for. These are qualifications the Club observes, and players are meant to discover them as they play. If asked, say: "You will discover why as you play."»
 [30 sec]
 
 ## Slide 24 · RELM
@@ -285,7 +285,7 @@ SAY: 'Let us put it together. 10 Cashflow Games, 15,000.'
 
 ## Slide 33 · Everything you get (2 of 10)
 
-SAY: 'Plus 3 STR Games, 15,000.'
+SAY: 'Plus 3 SRT Games, 15,000.'
 
 ## Slide 34 · Everything you get (3 of 10)
 
