@@ -14,7 +14,7 @@ Each item is marked «CONFIRM» or «PRIVATE» in the script below. None appear 
 - [ ] Exact cut-off date for the 2026 rate (for example December 31, 2026).
 - [ ] Exact Platinum qualification: what counts as a real-life deal.
 - [ ] SRT (Sir Ron's Table) Games and RELM are qualifications the Club observes. Never explain them. If asked: "You will discover why as you play."
-- [ ] GRADUATION PACE: how long from enrollment to the Graduation Game (say it as "most members reach it within ___ months"), whether SRT and RELM can run alongside the 10 games, and a limit on "play more" loops.
+- [ ] GRADUATION PACE: it depends on the participant, and games now run daily. Confirm the daily schedule is live before saying so. Also decide whether SRT and RELM can run alongside the 10 games, and set a limit on "play more" loops.
 - [ ] Your personal reason for rewarding early members.
 - [ ] Regular Family Member price, if you have one.
 - [ ] Membership validity and renewal terms (awaiting Board approval in the manual).
@@ -253,12 +253,8 @@ SAY: "Number three: RELM, valued at 15,000 pesos. Training before graduation."
 
 *On screen: item*
 
-SAY: "Number four: the Graduation Game, where the rules change. Valued at 25,000 pesos. It is scheduled once your games and training are complete."
-«CONFIRM BEFORE PRESENTING: the Graduation Game follows 10 Regular Games, 3 SRT Games and RELM. Decide and say clearly:
- 1. A realistic pace, for example "Most members reach Graduation within ___ months." Never promise a date you cannot keep.
- 2. Whether SRT and RELM can run alongside the 10 games, so Graduation is not delayed. This is recommended.
- 3. A limit on "play more" loops, so no one waits indefinitely after the readiness assessment.
- Do not explain what SRT or RELM are for. If asked "when do I graduate?", use the answer in the Q&A at the end of this script.»
+SAY: "Number four: the Graduation Game, where the rules change. Valued at 25,000 pesos. And here is the good news: our games now run daily, so your pace is yours. The more you play, the sooner you graduate."
+«CONFIRM: say "games run daily" only if the daily schedule is live. Do not explain what SRT or RELM are for. If asked "when do I graduate?", use the answer in the Q&A at the end of this script.»
 [30 sec]
 
 ## Slide 28 · The VIP Game
@@ -499,8 +495,8 @@ SAY: "Bayanihan, Kapwa, Katiwala. Good night, and keep playing."
 ## Appendix · If someone asks about the Graduation Game
 
 **"When do I graduate?"**
-SAY: "Your Graduation Game is scheduled once your games and training are complete. Most members reach it within «___ months». Your facilitator will tell you exactly where you are on your journey."
-«CONFIRM the number before using it. If you do not have one, say: "Your facilitator will map your path with you after you enroll."»
+SAY: "It depends on you. Our games now run daily, so the more you play, the sooner you reach your Graduation Game. Your facilitator will show you exactly where you are on your journey."
+«CONFIRM the daily schedule is live before saying so. Never promise a date.»
 
 **"Why so many steps before Graduation?"**
 SAY: "Because Graduation is not another game. It is the moment the rules change. We want you ready for it, so you get the most from it."

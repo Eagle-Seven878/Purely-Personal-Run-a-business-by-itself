@@ -472,3 +472,8 @@ S["item-4"]="""SAY: "Number four: the Graduation Game, where the rules change. V
  3. A limit on "play more" loops, so no one waits indefinitely after the readiness assessment.
  Do not explain what SRT or RELM are for. If asked "when do I graduate?", use the answer in the Q&A at the end of this script.»
 [30 sec]"""
+
+# ===== Graduation pace: depends on the participant; games run daily =====
+S["item-4"]="""SAY: "Number four: the Graduation Game, where the rules change. Valued at 25,000 pesos. And here is the good news: our games now run daily, so your pace is yours. The more you play, the sooner you graduate."
+«CONFIRM: say "games run daily" only if the daily schedule is live. Do not explain what SRT or RELM are for. If asked "when do I graduate?", use the answer in the Q&A at the end of this script.»
+[30 sec]"""
