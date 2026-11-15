@@ -362,3 +362,12 @@ SAY: "Not 740,000 pesos. VIP enrollment in 2026 is 60,000 pesos. The planned 202
 S["limiter"]="""SAY: "The 2026 rate ends with the year. The planned 2027 price is 75,000 pesos. Enroll in 2026, and you lock in 60,000 and save 15,000."
 «CONFIRM: confirm the exact cut-off date, for example December 31, 2026. Say it out loud.»
 [1 min]"""
+
+# ===== real event photos =====
+S["group-photo"]="""[Show the group photo from a past Money Table event.]
+SAY: "Before we continue, look at this room. These are real people, from a real Money Table. Smile. You are part of this community now."
+[Smile. Take a screenshot or photo of your own audience if you can.] [1 min]"""
+S["table-photo"]="""[Show the table photo.]
+SAY: "This is what it looks like at the table. Real players, real games, a facilitator guiding, and people discovering for themselves."
+[30 sec]"""
+S["cold-open"]=S["cold-open"]+"\n[Photo: a real Money Table game in progress.]"

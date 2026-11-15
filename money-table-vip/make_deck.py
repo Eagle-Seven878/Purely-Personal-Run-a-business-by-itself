@@ -147,6 +147,25 @@ add(type="statement",id="thanks-end",kicker="Thank you",label="Thank you",
  title="Thank you. When the rules change, ==you can change==.",
  notes="[OUTLINE 24 · THANK YOU] Mirror the opening line, warmer. Thank everyone: those who joined and those who did not. Remind them what happens next. [1 min]")
 
+
+# ---- real event photos ----
+import re as _re
+PH="assets/photos/"
+by={p["id"]:p for p in P}
+c=by["cold-open"]; c.pop("light",None); c["image"]=PH+"table-1.jpg"; c["focus"]="50% 40%"; c["breath"]=1.5
+by["promise"]["image"]=PH+"room-screen.jpg"; by["promise"]["focus"]="45% 50%"
+lp=by["low-point"]; lp["image"]=PH+"table-2.jpg"; lp["fit"]="cover"; lp["focus"]="60% 40%"; lp["breath"]=2
+by["thanks-1"]["image"]=PH+"room-hand.jpg"; by["thanks-1"]["focus"]="30% 50%"
+by["for-whom"]["image"]=PH+"room-seated.jpg"; by["for-whom"]["focus"]="50% 60%"
+rs=by["reason"]; rs["image"]=PH+"speaker-2.jpg"; rs["fit"]="cover"; rs["focus"]="30% 50%"
+by["close"]["image"]=PH+"group-2.jpg"; by["close"]["fit"]="cover"; by["close"]["focus"]="50% 55%"
+te=by["thanks-end"]; te["image"]=PH+"table-1.jpg"; te["fit"]="cover"; te["focus"]="50% 40%"
+for _id in ("low-point","reason","close","thanks-end"):
+    by[_id]["title"]=_re.sub(r"==","",by[_id]["title"])
+def after(pid,panel):
+    i=[x["id"] for x in P].index(pid); P.insert(i+1,panel)
+after("promise",dict(type="slide",id="group-photo",kicker="Warm the Room",label="Smile",image=PH+"group.jpg",caption="Smile.",notes="x"))
+after("story-proof",dict(type="slide",id="table-photo",kicker="The Bridge · the experience",label="At the table",image=PH+"table-3.jpg",caption="Real players. Real tables.",notes="x"))
 from script import S, STACK
 for p in P:
     if p["id"] in S: p["notes"]=S[p["id"]]
@@ -154,6 +173,6 @@ for p in P:
 deck={"mode":"blueprint","title":"The Money Table VIP","titleLines":["The Money","Table VIP"],
  "badge":"Philippine Cashflow Club · DRAFT, confirm flagged numbers before presenting",
  "promise":"The next step on the money ladder. When the rules change, can you change?",
- "theme":"simple","length":90,"panels":P}
+ "theme":"simple","length":90,"heroImage":"assets/photos/group.jpg","heroFocus":"50% 50%","panels":P}
 json.dump(deck,open("money-table-vip.deck.json","w"),ensure_ascii=False,indent=1)
 print(len(P),"panels, stack total",total)

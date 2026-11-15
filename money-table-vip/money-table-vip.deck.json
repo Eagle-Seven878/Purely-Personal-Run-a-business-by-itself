@@ -9,17 +9,21 @@
  "promise": "The next step on the money ladder. When the rules change, can you change?",
  "theme": "simple",
  "length": 90,
+ "heroImage": "assets/photos/group.jpg",
+ "heroFocus": "50% 50%",
  "panels": [
   {
    "type": "story",
    "id": "cold-open",
    "kicker": "Warm the Room",
    "label": "Welcome",
-   "light": true,
    "center": true,
    "title": "When the rules change,\ncan you ==change==?",
    "lede": "The Money Table · Philippine Cashflow Club",
-   "notes": "[Before you go live: audio, camera and chat tested. Your team is ready to drop the link and welcome names.]\n[Stay silent for three seconds. Smile. Then read the line slowly.]\nSAY: \"When the rules change... can you change?\"\n[PAUSE]\nSAY: \"Good evening, everyone, and welcome to The Money Table with the Philippine Cashflow Club. That one question is the heart of everything we do. By the end of today, you will know your answer.\"\n[2 min]"
+   "notes": "[Before you go live: audio, camera and chat tested. Your team is ready to drop the link and welcome names.]\n[Stay silent for three seconds. Smile. Then read the line slowly.]\nSAY: \"When the rules change... can you change?\"\n[PAUSE]\nSAY: \"Good evening, everyone, and welcome to The Money Table with the Philippine Cashflow Club. That one question is the heart of everything we do. By the end of today, you will know your answer.\"\n[2 min]\n[Photo: a real Money Table game in progress.]",
+   "image": "assets/photos/table-1.jpg",
+   "focus": "50% 40%",
+   "breath": 1.5
   },
   {
    "type": "statement",
@@ -60,7 +64,18 @@
    "kicker": "Warm the Room",
    "label": "The promise",
    "title": "By the end, you will know your next step on the ==money ladder==.",
-   "notes": "SAY: \"Here is my promise. By the end of this session, you will know your next step on the money ladder.\"\nSAY: \"The ladder is simple: Guest, Regular Member, VIP, then Gold. Every one of you is standing on one of those steps right now. We will find yours.\"\n[Do not sell yet. Just plant the ladder.] [1 min]"
+   "notes": "SAY: \"Here is my promise. By the end of this session, you will know your next step on the money ladder.\"\nSAY: \"The ladder is simple: Guest, Regular Member, VIP, then Gold. Every one of you is standing on one of those steps right now. We will find yours.\"\n[Do not sell yet. Just plant the ladder.] [1 min]",
+   "image": "assets/photos/room-screen.jpg",
+   "focus": "45% 50%"
+  },
+  {
+   "type": "slide",
+   "id": "group-photo",
+   "kicker": "Warm the Room",
+   "label": "Smile",
+   "image": "assets/photos/group.jpg",
+   "caption": "Smile.",
+   "notes": "[Show the group photo from a past Money Table event.]\nSAY: \"Before we continue, look at this room. These are real people, from a real Money Table. Smile. You are part of this community now.\"\n[Smile. Take a screenshot or photo of your own audience if you can.] [1 min]"
   },
   {
    "type": "statement",
@@ -98,9 +113,13 @@
    "kicker": "Earn the Right · the story",
    "label": "The low point",
    "over": "Imagine this",
-   "title": "The Big Deal cards are gone. ==Now what?==",
+   "title": "The Big Deal cards are gone. Now what?",
    "sub": "That moment is where players grow.",
-   "notes": "[Lower your voice. Look into the camera.]\nSAY: \"Picture this. You have played this game many times. You know your strategy by heart. Then the facilitator reaches over, and removes every Big Deal card.\"\n[PAUSE. Three seconds.]\nSAY: \"Now what?\"\nSAY: \"In that moment, people feel it. Frustration. Fear. Some say, 'This is not fair.' And that moment is exactly where they grow.\"\n«CONFIRM: if you have a true story of a real player, tell it here in your own words. Use a first name only with their permission.»\n[3 min]"
+   "notes": "[Lower your voice. Look into the camera.]\nSAY: \"Picture this. You have played this game many times. You know your strategy by heart. Then the facilitator reaches over, and removes every Big Deal card.\"\n[PAUSE. Three seconds.]\nSAY: \"Now what?\"\nSAY: \"In that moment, people feel it. Frustration. Fear. Some say, 'This is not fair.' And that moment is exactly where they grow.\"\n«CONFIRM: if you have a true story of a real player, tell it here in your own words. Use a first name only with their permission.»\n[3 min]",
+   "image": "assets/photos/table-2.jpg",
+   "fit": "cover",
+   "focus": "60% 40%",
+   "breath": 2
   },
   {
    "type": "statement",
@@ -144,7 +163,9 @@
    "kicker": "The Bridge",
    "label": "Thank you",
    "title": "Thank you for playing along.",
-   "notes": "SAY: \"Thank you for playing along. Thank you for being honest in the chat and trying things you were not sure about.\"\n[Name two or three people who took part.]\n[Smile.] [1 min]"
+   "notes": "SAY: \"Thank you for playing along. Thank you for being honest in the chat and trying things you were not sure about.\"\n[Name two or three people who took part.]\n[Smile.] [1 min]",
+   "image": "assets/photos/room-hand.jpg",
+   "focus": "30% 50%"
   },
   {
    "type": "question",
@@ -184,6 +205,15 @@
    "notes": "SAY: \"Let me show you what happens inside the Graduation Game. The rules change. The Big Deal cards are removed, and the player must adapt.\"\nSAY: \"Our facilitators do not hand over the answer. They guide with questions, and the player discovers it themselves. At the end, they answer the question: when the rules change, can you change?\"\n«CONFIRM: add one or two real member testimonials here, word for word, with permission. A real voice is stronger than anything I can say.»\n[3 min]"
   },
   {
+   "type": "slide",
+   "id": "table-photo",
+   "kicker": "The Bridge · the experience",
+   "label": "At the table",
+   "image": "assets/photos/table-3.jpg",
+   "caption": "Real players. Real tables.",
+   "notes": "[Show the table photo.]\nSAY: \"This is what it looks like at the table. Real players, real games, a facilitator guiding, and people discovering for themselves.\"\n[30 sec]"
+  },
+  {
    "type": "offer",
    "id": "offer",
    "kicker": "Pieces 1 and 2 · the name, where and when",
@@ -209,7 +239,9 @@
    "over": "Who it is for",
    "title": "For players who finished their first games and want the ==next step==.",
    "sub": "Objective: move from playing to adapting.",
-   "notes": "SAY: \"Who is this for? It is for players who have finished their first games and want the next step, a clear path instead of random games. The objective: move from playing to adapting.\"\nSAY: \"It is not for someone who only wants a one-time game. This is for people who want to grow.\"\n[1 min]"
+   "notes": "SAY: \"Who is this for? It is for players who have finished their first games and want the next step, a clear path instead of random games. The objective: move from playing to adapting.\"\nSAY: \"It is not for someone who only wants a one-time game. This is for people who want to grow.\"\n[1 min]",
+   "image": "assets/photos/room-seated.jpg",
+   "focus": "50% 60%"
   },
   {
    "type": "statement",
@@ -565,7 +597,10 @@
    "label": "Why today",
    "title": "From 2027, the planned price is P75,000.",
    "sub": "Enroll in 2026 and keep the 2026 rate.",
-   "notes": "SAY: \"Now, why this price today? Because the planned price for 2027 is 75,000 pesos. If you enroll in 2026, you keep the 2026 rate.\"\n«CONFIRM: add your personal reason, your why for rewarding early members, in your own words.»\n[1 min]"
+   "notes": "SAY: \"Now, why this price today? Because the planned price for 2027 is 75,000 pesos. If you enroll in 2026, you keep the 2026 rate.\"\n«CONFIRM: add your personal reason, your why for rewarding early members, in your own words.»\n[1 min]",
+   "image": "assets/photos/speaker-2.jpg",
+   "fit": "cover",
+   "focus": "30% 50%"
   },
   {
    "type": "price",
@@ -624,8 +659,11 @@
    "id": "close",
    "kicker": "The Close",
    "label": "The close",
-   "title": "Bayanihan. Kapwa. Katiwala. ==Your place is ready==.",
-   "notes": "SAY: \"Bayanihan. Kapwa. Katiwala. Together, as one community, caring for each other, and being good stewards. Your place is ready.\"\nSAY: \"The 2026 rate is 60,000 pesos. If you are ready, here is exactly what to do.\"\n[1 min]"
+   "title": "Bayanihan. Kapwa. Katiwala. Your place is ready.",
+   "notes": "SAY: \"Bayanihan. Kapwa. Katiwala. Together, as one community, caring for each other, and being good stewards. Your place is ready.\"\nSAY: \"The 2026 rate is 60,000 pesos. If you are ready, here is exactly what to do.\"\n[1 min]",
+   "image": "assets/photos/group-2.jpg",
+   "fit": "cover",
+   "focus": "50% 55%"
   },
   {
    "type": "cta",
@@ -659,8 +697,11 @@
    "id": "thanks-end",
    "kicker": "Thank you",
    "label": "Thank you",
-   "title": "Thank you. When the rules change, ==you can change==.",
-   "notes": "[Mirror your opening line, warmer. Smile.]\nSAY: \"Thank you, everyone. To those who joined, welcome to the family. To those who did not, thank you for playing. You still have your lesson from today. When the rules change, you can change.\"\nSAY: \"Bayanihan, Kapwa, Katiwala. Good night, and keep playing.\"\n[1 min]"
+   "title": "Thank you. When the rules change, you can change.",
+   "notes": "[Mirror your opening line, warmer. Smile.]\nSAY: \"Thank you, everyone. To those who joined, welcome to the family. To those who did not, thank you for playing. You still have your lesson from today. When the rules change, you can change.\"\nSAY: \"Bayanihan, Kapwa, Katiwala. Good night, and keep playing.\"\n[1 min]",
+   "image": "assets/photos/table-1.jpg",
+   "fit": "cover",
+   "focus": "50% 40%"
   }
  ]
 }

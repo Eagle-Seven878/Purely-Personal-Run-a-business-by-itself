@@ -1,5 +1,5 @@
 # The Money Table VIP Package: Presenter Script
-Philippine Cashflow Club · 58 slides · about 85 to 100 minutes with Q&A
+Philippine Cashflow Club · 60 slides · about 85 to 100 minutes with Q&A
 
 Open `money-table-vip.html` in Chrome, full screen. Arrow keys move, **N** shows this script on the slide, **S** opens speaker view.
 
@@ -20,6 +20,7 @@ Each item is marked «CONFIRM» or «PRIVATE» in the script below. None appear 
 - [ ] Payment methods and any installment plan.
 - [ ] Guarantee: say none unless the refund policy is approved.
 - [ ] Real member testimonials, word for word, with permission.
+- [ ] Photos are from past Money Table events. Confirm attendees are comfortable with their faces on your slides, and swap any you prefer not to show.
 - [ ] Registration link (so the QR code shows), start date and venue or Zoom.
 - [ ] Any extra bonus for people who join in the room.
 
@@ -35,6 +36,7 @@ SAY: "When the rules change... can you change?"
 [PAUSE]
 SAY: "Good evening, everyone, and welcome to The Money Table with the Philippine Cashflow Club. That one question is the heart of everything we do. By the end of today, you will know your answer."
 [2 min]
+[Photo: a real Money Table game in progress.]
 
 ## Slide 2 · Cameras on. Write where you are from in the chat.
 
@@ -61,7 +63,15 @@ SAY: "Here is my promise. By the end of this session, you will know your next st
 SAY: "The ladder is simple: Guest, Regular Member, VIP, then Gold. Every one of you is standing on one of those steps right now. We will find yours."
 [Do not sell yet. Just plant the ladder.] [1 min]
 
-## Slide 5 · Most people play to win a round. Few learn to change.
+## Slide 5 · Smile
+
+*On screen: slide*
+
+[Show the group photo from a past Money Table event.]
+SAY: "Before we continue, look at this room. These are real people, from a real Money Table. Smile. You are part of this community now."
+[Smile. Take a screenshot or photo of your own audience if you can.] [1 min]
+
+## Slide 6 · Most people play to win a round. Few learn to change.
 
 *On screen: statement*
 
@@ -70,7 +80,7 @@ SAY: "But here is the problem. Life does not keep the rules the same. Most peopl
 SAY: "So I ask you: how many of you realise the rules of money are changing? Write ME in the chat."
 ROOM MOVE: chat word = ME. [3 min]
 
-## Slide 6 · You can wait for the Big Deal. Or you can learn to adapt.
+## Slide 7 · You can wait for the Big Deal. Or you can learn to adapt.
 
 *On screen: swap*
 
@@ -79,7 +89,7 @@ SAY: "Or you can learn to adapt. Build capital with small deals. Pay down your l
 SAY: "This is exactly what we teach at the Graduation Game. We do not give the answer. We guide you to discover it. Which side are you on tonight?"
 [3 min]
 
-## Slide 7 · The Big Deal cards are gone. Now what?
+## Slide 8 · The Big Deal cards are gone. Now what?
 
 *On screen: statement*
 
@@ -91,7 +101,7 @@ SAY: "In that moment, people feel it. Frustration. Fear. Some say, 'This is not 
 «CONFIRM: if you have a true story of a real player, tell it here in your own words. Use a first name only with their permission.»
 [3 min]
 
-## Slide 8 · Value is measured by comparison.
+## Slide 9 · Value is measured by comparison.
 
 *On screen: statement*
 
@@ -99,7 +109,7 @@ SAY: "Let me teach you one lesson right now. It takes two minutes. Value is meas
 SAY: "A deal is never good or bad by itself. It is good or bad compared to the other choices you have. Ask the room: which is better, a deal that earns eight percent, or one that loses money? Obvious, right? Let us make it harder."
 [2 min]
 
-## Slide 9 · A shopping mall at -24% ROI is not a good Big Deal.
+## Slide 10 · A shopping mall at -24% ROI is not a good Big Deal.
 
 *On screen: statement*
 
@@ -109,21 +119,21 @@ ROOM MOVE: chat word = YES or NO. [Read a few answers.]
 SAY: "Size is not the measure. Return is the measure."
 [3 min]
 
-## Slide 10 · Write one deal you passed on. Was it really a bad deal?
+## Slide 11 · Write one deal you passed on. Was it really a bad deal?
 
 *On screen: statement*
 
 SAY: "Your turn. You have three minutes. Think of one deal you passed on in real life. Was it really a bad deal, or did you just not know how to measure it? Write it down."
 [Give three minutes of silence. Then ask two or three people to share. Optional: ask everyone to stand and stretch before moving on.] [3 min]
 
-## Slide 11 · You just practised the skill the ladder is built on.
+## Slide 12 · You just practised the skill the ladder is built on.
 
 *On screen: statement*
 
 SAY: "Beautiful. You just practised the skill the whole ladder is built on. That is one skill. In the club, we teach many, one game at a time, with people who play next to you."
 [1 min]
 
-## Slide 12 · Thank you for playing along.
+## Slide 13 · Thank you for playing along.
 
 *On screen: statement*
 
@@ -131,7 +141,7 @@ SAY: "Thank you for playing along. Thank you for being honest in the chat and tr
 [Name two or three people who took part.]
 [Smile.] [1 min]
 
-## Slide 13 · Would it be okay if I shared a small offer with you?
+## Slide 14 · Would it be okay if I shared a small offer with you?
 
 *On screen: question*
 
@@ -139,7 +149,7 @@ SAY: "Now, I told you at the start that I would share an offer. So I am asking p
 [Wait. Read every OK. Anyone who does not answer is not ready, and that is fine.]
 ROOM MOVE: chat word = OK. [2 min]
 
-## Slide 14 · What happens at the Graduation Game.
+## Slide 15 · What happens at the Graduation Game.
 
 *On screen: cards*
 
@@ -148,7 +158,15 @@ SAY: "Our facilitators do not hand over the answer. They guide with questions, a
 «CONFIRM: add one or two real member testimonials here, word for word, with permission. A real voice is stronger than anything I can say.»
 [3 min]
 
-## Slide 15 · The Money Table VIP Package
+## Slide 16 · At the table
+
+*On screen: slide*
+
+[Show the table photo.]
+SAY: "This is what it looks like at the table. Real players, real games, a facilitator guiding, and people discovering for themselves."
+[30 sec]
+
+## Slide 17 · The Money Table VIP Package
 
 *On screen: offer*
 
@@ -160,7 +178,7 @@ SAY: "You start on the day your payment is verified, your Official Joining Date,
 «CONFIRM: if you have a fixed start date or venue, say it here.»
 [2 min]
 
-## Slide 16 · For players who finished their first games and want the next step.
+## Slide 18 · For players who finished their first games and want the next step.
 
 *On screen: statement*
 
@@ -168,35 +186,35 @@ SAY: "Who is this for? It is for players who have finished their first games and
 SAY: "It is not for someone who only wants a one-time game. This is for people who want to grow."
 [1 min]
 
-## Slide 17 · How to read a deal: ROI, and good versus bad.
+## Slide 19 · How to read a deal: ROI, and good versus bad.
 
 *On screen: statement*
 
 SAY: "Here is what you will learn. First, how to read a deal. ROI, and how to tell a good deal from a bad deal."
 [1 min]
 
-## Slide 18 · How to build capital: DealFlow and market research.
+## Slide 20 · How to build capital: DealFlow and market research.
 
 *On screen: statement*
 
 SAY: "Second, how to build capital. DealFlow, market research, and how the rich write and read a financial statement inside the game."
 [1 min]
 
-## Slide 19 · How to adapt when the rules change.
+## Slide 21 · How to adapt when the rules change.
 
 *On screen: statement*
 
 SAY: "Third, how to adapt when the rules change. Paying down liabilities, cooperation play, and answering the Graduation Game question yourself."
 [1 min]
 
-## Slide 20 · What you get from it.
+## Slide 22 · What you get from it.
 
 *On screen: cards*
 
 SAY: "What do you get from all this? A path you can see: games, graduation, VIP, then Gold. You always know your next step. Every official game counts, because it is verified and kept in your record. And a community that plays with you: members, facilitators, and a VIP community."
 [2 min]
 
-## Slide 21 · Your journey
+## Slide 23 · Your journey
 
 *On screen: slide*
 
@@ -207,7 +225,7 @@ SAY: "And at the top is Platinum, the highest membership level. Any VIP can beco
 SAY: "Everything starts with one step. Begin your VIP journey."
 [2 min]
 
-## Slide 22 · 10 Regular Games (including RELM)
+## Slide 24 · 10 Regular Games (including RELM)
 
 *On screen: item*
 
@@ -215,7 +233,7 @@ SAY: "Let me show you the value of the journey, tier by tier. We start with VIP.
 «PRIVATE: do not explain RELM. If asked: "You will discover why as you play."»
 [30 sec]
 
-## Slide 23 · 3 Additional SRT Games
+## Slide 25 · 3 Additional SRT Games
 
 *On screen: item*
 
@@ -223,56 +241,56 @@ SAY: "Number two: 3 additional SRT Games, games and training before graduation, 
 «PRIVATE: SRT stands for Sir Ron's Table. Do not explain what it is for. If asked: "You will discover why as you play."»
 [30 sec]
 
-## Slide 24 · The Graduation Game
+## Slide 26 · The Graduation Game
 
 *On screen: item*
 
 SAY: "Number three: the Graduation Game, where the rules change. Valued at 25,000 pesos."
 [30 sec]
 
-## Slide 25 · The VIP Game
+## Slide 27 · The VIP Game
 
 *On screen: item*
 
 SAY: "Number four: the VIP Game, your game on the way to Gold. Valued at 25,000 pesos."
 [30 sec]
 
-## Slide 26 · VIP Training
+## Slide 28 · VIP Training
 
 *On screen: item*
 
 SAY: "Number five: VIP Training. Irresistible Offer, 15,000. Facilitation Training, 50,000. Teach to Be Rich, 50,000. Masterpiece of a Deal, 95,000. Together, 210,000 pesos. And that makes the VIP benefit value 290,000 pesos."
 [Slow down. Say each training and let the numbers land.] [1 min]
 
-## Slide 27 · Unlimited Club Games
+## Slide 29 · Unlimited Club Games
 
 *On screen: item*
 
 SAY: "Now Gold, the next progression level, after the VIP Game. Unlimited Club Games. The value is based on 50 games at 1,500 pesos, so 75,000, but it is not a play limit. You can play unlimited."
 [30 sec]
 
-## Slide 28 · Advanced Games
+## Slide 30 · Advanced Games
 
 *On screen: item*
 
 SAY: "Advanced Games: FOMO 1, FOMO 2, and No Pay Day. 10,000 pesos each, so 30,000 pesos."
 [30 sec]
 
-## Slide 29 · Gold Training
+## Slide 31 · Gold Training
 
 *On screen: item*
 
 SAY: "Gold Training: Public Speaking Training, 50,000. Training and Coaching Development, 75,000. Leadership Training, 50,000. Together, 175,000 pesos. Gold adds 280,000 pesos of value."
 [1 min]
 
-## Slide 30 · Gold Opportunities
+## Slide 32 · Gold Opportunities
 
 *On screen: item*
 
 SAY: "And beginning at Gold, opportunities open by invitation: speaking and facilitation, training and coaching pathways, chapter creation, and local and international travel. These depend on qualifications and availability, so the Club does not put a money value on them."
 [30 sec]
 
-## Slide 31 · Platinum Training
+## Slide 33 · Platinum Training
 
 *On screen: item*
 
@@ -280,58 +298,58 @@ SAY: "Platinum is the highest membership level. Any VIP can qualify, but it asks
 «CONFIRM: state the exact Platinum qualification (what counts as a real-life deal).»
 [1 min]
 
-## Slide 32 · Leadership and Collaboration
+## Slide 34 · Leadership and Collaboration
 
 *On screen: item*
 
 SAY: "And with Platinum come advanced leadership pathways and business partnerships, by invitation. No monetary value is assigned to those."
 [30 sec]
 
-## Slide 33 · Everything you get (1 of 11)
+## Slide 35 · Everything you get (1 of 11)
 
 SAY: 'Let us put it together. 10 Regular Games, including RELM, 15,000.'
 
-## Slide 34 · Everything you get (2 of 11)
+## Slide 36 · Everything you get (2 of 11)
 
 SAY: 'Plus 3 additional SRT Games, 15,000.'
 
-## Slide 35 · Everything you get (3 of 11)
+## Slide 37 · Everything you get (3 of 11)
 
 SAY: 'Plus the Graduation Game, 25,000.'
 
-## Slide 36 · Everything you get (4 of 11)
+## Slide 38 · Everything you get (4 of 11)
 
 SAY: 'Plus the VIP Game, 25,000.'
 
-## Slide 37 · Everything you get (5 of 11)
+## Slide 39 · Everything you get (5 of 11)
 
 SAY: 'Plus VIP Training, 210,000. That is the VIP benefit value: 290,000 pesos.'
 
-## Slide 38 · Everything you get (6 of 11)
+## Slide 40 · Everything you get (6 of 11)
 
 SAY: 'Then Gold. Unlimited Club Games, 75,000.'
 
-## Slide 39 · Everything you get (7 of 11)
+## Slide 41 · Everything you get (7 of 11)
 
 SAY: 'Plus Advanced Games, 30,000.'
 
-## Slide 40 · Everything you get (8 of 11)
+## Slide 42 · Everything you get (8 of 11)
 
 SAY: 'Plus Gold Training, 175,000. Gold adds 280,000 pesos.'
 
-## Slide 41 · Everything you get (9 of 11)
+## Slide 43 · Everything you get (9 of 11)
 
 SAY: 'Plus opportunities by invitation, beginning at Gold.'
 
-## Slide 42 · Everything you get (10 of 11)
+## Slide 44 · Everything you get (10 of 11)
 
 SAY: 'And Platinum Training, 170,000.'
 
-## Slide 43 · Everything you get (11 of 11)
+## Slide 45 · Everything you get (11 of 11)
 
 SAY: 'Plus leadership and collaboration, by invitation. The total journey value is 740,000 pesos.' [Pause. Let it land.]
 
-## Slide 44 · Value journey
+## Slide 46 · Value journey
 
 *On screen: slide*
 
@@ -340,7 +358,7 @@ SAY: "Here is the whole value journey on one page. VIP benefit value, 290,000. G
 SAY: "And at the bottom, read it with me: VIP enrollment, 60,000 pesos. Planned 2027 price, 75,000 pesos."
 [2 min]
 
-## Slide 45 · Club-assigned benefit values, not prices.
+## Slide 47 · Club-assigned benefit values, not prices.
 
 *On screen: statement*
 
@@ -348,7 +366,7 @@ SAY: "Please hear this clearly. These are Club-assigned benefit values. They are
 «IMPORTANT: say this line out loud. It is on the Club's own graphic, and it keeps the offer honest.»
 [1 min]
 
-## Slide 46 · Three numbers to remember.
+## Slide 48 · Three numbers to remember.
 
 *On screen: cards*
 
@@ -356,14 +374,14 @@ SAY: "Three numbers to remember. First, the total journey value: 740,000 pesos. 
 «CONFIRM: the outline calls for a Regular Family Member price. If you have one, say it here.»
 [2 min]
 
-## Slide 47 · The total
+## Slide 49 · The total
 
 *On screen: struck*
 
 SAY: "The total journey value: 740,000 pesos."
 [Silence. Let the number sit for three seconds.] [30 sec]
 
-## Slide 48 · Gold: deals in the game. Platinum: a real-life deal.
+## Slide 50 · Gold: deals in the game. Platinum: a real-life deal.
 
 *On screen: statement*
 
@@ -371,7 +389,7 @@ SAY: "Here is how the journey grows. Start as VIP. After the VIP Game, you grow 
 «CONFIRM: describe the Platinum qualification in your own words so no one expects it automatically.»
 [1 min]
 
-## Slide 49 · From 2027, the planned price is P75,000.
+## Slide 51 · From 2027, the planned price is P75,000.
 
 *On screen: statement*
 
@@ -379,7 +397,7 @@ SAY: "Now, why this price today? Because the planned price for 2027 is 75,000 pe
 «CONFIRM: add your personal reason, your why for rewarding early members, in your own words.»
 [1 min]
 
-## Slide 50 · The price
+## Slide 52 · The price
 
 *On screen: price*
 
@@ -387,7 +405,7 @@ SAY: "Now, why this price today? Because the planned price for 2027 is 75,000 pe
 SAY: "Not 740,000 pesos. VIP enrollment in 2026 is 60,000 pesos. The planned 2027 price is 75,000, so you save 15,000. VIP alone carries 290,000 pesos of Club benefit value, almost five times what you enroll for."
 [Then stop talking. Hold the silence.] [3 min]
 
-## Slide 51 · The 2026 rate ends with the year.
+## Slide 53 · The 2026 rate ends with the year.
 
 *On screen: limiter*
 
@@ -395,7 +413,7 @@ SAY: "The 2026 rate ends with the year. The planned 2027 price is 75,000 pesos. 
 «CONFIRM: confirm the exact cut-off date, for example December 31, 2026. Say it out loud.»
 [1 min]
 
-## Slide 52 · Gold after the VIP Game. Platinum with a real-life deal.
+## Slide 54 · Gold after the VIP Game. Platinum with a real-life deal.
 
 *On screen: statement*
 
@@ -403,7 +421,7 @@ SAY: "And remember where this leads: Gold after the VIP Game, and Platinum, for 
 «CONFIRM: add any extra bonus for people who join in the room today. Only add what is truly extra.»
 [1 min]
 
-## Slide 53 · Message your facilitator. Pay. Get verified. You are in.
+## Slide 55 · Message your facilitator. Pay. Get verified. You are in.
 
 *On screen: statement*
 
@@ -411,7 +429,7 @@ SAY: "How do you join? Message your facilitator or the club page. You complete t
 «CONFIRM: say the real payment methods and any installment plan (GCash, bank transfer, cash, installments).»
 [1 min]
 
-## Slide 54 · Receipt. Member ID. Signed agreement. Your path is on record.
+## Slide 56 · Receipt. Member ID. Signed agreement. Your path is on record.
 
 *On screen: statement*
 
@@ -419,7 +437,7 @@ SAY: "And your seat is documented. You get a receipt, a Member ID, and a signed 
 «CONFIRM: this is a documentation assurance, not a money-back guarantee. Do not say 'guarantee' or promise refunds until the Board approves the refund, transfer, and cancellation policy.»
 [1 min]
 
-## Slide 55 · Bayanihan. Kapwa. Katiwala. Your place is ready.
+## Slide 57 · Bayanihan. Kapwa. Katiwala. Your place is ready.
 
 *On screen: statement*
 
@@ -427,7 +445,7 @@ SAY: "Bayanihan. Kapwa. Katiwala. Together, as one community, caring for each ot
 SAY: "The 2026 rate is 60,000 pesos. If you are ready, here is exactly what to do."
 [1 min]
 
-## Slide 56 · Here is exactly what to do now.
+## Slide 58 · Here is exactly what to do now.
 
 *On screen: cta*
 
@@ -437,14 +455,14 @@ SAY: "Step one: message your facilitator or the club page. Step two: lock in the
 «CONFIRM: add the real registration link to the deck as 'url' so a QR code shows.»
 ROOM MOVE: chat word = VIP. [3 min]
 
-## Slide 57 · Welcome to VIP.
+## Slide 59 · Welcome to VIP.
 
 *On screen: buyerswall*
 
 [Type each first name as it lands in the chat and press Enter. Names appear on the wall.]
 SAY: "Welcome to VIP, welcome, welcome!" [3 min]
 
-## Slide 58 · Thank you. When the rules change, you can change.
+## Slide 60 · Thank you. When the rules change, you can change.
 
 *On screen: statement*
 
