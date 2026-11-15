@@ -137,6 +137,10 @@ add(type="statement",id="thanks-end",kicker="Thank you",label="Thank you",
  title="Thank you. When the rules change, ==you can change==.",
  notes="[OUTLINE 24 · THANK YOU] Mirror the opening line, warmer. Thank everyone: those who joined and those who did not. Remind them what happens next. [1 min]")
 
+from script import S, STACK
+for p in P:
+    if p["id"] in S: p["notes"]=S[p["id"]]
+    if p["type"]=="stacklist": p["stepNotes"]=STACK
 deck={"mode":"blueprint","title":"The Money Table VIP","titleLines":["The Money","Table VIP"],
  "badge":"Philippine Cashflow Club · DRAFT, confirm flagged numbers before presenting",
  "promise":"The next step on the money ladder. When the rules change, can you change?",
