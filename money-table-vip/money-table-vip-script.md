@@ -12,7 +12,7 @@ Each item is marked «CONFIRM» in the script below. None appear on the slides.
 - [ ] Exact cut-off date for the 2026 rate (for example December 31, 2026).
 - [ ] Exact Platinum qualification: what counts as a real-life deal, and whether the invitation follows qualification.
 - [ ] Your personal reason for rewarding early members.
-- [ ] 3 STR Games and the separate RELM (kept as on your value stack page). The official graphic shows neither STR Games nor RELM as a separate VIP item, so be ready to explain them.
+- [ ] STR Games and RELM are qualifications the Club observes. The script never explains them. If asked, say: "You will discover why as you play."
 - [ ] Regular Family Member price, if you have one.
 - [ ] Membership validity and renewal terms (still awaiting Board approval in the manual).
 - [ ] Payment methods and any installment plan.
@@ -216,28 +216,30 @@ SAY: "Let me show you everything you get, tier by tier. We start with VIP. Numbe
 
 *On screen: item*
 
-SAY: "Number two: 3 STR Games. Additional games at 5,000 pesos each. That is 15,000 pesos."
+SAY: "Number two: 3 STR Games. Additional games, part of your games and training before graduation. 15,000 pesos."
+«PRIVATE: do not explain what STR is for. These are qualifications the Club observes, and players are meant to discover them as they play. If asked, say: "You will discover why as you play."»
 [30 sec]
 
-## Slide 24 · The Graduation Game
+## Slide 24 · RELM
 
 *On screen: item*
 
-SAY: "Number three: the Graduation Game, where the rules change. Worth 25,000 pesos."
+SAY: "Number three: RELM, 10,000 pesos. Training before graduation."
+«PRIVATE: do not explain RELM. Same rule: players discover it as they play. If asked: "You will discover why as you play."»
 [30 sec]
 
-## Slide 25 · The VIP Game
+## Slide 25 · The Graduation Game
 
 *On screen: item*
 
-SAY: "Number four: the VIP Game, your game on the way to Gold. Worth 25,000 pesos."
+SAY: "Number four: the Graduation Game, where the rules change. Worth 25,000 pesos."
 [30 sec]
 
-## Slide 26 · RELM
+## Slide 26 · The VIP Game
 
 *On screen: item*
 
-SAY: "Number five: RELM, 10,000 pesos. And that completes your VIP foundation: 90,000 pesos of value."
+SAY: "Number five: the VIP Game, your game on the way to Gold. Worth 25,000 pesos. And that completes VIP: 90,000 pesos of value."
 [30 sec]
 
 ## Slide 27 · Unlimited Games at the Club
@@ -287,15 +289,15 @@ SAY: 'Plus 3 STR Games, 15,000.'
 
 ## Slide 34 · Everything you get (3 of 10)
 
-SAY: 'Plus the Graduation Game, 25,000.'
+SAY: 'Plus RELM, 10,000.'
 
 ## Slide 35 · Everything you get (4 of 10)
 
-SAY: 'Plus the VIP Game, 25,000.'
+SAY: 'Plus the Graduation Game, 25,000.'
 
 ## Slide 36 · Everything you get (5 of 10)
 
-SAY: 'Plus RELM, 10,000. That is VIP: 90,000 pesos.'
+SAY: 'Plus the VIP Game, 25,000. That is VIP: 90,000 pesos.'
 
 ## Slide 37 · Everything you get (6 of 10)
 

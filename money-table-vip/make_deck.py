@@ -86,10 +86,10 @@ add(type="slide",id="journey",kicker="Your membership journey",label="Your journ
 # stack items (values from the Club's VIP Package value stack, structure from the official journey graphic)
 seq=[
  ("10 Cashflow Games","Regular games at P1,500 each.",15000,None,"VIP · Piece 3 · everything you get","Real value from the VIP Package value stack."),
- ("3 STR Games","Additional games at P5,000 each.",15000,None,"VIP · Piece 3 · everything you get","Real value from the VIP Package value stack."),
+ ("3 STR Games","Games and training before graduation.",15000,None,"VIP · Piece 3 · everything you get","Real value from the VIP Package value stack. Do not explain STR."),
+ ("RELM","Training before graduation.",10000,None,"VIP · Piece 3 · everything you get","Real value from the VIP Package value stack. Do not explain RELM."),
  ("The Graduation Game","The game where the rules change.",25000,None,"VIP · Piece 3 · everything you get","Real value from the VIP Package value stack."),
  ("The VIP Game","Your game on the way to Gold.",25000,None,"VIP · Piece 3 · everything you get","Real value from the VIP Package value stack."),
- ("RELM","Part of your VIP learning foundation.",10000,None,"VIP · Piece 3 · everything you get","Real value from the VIP Package value stack."),
  ("Unlimited Games at the Club","After the VIP Game. 50 games valued at P75,000, then unlimited.",75000,None,"Gold · Piece 3 · everything you get","Real value from the VIP Package value stack."),
  ("Advanced Games","FOMO 1, FOMO 2 and No Pay Day, P10,000 each.",30000,None,"Gold · Piece 3 · everything you get","Real value from the VIP Package value stack."),
  ("Gold Training","Five trainings, from Irresistible Offer to Public Speaking.",260000,None,"Gold · Piece 3 · everything you get","Real value: 15,000 + 50,000 + 50,000 + 95,000 + 50,000."),

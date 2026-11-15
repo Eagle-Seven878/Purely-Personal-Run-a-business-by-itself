@@ -296,52 +296,52 @@
    "n": 2,
    "of": 10,
    "name": "3 STR Games",
-   "desc": "Additional games at P5,000 each.",
+   "desc": "Games and training before graduation.",
    "currency": "P",
-   "notes": "SAY: \"Number two: 3 STR Games. Additional games at 5,000 pesos each. That is 15,000 pesos.\"\n[30 sec]",
+   "notes": "SAY: \"Number two: 3 STR Games. Additional games, part of your games and training before graduation. 15,000 pesos.\"\n«PRIVATE: do not explain what STR is for. These are qualifications the Club observes, and players are meant to discover them as they play. If asked, say: \"You will discover why as you play.\"»\n[30 sec]",
    "value": 15000
   },
   {
    "type": "item",
    "id": "item-3",
    "kicker": "VIP · Piece 3 · everything you get",
-   "label": "The Graduation Game",
+   "label": "RELM",
    "heading": "Everything you get",
    "n": 3,
    "of": 10,
-   "name": "The Graduation Game",
-   "desc": "The game where the rules change.",
+   "name": "RELM",
+   "desc": "Training before graduation.",
    "currency": "P",
-   "notes": "SAY: \"Number three: the Graduation Game, where the rules change. Worth 25,000 pesos.\"\n[30 sec]",
-   "value": 25000
+   "notes": "SAY: \"Number three: RELM, 10,000 pesos. Training before graduation.\"\n«PRIVATE: do not explain RELM. Same rule: players discover it as they play. If asked: \"You will discover why as you play.\"»\n[30 sec]",
+   "value": 10000
   },
   {
    "type": "item",
    "id": "item-4",
    "kicker": "VIP · Piece 3 · everything you get",
-   "label": "The VIP Game",
+   "label": "The Graduation Game",
    "heading": "Everything you get",
    "n": 4,
    "of": 10,
-   "name": "The VIP Game",
-   "desc": "Your game on the way to Gold.",
+   "name": "The Graduation Game",
+   "desc": "The game where the rules change.",
    "currency": "P",
-   "notes": "SAY: \"Number four: the VIP Game, your game on the way to Gold. Worth 25,000 pesos.\"\n[30 sec]",
+   "notes": "SAY: \"Number four: the Graduation Game, where the rules change. Worth 25,000 pesos.\"\n[30 sec]",
    "value": 25000
   },
   {
    "type": "item",
    "id": "item-5",
    "kicker": "VIP · Piece 3 · everything you get",
-   "label": "RELM",
+   "label": "The VIP Game",
    "heading": "Everything you get",
    "n": 5,
    "of": 10,
-   "name": "RELM",
-   "desc": "Part of your VIP learning foundation.",
+   "name": "The VIP Game",
+   "desc": "Your game on the way to Gold.",
    "currency": "P",
-   "notes": "SAY: \"Number five: RELM, 10,000 pesos. And that completes your VIP foundation: 90,000 pesos of value.\"\n[30 sec]",
-   "value": 10000
+   "notes": "SAY: \"Number five: the VIP Game, your game on the way to Gold. Worth 25,000 pesos. And that completes VIP: 90,000 pesos of value.\"\n[30 sec]",
+   "value": 25000
   },
   {
    "type": "item",
@@ -430,16 +430,16 @@
      "value": 15000
     },
     {
+     "name": "RELM",
+     "value": 10000
+    },
+    {
      "name": "The Graduation Game",
      "value": 25000
     },
     {
      "name": "The VIP Game",
      "value": 25000
-    },
-    {
-     "name": "RELM",
-     "value": 10000
     },
     {
      "name": "Unlimited Games at the Club",
@@ -467,9 +467,9 @@
    "stepNotes": [
     "SAY: 'Let us put it together. 10 Cashflow Games, 15,000.'",
     "SAY: 'Plus 3 STR Games, 15,000.'",
+    "SAY: 'Plus RELM, 10,000.'",
     "SAY: 'Plus the Graduation Game, 25,000.'",
-    "SAY: 'Plus the VIP Game, 25,000.'",
-    "SAY: 'Plus RELM, 10,000. That is VIP: 90,000 pesos.'",
+    "SAY: 'Plus the VIP Game, 25,000. That is VIP: 90,000 pesos.'",
     "SAY: 'Then Gold, after the VIP Game. Unlimited games at the Club, 75,000.'",
     "SAY: 'Plus Advanced Games, 30,000.'",
     "SAY: 'Plus Gold Training, 260,000. Gold is worth 365,000 pesos.'",
