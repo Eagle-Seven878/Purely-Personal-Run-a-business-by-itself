@@ -215,3 +215,52 @@ S["thanks-end"]="""[Mirror your opening line, warmer. Smile.]
 SAY: "Thank you, everyone. To those who joined, welcome to the family. To those who did not, thank you for playing. You still have your lesson from today. When the rules change, you can change."
 SAY: "Bayanihan, Kapwa, Katiwala. Good night, and keep playing."
 [1 min]"""
+
+# ===== Reconciled with the official membership journey graphic (VIP + Gold = 455,000; Platinum by invitation) =====
+S["journey"]="""[Show the journey graphic. Walk it from the bottom up, slowly.]
+SAY: "This is your membership journey. Learn. Practice. Develop. Lead. It starts here, with VIP: your 10 games, including RELM, the Graduation Game, and the VIP Game."
+SAY: "After the VIP Game, you grow into Gold: unlimited games at the Club, games and training, and opportunities by invitation. And at the top, Platinum, the highest level, by invitation."
+SAY: "Everything starts with one step. Begin your VIP journey."
+[2 min]"""
+S["offer"]="""SAY: "How many of you want to know exactly what to do next, after your first games? Write NEXT in the chat."
+[Read some answers.]
+SAY: "That is why the Philippine Cashflow Club created The Money Table VIP Package. Learn. Practice. Develop. Lead."
+SAY: "The most important thing you will get is your complete membership journey: start at VIP, grow into Gold, with Platinum by invitation."
+SAY: "You start on the day your payment is verified, your Official Joining Date, with an orientation by Zoom or face to face. Every game is verified and tracked in your record."
+«CONFIRM: if you have a fixed start date or venue, say it here.»
+[2 min]"""
+S["item-5"]="""SAY: "Number five: RELM, 10,000 pesos. And that completes your VIP foundation: 90,000 pesos of value."
+[30 sec]"""
+S["item-6"]="""SAY: "Now Gold, which comes after the VIP Game. Unlimited games at the Club. Fifty games valued at 75,000 pesos, and then unlimited play."
+[30 sec]"""
+S["item-8"]="""SAY: "Gold Training. Five trainings: Irresistible Offer, 15,000. Facilitation Training, 50,000. Teach to Be Rich, 50,000. Masterpiece of a Deal, 95,000. And Public Speaking Training, 50,000. Together, 260,000 pesos. Gold is worth 365,000 pesos."
+[Slow down. Say each training and let the numbers land.] [1 min]"""
+S["item-9"]="""SAY: "And beginning at Gold, opportunities open up, by invitation: speaking and facilitation, from room facilitator to international facilitator. Training and coaching, from national trainer to international coach. And chapter creation and travel. These come by invitation, so I do not put a price on them."
+[30 sec]"""
+S["item-10"]="""SAY: "At the top of the journey is Platinum: the highest membership level, by invitation. Psychology of Winning, Irresistible Confidence, Leadership Training, and business partnerships. I do not put a price on Platinum. It is a path you grow into."
+[30 sec]"""
+for k in ["item-11"]: S.pop(k,None)
+STACK=[
+ "SAY: 'Let us put it together. 10 Cashflow Games, 15,000.'",
+ "SAY: 'Plus 3 STR Games, 15,000.'",
+ "SAY: 'Plus the Graduation Game, 25,000.'",
+ "SAY: 'Plus the VIP Game, 25,000.'",
+ "SAY: 'Plus RELM, 10,000. That is VIP: 90,000 pesos.'",
+ "SAY: 'Then Gold, after the VIP Game. Unlimited games at the Club, 75,000.'",
+ "SAY: 'Plus Advanced Games, 30,000.'",
+ "SAY: 'Plus Gold Training, 260,000. Gold is worth 365,000 pesos.'",
+ "SAY: 'Plus opportunities by invitation, beginning at Gold.'",
+ "SAY: 'And Platinum, by invitation. The total value of VIP and Gold is 455,000 pesos.' [Pause. Let it land.]"]
+S["ladder"]="""SAY: "Three numbers to remember. First, the comparison value: 455,000 pesos for VIP and Gold. Second, the regular price: starting 2027, it is 75,000 pesos. Third, your 2026 member price: 60,000 pesos. Lock it in this year."
+«CONFIRM: the outline calls for a Regular Family Member price. If you have one, say it here. If not, the 2026 member price is your member price.»
+[2 min]"""
+S["struck"]="""SAY: "The total value of VIP and Gold: 455,000 pesos."
+[Silence. Let the number sit for three seconds.] [30 sec]"""
+S["future-bonuses"]="""SAY: "Here is how the journey grows. Start as VIP. After the VIP Game, you grow into Gold. And Platinum, the highest level, is by invitation."
+[1 min]"""
+S["price"]="""[STAR MOMENT. Say nothing for three seconds before you speak.]
+SAY: "Not 455,000 pesos. Not even 75,000. The 2026 rate is 60,000 pesos. Starting 2027 it is 75,000, so you save 15,000. That is more than seven times the value you pay."
+[Then stop talking. Hold the silence.] [3 min]"""
+S["bonuses"]="""SAY: "And remember where this leads: Gold after the VIP Game, opportunities by invitation, and Platinum, the highest level, by invitation."
+«CONFIRM: add any extra bonus for people who join in the room today. Only add what is truly extra.»
+[1 min]"""

@@ -61,7 +61,7 @@ add(type="cards",id="story-proof",kicker="The Bridge · the experience",label="W
 add(type="offer",id="offer",kicker="Pieces 1 and 2 · the name, where and when",label="The offer",
  name="The Money Table ==VIP== Package",tagline="Learn. Practice. Develop. Lead.",
  problem="How many of you want to know exactly what to do next, after your first games?",
- benefit="Your complete membership journey: VIP, Gold and Platinum in one investment.",
+ benefit="Your complete membership journey: start at VIP, grow into Gold, with Platinum by invitation.",
  when=["Your start date is your Official Joining Date","It begins the day your payment is verified","Orientation by Zoom or face to face"],
  where="Philippine Cashflow Club, Alpha Chapter. Games, trainings and community.",format="Live games with certified facilitators. Every game verified and tracked.",
  notes="[OUTLINE 6, 11 and 12 · NAME, LOCATION, DATE] Ask the problem question first and read the chat. Then: 'That is why the club created The Money Table VIP.' Say the benefit slowly. NEED: replace the start line with the real VIP start date and venue or Zoom link when confirmed. [2 min]")
@@ -81,27 +81,21 @@ add(type="cards",id="benefits",kicker="Key benefits",label="Key benefits",title=
  cards=[{"title":"A path you can see","body":"Start as VIP. Grow into Gold. Aspire to Platinum."},{"title":"Every game counts","body":"Official games are verified and kept in your record."},{"title":"A community that plays with you","body":"Members, facilitators and a VIP community."}],
  notes="[OUTLINE 9 · KEY BENEFITS] Three benefits, no more. Tie each to a line from the club's member dashboard: 'What is my next step?' is always answered. [2 min]")
 
-# stack items (real values from the Club's VIP Package value stack)
-items=[
- ("10 Cashflow Games","Regular games at P1,500 each.",15000,"VIP · Piece 3 · everything you get","Real value from the VIP Package value stack."),
- ("3 STR Games","Additional games at P5,000 each.",15000,"VIP · Piece 3 · everything you get","Real value from the VIP Package value stack."),
- ("The Graduation Game","The game where the rules change.",25000,"VIP · Piece 3 · everything you get","Real value from the VIP Package value stack."),
- ("The VIP Game","Your game on the way to Gold.",25000,"VIP · Piece 3 · everything you get","Real value from the VIP Package value stack."),
- ("RELM","Part of your VIP learning foundation.",10000,"VIP · Piece 3 · everything you get","Real value from the VIP Package value stack."),
- ("Unlimited Games at the Club","50 games valued at P75,000. Then unlimited play.",75000,"Gold · Piece 3 · everything you get","Real value from the VIP Package value stack."),
- ("Advanced Games","FOMO 1, FOMO 2 and No Pay Day, P10,000 each.",30000,"Gold · Piece 3 · everything you get","Real value from the VIP Package value stack."),
- ("Gold Training","Six trainings, from Irresistible Offer to Masterpiece of a Deal.",335000,"Gold · Piece 3 · everything you get","Real value: 15,000 + 50,000 + 50,000 + 95,000 + 50,000 + 75,000."),
- ("Platinum Training","Psychology of Winning, Irresistible Confidence, Leadership.",195000,"Platinum · Piece 3 · everything you get","Real value: 85,000 + 60,000 + 50,000."),
+# journey graphic (official)
+add(type="slide",id="journey",kicker="Your membership journey",label="Your journey",image="assets/journey.jpg",caption="Start here. Grow. Lead.",notes="x")
+# stack items (values from the Club's VIP Package value stack, structure from the official journey graphic)
+seq=[
+ ("10 Cashflow Games","Regular games at P1,500 each.",15000,None,"VIP · Piece 3 · everything you get","Real value from the VIP Package value stack."),
+ ("3 STR Games","Additional games at P5,000 each.",15000,None,"VIP · Piece 3 · everything you get","Real value from the VIP Package value stack."),
+ ("The Graduation Game","The game where the rules change.",25000,None,"VIP · Piece 3 · everything you get","Real value from the VIP Package value stack."),
+ ("The VIP Game","Your game on the way to Gold.",25000,None,"VIP · Piece 3 · everything you get","Real value from the VIP Package value stack."),
+ ("RELM","Part of your VIP learning foundation.",10000,None,"VIP · Piece 3 · everything you get","Real value from the VIP Package value stack."),
+ ("Unlimited Games at the Club","After the VIP Game. 50 games valued at P75,000, then unlimited.",75000,None,"Gold · Piece 3 · everything you get","Real value from the VIP Package value stack."),
+ ("Advanced Games","FOMO 1, FOMO 2 and No Pay Day, P10,000 each.",30000,None,"Gold · Piece 3 · everything you get","Real value from the VIP Package value stack."),
+ ("Gold Training","Five trainings, from Irresistible Offer to Public Speaking.",260000,None,"Gold · Piece 3 · everything you get","Real value: 15,000 + 50,000 + 50,000 + 95,000 + 50,000."),
+ ("Gold Opportunities","Speaking, training and coaching, chapter creation and travel.",None,"By invitation","Gold · Piece 3 · everything you get","By invitation, beginning at Gold. No price attached."),
+ ("Platinum","The highest level. Leadership and business partnerships.",None,"By invitation","Platinum · Piece 3 · the path ahead","By invitation. No price attached."),
 ]
-priceless=[
- ("Gold Opportunities","Chapter Creation Opportunity. Local and international travel.",4),
- ("Leadership and Global Impact","Business partnerships, higher leadership roles, global events.",9),
-]
-seq=[]
-for nm,d,v,k,note in items[:8]: seq.append((nm,d,v,None,k,note))
-seq.insert(8,("Gold Opportunities","Chapter Creation Opportunity. Local and international travel.",None,"Priceless","Gold · Piece 3 · everything you get","Priceless. Say it with a smile and add no number."))
-seq.append(("Platinum Training","Psychology of Winning, Irresistible Confidence, Leadership.",195000,None,"Platinum · Piece 3 · everything you get","Real value: 85,000 + 60,000 + 50,000."))
-seq.append(("Leadership and Global Impact","Business partnerships, higher leadership roles, global events.",None,"Priceless","Platinum · Piece 3 · everything you get","Priceless. Business partnerships are by invitation."))
 n=len(seq)
 for i,(nm,d,v,vt,k,note) in enumerate(seq,1):
     p=dict(type="item",id=f"item-{i}",kicker=k,label=nm,heading="Everything you get",n=i,of=n,name=nm,desc=d,currency=C,notes="[STACK] "+note)
@@ -114,11 +108,11 @@ for nm,d,v,vt,k,note in seq:
 total=sum(v for _,_,v,_,_,_ in seq if v is not None)
 add(type="stacklist",id="stack-list",build=True,kicker="Piece 3 · everything you get",label="Everything you get",title="Everything you get",items=stack,totalLabel="Total value",currency=C,stepNotes=["x"]*len(stack))
 add(type="cards",id="ladder",kicker="Tuition and price",label="The price",title="Three numbers to remember.",cardLabel="THE PRICE",
- cards=[{"title":"Comparison value","body":f"{C}725,000 for the complete journey."},{"title":"Regular price","body":f"{C}75,000 starting 2027."},{"title":"2026 member price","body":f"{C}60,000. Lock it in this year."}],
+ cards=[{"title":"Comparison value","body":f"{C}455,000 for VIP and Gold."},{"title":"Regular price","body":f"{C}75,000 starting 2027."},{"title":"2026 member price","body":f"{C}60,000. Lock it in this year."}],
  notes="x")
 add(type="struck",id="struck",kicker="Pieces 4, 5 and 6 · the anchor, the reason, the drop",label="The total",amount=total,currency=C,notes="x")
 add(type="statement",id="future-bonuses",kicker="Introduce future bonuses",label="What comes next",over="What comes next",
- title="Start as VIP. Grow into ==Gold==. Aspire to ==Platinum==.",
+ title="Start as VIP. Grow into ==Gold== after the VIP Game.",sub="Platinum is by invitation.",
  notes="x")
 add(type="statement",id="reason",role="reason",kicker="Pieces 4, 5 and 6 · the anchor, the reason, the drop",label="Why today",
  title="From 2027, the price becomes P75,000.",sub="Join in 2026 and keep the 2026 rate.",
@@ -127,8 +121,8 @@ add(type="price",id="price",kicker="Pieces 4, 5 and 6 · the anchor, the reason,
     reframe="Starting 2027: P75,000. Save P15,000.",todayLabel="The 2026 rate",was=True,notes="x")
 add(type="limiter",id="limiter",kicker="Piece 7 · the limiter",label="The limit",title="The 2026 rate ends with the year.",kind="deadline",
     deadline="From 2027 it is P75,000",line="Join in 2026 and you lock in P60,000. You save P15,000.",notes="x")
-add(type="statement",id="bonuses",kicker="Bonuses",label="Bonuses",over="Included in this one investment",
- title="Gold. Platinum. ==All in one investment==.",sub="Trainings, travel and partnerships.",
+add(type="statement",id="bonuses",kicker="Bonuses",label="Bonuses",over="Where the journey leads",
+ title="Gold after the VIP Game. ==Opportunities== by invitation.",sub="Platinum is the highest level, by invitation.",
  notes="x")
 add(type="statement",id="payment",kicker="Payment options",label="How to pay",over="Payment options",
  title="Message your facilitator. Pay. Get verified. You are in.",
