@@ -237,8 +237,8 @@ SAY: "Let me show you the value of the journey, tier by tier. We start with VIP,
 
 *On screen: item*
 
-SAY: "Number two: 3 SRT Games, valued at 15,000 pesos. We recommend them within your first 10 games, and before graduation."
-«PRIVATE: SRT stands for Sir Ron's Table. It is recommended, not a hard gate. Do not explain what it is for. If asked: "You will discover why as you play."»
+SAY: "Number two: 3 SRT Games, valued at 15,000 pesos. They are separate from your 10 games, and we recommend doing them before the 10 games."
+«PRIVATE: SRT stands for Sir Ron's Table. It is separate from the 10 Regular Games and recommended before them. Do not explain what it is for. If asked: "You will discover why as you play."»
 [30 sec]
 
 ## Slide 26 · RELM
@@ -246,15 +246,15 @@ SAY: "Number two: 3 SRT Games, valued at 15,000 pesos. We recommend them within 
 *On screen: item*
 
 SAY: "Number three: RELM, valued at 15,000 pesos. You complete it before your assessment, and then comes your Graduation Game."
-«PRIVATE: do not explain RELM. Order: 10 games (SRT recommended) → RELM → assessment → Graduation Game. If asked: "You will discover why as you play."»
+«PRIVATE: do not explain RELM. The assessment can happen before the 10th game, and it covers SRT and RELM. Do not tell the room what it covers. If asked: "You will discover why as you play."»
 [30 sec]
 
 ## Slide 27 · The Graduation Game
 
 *On screen: item*
 
-SAY: "Number four: the Graduation Game, where the rules change. Valued at 25,000 pesos. Our games now run daily, so your pace is yours. You graduate as soon as you have the basics."
-«CONFIRM: say "games run daily" only if the daily schedule is live. Do not explain what SRT or RELM are for. If asked "when do I graduate?", use the answer in the Q&A at the end of this script.»
+SAY: "Number four: the Graduation Game, where the rules change. Valued at 25,000 pesos. Our games now run daily, so your pace is yours. You can even be assessed before your 10th game, once you have the basics."
+«CONFIRM: say "games run daily" only if the daily schedule is live, and confirm the "assessed before the 10th game" timing. Order privately: SRT (recommended first) → RELM → assessment (can be before the 10th game; covers SRT and RELM) → Graduation. Do not explain what SRT or RELM are for.»
 [30 sec]
 
 ## Slide 28 · The VIP Game
@@ -498,13 +498,17 @@ SAY: "Bayanihan, Kapwa, Katiwala. Good night, and keep playing."
 SAY: "It depends on you, on how soon you want the basics. Our games now run daily, so the more you play, the sooner you reach your Graduation Game. Your facilitator will show you exactly where you are on your journey."
 «CONFIRM the daily schedule is live before saying so. Never promise a date.»
 
-**"Do I have to play the SRT Games before Graduation?"**
-SAY: "We recommend them within your first 10 games, and before graduation. Your facilitator will guide you."
+**"Do I have to play the SRT Games?"**
+SAY: "SRT is separate from your 10 games, and we recommend doing it before them. Your facilitator will guide you."
 «Do not explain what SRT is for. If pressed: "You will discover why as you play."»
 
 **"Do I need RELM before the assessment?"**
 SAY: "Yes. RELM is completed before your assessment, and then comes your Graduation Game. Your facilitator will guide you."
 «Do not explain what RELM is for. If pressed: "You will discover why as you play."»
+
+**"When can I be assessed?"**
+SAY: "Your assessment can happen as early as before your 10th game, once you have the basics. Your facilitator will tell you when you are ready."
+«CONFIRM this timing before saying it. Do not say what the assessment covers. Privately: it includes SRT and RELM.»
 
 **"Why the extra steps before Graduation?"**
 SAY: "Because Graduation is not another game. It is the moment the rules change. We want you ready for it, so you get the most from it."

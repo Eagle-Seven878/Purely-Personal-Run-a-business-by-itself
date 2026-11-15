@@ -497,3 +497,14 @@ S["journey"]=S["journey"].replace("your 10 games, including RELM, the Graduation
 S["item-3"]="""SAY: "Number three: RELM, valued at 15,000 pesos. You complete it before your assessment, and then comes your Graduation Game."
 «PRIVATE: do not explain RELM. Order: 10 games (SRT recommended) → RELM → assessment → Graduation Game. If asked: "You will discover why as you play."»
 [30 sec]"""
+
+# ===== SRT separate from the 10 games, recommended before them; assessment can be before the 10th game =====
+S["item-2"]="""SAY: "Number two: 3 SRT Games, valued at 15,000 pesos. They are separate from your 10 games, and we recommend doing them before the 10 games."
+«PRIVATE: SRT stands for Sir Ron's Table. It is separate from the 10 Regular Games and recommended before them. Do not explain what it is for. If asked: "You will discover why as you play."»
+[30 sec]"""
+S["item-3"]="""SAY: "Number three: RELM, valued at 15,000 pesos. You complete it before your assessment, and then comes your Graduation Game."
+«PRIVATE: do not explain RELM. The assessment can happen before the 10th game, and it covers SRT and RELM. Do not tell the room what it covers. If asked: "You will discover why as you play."»
+[30 sec]"""
+S["item-4"]="""SAY: "Number four: the Graduation Game, where the rules change. Valued at 25,000 pesos. Our games now run daily, so your pace is yours. You can even be assessed before your 10th game, once you have the basics."
+«CONFIRM: say "games run daily" only if the daily schedule is live, and confirm the "assessed before the 10th game" timing. Order privately: SRT (recommended first) → RELM → assessment (can be before the 10th game; covers SRT and RELM) → Graduation. Do not explain what SRT or RELM are for.»
+[30 sec]"""

@@ -87,7 +87,7 @@ add(type="slide",id="journey",kicker="Your membership journey",label="Your journ
 V="Club-assigned reference value from the official membership journey graphic."
 seq=[
  ("10 Regular Games","Games and training before graduation.",15000,None,"VIP · Piece 3 · everything you get",V),
- ("3 SRT Games","Recommended within your first 10 games, before graduation.",15000,None,"VIP · Piece 3 · everything you get",V+" SRT is Sir Ron's Table. Do not explain it."),
+ ("3 SRT Games","Separate from your 10 games. Recommended before them.",15000,None,"VIP · Piece 3 · everything you get",V+" SRT is Sir Ron's Table. Do not explain it."),
  ("RELM","Completed before your assessment.",15000,None,"VIP · Piece 3 · everything you get",V+" Do not explain RELM."),
  ("The Graduation Game","The game where the rules change. Games run daily. Graduate as soon as you have the basics.",25000,None,"VIP · Piece 3 · everything you get",V),
  ("The VIP Game","Your game on the way to Gold.",25000,None,"VIP · Piece 3 · everything you get",V),

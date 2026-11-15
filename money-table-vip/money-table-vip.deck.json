@@ -328,9 +328,9 @@
    "n": 2,
    "of": 11,
    "name": "3 SRT Games",
-   "desc": "Recommended within your first 10 games, before graduation.",
+   "desc": "Separate from your 10 games. Recommended before them.",
    "currency": "P",
-   "notes": "SAY: \"Number two: 3 SRT Games, valued at 15,000 pesos. We recommend them within your first 10 games, and before graduation.\"\n«PRIVATE: SRT stands for Sir Ron's Table. It is recommended, not a hard gate. Do not explain what it is for. If asked: \"You will discover why as you play.\"»\n[30 sec]",
+   "notes": "SAY: \"Number two: 3 SRT Games, valued at 15,000 pesos. They are separate from your 10 games, and we recommend doing them before the 10 games.\"\n«PRIVATE: SRT stands for Sir Ron's Table. It is separate from the 10 Regular Games and recommended before them. Do not explain what it is for. If asked: \"You will discover why as you play.\"»\n[30 sec]",
    "value": 15000
   },
   {
@@ -344,7 +344,7 @@
    "name": "RELM",
    "desc": "Completed before your assessment.",
    "currency": "P",
-   "notes": "SAY: \"Number three: RELM, valued at 15,000 pesos. You complete it before your assessment, and then comes your Graduation Game.\"\n«PRIVATE: do not explain RELM. Order: 10 games (SRT recommended) → RELM → assessment → Graduation Game. If asked: \"You will discover why as you play.\"»\n[30 sec]",
+   "notes": "SAY: \"Number three: RELM, valued at 15,000 pesos. You complete it before your assessment, and then comes your Graduation Game.\"\n«PRIVATE: do not explain RELM. The assessment can happen before the 10th game, and it covers SRT and RELM. Do not tell the room what it covers. If asked: \"You will discover why as you play.\"»\n[30 sec]",
    "value": 15000
   },
   {
@@ -358,7 +358,7 @@
    "name": "The Graduation Game",
    "desc": "The game where the rules change. Games run daily. Graduate as soon as you have the basics.",
    "currency": "P",
-   "notes": "SAY: \"Number four: the Graduation Game, where the rules change. Valued at 25,000 pesos. Our games now run daily, so your pace is yours. You graduate as soon as you have the basics.\"\n«CONFIRM: say \"games run daily\" only if the daily schedule is live. Do not explain what SRT or RELM are for. If asked \"when do I graduate?\", use the answer in the Q&A at the end of this script.»\n[30 sec]",
+   "notes": "SAY: \"Number four: the Graduation Game, where the rules change. Valued at 25,000 pesos. Our games now run daily, so your pace is yours. You can even be assessed before your 10th game, once you have the basics.\"\n«CONFIRM: say \"games run daily\" only if the daily schedule is live, and confirm the \"assessed before the 10th game\" timing. Order privately: SRT (recommended first) → RELM → assessment (can be before the 10th game; covers SRT and RELM) → Graduation. Do not explain what SRT or RELM are for.»\n[30 sec]",
    "value": 25000
   },
   {
