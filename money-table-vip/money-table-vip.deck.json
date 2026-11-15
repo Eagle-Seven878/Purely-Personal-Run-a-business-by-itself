@@ -188,10 +188,10 @@
    "id": "offer",
    "kicker": "Pieces 1 and 2 · the name, where and when",
    "label": "The offer",
-   "name": "The Money Table ==VIP==",
-   "tagline": "The next step on the ladder.",
+   "name": "The Money Table ==VIP== Package",
+   "tagline": "Learn. Practice. Develop. Lead.",
    "problem": "How many of you want to know exactly what to do next, after your first games?",
-   "benefit": "How to move from playing the game to adapting when the rules change, with a path all the way to Gold.",
+   "benefit": "Your complete membership journey: VIP, Gold and Platinum in one investment.",
    "when": [
     "Your start date is your Official Joining Date",
     "It begins the day your payment is verified",
@@ -199,7 +199,7 @@
    ],
    "where": "Philippine Cashflow Club, Alpha Chapter. Games, trainings and community.",
    "format": "Live games with certified facilitators. Every game verified and tracked.",
-   "notes": "SAY: \"So, how many of you want to know exactly what to do next, after your first games? Write NEXT in the chat.\"\n[Read some answers.]\nSAY: \"That is why the Philippine Cashflow Club created The Money Table VIP, the next step on the ladder.\"\nSAY: \"The most important thing you will learn is how to move from playing the game to adapting when the rules change, with a path all the way to Gold.\"\nSAY: \"Your start date is your Official Joining Date, the day your payment is verified. You begin with an orientation, by Zoom or face to face. Games are with certified facilitators, and every game is verified and tracked in your record.\"\n«CONFIRM: if you have a fixed VIP start date or venue, say it here.»\n[2 min]"
+   "notes": "SAY: \"How many of you want to know exactly what to do next, after your first games? Write NEXT in the chat.\"\n[Read some answers.]\nSAY: \"That is why the Philippine Cashflow Club created The Money Table VIP Package. Learn. Practice. Develop. Lead.\"\nSAY: \"The most important thing you will get is your complete membership journey: VIP, Gold and Platinum, in one investment.\"\nSAY: \"You start on the day your payment is verified, your Official Joining Date. You begin with an orientation, by Zoom or face to face, and every game is verified and tracked in your record.\"\n«CONFIRM: if you have a fixed start date or venue, say it here.»\n[2 min]"
   },
   {
    "type": "statement",
@@ -251,7 +251,7 @@
    "cards": [
     {
      "title": "A path you can see",
-     "body": "Games, graduation, VIP, then Gold. Your next step is always clear."
+     "body": "Start as VIP. Grow into Gold. Aspire to Platinum."
     },
     {
      "title": "Every game counts",
@@ -267,85 +267,156 @@
   {
    "type": "item",
    "id": "item-1",
-   "kicker": "Piece 3 · everything you get",
-   "label": "10 Regular Games",
+   "kicker": "VIP · Piece 3 · everything you get",
+   "label": "10 Cashflow Games",
    "heading": "Everything you get",
    "n": 1,
-   "of": 6,
-   "name": "10 Regular Games",
-   "desc": "Ten official games, verified and tracked.",
-   "value": 15000,
+   "of": 11,
+   "name": "10 Cashflow Games",
+   "desc": "Regular games at P1,500 each.",
    "currency": "P",
-   "notes": "SAY: \"Let me show you everything you get. Number one: 10 Regular Games. Ten official games, verified and tracked. At the club's pay-per-game rate of 1,500 pesos each, that is worth 15,000 pesos.\"\n[Pause after the number.] [30 sec]"
+   "notes": "SAY: \"Let me show you everything you get, tier by tier. We start with VIP. Number one: 10 Cashflow Games. Regular games at 1,500 pesos each, so 15,000 pesos.\"\n[Pause after the number.] [30 sec]",
+   "value": 15000
   },
   {
    "type": "item",
    "id": "item-2",
-   "kicker": "Piece 3 · everything you get",
-   "label": "The Graduation Game",
+   "kicker": "VIP · Piece 3 · everything you get",
+   "label": "3 STR Games",
    "heading": "Everything you get",
    "n": 2,
-   "of": 6,
-   "name": "The Graduation Game",
-   "desc": "The game where the rules change.",
-   "value": 1500,
+   "of": 11,
+   "name": "3 STR Games",
+   "desc": "Additional games at P5,000 each.",
    "currency": "P",
-   "notes": "SAY: \"Number two: The Graduation Game. The game where the rules change. Worth 1,500 pesos.\"\n[30 sec]"
+   "notes": "SAY: \"Number two: 3 STR Games. Additional games at 5,000 pesos each. That is 15,000 pesos.\"\n[30 sec]",
+   "value": 15000
   },
   {
    "type": "item",
    "id": "item-3",
-   "kicker": "Piece 3 · everything you get",
-   "label": "The VIP Game",
+   "kicker": "VIP · Piece 3 · everything you get",
+   "label": "The Graduation Game",
    "heading": "Everything you get",
    "n": 3,
-   "of": 6,
-   "name": "The VIP Game",
-   "desc": "Your game on the way to Gold.",
-   "value": 30000,
+   "of": 11,
+   "name": "The Graduation Game",
+   "desc": "The game where the rules change.",
    "currency": "P",
-   "notes": "SAY: \"Number three: The VIP Game, your game on the way to Gold. Worth 30,000 pesos.\"\n«CONFIRM VALUE: 30,000 is a draft number. Replace it with the Executive Board's real value before presenting, and update the deck.»\n[30 sec]"
+   "notes": "SAY: \"Number three: the Graduation Game, where the rules change. Worth 25,000 pesos.\"\n[30 sec]",
+   "value": 25000
   },
   {
    "type": "item",
    "id": "item-4",
-   "kicker": "Piece 3 · everything you get",
-   "label": "VIP Trainings and Assessment",
+   "kicker": "VIP · Piece 3 · everything you get",
+   "label": "The VIP Game",
    "heading": "Everything you get",
    "n": 4,
-   "of": 6,
-   "name": "VIP Trainings and Assessment",
-   "desc": "Training, PERT lesson, and your readiness check.",
-   "value": 50000,
+   "of": 11,
+   "name": "The VIP Game",
+   "desc": "Your game on the way to Gold.",
    "currency": "P",
-   "notes": "SAY: \"Number four: VIP Trainings and Assessment. Training, the PERT lesson, and your readiness check. Worth 50,000 pesos.\"\n«CONFIRM VALUE: draft number. Replace with the real value of the trainings and assessment.»\n[30 sec]"
+   "notes": "SAY: \"Number four: the VIP Game, your game on the way to Gold. Worth 25,000 pesos.\"\n[30 sec]",
+   "value": 25000
   },
   {
    "type": "item",
    "id": "item-5",
-   "kicker": "Piece 3 · everything you get",
-   "label": "VIP Member Card and Portal",
+   "kicker": "VIP · Piece 3 · everything you get",
+   "label": "RELM",
    "heading": "Everything you get",
    "n": 5,
-   "of": 6,
-   "name": "VIP Member Card and Portal",
-   "desc": "Your card, your dashboard, your Gold tracker.",
-   "value": 10000,
+   "of": 11,
+   "name": "RELM",
+   "desc": "Part of your VIP learning foundation.",
    "currency": "P",
-   "notes": "SAY: \"Number five: your VIP Member Card and Portal. Your card, your dashboard, and your Gold tracker. Worth 10,000 pesos.\"\n«CONFIRM VALUE: draft number. Replace with the real value.»\n[30 sec]"
+   "notes": "SAY: \"Number five: RELM, 10,000 pesos. And that completes your VIP foundation: 90,000 pesos of value.\"\n[30 sec]",
+   "value": 10000
   },
   {
    "type": "item",
    "id": "item-6",
-   "kicker": "Piece 3 · everything you get",
-   "label": "VIP Community",
+   "kicker": "Gold · Piece 3 · everything you get",
+   "label": "Unlimited Games at the Club",
    "heading": "Everything you get",
    "n": 6,
-   "of": 6,
-   "name": "The VIP Community",
-   "desc": "Players who are on the same path, with you.",
-   "valueText": "Priceless",
-   "notes": "SAY: \"And number six: The VIP Community. Players on the same path as you. And that one is priceless.\"\n«CONFIRM: confirm VIP community access terms.»\n[30 sec]"
+   "of": 11,
+   "name": "Unlimited Games at the Club",
+   "desc": "50 games valued at P75,000. Then unlimited play.",
+   "currency": "P",
+   "notes": "SAY: \"Now Gold. Unlimited games at the Club. Fifty games valued at 75,000 pesos, and then unlimited play.\"\n[30 sec]",
+   "value": 75000
+  },
+  {
+   "type": "item",
+   "id": "item-7",
+   "kicker": "Gold · Piece 3 · everything you get",
+   "label": "Advanced Games",
+   "heading": "Everything you get",
+   "n": 7,
+   "of": 11,
+   "name": "Advanced Games",
+   "desc": "FOMO 1, FOMO 2 and No Pay Day, P10,000 each.",
+   "currency": "P",
+   "notes": "SAY: \"Advanced Games: FOMO 1, FOMO 2, and No Pay Day. 10,000 pesos each, so 30,000 pesos.\"\n[30 sec]",
+   "value": 30000
+  },
+  {
+   "type": "item",
+   "id": "item-8",
+   "kicker": "Gold · Piece 3 · everything you get",
+   "label": "Gold Training",
+   "heading": "Everything you get",
+   "n": 8,
+   "of": 11,
+   "name": "Gold Training",
+   "desc": "Six trainings, from Irresistible Offer to Masterpiece of a Deal.",
+   "currency": "P",
+   "notes": "SAY: \"Gold Training. Six trainings: Irresistible Offer Training, 15,000. Facilitation Training, 50,000. Teach to Be Rich, 50,000. Masterpiece of a Deal, 95,000. Public Speaking Training, 50,000. And Training and Coaching Development, 75,000. Together, 335,000 pesos. Gold is worth over 440,000 pesos.\"\n[Slow down. Say each training and let the numbers land.] [1 min]",
+   "value": 335000
+  },
+  {
+   "type": "item",
+   "id": "item-9",
+   "kicker": "Gold · Piece 3 · everything you get",
+   "label": "Gold Opportunities",
+   "heading": "Everything you get",
+   "n": 9,
+   "of": 11,
+   "name": "Gold Opportunities",
+   "desc": "Chapter Creation Opportunity. Local and international travel.",
+   "currency": "P",
+   "notes": "SAY: \"And Gold opens opportunities: the Chapter Creation Opportunity, and local and international travel. Those are priceless.\"\n[30 sec]",
+   "valueText": "Priceless"
+  },
+  {
+   "type": "item",
+   "id": "item-10",
+   "kicker": "Platinum · Piece 3 · everything you get",
+   "label": "Platinum Training",
+   "heading": "Everything you get",
+   "n": 10,
+   "of": 11,
+   "name": "Platinum Training",
+   "desc": "Psychology of Winning, Irresistible Confidence, Leadership.",
+   "currency": "P",
+   "notes": "SAY: \"Now Platinum Training. The Psychology of Winning Conference, 85,000. Irresistible Confidence, 60,000. Leadership Training, 50,000. That is 195,000 pesos.\"\n[30 sec]",
+   "value": 195000
+  },
+  {
+   "type": "item",
+   "id": "item-11",
+   "kicker": "Platinum · Piece 3 · everything you get",
+   "label": "Leadership and Global Impact",
+   "heading": "Everything you get",
+   "n": 11,
+   "of": 11,
+   "name": "Leadership and Global Impact",
+   "desc": "Business partnerships, higher leadership roles, global events.",
+   "currency": "P",
+   "notes": "SAY: \"And Leadership and Global Impact: advanced leadership development, business partnerships by invitation, higher leadership roles in the Philippine Cash Flow Club, and priority access to international travel programs and global events. Priceless.\"\n[30 sec]",
+   "valueText": "Priceless"
   },
   {
    "type": "stacklist",
@@ -356,72 +427,97 @@
    "title": "Everything you get",
    "items": [
     {
-     "name": "10 Regular Games",
+     "name": "10 Cashflow Games",
+     "value": 15000
+    },
+    {
+     "name": "3 STR Games",
      "value": 15000
     },
     {
      "name": "The Graduation Game",
-     "value": 1500
+     "value": 25000
     },
     {
      "name": "The VIP Game",
-     "value": 30000
+     "value": 25000
     },
     {
-     "name": "VIP Trainings and Assessment",
-     "value": 50000
-    },
-    {
-     "name": "VIP Member Card and Portal",
+     "name": "RELM",
      "value": 10000
     },
     {
-     "name": "The VIP Community",
+     "name": "Unlimited Games at the Club",
+     "value": 75000
+    },
+    {
+     "name": "Advanced Games",
+     "value": 30000
+    },
+    {
+     "name": "Gold Training",
+     "value": 335000
+    },
+    {
+     "name": "Gold Opportunities",
+     "valueText": "Priceless"
+    },
+    {
+     "name": "Platinum Training",
+     "value": 195000
+    },
+    {
+     "name": "Leadership and Global Impact",
      "valueText": "Priceless"
     }
    ],
    "totalLabel": "Total value",
    "currency": "P",
    "stepNotes": [
-    "SAY: 'Let us put it together. Line one: 10 Regular Games, 15,000.'",
-    "SAY: 'Plus the Graduation Game, 1,500.'",
-    "SAY: 'Plus the VIP Game, 30,000.'",
-    "SAY: 'Plus VIP Trainings and Assessment, 50,000.'",
-    "SAY: 'Plus your VIP Member Card and Portal, 10,000.'",
-    "SAY: 'Plus the VIP Community, priceless. And the total value is 106,500 pesos.' [Pause. Let it land.] This is your comparison price: the full value of everything in the VIP package. «CONFIRM: update if you change any stack value.»"
+    "SAY: 'Let us put it together. 10 Cashflow Games, 15,000.'",
+    "SAY: 'Plus 3 STR Games, 15,000.'",
+    "SAY: 'Plus the Graduation Game, 25,000.'",
+    "SAY: 'Plus the VIP Game, 25,000.'",
+    "SAY: 'Plus RELM, 10,000. That is VIP: 90,000 pesos.'",
+    "SAY: 'Plus unlimited games at the Club, 75,000.'",
+    "SAY: 'Plus Advanced Games, 30,000.'",
+    "SAY: 'Plus Gold Training, 335,000. Gold is over 440,000 pesos.'",
+    "SAY: 'Plus Gold Opportunities, priceless.'",
+    "SAY: 'Plus Platinum Training, 195,000.'",
+    "SAY: 'Plus Leadership and Global Impact, priceless. And the complete journey is worth 725,000 pesos, and more.' [Pause. Let it land.]"
    ]
   },
   {
    "type": "cards",
    "id": "ladder",
    "kicker": "Tuition and price",
-   "label": "The ladder",
-   "title": "Where you stand on the ladder.",
-   "cardLabel": "THE LADDER",
+   "label": "The price",
+   "title": "Three numbers to remember.",
+   "cardLabel": "THE PRICE",
    "cards": [
     {
-     "title": "Guest",
-     "body": "P1,000 for your first game. P1,500 for each game after."
+     "title": "Comparison value",
+     "body": "P725,000 for the complete journey."
     },
     {
-     "title": "Regular Member",
-     "body": "10 games plus the Graduation Game. 11 games in total."
+     "title": "Regular price",
+     "body": "P75,000 starting 2027."
     },
     {
-     "title": "VIP Member",
-     "body": "P60,000. The path to Gold."
+     "title": "2026 member price",
+     "body": "P60,000. Lock it in this year."
     }
    ],
-   "notes": "SAY: \"Now, where do you stand on the ladder? As a Guest, your first game is 1,000 pesos, and every game after is 1,500. As a Regular Member, you get 10 games plus the Graduation Game, 11 games in total. And VIP is 60,000 pesos, the path to Gold.\"\n«CONFIRM: add the Regular Member price when the Board confirms it (the manual says 12,000 to 15,000), and the Regular Family Member price, which is not yet defined. Then say them here.»\n[2 min]"
+   "notes": "SAY: \"Three numbers to remember. First, the comparison value: 725,000 pesos for the complete journey. Second, the regular price: starting 2027, it is 75,000 pesos. Third, your 2026 member price: 60,000 pesos. Lock it in this year.\"\n«CONFIRM: the outline calls for a Regular Family Member price. If you have one, say it here. If not, the 2026 member price is your member price.»\n[2 min]"
   },
   {
    "type": "struck",
    "id": "struck",
    "kicker": "Pieces 4, 5 and 6 · the anchor, the reason, the drop",
    "label": "The total",
-   "amount": 106500,
+   "amount": 725000,
    "currency": "P",
-   "notes": "SAY: \"So the total value of everything in the VIP package is 106,500 pesos.\"\n[Silence. Let the number sit for three seconds.] [30 sec]"
+   "notes": "SAY: \"The total value of the complete membership journey: 725,000 pesos.\"\n[Silence. Let the number sit for three seconds.] [30 sec]"
   },
   {
    "type": "statement",
@@ -429,9 +525,8 @@
    "kicker": "Introduce future bonuses",
    "label": "What comes next",
    "over": "What comes next",
-   "title": "Finish the path, and ==Gold== is next.",
-   "sub": "Then Certified Facilitator, if you choose.",
-   "notes": "SAY: \"And before I tell you the price, know where this leads. Finish the path, and Gold is next. After that, if you choose, Certified Facilitator, so you can help guide others.\"\n«CONFIRM: Gold benefits are not final. Promise only the path, not specific perks, until the Board approves them.»\n[1 min]"
+   "title": "Start as VIP. Grow into ==Gold==. Aspire to ==Platinum==.",
+   "notes": "SAY: \"Here is how the journey grows. Start as VIP. Grow into Gold. Aspire to Platinum. Learn, practise, develop, lead.\"\n«CONFIRM: your manual says Gold is earned by completing the 10 games, the Graduation Game and the VIP requirement. Explain clearly how Gold and Platinum unlock so no one is misled.»\n[1 min]"
   },
   {
    "type": "statement",
@@ -439,43 +534,43 @@
    "role": "reason",
    "kicker": "Pieces 4, 5 and 6 · the anchor, the reason, the drop",
    "label": "Why today",
-   "title": "I want more Filipinos to learn how money really works.",
-   "sub": "So today the price is not the total.",
-   "notes": "SAY: \"Now, why would I give you a special price today? Because I want more Filipinos to learn how money really works. So today, the price is not 106,500.\"\n«CONFIRM: this is a draft reason. Replace it with your own true reason, ideally with a personal story.»\n[1 min]"
+   "title": "From 2027, the price becomes P75,000.",
+   "sub": "Join in 2026 and keep the 2026 rate.",
+   "notes": "SAY: \"Now, why this price today? Because from 2027, the price becomes 75,000 pesos. If you join in 2026, you keep the 2026 rate.\"\n«CONFIRM: add your personal reason, your why for rewarding early members, in your own words.»\n[1 min]"
   },
   {
    "type": "price",
    "id": "price",
    "kicker": "Pieces 4, 5 and 6 · the anchor, the reason, the drop",
    "label": "The price",
-   "anchor": 106500,
+   "anchor": 725000,
    "price": 60000,
    "currency": "P",
-   "reframe": "One investment. The whole path to Gold.",
-   "todayLabel": "For today only",
+   "reframe": "Starting 2027: P75,000. Save P15,000.",
+   "todayLabel": "The 2026 rate",
    "was": true,
-   "notes": "[STAR MOMENT. Say nothing for three seconds before you speak.]\nSAY: \"Not 106,500 pesos. For today only, it is 60,000 pesos. One investment, the whole path to Gold.\"\n[Then stop talking. Hold the silence.]\n«CONFIRM: 60,000 is the VIP fee in the club manual. Confirm it is today's room price. If today's price is lower, add the lower price and keep the total above it.»\n[3 min]"
+   "notes": "[STAR MOMENT. Say nothing for three seconds before you speak.]\nSAY: \"Not 725,000 pesos. Not even 75,000. The 2026 rate is 60,000 pesos. Starting 2027 it is 75,000, so you save 15,000. That is about twelve times the value you pay.\"\n[Then stop talking. Hold the silence.] [3 min]"
   },
   {
    "type": "limiter",
    "id": "limiter",
    "kicker": "Piece 7 · the limiter",
    "label": "The limit",
-   "title": "This special offer closes with this session.",
+   "title": "The 2026 rate ends with the year.",
    "kind": "deadline",
-   "deadline": "Today, in this room",
-   "line": "The Club gives this room price only while we are together.",
-   "notes": "SAY: \"And this room price is only available while we are together. When this session closes, the offer closes.\"\n«CONFIRM: say a limit only if it is true: a seat count or a date and its real reason. Replace this line before presenting. Never invent scarcity.»\n[1 min]"
+   "deadline": "From 2027 it is P75,000",
+   "line": "Join in 2026 and you lock in P60,000. You save P15,000.",
+   "notes": "SAY: \"The 2026 rate ends with the year. From 2027 it is 75,000 pesos. Join in 2026, and you lock in 60,000 and save 15,000.\"\n«CONFIRM: confirm the exact cut-off date, for example December 31, 2026. Say it out loud so the deadline is clear.»\n[1 min]"
   },
   {
    "type": "statement",
    "id": "bonuses",
    "kicker": "Bonuses",
    "label": "Bonuses",
-   "over": "Included today",
-   "title": "Your VIP card, your portal, your community.",
-   "sub": "From day one.",
-   "notes": "SAY: \"And you get your VIP card, your portal, and your community from day one.\"\n«CONFIRM: add any real extra bonus for people who join in the room today, for example an early orientation or an extra game. Only add what is truly extra.»\n[1 min]"
+   "over": "Included in this one investment",
+   "title": "Gold. Platinum. ==All in one investment==.",
+   "sub": "Trainings, travel and partnerships.",
+   "notes": "SAY: \"And remember, Gold and Platinum come with this one investment: trainings, travel opportunities, and partnerships.\"\n«CONFIRM: add any extra bonus for people who join in the room today. Only add what is truly extra.»\n[1 min]"
   },
   {
    "type": "statement",
@@ -483,8 +578,8 @@
    "kicker": "Payment options",
    "label": "How to pay",
    "over": "Payment options",
-   "title": "Pay, send your proof, get verified. Then you are in.",
-   "notes": "SAY: \"How do you pay? It is simple. You complete the registration and payment form, send your proof of payment, and our team verifies it. Then you receive your official receipt, and you are in.\"\n«CONFIRM: say the real payment methods and any installment plan (GCash, bank transfer, cash, installments).»\n[1 min]"
+   "title": "Message your facilitator. Pay. Get verified. You are in.",
+   "notes": "SAY: \"How do you join? Message your facilitator or the club page. You complete the registration and payment form, send your proof of payment, and our team verifies it. Then you receive your official receipt, and you are in.\"\n«CONFIRM: say the real payment methods and any installment plan (GCash, bank transfer, cash, installments).»\n[1 min]"
   },
   {
    "type": "statement",
@@ -500,8 +595,8 @@
    "id": "close",
    "kicker": "The Close",
    "label": "The close",
-   "title": "The next step on the ladder is ==yours to take==.",
-   "notes": "SAY: \"So let me say it simply. The path is clear. The price is 60,000 pesos, for today only. And the next step on the ladder is yours to take.\"\nSAY: \"If you are ready, here is exactly what to do.\"\n[1 min]"
+   "title": "Bayanihan. Kapwa. Katiwala. ==Your place is ready==.",
+   "notes": "SAY: \"Bayanihan. Kapwa. Katiwala. Together, as one community, caring for each other, and being good stewards. Your place is ready.\"\nSAY: \"The 2026 rate is 60,000 pesos. If you are ready, here is exactly what to do.\"\n[1 min]"
   },
   {
    "type": "cta",
@@ -510,16 +605,16 @@
    "label": "Join now",
    "title": "Here is exactly what to do now.",
    "steps": [
-    "Click the link my team drops in the chat",
-    "Complete your registration and payment",
+    "Message your facilitator or the club page",
+    "Lock in the 2026 rate of P60,000",
     "Write VIP in the chat"
    ],
    "chatWord": "VIP",
-   "link": "Link in the chat",
+   "link": "Facilitator or club page",
    "price": 60000,
    "currency": "P",
    "help": "Payment issue? Write TEAM in the chat.",
-   "notes": "[Your team posts the link as you speak.]\nSAY: \"Step one: click the link my team drops in the chat. Step two: complete your registration and payment. Step three: write VIP in the chat, so we can welcome you. If you have any payment issue, write TEAM and we will help you right away.\"\n[Welcome each person by name as they write VIP.]\n«CONFIRM: add the real registration link to the deck as 'url' so a QR code shows.»\nROOM MOVE: chat word = VIP. [3 min]"
+   "notes": "[Your team posts the facilitator and club page details as you speak.]\nSAY: \"Step one: message your facilitator or the club page. Step two: lock in the 2026 rate of 60,000 pesos. Step three: write VIP in the chat, so we can welcome you. If you have any payment issue, write TEAM and we will help you right away.\"\n[Welcome each person by name as they write VIP.]\n«CONFIRM: add the real registration link to the deck as 'url' so a QR code shows.»\nROOM MOVE: chat word = VIP. [3 min]"
   },
   {
    "type": "buyerswall",
@@ -536,7 +631,7 @@
    "kicker": "Thank you",
    "label": "Thank you",
    "title": "Thank you. When the rules change, ==you can change==.",
-   "notes": "[Mirror your opening line, warmer. Smile.]\nSAY: \"Thank you, everyone. To those who joined, welcome. To those who did not, thank you for playing. You still have your lesson from today. When the rules change, you can change.\"\nSAY: \"Your team will message you your next steps. Good night, and keep playing.\"\n[1 min]"
+   "notes": "[Mirror your opening line, warmer. Smile.]\nSAY: \"Thank you, everyone. To those who joined, welcome to the family. To those who did not, thank you for playing. You still have your lesson from today. When the rules change, you can change.\"\nSAY: \"Bayanihan, Kapwa, Katiwala. Good night, and keep playing.\"\n[1 min]"
   }
  ]
 }
