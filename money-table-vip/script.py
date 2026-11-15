@@ -490,3 +490,5 @@ S["item-4"]="""SAY: "Number four: the Graduation Game, where the rules change. V
 S["item-3"]="""SAY: "Number three: RELM, valued at 15,000 pesos. You complete it before your Graduation Game."
 «PRIVATE: do not explain RELM. It is completed before Graduation, as part of the journey. If asked: "You will discover why as you play."»
 [30 sec]"""
+
+S["journey"]=S["journey"].replace("your 10 games, including RELM, the Graduation Game, and the VIP Game","your 10 games, the Graduation Game, and the VIP Game")

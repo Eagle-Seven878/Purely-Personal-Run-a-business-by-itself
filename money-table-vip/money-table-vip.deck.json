@@ -303,7 +303,7 @@
    "label": "Your journey",
    "image": "assets/journey.jpg",
    "caption": "Start here. Grow. Lead.",
-   "notes": "[Show the journey graphic. Walk it from the bottom up, slowly.]\nSAY: \"This is your membership journey. Learn. Practice. Develop. Lead. It starts here, with VIP: your 10 games, including RELM, the Graduation Game, and the VIP Game.\"\nSAY: \"After the VIP Game, you grow into Gold: unlimited games at the Club, games and training, and opportunities by invitation. Gold is about deals in the game.\"\nSAY: \"And at the top is Platinum, the highest membership level. Any VIP can become Platinum, but it asks for a higher level of qualification: a real-life deal, not just a game deal.\"\nSAY: \"Everything starts with one step. Begin your VIP journey.\"\n[2 min]"
+   "notes": "[Show the journey graphic. Walk it from the bottom up, slowly.]\nSAY: \"This is your membership journey. Learn. Practice. Develop. Lead. It starts here, with VIP: your 10 games, the Graduation Game, and the VIP Game.\"\nSAY: \"After the VIP Game, you grow into Gold: unlimited games at the Club, games and training, and opportunities by invitation. Gold is about deals in the game.\"\nSAY: \"And at the top is Platinum, the highest membership level. Any VIP can become Platinum, but it asks for a higher level of qualification: a real-life deal, not just a game deal.\"\nSAY: \"Everything starts with one step. Begin your VIP journey.\"\n[2 min]"
   },
   {
    "type": "item",
