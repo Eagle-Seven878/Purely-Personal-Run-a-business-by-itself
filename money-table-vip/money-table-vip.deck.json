@@ -309,93 +309,107 @@
    "type": "item",
    "id": "item-1",
    "kicker": "VIP · Piece 3 · everything you get",
-   "label": "10 Regular Games (including RELM)",
+   "label": "10 Regular Games",
    "heading": "Everything you get",
    "n": 1,
    "of": 11,
-   "name": "10 Regular Games (including RELM)",
-   "desc": "Games and training on your way to graduation.",
+   "name": "10 Regular Games",
+   "desc": "Games and training before graduation.",
    "currency": "P",
-   "notes": "SAY: \"Let me show you the value of the journey, tier by tier. We start with VIP. Number one: 10 Regular Games, including RELM, valued by the Club at 15,000 pesos.\"\n«PRIVATE: do not explain RELM. If asked: \"You will discover why as you play.\"»\n[30 sec]",
+   "notes": "SAY: \"Let me show you the value of the journey, tier by tier. We start with VIP, your starting point. Number one: 10 Regular Games, valued by the Club at 15,000 pesos.\"\n[30 sec]",
    "value": 15000
   },
   {
    "type": "item",
    "id": "item-2",
    "kicker": "VIP · Piece 3 · everything you get",
-   "label": "3 Additional SRT Games",
+   "label": "3 SRT Games",
    "heading": "Everything you get",
    "n": 2,
    "of": 11,
-   "name": "3 Additional SRT Games",
+   "name": "3 SRT Games",
    "desc": "Games and training before graduation.",
    "currency": "P",
-   "notes": "SAY: \"Number two: 3 additional SRT Games, games and training before graduation, valued at 15,000 pesos.\"\n«PRIVATE: SRT stands for Sir Ron's Table. Do not explain what it is for. If asked: \"You will discover why as you play.\"»\n[30 sec]",
+   "notes": "SAY: \"Number two: 3 SRT Games, valued at 15,000 pesos. Games and training before graduation.\"\n«PRIVATE: SRT stands for Sir Ron's Table. Do not explain what it is for. These are qualifications the Club observes. If asked: \"You will discover why as you play.\"»\n[30 sec]",
    "value": 15000
   },
   {
    "type": "item",
    "id": "item-3",
    "kicker": "VIP · Piece 3 · everything you get",
-   "label": "The Graduation Game",
+   "label": "RELM",
    "heading": "Everything you get",
    "n": 3,
    "of": 11,
-   "name": "The Graduation Game",
-   "desc": "The game where the rules change.",
+   "name": "RELM",
+   "desc": "Training before graduation.",
    "currency": "P",
-   "notes": "SAY: \"Number three: the Graduation Game, where the rules change. Valued at 25,000 pesos.\"\n[30 sec]",
-   "value": 25000
+   "notes": "SAY: \"Number three: RELM, valued at 15,000 pesos. Training before graduation.\"\n«PRIVATE: do not explain RELM. If asked: \"You will discover why as you play.\"»\n[30 sec]",
+   "value": 15000
   },
   {
    "type": "item",
    "id": "item-4",
    "kicker": "VIP · Piece 3 · everything you get",
-   "label": "The VIP Game",
+   "label": "The Graduation Game",
    "heading": "Everything you get",
    "n": 4,
    "of": 11,
-   "name": "The VIP Game",
-   "desc": "Your game on the way to Gold.",
+   "name": "The Graduation Game",
+   "desc": "The game where the rules change.",
    "currency": "P",
-   "notes": "SAY: \"Number four: the VIP Game, your game on the way to Gold. Valued at 25,000 pesos.\"\n[30 sec]",
+   "notes": "SAY: \"Number four: the Graduation Game, where the rules change. Valued at 25,000 pesos.\"\n[30 sec]",
    "value": 25000
   },
   {
    "type": "item",
    "id": "item-5",
    "kicker": "VIP · Piece 3 · everything you get",
-   "label": "VIP Training",
+   "label": "The VIP Game",
    "heading": "Everything you get",
    "n": 5,
    "of": 11,
-   "name": "VIP Training",
-   "desc": "Irresistible Offer, Facilitation, Teach to Be Rich, Masterpiece of a Deal.",
+   "name": "The VIP Game",
+   "desc": "Your game on the way to Gold.",
    "currency": "P",
-   "notes": "SAY: \"Number five: VIP Training. Irresistible Offer, 15,000. Facilitation Training, 50,000. Teach to Be Rich, 50,000. Masterpiece of a Deal, 95,000. Together, 210,000 pesos. And that makes the VIP benefit value 290,000 pesos.\"\n[Slow down. Say each training and let the numbers land.] [1 min]",
-   "value": 210000
+   "notes": "SAY: \"Number five: the VIP Game, your game on the way to Gold. Valued at 25,000 pesos.\"\n[30 sec]",
+   "value": 25000
   },
   {
    "type": "item",
    "id": "item-6",
-   "kicker": "Gold · Piece 3 · everything you get",
-   "label": "Unlimited Club Games",
+   "kicker": "VIP · Piece 3 · everything you get",
+   "label": "VIP Training",
    "heading": "Everything you get",
    "n": 6,
    "of": 11,
-   "name": "Unlimited Club Games",
-   "desc": "Value basis: 50 games at P1,500. Not a play limit.",
+   "name": "VIP Training",
+   "desc": "Irresistible Offer, Facilitation, Teach to Be Rich, Masterpiece of a Deal.",
    "currency": "P",
-   "notes": "SAY: \"Now Gold, the next progression level, after the VIP Game. Unlimited Club Games. The value is based on 50 games at 1,500 pesos, so 75,000, but it is not a play limit. You can play unlimited.\"\n[30 sec]",
-   "value": 75000
+   "notes": "SAY: \"Number six: VIP Training. Irresistible Offer, 15,000. Facilitation Training, 50,000. Teach to Be Rich, 50,000. Masterpiece of a Deal, 95,000. Together, 210,000 pesos. And that makes the VIP benefit value 305,000 pesos.\"\n[Slow down. Say each training and let the numbers land.] [1 min]",
+   "value": 210000
   },
   {
    "type": "item",
    "id": "item-7",
    "kicker": "Gold · Piece 3 · everything you get",
-   "label": "Advanced Games",
+   "label": "Unlimited Club Games",
    "heading": "Everything you get",
    "n": 7,
+   "of": 11,
+   "name": "Unlimited Club Games",
+   "desc": "Value basis: 50 games at P1,500. Not a play limit.",
+   "currency": "P",
+   "notes": "SAY: \"Now Gold, beyond VIP. Unlimited Club Games. The value is based on 50 games at 1,500 pesos, so 75,000, but it is not a play limit. You can play unlimited.\"\n[30 sec]",
+   "value": 75000
+  },
+  {
+   "type": "item",
+   "id": "item-8",
+   "kicker": "Gold · Piece 3 · everything you get",
+   "label": "Advanced Games",
+   "heading": "Everything you get",
+   "n": 8,
    "of": 11,
    "name": "Advanced Games",
    "desc": "FOMO 1, FOMO 2 and No Pay Day, P10,000 each.",
@@ -405,31 +419,17 @@
   },
   {
    "type": "item",
-   "id": "item-8",
+   "id": "item-9",
    "kicker": "Gold · Piece 3 · everything you get",
    "label": "Gold Training",
    "heading": "Everything you get",
-   "n": 8,
+   "n": 9,
    "of": 11,
    "name": "Gold Training",
    "desc": "Public Speaking, Training and Coaching Development, Leadership.",
    "currency": "P",
-   "notes": "SAY: \"Gold Training: Public Speaking Training, 50,000. Training and Coaching Development, 75,000. Leadership Training, 50,000. Together, 175,000 pesos. Gold adds 280,000 pesos of value.\"\n[1 min]",
+   "notes": "SAY: \"Gold Training: Public Speaking Training, 50,000. Training and Coaching Development, 75,000. Leadership Training, 50,000. Together, 175,000 pesos. Gold adds 280,000 pesos of reference value.\"\n[1 min]",
    "value": 175000
-  },
-  {
-   "type": "item",
-   "id": "item-9",
-   "kicker": "Gold · Piece 3 · everything you get",
-   "label": "Gold Opportunities",
-   "heading": "Everything you get",
-   "n": 9,
-   "of": 11,
-   "name": "Gold Opportunities",
-   "desc": "Speaking, training and coaching, chapter creation and travel.",
-   "currency": "P",
-   "notes": "SAY: \"And beginning at Gold, opportunities open by invitation: speaking and facilitation, training and coaching pathways, chapter creation, and local and international travel. These depend on qualifications and availability, so the Club does not put a money value on them.\"\n[30 sec]",
-   "valueText": "By invitation"
   },
   {
    "type": "item",
@@ -448,15 +448,15 @@
   {
    "type": "item",
    "id": "item-11",
-   "kicker": "Platinum · Piece 3 · the path ahead",
-   "label": "Leadership and Collaboration",
+   "kicker": "Gold and Platinum · Piece 3 · the path ahead",
+   "label": "Opportunity Pathways",
    "heading": "Everything you get",
    "n": 11,
    "of": 11,
-   "name": "Leadership and Collaboration",
-   "desc": "Advanced leadership pathways and business partnerships.",
+   "name": "Opportunity Pathways",
+   "desc": "Speaking, facilitation, training, coaching, travel and partnerships.",
    "currency": "P",
-   "notes": "SAY: \"And with Platinum come advanced leadership pathways and business partnerships, by invitation. No monetary value is assigned to those.\"\n[30 sec]",
+   "notes": "SAY: \"And finally, opportunity pathways, by invitation. Beginning at Gold: speaking, facilitation, training, coaching, chapter creation, and local and international travel. At Platinum: advanced leadership, business partnerships, and wider collaboration. These depend on qualifications and availability, so the Club does not put a money value on them.\"\n[1 min]",
    "valueText": "By invitation"
   },
   {
@@ -468,11 +468,15 @@
    "title": "Everything you get",
    "items": [
     {
-     "name": "10 Regular Games (including RELM)",
+     "name": "10 Regular Games",
      "value": 15000
     },
     {
-     "name": "3 Additional SRT Games",
+     "name": "3 SRT Games",
+     "value": 15000
+    },
+    {
+     "name": "RELM",
      "value": 15000
     },
     {
@@ -500,32 +504,28 @@
      "value": 175000
     },
     {
-     "name": "Gold Opportunities",
-     "valueText": "By invitation"
-    },
-    {
      "name": "Platinum Training",
      "value": 170000
     },
     {
-     "name": "Leadership and Collaboration",
+     "name": "Opportunity Pathways",
      "valueText": "By invitation"
     }
    ],
    "totalLabel": "Total journey value",
    "currency": "P",
    "stepNotes": [
-    "SAY: 'Let us put it together. 10 Regular Games, including RELM, 15,000.'",
-    "SAY: 'Plus 3 additional SRT Games, 15,000.'",
+    "SAY: 'Let us put it together. 10 Regular Games, 15,000.'",
+    "SAY: 'Plus 3 SRT Games, 15,000.'",
+    "SAY: 'Plus RELM, 15,000.'",
     "SAY: 'Plus the Graduation Game, 25,000.'",
     "SAY: 'Plus the VIP Game, 25,000.'",
-    "SAY: 'Plus VIP Training, 210,000. That is the VIP benefit value: 290,000 pesos.'",
-    "SAY: 'Then Gold. Unlimited Club Games, 75,000.'",
+    "SAY: 'Plus VIP Training, 210,000. That is the VIP benefit value: 305,000 pesos.'",
+    "SAY: 'Then Gold, beyond VIP. Unlimited Club Games, 75,000.'",
     "SAY: 'Plus Advanced Games, 30,000.'",
     "SAY: 'Plus Gold Training, 175,000. Gold adds 280,000 pesos.'",
-    "SAY: 'Plus opportunities by invitation, beginning at Gold.'",
     "SAY: 'And Platinum Training, 170,000.'",
-    "SAY: 'Plus leadership and collaboration, by invitation. The total journey value is 740,000 pesos.' [Pause. Let it land.]"
+    "SAY: 'Plus opportunity pathways, by invitation. The total journey reference value is 755,000 pesos.' [Pause. Let it land.]"
    ]
   },
   {
@@ -534,8 +534,8 @@
    "kicker": "Your membership value journey",
    "label": "Value journey",
    "image": "assets/value-journey.jpg",
-   "caption": "Club-assigned benefit values, not prices.",
-   "notes": "[Show the Value Journey graphic. Walk left to right: VIP, Gold, Platinum.]\nSAY: \"Here is the whole value journey on one page. VIP benefit value, 290,000. Gold adds 280,000. Platinum training adds 170,000. The total journey value is 740,000 pesos.\"\nSAY: \"And at the bottom, read it with me: VIP enrollment, 60,000 pesos. Planned 2027 price, 75,000 pesos.\"\n[2 min]"
+   "caption": "Club-assigned reference values, not prices.",
+   "notes": "[Show the membership journey graphic. Walk left to right: VIP, Gold, Platinum.]\nSAY: \"Here is the whole journey on one page. VIP benefit value, 305,000. Add Gold, 280,000, and VIP plus Gold is 585,000. Add Platinum training, 170,000, and the total is 755,000 pesos.\"\nSAY: \"And at the bottom, read it with me: VIP enrollment, 60,000 pesos. Planned 2027 price, 75,000 pesos.\"\n[2 min]"
   },
   {
    "type": "statement",
@@ -543,9 +543,9 @@
    "kicker": "Please note",
    "label": "Please note",
    "over": "Please note",
-   "title": "Club-assigned benefit values, not prices.",
+   "title": "Club-assigned reference values, not prices.",
    "sub": "Gold and Platinum are progression levels you grow into.",
-   "notes": "SAY: \"Please hear this clearly. These are Club-assigned benefit values. They are not prices. Gold and Platinum are progression levels. You grow into them. What you enroll in today is VIP, at 60,000 pesos.\"\n«IMPORTANT: say this line out loud. It is on the Club's own graphic, and it keeps the offer honest.»\n[1 min]"
+   "notes": "SAY: \"Please hear this clearly. These are Club-assigned reference values. They are not prices. Gold and Platinum are separate progression levels. You grow into them, and opportunities depend on qualifications and availability. What you enroll in today is VIP, at 60,000 pesos.\"\n«IMPORTANT: say this line out loud. It is on the Club's own graphic, and it keeps the offer honest.»\n[1 min]"
   },
   {
    "type": "cards",
@@ -557,7 +557,7 @@
    "cards": [
     {
      "title": "Total journey value",
-     "body": "P740,000 across VIP, Gold and Platinum."
+     "body": "P755,000 across VIP, Gold and Platinum."
     },
     {
      "title": "Planned 2027 price",
@@ -568,16 +568,16 @@
      "body": "P60,000. Lock it in this year."
     }
    ],
-   "notes": "SAY: \"Three numbers to remember. First, the total journey value: 740,000 pesos. Second, the planned 2027 price: 75,000 pesos. Third, your 2026 enrollment: 60,000 pesos. Lock it in this year.\"\n«CONFIRM: the outline calls for a Regular Family Member price. If you have one, say it here.»\n[2 min]"
+   "notes": "SAY: \"Three numbers to remember. First, the total journey reference value: 755,000 pesos. Second, the planned 2027 price: 75,000 pesos. Third, your 2026 enrollment: 60,000 pesos. Lock it in this year.\"\n«CONFIRM: the outline calls for a Regular Family Member price. If you have one, say it here.»\n[2 min]"
   },
   {
    "type": "struck",
    "id": "struck",
    "kicker": "Pieces 4, 5 and 6 · the anchor, the reason, the drop",
    "label": "The total",
-   "amount": 740000,
+   "amount": 755000,
    "currency": "P",
-   "notes": "SAY: \"The total journey value: 740,000 pesos.\"\n[Silence. Let the number sit for three seconds.] [30 sec]"
+   "notes": "SAY: \"The total journey reference value: 755,000 pesos.\"\n[Silence. Let the number sit for three seconds.] [30 sec]"
   },
   {
    "type": "statement",
@@ -607,13 +607,13 @@
    "id": "price",
    "kicker": "Pieces 4, 5 and 6 · the anchor, the reason, the drop",
    "label": "The price",
-   "anchor": 740000,
+   "anchor": 755000,
    "price": 60000,
    "currency": "P",
    "reframe": "Planned 2027 price: P75,000. Save P15,000.",
    "todayLabel": "VIP enrollment, 2026",
    "was": true,
-   "notes": "[STAR MOMENT. Say nothing for three seconds before you speak.]\nSAY: \"Not 740,000 pesos. VIP enrollment in 2026 is 60,000 pesos. The planned 2027 price is 75,000, so you save 15,000. VIP alone carries 290,000 pesos of Club benefit value, almost five times what you enroll for.\"\n[Then stop talking. Hold the silence.] [3 min]"
+   "notes": "[STAR MOMENT. Say nothing for three seconds before you speak.]\nSAY: \"Not 755,000 pesos. VIP enrollment in 2026 is 60,000 pesos. The planned 2027 price is 75,000, so you save 15,000. VIP alone carries 305,000 pesos of Club reference value, about five times what you enroll for.\"\n[Then stop talking. Hold the silence.] [3 min]"
   },
   {
    "type": "limiter",
