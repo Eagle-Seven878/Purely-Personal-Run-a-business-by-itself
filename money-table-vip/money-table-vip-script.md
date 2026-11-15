@@ -1,5 +1,5 @@
 # The Money Table VIP Package: Presenter Script
-Philippine Cashflow Club · 60 slides · about 85 to 100 minutes with Q&A
+Philippine Cashflow Club · 61 slides · about 85 to 100 minutes with Q&A
 
 Open `money-table-vip.html` in Chrome, full screen. Arrow keys move, **N** shows this script on the slide, **S** opens speaker view.
 
@@ -17,7 +17,7 @@ Each item is marked «CONFIRM» or «PRIVATE» in the script below. None appear 
 - [ ] Your personal reason for rewarding early members.
 - [ ] Regular Family Member price, if you have one.
 - [ ] Membership validity and renewal terms (awaiting Board approval in the manual).
-- [ ] Payment methods and any installment plan.
+- [ ] PAYMENT (proposed, not yet approved): 20,000 down then two equal payments of 20,000; whether the 2026 rate locks on first verified payment; accepted methods (GCash, Maya, bank, cash); official account details; down-payment refund terms.
 - [ ] Guarantee: say none unless the refund policy is approved.
 - [ ] Real member testimonials, word for word, with permission.
 - [ ] Photos are from past Money Table events. Confirm attendees are comfortable with their faces on your slides, and swap any you prefer not to show.
@@ -421,15 +421,32 @@ SAY: "And remember where this leads: Gold after the VIP Game, and Platinum, for 
 «CONFIRM: add any extra bonus for people who join in the room today. Only add what is truly extra.»
 [1 min]
 
-## Slide 55 · Message your facilitator. Pay. Get verified. You are in.
+## Slide 55 · Two simple ways to join.
 
-*On screen: statement*
+*On screen: cards*
 
-SAY: "How do you join? Message your facilitator or the club page. You complete the registration and payment form, send your proof of payment, and our team verifies it. Then you receive your official receipt, and you are in."
-«CONFIRM: say the real payment methods and any installment plan (GCash, bank transfer, cash, installments).»
+SAY: "Let me make this simple. There are two ways to join."
+SAY: "Option one: pay in full. 60,000 pesos, once. The moment your payment is verified, your 2026 rate is locked."
+SAY: "Option two: reserve your seat. A down payment of 20,000 pesos locks the 2026 rate, and you complete the balance in two equal payments."
+SAY: "You can pay by GCash, Maya, bank transfer, or cash with your facilitator. One important rule: pay only to the official Club account your facilitator confirms. Never to a personal account you have not verified."
+«CONFIRM BEFORE PRESENTING (these are proposed, not yet approved by the Club):
+ 1. The installment structure: 20,000 down, then two equal payments of 20,000. Adjust the amounts and the deadline for the balance.
+ 2. That the 2026 rate is locked once the first payment is verified. Decide this and say it exactly.
+ 3. The accepted methods: GCash, Maya, bank transfer, cash. Remove any you do not accept.
+ 4. The official account details your team will share in the chat. Do not read personal account numbers aloud.
+ 5. Refund and cancellation terms for a down payment. The manual says these are awaiting Board approval, so state them clearly or say "ask your facilitator".»
+[2 min]
+
+## Slide 56 · Four steps. Then you are in.
+
+*On screen: route*
+
+SAY: "Here is how it works, in four steps. Step one: choose. Pay in full, or reserve your seat. Step two: pay, to the official Club account only. Step three: send your proof of payment, a screenshot or a receipt. Step four: our team verifies it, and you receive your official receipt, your Member ID, and your welcome message."
+SAY: "Your Official Joining Date is the day your payment is verified. Then comes your orientation, and you are on your way."
+«This follows the Club manual: payment verification, receipt, Member ID, then onboarding.»
 [1 min]
 
-## Slide 56 · Receipt. Member ID. Signed agreement. Your path is on record.
+## Slide 57 · Receipt. Member ID. Signed agreement. Your path is on record.
 
 *On screen: statement*
 
@@ -437,7 +454,7 @@ SAY: "And your seat is documented. You get a receipt, a Member ID, and a signed 
 «CONFIRM: this is a documentation assurance, not a money-back guarantee. Do not say 'guarantee' or promise refunds until the Board approves the refund, transfer, and cancellation policy.»
 [1 min]
 
-## Slide 57 · Bayanihan. Kapwa. Katiwala. Your place is ready.
+## Slide 58 · Bayanihan. Kapwa. Katiwala. Your place is ready.
 
 *On screen: statement*
 
@@ -445,24 +462,24 @@ SAY: "Bayanihan. Kapwa. Katiwala. Together, as one community, caring for each ot
 SAY: "The 2026 rate is 60,000 pesos. If you are ready, here is exactly what to do."
 [1 min]
 
-## Slide 58 · Here is exactly what to do now.
+## Slide 59 · Here is exactly what to do now.
 
 *On screen: cta*
 
 [Your team posts the facilitator and club page details as you speak.]
-SAY: "Step one: message your facilitator or the club page. Step two: lock in the 2026 rate of 60,000 pesos. Step three: write VIP in the chat, so we can welcome you. If you have any payment issue, write TEAM and we will help you right away."
+SAY: "Step one: message your facilitator or the club page. Step two: choose how you will pay: in full, or reserve your seat with a down payment. Step three: write VIP in the chat, so we can welcome you. If you have any payment issue, write TEAM and we will help you right away."
 [Welcome each person by name as they write VIP.]
 «CONFIRM: add the real registration link to the deck as 'url' so a QR code shows.»
 ROOM MOVE: chat word = VIP. [3 min]
 
-## Slide 59 · Welcome to VIP.
+## Slide 60 · Welcome to VIP.
 
 *On screen: buyerswall*
 
 [Type each first name as it lands in the chat and press Enter. Names appear on the wall.]
 SAY: "Welcome to VIP, welcome, welcome!" [3 min]
 
-## Slide 60 · Thank you. When the rules change, you can change.
+## Slide 61 · Thank you. When the rules change, you can change.
 
 *On screen: statement*
 

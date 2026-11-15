@@ -129,9 +129,14 @@ add(type="limiter",id="limiter",kicker="Piece 7 · the limiter",label="The limit
 add(type="statement",id="bonuses",kicker="Bonuses",label="Bonuses",over="Where the journey leads",
  title="Gold after the VIP Game. ==Platinum== with a real-life deal.",sub="Opportunities by invitation, beginning at Gold.",
  notes="x")
-add(type="statement",id="payment",kicker="Payment options",label="How to pay",over="Payment options",
- title="Message your facilitator. Pay. Get verified. You are in.",
+add(type="cards",id="payment",kicker="Payment options",label="Payment options",title="Two simple ways to join.",cardLabel="PAY",
+ cards=[{"title":"Pay in full","body":"P60,000 once. Your 2026 rate is locked the moment it is verified."},
+        {"title":"Reserve your seat","body":"A P20,000 down payment locks the 2026 rate. The balance follows in two equal payments."},
+        {"title":"GCash, Maya, bank or cash","body":"Pay only to the official Club account your facilitator confirms."}],
  notes="x")
+add(type="route",id="payment-steps",kicker="How it works",label="How it works",bgword="PAYMENT",title="Four steps. Then you are in.",
+ steps=[{"title":"Choose","body":"Pay in full, or reserve"},{"title":"Pay","body":"Official Club account only"},{"title":"Send proof","body":"Screenshot or receipt"},{"title":"Get verified","body":"Receipt, Member ID, welcome"}],
+ lede="Your Official Joining Date is the day your payment is verified.",notes="x")
 add(type="statement",id="guarantee",kicker="Guarantee",label="Your seat is documented",over="Guarantee",
  title="Receipt. Member ID. Signed agreement. Your path is on record.",
  notes="x")
@@ -139,7 +144,7 @@ add(type="statement",id="close",kicker="The Close",label="The close",
  title="Bayanihan. Kapwa. Katiwala. ==Your place is ready==.",
  notes="x")
 add(type="cta",id="cta",kicker="Piece 8 · the call to action",label="Join now",title="Here is exactly what to do now.",
- steps=["Message your facilitator or the club page","Lock in the 2026 rate of P60,000","Write VIP in the chat"],chatWord="VIP",link="Facilitator or club page",price=60000,currency=C,help="Payment issue? Write TEAM in the chat.",
+ steps=["Message your facilitator or the club page","Pay in full or reserve your seat","Write VIP in the chat"],chatWord="VIP",link="Facilitator or club page",price=60000,currency=C,help="Payment issue? Write TEAM in the chat.",
  notes="x")
 add(type="buyerswall",id="wall",kicker="Welcome",label="Welcome to VIP",title="Welcome to VIP.",lede="Type each first name as it lands.",
  notes="Type the first name of each person who writes VIP and press Enter. Names appear on the wall. [3 min]")

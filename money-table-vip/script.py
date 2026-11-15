@@ -441,3 +441,25 @@ STACK[:]=[
  "SAY: 'Plus Gold Training, 175,000. Gold adds 280,000 pesos.'",
  "SAY: 'And Platinum Training, 170,000.'",
  "SAY: 'Plus opportunity pathways, by invitation. The total journey reference value is 755,000 pesos.' [Pause. Let it land.]"]
+
+# ===== Payment: designed options =====
+S["payment"]="""SAY: "Let me make this simple. There are two ways to join."
+SAY: "Option one: pay in full. 60,000 pesos, once. The moment your payment is verified, your 2026 rate is locked."
+SAY: "Option two: reserve your seat. A down payment of 20,000 pesos locks the 2026 rate, and you complete the balance in two equal payments."
+SAY: "You can pay by GCash, Maya, bank transfer, or cash with your facilitator. One important rule: pay only to the official Club account your facilitator confirms. Never to a personal account you have not verified."
+«CONFIRM BEFORE PRESENTING (these are proposed, not yet approved by the Club):
+ 1. The installment structure: 20,000 down, then two equal payments of 20,000. Adjust the amounts and the deadline for the balance.
+ 2. That the 2026 rate is locked once the first payment is verified. Decide this and say it exactly.
+ 3. The accepted methods: GCash, Maya, bank transfer, cash. Remove any you do not accept.
+ 4. The official account details your team will share in the chat. Do not read personal account numbers aloud.
+ 5. Refund and cancellation terms for a down payment. The manual says these are awaiting Board approval, so state them clearly or say "ask your facilitator".»
+[2 min]"""
+S["payment-steps"]="""SAY: "Here is how it works, in four steps. Step one: choose. Pay in full, or reserve your seat. Step two: pay, to the official Club account only. Step three: send your proof of payment, a screenshot or a receipt. Step four: our team verifies it, and you receive your official receipt, your Member ID, and your welcome message."
+SAY: "Your Official Joining Date is the day your payment is verified. Then comes your orientation, and you are on your way."
+«This follows the Club manual: payment verification, receipt, Member ID, then onboarding.»
+[1 min]"""
+S["cta"]="""[Your team posts the facilitator and club page details as you speak.]
+SAY: "Step one: message your facilitator or the club page. Step two: choose how you will pay: in full, or reserve your seat with a down payment. Step three: write VIP in the chat, so we can welcome you. If you have any payment issue, write TEAM and we will help you right away."
+[Welcome each person by name as they write VIP.]
+«CONFIRM: add the real registration link to the deck as 'url' so a QR code shows.»
+ROOM MOVE: chat word = VIP. [3 min]"""

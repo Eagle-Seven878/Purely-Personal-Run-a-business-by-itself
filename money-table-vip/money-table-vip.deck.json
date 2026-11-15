@@ -637,13 +637,55 @@
    "notes": "SAY: \"And remember where this leads: Gold after the VIP Game, and Platinum, for those who prove it with a real-life deal. Opportunities open by invitation, beginning at Gold.\"\n«CONFIRM: add any extra bonus for people who join in the room today. Only add what is truly extra.»\n[1 min]"
   },
   {
-   "type": "statement",
+   "type": "cards",
    "id": "payment",
    "kicker": "Payment options",
-   "label": "How to pay",
-   "over": "Payment options",
-   "title": "Message your facilitator. Pay. Get verified. You are in.",
-   "notes": "SAY: \"How do you join? Message your facilitator or the club page. You complete the registration and payment form, send your proof of payment, and our team verifies it. Then you receive your official receipt, and you are in.\"\n«CONFIRM: say the real payment methods and any installment plan (GCash, bank transfer, cash, installments).»\n[1 min]"
+   "label": "Payment options",
+   "title": "Two simple ways to join.",
+   "cardLabel": "PAY",
+   "cards": [
+    {
+     "title": "Pay in full",
+     "body": "P60,000 once. Your 2026 rate is locked the moment it is verified."
+    },
+    {
+     "title": "Reserve your seat",
+     "body": "A P20,000 down payment locks the 2026 rate. The balance follows in two equal payments."
+    },
+    {
+     "title": "GCash, Maya, bank or cash",
+     "body": "Pay only to the official Club account your facilitator confirms."
+    }
+   ],
+   "notes": "SAY: \"Let me make this simple. There are two ways to join.\"\nSAY: \"Option one: pay in full. 60,000 pesos, once. The moment your payment is verified, your 2026 rate is locked.\"\nSAY: \"Option two: reserve your seat. A down payment of 20,000 pesos locks the 2026 rate, and you complete the balance in two equal payments.\"\nSAY: \"You can pay by GCash, Maya, bank transfer, or cash with your facilitator. One important rule: pay only to the official Club account your facilitator confirms. Never to a personal account you have not verified.\"\n«CONFIRM BEFORE PRESENTING (these are proposed, not yet approved by the Club):\n 1. The installment structure: 20,000 down, then two equal payments of 20,000. Adjust the amounts and the deadline for the balance.\n 2. That the 2026 rate is locked once the first payment is verified. Decide this and say it exactly.\n 3. The accepted methods: GCash, Maya, bank transfer, cash. Remove any you do not accept.\n 4. The official account details your team will share in the chat. Do not read personal account numbers aloud.\n 5. Refund and cancellation terms for a down payment. The manual says these are awaiting Board approval, so state them clearly or say \"ask your facilitator\".»\n[2 min]"
+  },
+  {
+   "type": "route",
+   "id": "payment-steps",
+   "kicker": "How it works",
+   "label": "How it works",
+   "bgword": "PAYMENT",
+   "title": "Four steps. Then you are in.",
+   "steps": [
+    {
+     "title": "Choose",
+     "body": "Pay in full, or reserve"
+    },
+    {
+     "title": "Pay",
+     "body": "Official Club account only"
+    },
+    {
+     "title": "Send proof",
+     "body": "Screenshot or receipt"
+    },
+    {
+     "title": "Get verified",
+     "body": "Receipt, Member ID, welcome"
+    }
+   ],
+   "lede": "Your Official Joining Date is the day your payment is verified.",
+   "notes": "SAY: \"Here is how it works, in four steps. Step one: choose. Pay in full, or reserve your seat. Step two: pay, to the official Club account only. Step three: send your proof of payment, a screenshot or a receipt. Step four: our team verifies it, and you receive your official receipt, your Member ID, and your welcome message.\"\nSAY: \"Your Official Joining Date is the day your payment is verified. Then comes your orientation, and you are on your way.\"\n«This follows the Club manual: payment verification, receipt, Member ID, then onboarding.»\n[1 min]"
   },
   {
    "type": "statement",
@@ -673,7 +715,7 @@
    "title": "Here is exactly what to do now.",
    "steps": [
     "Message your facilitator or the club page",
-    "Lock in the 2026 rate of P60,000",
+    "Pay in full or reserve your seat",
     "Write VIP in the chat"
    ],
    "chatWord": "VIP",
@@ -681,7 +723,7 @@
    "price": 60000,
    "currency": "P",
    "help": "Payment issue? Write TEAM in the chat.",
-   "notes": "[Your team posts the facilitator and club page details as you speak.]\nSAY: \"Step one: message your facilitator or the club page. Step two: lock in the 2026 rate of 60,000 pesos. Step three: write VIP in the chat, so we can welcome you. If you have any payment issue, write TEAM and we will help you right away.\"\n[Welcome each person by name as they write VIP.]\n«CONFIRM: add the real registration link to the deck as 'url' so a QR code shows.»\nROOM MOVE: chat word = VIP. [3 min]"
+   "notes": "[Your team posts the facilitator and club page details as you speak.]\nSAY: \"Step one: message your facilitator or the club page. Step two: choose how you will pay: in full, or reserve your seat with a down payment. Step three: write VIP in the chat, so we can welcome you. If you have any payment issue, write TEAM and we will help you right away.\"\n[Welcome each person by name as they write VIP.]\n«CONFIRM: add the real registration link to the deck as 'url' so a QR code shows.»\nROOM MOVE: chat word = VIP. [3 min]"
   },
   {
    "type": "buyerswall",
