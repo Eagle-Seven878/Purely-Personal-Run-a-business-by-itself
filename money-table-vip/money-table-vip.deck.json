@@ -1,0 +1,543 @@
+{
+ "mode": "blueprint",
+ "title": "The Money Table VIP",
+ "titleLines": [
+  "The Money",
+  "Table VIP"
+ ],
+ "badge": "Philippine Cashflow Club · DRAFT, confirm flagged numbers before presenting",
+ "promise": "The next step on the money ladder. When the rules change, can you change?",
+ "theme": "simple",
+ "length": 90,
+ "panels": [
+  {
+   "type": "story",
+   "id": "cold-open",
+   "kicker": "Warm the Room",
+   "label": "Welcome",
+   "light": true,
+   "center": true,
+   "title": "When the rules change,\ncan you ==change==?",
+   "lede": "The Money Table · Philippine Cashflow Club",
+   "notes": "[OUTLINE 1 · PREPARE LOGISTICS] Before going live: test audio and camera, open the chat, have your team ready to drop the link and welcome names. [Smile] Say nothing for three seconds, then read the line slowly. [PAUSE] This question is the heart of the Graduation Game, so it is also the heart of today. [2 min]"
+  },
+  {
+   "type": "statement",
+   "id": "logistics",
+   "kicker": "Warm the Room",
+   "label": "Cameras on",
+   "over": "First, together",
+   "title": "Cameras on. Write where you are from in the chat.",
+   "notes": "[OUTLINE 1 · LOGISTICS] Housekeeping in one breath: cameras on, say your city, mute when not speaking. Read three or four names aloud as they come in. Make them feel seen before you teach. [ROOM MOVE] Chat word: city name. [2 min]"
+  },
+  {
+   "type": "cards",
+   "id": "rules",
+   "kicker": "Warm the Room",
+   "label": "Three rules",
+   "title": "Three rules for today.",
+   "cardLabel": "RULE",
+   "cards": [
+    {
+     "title": "Stay to the end",
+     "body": "The best part comes last."
+    },
+    {
+     "title": "Play along in the chat",
+     "body": "When I ask, you type. It keeps us all in the game."
+    },
+    {
+     "title": "An offer is coming",
+     "body": "At the end I will share the next step. You decide."
+    }
+   ],
+   "notes": "[OUTLINE 1 · SEEDING] Rule three is the seed: tell them honestly that an offer comes at the end. Honesty now removes resistance later. [Smile] Ask: 'Is that okay with everyone? Write OK.' [ROOM MOVE] Chat word: OK. [2 min]"
+  },
+  {
+   "type": "statement",
+   "id": "promise",
+   "role": "promise",
+   "kicker": "Warm the Room",
+   "label": "The promise",
+   "title": "By the end, you will know your next step on the ==money ladder==.",
+   "notes": "[OUTLINE 2 · SEEDING] One line promise. Plant the ladder idea: Guest, Regular, VIP, Gold. Say: 'Every one of you is standing on one of those steps today.' Do not sell yet. [1 min]"
+  },
+  {
+   "type": "statement",
+   "id": "problem",
+   "role": "problem",
+   "kicker": "Earn the Right · the problem",
+   "label": "The problem",
+   "over": "The problem",
+   "title": "Most people play to win a round. Few learn to change.",
+   "notes": "[OUTLINE 3 · PROBLEM] Tell it as a story: 'I have watched player after player do the same thing. Small deals, build capital, wait for the Big Deal, get out of the Rat Race. Then the Big Deals disappear.' [PAUSE] Ask: 'How many of you realise the rules of money are changing?' [ROOM MOVE] Chat word: ME. [3 min]"
+  },
+  {
+   "type": "swap",
+   "id": "two-ways",
+   "kicker": "Earn the Right · the solution",
+   "label": "Two ways to play",
+   "title": "You can wait for the Big Deal.\nOr you can ==learn to adapt==.",
+   "oldLabel": "Waiting",
+   "newLabel": "Adapting",
+   "old": [
+    "Same strategy every game",
+    "Hope the right card appears",
+    "Stuck when the rules change"
+   ],
+   "new": [
+    "Build capital with small deals",
+    "Pay down liabilities",
+    "Change your play when the rules change"
+   ],
+   "notes": "[OUTLINE 3 · SOLUTION] This is the solution in one picture. It comes straight from how the Graduation Game is facilitated: the Big Deal cards are removed and the player must discover another way. Guide, do not give away the answer. [3 min]"
+  },
+  {
+   "type": "statement",
+   "id": "low-point",
+   "kicker": "Earn the Right · the story",
+   "label": "The low point",
+   "over": "Imagine this",
+   "title": "The Big Deal cards are gone. ==Now what?==",
+   "sub": "That moment is where players grow.",
+   "notes": "[PAUSE] [Lower your voice. Look into the camera.] Tell the emotional story in your own words: a real player you facilitated, the moment the Big Deals were removed, what they felt, what they changed. Use a real first name only with permission. NEED: replace this beat with your true story. [3 min]"
+  },
+  {
+   "type": "statement",
+   "id": "win-1",
+   "kicker": "Teach One Win",
+   "label": "Value by comparison",
+   "over": "One lesson",
+   "title": "Value is measured by ==comparison==.",
+   "notes": "[Teach one win] Taken from the club's own assessment: a player must tell a good deal from a bad deal. Ask the room: 'Which is better, a deal that pays 8 percent or one that loses money?' Obvious? Good. Now make it harder on the next slide. [2 min]"
+  },
+  {
+   "type": "statement",
+   "id": "win-2",
+   "kicker": "Teach One Win",
+   "label": "Good deal or bad deal",
+   "over": "Try it",
+   "title": "A shopping mall at ==-24% ROI== is not a good Big Deal.",
+   "sub": "Big does not mean good.",
+   "notes": "[Teach one win] The club's own example: the Shopping Mall can look like a Big Deal, yet at minus 24 percent ROI it is not a good one. Ask: 'Would you buy it?' [ROOM MOVE] Chat word: YES or NO. Reveal: size is not the measure, return is. [3 min]"
+  },
+  {
+   "type": "statement",
+   "id": "win-3",
+   "kicker": "Teach One Win",
+   "label": "Your turn",
+   "over": "Your turn · 3 minutes",
+   "title": "Write one deal you passed on. Was it really a bad deal?",
+   "notes": "[Watch, then do] Give them three minutes of silence. Then ask two or three people to share. Pattern interrupt: stand up, stretch, then continue. [3 min]"
+  },
+  {
+   "type": "statement",
+   "id": "win-result",
+   "kicker": "Teach One Win",
+   "label": "The result",
+   "title": "You just practised the skill the ladder is built on.",
+   "notes": "Close the win: they now see value by comparison. Say: 'That is one skill. The club teaches many, one game at a time.' [1 min]"
+  },
+  {
+   "type": "statement",
+   "id": "thanks-1",
+   "kicker": "The Bridge",
+   "label": "Thank you",
+   "title": "Thank you for playing along.",
+   "notes": "[OUTLINE 5 · THANK YOU] Thank them sincerely, by naming two or three people who took part. Gratitude earns the right to ask. [Smile] [1 min]"
+  },
+  {
+   "type": "question",
+   "id": "permission",
+   "kicker": "The Bridge · permission to sell",
+   "label": "Permission",
+   "ask": "Would it be okay if I shared a small offer with you?",
+   "not": [
+    "No pressure.",
+    "It takes a few minutes."
+   ],
+   "answer": "Write OK in the chat.",
+   "notes": "[OUTLINE 4 · ASK PERMISSION] Ask warmly, then wait. Read out every OK. Anyone who does not answer is not ready, and that is fine. [ROOM MOVE] Chat word: OK. [2 min]"
+  },
+  {
+   "type": "cards",
+   "id": "story-proof",
+   "kicker": "The Bridge · the experience",
+   "label": "What players discover",
+   "dark": true,
+   "cardLabel": "THE EXPERIENCE",
+   "title": "What happens at the Graduation Game.",
+   "cards": [
+    {
+     "title": "The rules change",
+     "body": "The Big Deal cards are removed. The player must adapt."
+    },
+    {
+     "title": "They discover it themselves",
+     "body": "Facilitators guide with questions. They never hand over the answer."
+    },
+    {
+     "title": "They answer the question",
+     "body": "When the rules change, can you change?"
+    }
+   ],
+   "notes": "[OUTLINE 10 · TESTIMONIALS OR EMOTIONAL STORIES] This slide tells the emotional story from the club's own Graduation Game process, with no invented quotes. NEED: add one or two real member testimonials, word for word and with permission, as a testimonial slide here. [3 min]"
+  },
+  {
+   "type": "offer",
+   "id": "offer",
+   "kicker": "Pieces 1 and 2 · the name, where and when",
+   "label": "The offer",
+   "name": "The Money Table ==VIP==",
+   "tagline": "The next step on the ladder.",
+   "problem": "How many of you want to know exactly what to do next, after your first games?",
+   "benefit": "How to move from playing the game to adapting when the rules change, with a path all the way to Gold.",
+   "when": [
+    "Your start date is your Official Joining Date",
+    "It begins the day your payment is verified",
+    "Orientation by Zoom or face to face"
+   ],
+   "where": "Philippine Cashflow Club, Alpha Chapter. Games, trainings and community.",
+   "format": "Live games with certified facilitators. Every game verified and tracked.",
+   "notes": "[OUTLINE 6, 11 and 12 · NAME, LOCATION, DATE] Ask the problem question first and read the chat. Then: 'That is why the club created The Money Table VIP.' Say the benefit slowly. NEED: replace the start line with the real VIP start date and venue or Zoom link when confirmed. [2 min]"
+  },
+  {
+   "type": "statement",
+   "id": "for-whom",
+   "kicker": "Who it is for",
+   "label": "Who it is for",
+   "over": "Who it is for",
+   "title": "For players who finished their first games and want the ==next step==.",
+   "sub": "Objective: move from playing to adapting.",
+   "notes": "[OUTLINE 7 · WHO IS IT FOR / OBJECTIVE] Name the person clearly: someone who has played, wants more structure, and wants a visible path. Say who it is not for: people who only want a one-time game. [1 min]"
+  },
+  {
+   "type": "statement",
+   "id": "learn-1",
+   "role": "learn",
+   "kicker": "What you will learn",
+   "label": "What you will learn",
+   "over": "Learn 1",
+   "title": "How to read a deal: ROI, and good versus bad.",
+   "notes": "[OUTLINE 8 · WHAT YOU WILL LEARN] From the club's VIP to Graduation parameters: ROI, and value by comparison. [1 min]"
+  },
+  {
+   "type": "statement",
+   "id": "learn-2",
+   "role": "learn",
+   "kicker": "What you will learn",
+   "label": "What you will learn",
+   "over": "Learn 2",
+   "title": "How to build capital: DealFlow and market research.",
+   "notes": "Capital building and market research, plus how the rich write and read a financial statement inside the game. [1 min]"
+  },
+  {
+   "type": "statement",
+   "id": "learn-3",
+   "role": "learn",
+   "kicker": "What you will learn",
+   "label": "What you will learn",
+   "over": "Learn 3",
+   "title": "How to adapt when the rules change.",
+   "notes": "Paying liabilities, cooperation play, and the Graduation Game question. [1 min]"
+  },
+  {
+   "type": "cards",
+   "id": "benefits",
+   "kicker": "Key benefits",
+   "label": "Key benefits",
+   "title": "What you get from it.",
+   "cardLabel": "BENEFIT",
+   "cards": [
+    {
+     "title": "A path you can see",
+     "body": "Games, graduation, VIP, then Gold. Your next step is always clear."
+    },
+    {
+     "title": "Every game counts",
+     "body": "Official games are verified and kept in your record."
+    },
+    {
+     "title": "A community that plays with you",
+     "body": "Members, facilitators and a VIP community."
+    }
+   ],
+   "notes": "[OUTLINE 9 · KEY BENEFITS] Three benefits, no more. Tie each to a line from the club's member dashboard: 'What is my next step?' is always answered. [2 min]"
+  },
+  {
+   "type": "item",
+   "id": "item-1",
+   "kicker": "Piece 3 · everything you get",
+   "label": "10 Regular Games",
+   "heading": "Everything you get",
+   "n": 1,
+   "of": 6,
+   "name": "10 Regular Games",
+   "desc": "Ten official games, verified and tracked.",
+   "value": 15000,
+   "currency": "P",
+   "notes": "[OUTLINE 17 · STACK] Say the name, say what it is, then say its value out loud. Value is 10 games at the Club pay-per-game rate of 1,500 each. Real, from the Club's own rates."
+  },
+  {
+   "type": "item",
+   "id": "item-2",
+   "kicker": "Piece 3 · everything you get",
+   "label": "The Graduation Game",
+   "heading": "Everything you get",
+   "n": 2,
+   "of": 6,
+   "name": "The Graduation Game",
+   "desc": "The game where the rules change.",
+   "value": 1500,
+   "currency": "P",
+   "notes": "[OUTLINE 17 · STACK] Say the name, say what it is, then say its value out loud. Value is one game at the pay-per-game rate of 1,500. Real, from the Club's own rates."
+  },
+  {
+   "type": "item",
+   "id": "item-3",
+   "kicker": "Piece 3 · everything you get",
+   "label": "The VIP Game",
+   "heading": "Everything you get",
+   "n": 3,
+   "of": 6,
+   "name": "The VIP Game",
+   "desc": "Your game on the way to Gold.",
+   "value": 30000,
+   "currency": "P",
+   "notes": "[OUTLINE 17 · STACK] Say the name, say what it is, then say its value out loud. DRAFT VALUE, illustrative. NEED: replace with the Executive Board's real value."
+  },
+  {
+   "type": "item",
+   "id": "item-4",
+   "kicker": "Piece 3 · everything you get",
+   "label": "VIP Trainings and Assessment",
+   "heading": "Everything you get",
+   "n": 4,
+   "of": 6,
+   "name": "VIP Trainings and Assessment",
+   "desc": "Training, PERT lesson, and your readiness check.",
+   "value": 50000,
+   "currency": "P",
+   "notes": "[OUTLINE 17 · STACK] Say the name, say what it is, then say its value out loud. DRAFT VALUE, illustrative. NEED: replace with the real value of the trainings and assessment."
+  },
+  {
+   "type": "item",
+   "id": "item-5",
+   "kicker": "Piece 3 · everything you get",
+   "label": "VIP Member Card and Portal",
+   "heading": "Everything you get",
+   "n": 5,
+   "of": 6,
+   "name": "VIP Member Card and Portal",
+   "desc": "Your card, your dashboard, your Gold tracker.",
+   "value": 10000,
+   "currency": "P",
+   "notes": "[OUTLINE 17 · STACK] Say the name, say what it is, then say its value out loud. DRAFT VALUE, illustrative. NEED: replace with the real value."
+  },
+  {
+   "type": "item",
+   "id": "item-6",
+   "kicker": "Piece 3 · everything you get",
+   "label": "VIP Community",
+   "heading": "Everything you get",
+   "n": 6,
+   "of": 6,
+   "name": "The VIP Community",
+   "desc": "Players who are on the same path, with you.",
+   "valueText": "Priceless",
+   "notes": "[STACK] Priceless. Say it with a smile and add no number. The community is real per the Club manual (VIP Members group). NEED: confirm access terms."
+  },
+  {
+   "type": "stacklist",
+   "id": "stack-list",
+   "build": true,
+   "kicker": "Piece 3 · everything you get",
+   "label": "Everything you get",
+   "title": "Everything you get",
+   "items": [
+    {
+     "name": "10 Regular Games",
+     "value": 15000
+    },
+    {
+     "name": "The Graduation Game",
+     "value": 1500
+    },
+    {
+     "name": "The VIP Game",
+     "value": 30000
+    },
+    {
+     "name": "VIP Trainings and Assessment",
+     "value": 50000
+    },
+    {
+     "name": "VIP Member Card and Portal",
+     "value": 10000
+    },
+    {
+     "name": "The VIP Community",
+     "valueText": "Priceless"
+    }
+   ],
+   "totalLabel": "Total value",
+   "currency": "P",
+   "stepNotes": [
+    "[GROWING LIST] Line 1. Say it, then pause.",
+    "[GROWING LIST] Line 2. Say it, then pause.",
+    "[GROWING LIST] Line 3. Say it, then pause.",
+    "[GROWING LIST] Line 4. Say it, then pause.",
+    "[GROWING LIST] Line 5. Say it, then pause.",
+    "[GROWING LIST] Line 6. Say it, then pause.",
+    "[GROWING LIST] The total. Say the number: P106,500. Pause. [OUTLINE 13 · TUITION] This is the comparison price, the full value of everything in the VIP package."
+   ]
+  },
+  {
+   "type": "cards",
+   "id": "ladder",
+   "kicker": "Tuition and price",
+   "label": "The ladder",
+   "title": "Where you stand on the ladder.",
+   "cardLabel": "THE LADDER",
+   "cards": [
+    {
+     "title": "Guest",
+     "body": "P1,000 for your first game. P1,500 for each game after."
+    },
+    {
+     "title": "Regular Member",
+     "body": "10 games plus the Graduation Game. 11 games in total."
+    },
+    {
+     "title": "VIP Member",
+     "body": "P60,000. The path to Gold."
+    }
+   ],
+   "notes": "[OUTLINE 13 · TUITION / PRICE] Show the ladder so the VIP price has context. Comparison price: the total value you just built. Regular price: the VIP price on the club's manual is 60,000. NEED: the Regular Member price is a range of 12,000 to 15,000 awaiting Board confirmation, and the Regular Family Member price is not yet defined. Add both when confirmed. [2 min]"
+  },
+  {
+   "type": "struck",
+   "id": "struck",
+   "kicker": "Pieces 4, 5 and 6 · the anchor, the reason, the drop",
+   "label": "The total",
+   "amount": 106500,
+   "currency": "P",
+   "notes": "[ANCHOR] P106,500. Say it once, slowly. Silence. This is the number the room will compare against."
+  },
+  {
+   "type": "statement",
+   "id": "future-bonuses",
+   "kicker": "Introduce future bonuses",
+   "label": "What comes next",
+   "over": "What comes next",
+   "title": "Finish the path, and ==Gold== is next.",
+   "sub": "Then Certified Facilitator, if you choose.",
+   "notes": "[OUTLINE 14 · INTRODUCE FUTURE BONUSES] The club manual shows the road ahead: Gold, then the Facilitator Certification pathway. Plant it as what members grow into. NEED: Board has not finalised Gold benefits yet, so promise nothing beyond the path itself. [1 min]"
+  },
+  {
+   "type": "statement",
+   "id": "reason",
+   "role": "reason",
+   "kicker": "Pieces 4, 5 and 6 · the anchor, the reason, the drop",
+   "label": "Why today",
+   "title": "I want more Filipinos to learn how money really works.",
+   "sub": "So today the price is not the total.",
+   "notes": "[OUTLINE 15 · REASON FOR DEAL] Say your true reason in your own words, ideally with a real photo. NEED: the line above is a draft. Replace it with your real reason for the special offer. [1 min]"
+  },
+  {
+   "type": "price",
+   "id": "price",
+   "kicker": "Pieces 4, 5 and 6 · the anchor, the reason, the drop",
+   "label": "The price",
+   "anchor": 106500,
+   "price": 60000,
+   "currency": "P",
+   "reframe": "One investment. The whole path to Gold.",
+   "todayLabel": "For today only",
+   "was": true,
+   "notes": "[OUTLINE 18 · SPECIAL OFFER · STAR MOMENT] Say nothing. Three seconds. Then: P60,000. NEED: confirm that P60,000 is today's room price. If today's price is lower than the regular VIP price, add it here and keep the anchor above it. [3 min]"
+  },
+  {
+   "type": "limiter",
+   "id": "limiter",
+   "kicker": "Piece 7 · the limiter",
+   "label": "The limit",
+   "title": "This special offer closes with this session.",
+   "kind": "deadline",
+   "deadline": "Today, in this room",
+   "line": "The Club gives this room price only while we are together.",
+   "notes": "[OUTLINE 16 · LIMITATION] NEED: state the real limit and its real reason (for example a seat count or a date). The wording above is a draft and must be true before you say it. Never invent scarcity. [1 min]"
+  },
+  {
+   "type": "statement",
+   "id": "bonuses",
+   "kicker": "Bonuses",
+   "label": "Bonuses",
+   "over": "Included today",
+   "title": "Your VIP card, your portal, your community.",
+   "sub": "From day one.",
+   "notes": "[OUTLINE 19 · BONUSES] NEED: list any real bonuses for the people who join in the room (for example early orientation, extra games). The three items above are already in the stack, so only add what is truly extra. [1 min]"
+  },
+  {
+   "type": "statement",
+   "id": "payment",
+   "kicker": "Payment options",
+   "label": "How to pay",
+   "over": "Payment options",
+   "title": "Pay, send your proof, get verified. Then you are in.",
+   "notes": "[OUTLINE 20 · PAYMENT OPTIONS] The club process: registration and payment form, proof of payment, then verification and your official receipt. NEED: list the real payment methods and any installment plan (GCash, bank, cash, installments) before presenting. [1 min]"
+  },
+  {
+   "type": "statement",
+   "id": "guarantee",
+   "kicker": "Guarantee",
+   "label": "Your seat is documented",
+   "over": "Guarantee",
+   "title": "Receipt. Member ID. Signed agreement. Your path is on record.",
+   "notes": "[OUTLINE 21 · GUARANTEE] This is an assurance of documentation, not a money-back promise. NEED: the refund, transfer and cancellation policy is awaiting Board approval. Add a real guarantee only when it is approved. Never promise one that does not exist. [1 min]"
+  },
+  {
+   "type": "statement",
+   "id": "close",
+   "kicker": "The Close",
+   "label": "The close",
+   "title": "The next step on the ladder is ==yours to take==.",
+   "notes": "[OUTLINE 22 · CLOSE] Summarise in three sentences: the path, the price, the next step. Then stop. 'If you are ready, here is exactly what to do.' [1 min]"
+  },
+  {
+   "type": "cta",
+   "id": "cta",
+   "kicker": "Piece 8 · the call to action",
+   "label": "Join now",
+   "title": "Here is exactly what to do now.",
+   "steps": [
+    "Click the link my team drops in the chat",
+    "Complete your registration and payment",
+    "Write VIP in the chat"
+   ],
+   "chatWord": "VIP",
+   "link": "Link in the chat",
+   "price": 60000,
+   "currency": "P",
+   "help": "Payment issue? Write TEAM in the chat.",
+   "notes": "[OUTLINE 23 · CALL TO ACTION] Read the three steps slowly. Your team posts the link as you speak. Welcome each person by name as they write VIP. NEED: add the real registration link as 'url' so the QR code appears. [3 min]"
+  },
+  {
+   "type": "buyerswall",
+   "id": "wall",
+   "kicker": "Welcome",
+   "label": "Welcome to VIP",
+   "title": "Welcome to VIP.",
+   "lede": "Type each first name as it lands.",
+   "notes": "Type the first name of each person who writes VIP and press Enter. Names appear on the wall. [3 min]"
+  },
+  {
+   "type": "statement",
+   "id": "thanks-end",
+   "kicker": "Thank you",
+   "label": "Thank you",
+   "title": "Thank you. When the rules change, ==you can change==.",
+   "notes": "[OUTLINE 24 · THANK YOU] Mirror the opening line, warmer. Thank everyone: those who joined and those who did not. Remind them what happens next. [1 min]"
+  }
+ ]
+}
