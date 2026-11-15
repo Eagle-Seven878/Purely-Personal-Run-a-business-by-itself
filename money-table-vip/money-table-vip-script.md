@@ -14,6 +14,7 @@ Each item is marked «CONFIRM» or «PRIVATE» in the script below. None appear 
 - [ ] Exact cut-off date for the 2026 rate (for example December 31, 2026).
 - [ ] Exact Platinum qualification: what counts as a real-life deal.
 - [ ] SRT (Sir Ron's Table) Games and RELM are qualifications the Club observes. Never explain them. If asked: "You will discover why as you play."
+- [ ] GRADUATION PACE: how long from enrollment to the Graduation Game (say it as "most members reach it within ___ months"), whether SRT and RELM can run alongside the 10 games, and a limit on "play more" loops.
 - [ ] Your personal reason for rewarding early members.
 - [ ] Regular Family Member price, if you have one.
 - [ ] Membership validity and renewal terms (awaiting Board approval in the manual).
@@ -252,7 +253,12 @@ SAY: "Number three: RELM, valued at 15,000 pesos. Training before graduation."
 
 *On screen: item*
 
-SAY: "Number four: the Graduation Game, where the rules change. Valued at 25,000 pesos."
+SAY: "Number four: the Graduation Game, where the rules change. Valued at 25,000 pesos. It is scheduled once your games and training are complete."
+«CONFIRM BEFORE PRESENTING: the Graduation Game follows 10 Regular Games, 3 SRT Games and RELM. Decide and say clearly:
+ 1. A realistic pace, for example "Most members reach Graduation within ___ months." Never promise a date you cannot keep.
+ 2. Whether SRT and RELM can run alongside the 10 games, so Graduation is not delayed. This is recommended.
+ 3. A limit on "play more" loops, so no one waits indefinitely after the readiness assessment.
+ Do not explain what SRT or RELM are for. If asked "when do I graduate?", use the answer in the Q&A at the end of this script.»
 [30 sec]
 
 ## Slide 28 · The VIP Game
@@ -487,3 +493,19 @@ SAY: "Welcome to VIP, welcome, welcome!" [3 min]
 SAY: "Thank you, everyone. To those who joined, welcome to the family. To those who did not, thank you for playing. You still have your lesson from today. When the rules change, you can change."
 SAY: "Bayanihan, Kapwa, Katiwala. Good night, and keep playing."
 [1 min]
+
+---
+
+## Appendix · If someone asks about the Graduation Game
+
+**"When do I graduate?"**
+SAY: "Your Graduation Game is scheduled once your games and training are complete. Most members reach it within «___ months». Your facilitator will tell you exactly where you are on your journey."
+«CONFIRM the number before using it. If you do not have one, say: "Your facilitator will map your path with you after you enroll."»
+
+**"Why so many steps before Graduation?"**
+SAY: "Because Graduation is not another game. It is the moment the rules change. We want you ready for it, so you get the most from it."
+«Do not explain SRT or RELM. If pressed: "You will discover why as you play."»
+
+**"What if I am not ready?"**
+SAY: "Then your facilitator will recommend more play, and tell you what to focus on. You are never left guessing."
+«CONFIRM the limit on play-more loops before promising this.»

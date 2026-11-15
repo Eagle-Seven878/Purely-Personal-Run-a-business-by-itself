@@ -463,3 +463,12 @@ SAY: "Step one: message your facilitator or the club page. Step two: choose how 
 [Welcome each person by name as they write VIP.]
 «CONFIRM: add the real registration link to the deck as 'url' so a QR code shows.»
 ROOM MOVE: chat word = VIP. [3 min]"""
+
+# ===== Graduation pace and gating =====
+S["item-4"]="""SAY: "Number four: the Graduation Game, where the rules change. Valued at 25,000 pesos. It is scheduled once your games and training are complete."
+«CONFIRM BEFORE PRESENTING: the Graduation Game follows 10 Regular Games, 3 SRT Games and RELM. Decide and say clearly:
+ 1. A realistic pace, for example "Most members reach Graduation within ___ months." Never promise a date you cannot keep.
+ 2. Whether SRT and RELM can run alongside the 10 games, so Graduation is not delayed. This is recommended.
+ 3. A limit on "play more" loops, so no one waits indefinitely after the readiness assessment.
+ Do not explain what SRT or RELM are for. If asked "when do I graduate?", use the answer in the Q&A at the end of this script.»
+[30 sec]"""

@@ -356,9 +356,9 @@
    "n": 4,
    "of": 11,
    "name": "The Graduation Game",
-   "desc": "The game where the rules change.",
+   "desc": "The game where the rules change. Scheduled when your games and training are complete.",
    "currency": "P",
-   "notes": "SAY: \"Number four: the Graduation Game, where the rules change. Valued at 25,000 pesos.\"\n[30 sec]",
+   "notes": "SAY: \"Number four: the Graduation Game, where the rules change. Valued at 25,000 pesos. It is scheduled once your games and training are complete.\"\n«CONFIRM BEFORE PRESENTING: the Graduation Game follows 10 Regular Games, 3 SRT Games and RELM. Decide and say clearly:\n 1. A realistic pace, for example \"Most members reach Graduation within ___ months.\" Never promise a date you cannot keep.\n 2. Whether SRT and RELM can run alongside the 10 games, so Graduation is not delayed. This is recommended.\n 3. A limit on \"play more\" loops, so no one waits indefinitely after the readiness assessment.\n Do not explain what SRT or RELM are for. If asked \"when do I graduate?\", use the answer in the Q&A at the end of this script.»\n[30 sec]",
    "value": 25000
   },
   {
