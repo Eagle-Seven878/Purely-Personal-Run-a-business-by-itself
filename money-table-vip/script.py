@@ -492,3 +492,8 @@ S["item-3"]="""SAY: "Number three: RELM, valued at 15,000 pesos. You complete it
 [30 sec]"""
 
 S["journey"]=S["journey"].replace("your 10 games, including RELM, the Graduation Game, and the VIP Game","your 10 games, the Graduation Game, and the VIP Game")
+
+# ===== RELM is completed before the assessment (confirmed) =====
+S["item-3"]="""SAY: "Number three: RELM, valued at 15,000 pesos. You complete it before your assessment, and then comes your Graduation Game."
+«PRIVATE: do not explain RELM. Order: 10 games (SRT recommended) → RELM → assessment → Graduation Game. If asked: "You will discover why as you play."»
+[30 sec]"""

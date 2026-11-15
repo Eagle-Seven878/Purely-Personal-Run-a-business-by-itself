@@ -245,8 +245,8 @@ SAY: "Number two: 3 SRT Games, valued at 15,000 pesos. We recommend them within 
 
 *On screen: item*
 
-SAY: "Number three: RELM, valued at 15,000 pesos. You complete it before your Graduation Game."
-«PRIVATE: do not explain RELM. It is completed before Graduation, as part of the journey. If asked: "You will discover why as you play."»
+SAY: "Number three: RELM, valued at 15,000 pesos. You complete it before your assessment, and then comes your Graduation Game."
+«PRIVATE: do not explain RELM. Order: 10 games (SRT recommended) → RELM → assessment → Graduation Game. If asked: "You will discover why as you play."»
 [30 sec]
 
 ## Slide 27 · The Graduation Game
@@ -502,8 +502,8 @@ SAY: "It depends on you, on how soon you want the basics. Our games now run dail
 SAY: "We recommend them within your first 10 games, and before graduation. Your facilitator will guide you."
 «Do not explain what SRT is for. If pressed: "You will discover why as you play."»
 
-**"Do I need RELM before Graduation?"**
-SAY: "Yes. RELM is completed before your Graduation Game, as part of your journey. Your facilitator will guide you."
+**"Do I need RELM before the assessment?"**
+SAY: "Yes. RELM is completed before your assessment, and then comes your Graduation Game. Your facilitator will guide you."
 «Do not explain what RELM is for. If pressed: "You will discover why as you play."»
 
 **"Why the extra steps before Graduation?"**
