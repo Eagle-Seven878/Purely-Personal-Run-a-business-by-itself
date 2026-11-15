@@ -191,7 +191,7 @@
    "name": "The Money Table ==VIP== Package",
    "tagline": "Learn. Practice. Develop. Lead.",
    "problem": "How many of you want to know exactly what to do next, after your first games?",
-   "benefit": "Your complete membership journey: start at VIP, grow into Gold, with Platinum by invitation.",
+   "benefit": "Your complete membership journey: start at VIP, grow into Gold, and qualify for Platinum with a real-life deal.",
    "when": [
     "Your start date is your Official Joining Date",
     "It begins the day your payment is verified",
@@ -199,7 +199,7 @@
    ],
    "where": "Philippine Cashflow Club, Alpha Chapter. Games, trainings and community.",
    "format": "Live games with certified facilitators. Every game verified and tracked.",
-   "notes": "SAY: \"How many of you want to know exactly what to do next, after your first games? Write NEXT in the chat.\"\n[Read some answers.]\nSAY: \"That is why the Philippine Cashflow Club created The Money Table VIP Package. Learn. Practice. Develop. Lead.\"\nSAY: \"The most important thing you will get is your complete membership journey: start at VIP, grow into Gold, with Platinum by invitation.\"\nSAY: \"You start on the day your payment is verified, your Official Joining Date, with an orientation by Zoom or face to face. Every game is verified and tracked in your record.\"\n«CONFIRM: if you have a fixed start date or venue, say it here.»\n[2 min]"
+   "notes": "SAY: \"How many of you want to know exactly what to do next, after your first games? Write NEXT in the chat.\"\n[Read some answers.]\nSAY: \"That is why the Philippine Cashflow Club created The Money Table VIP Package. Learn. Practice. Develop. Lead.\"\nSAY: \"The most important thing you will get is your complete membership journey: start at VIP, grow into Gold, and qualify for Platinum with a real-life deal.\"\nSAY: \"You start on the day your payment is verified, your Official Joining Date, with an orientation by Zoom or face to face. Every game is verified and tracked in your record.\"\n«CONFIRM: if you have a fixed start date or venue, say it here.»\n[2 min]"
   },
   {
    "type": "statement",
@@ -271,7 +271,7 @@
    "label": "Your journey",
    "image": "assets/journey.jpg",
    "caption": "Start here. Grow. Lead.",
-   "notes": "[Show the journey graphic. Walk it from the bottom up, slowly.]\nSAY: \"This is your membership journey. Learn. Practice. Develop. Lead. It starts here, with VIP: your 10 games, including RELM, the Graduation Game, and the VIP Game.\"\nSAY: \"After the VIP Game, you grow into Gold: unlimited games at the Club, games and training, and opportunities by invitation. And at the top, Platinum, the highest level, by invitation.\"\nSAY: \"Everything starts with one step. Begin your VIP journey.\"\n[2 min]"
+   "notes": "[Show the journey graphic. Walk it from the bottom up, slowly.]\nSAY: \"This is your membership journey. Learn. Practice. Develop. Lead. It starts here, with VIP: your 10 games, including RELM, the Graduation Game, and the VIP Game.\"\nSAY: \"After the VIP Game, you grow into Gold: unlimited games at the Club, games and training, and opportunities by invitation. Gold is about deals in the game.\"\nSAY: \"And at the top is Platinum, the highest membership level. Any VIP can become Platinum, but it asks for a higher level of qualification: a real-life deal, not just a game deal.\"\nSAY: \"Everything starts with one step. Begin your VIP journey.\"\n[2 min]"
   },
   {
    "type": "item",
@@ -408,10 +408,10 @@
    "n": 10,
    "of": 10,
    "name": "Platinum",
-   "desc": "The highest level. Leadership and business partnerships.",
+   "desc": "The highest level. Any VIP can qualify, with a real-life deal.",
    "currency": "P",
-   "notes": "SAY: \"At the top of the journey is Platinum: the highest membership level, by invitation. Psychology of Winning, Irresistible Confidence, Leadership Training, and business partnerships. I do not put a price on Platinum. It is a path you grow into.\"\n[30 sec]",
-   "valueText": "By invitation"
+   "notes": "SAY: \"At the top of the journey is Platinum, the highest membership level. Any VIP can become Platinum. The difference is the qualification: Gold is about deals in the game. Platinum asks for a real-life deal.\"\nSAY: \"With Platinum come Psychology of Winning, Irresistible Confidence, Leadership Training, and business partnerships. I do not put a price on Platinum, because you earn it.\"\n«CONFIRM: state the exact Platinum qualification (what counts as a real-life deal), and whether the invitation follows qualification.»\n[1 min]",
+   "valueText": "Earned"
   },
   {
    "type": "stacklist",
@@ -459,7 +459,7 @@
     },
     {
      "name": "Platinum",
-     "valueText": "By invitation"
+     "valueText": "Earned"
     }
    ],
    "totalLabel": "Total value",
@@ -474,7 +474,7 @@
     "SAY: 'Plus Advanced Games, 30,000.'",
     "SAY: 'Plus Gold Training, 260,000. Gold is worth 365,000 pesos.'",
     "SAY: 'Plus opportunities by invitation, beginning at Gold.'",
-    "SAY: 'And Platinum, by invitation. The total value of VIP and Gold is 455,000 pesos.' [Pause. Let it land.]"
+    "SAY: 'And Platinum, the highest level, which you earn with a real-life deal. The total value of VIP and Gold is 455,000 pesos.' [Pause. Let it land.]"
    ]
   },
   {
@@ -515,9 +515,9 @@
    "kicker": "Introduce future bonuses",
    "label": "What comes next",
    "over": "What comes next",
-   "title": "Start as VIP. Grow into ==Gold== after the VIP Game.",
-   "sub": "Platinum is by invitation.",
-   "notes": "SAY: \"Here is how the journey grows. Start as VIP. After the VIP Game, you grow into Gold. And Platinum, the highest level, is by invitation.\"\n[1 min]"
+   "title": "Gold: deals in the game. ==Platinum==: a real-life deal.",
+   "sub": "Any VIP can qualify.",
+   "notes": "SAY: \"Here is how the journey grows. Start as VIP. After the VIP Game, you grow into Gold. Gold is about deals in the game. Then Platinum, the highest level. Any VIP can qualify, but it asks for a real-life deal.\"\n«CONFIRM: describe the Platinum qualification in your own words so no one expects it automatically.»\n[1 min]"
   },
   {
    "type": "statement",
@@ -559,9 +559,9 @@
    "kicker": "Bonuses",
    "label": "Bonuses",
    "over": "Where the journey leads",
-   "title": "Gold after the VIP Game. ==Opportunities== by invitation.",
-   "sub": "Platinum is the highest level, by invitation.",
-   "notes": "SAY: \"And remember where this leads: Gold after the VIP Game, opportunities by invitation, and Platinum, the highest level, by invitation.\"\n«CONFIRM: add any extra bonus for people who join in the room today. Only add what is truly extra.»\n[1 min]"
+   "title": "Gold after the VIP Game. ==Platinum== with a real-life deal.",
+   "sub": "Opportunities by invitation, beginning at Gold.",
+   "notes": "SAY: \"And remember where this leads: Gold after the VIP Game, and Platinum, for those who prove it with a real-life deal. Opportunities open by invitation, beginning at Gold.\"\n«CONFIRM: add any extra bonus for people who join in the room today. Only add what is truly extra.»\n[1 min]"
   },
   {
    "type": "statement",

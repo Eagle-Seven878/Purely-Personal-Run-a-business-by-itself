@@ -264,3 +264,23 @@ SAY: "Not 455,000 pesos. Not even 75,000. The 2026 rate is 60,000 pesos. Startin
 S["bonuses"]="""SAY: "And remember where this leads: Gold after the VIP Game, opportunities by invitation, and Platinum, the highest level, by invitation."
 «CONFIRM: add any extra bonus for people who join in the room today. Only add what is truly extra.»
 [1 min]"""
+
+# ===== Platinum clarified: highest level, any VIP can qualify with a real-life deal =====
+S["offer"]=S["offer"].replace("start at VIP, grow into Gold, with Platinum by invitation.","start at VIP, grow into Gold, and qualify for Platinum with a real-life deal.")
+S["journey"]="""[Show the journey graphic. Walk it from the bottom up, slowly.]
+SAY: "This is your membership journey. Learn. Practice. Develop. Lead. It starts here, with VIP: your 10 games, including RELM, the Graduation Game, and the VIP Game."
+SAY: "After the VIP Game, you grow into Gold: unlimited games at the Club, games and training, and opportunities by invitation. Gold is about deals in the game."
+SAY: "And at the top is Platinum, the highest membership level. Any VIP can become Platinum, but it asks for a higher level of qualification: a real-life deal, not just a game deal."
+SAY: "Everything starts with one step. Begin your VIP journey."
+[2 min]"""
+S["item-10"]="""SAY: "At the top of the journey is Platinum, the highest membership level. Any VIP can become Platinum. The difference is the qualification: Gold is about deals in the game. Platinum asks for a real-life deal."
+SAY: "With Platinum come Psychology of Winning, Irresistible Confidence, Leadership Training, and business partnerships. I do not put a price on Platinum, because you earn it."
+«CONFIRM: state the exact Platinum qualification (what counts as a real-life deal), and whether the invitation follows qualification.»
+[1 min]"""
+STACK[-1]="SAY: 'And Platinum, the highest level, which you earn with a real-life deal. The total value of VIP and Gold is 455,000 pesos.' [Pause. Let it land.]"
+S["future-bonuses"]="""SAY: "Here is how the journey grows. Start as VIP. After the VIP Game, you grow into Gold. Gold is about deals in the game. Then Platinum, the highest level. Any VIP can qualify, but it asks for a real-life deal."
+«CONFIRM: describe the Platinum qualification in your own words so no one expects it automatically.»
+[1 min]"""
+S["bonuses"]="""SAY: "And remember where this leads: Gold after the VIP Game, and Platinum, for those who prove it with a real-life deal. Opportunities open by invitation, beginning at Gold."
+«CONFIRM: add any extra bonus for people who join in the room today. Only add what is truly extra.»
+[1 min]"""

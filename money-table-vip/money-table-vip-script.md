@@ -3,13 +3,14 @@ Philippine Cashflow Club · 54 slides · about 80 to 95 minutes with Q&A
 
 Open `money-table-vip.html` in Chrome, full screen. Arrow keys move, **N** shows this script on the slide, **S** opens speaker view.
 
-Numbers: VIP P90,000 + Gold P365,000 = P455,000 total value (about 7.6x the price). 2026 rate P60,000, P75,000 from 2027. Platinum and the invitation-only opportunities are shown as a path, by invitation, with no price. Structure follows the Club's official membership journey graphic.
+Numbers: VIP P90,000 + Gold P365,000 = P455,000 total value (about 7.6x the price). 2026 rate P60,000, P75,000 from 2027. Platinum (the highest level, earned by any VIP with a real-life deal) and the invitation-only opportunities are shown as a path with no price. Structure follows the Club's official membership journey graphic.
 
 ## Pre-flight checklist: confirm before you go live
 
 Each item is marked «CONFIRM» in the script below. None appear on the slides.
 
 - [ ] Exact cut-off date for the 2026 rate (for example December 31, 2026).
+- [ ] Exact Platinum qualification: what counts as a real-life deal, and whether the invitation follows qualification.
 - [ ] Your personal reason for rewarding early members.
 - [ ] 3 STR Games and the separate RELM (kept as on your value stack page). The official graphic shows neither STR Games nor RELM as a separate VIP item, so be ready to explain them.
 - [ ] Regular Family Member price, if you have one.
@@ -152,7 +153,7 @@ SAY: "Our facilitators do not hand over the answer. They guide with questions, a
 SAY: "How many of you want to know exactly what to do next, after your first games? Write NEXT in the chat."
 [Read some answers.]
 SAY: "That is why the Philippine Cashflow Club created The Money Table VIP Package. Learn. Practice. Develop. Lead."
-SAY: "The most important thing you will get is your complete membership journey: start at VIP, grow into Gold, with Platinum by invitation."
+SAY: "The most important thing you will get is your complete membership journey: start at VIP, grow into Gold, and qualify for Platinum with a real-life deal."
 SAY: "You start on the day your payment is verified, your Official Joining Date, with an orientation by Zoom or face to face. Every game is verified and tracked in your record."
 «CONFIRM: if you have a fixed start date or venue, say it here.»
 [2 min]
@@ -199,7 +200,8 @@ SAY: "What do you get from all this? A path you can see: games, graduation, VIP,
 
 [Show the journey graphic. Walk it from the bottom up, slowly.]
 SAY: "This is your membership journey. Learn. Practice. Develop. Lead. It starts here, with VIP: your 10 games, including RELM, the Graduation Game, and the VIP Game."
-SAY: "After the VIP Game, you grow into Gold: unlimited games at the Club, games and training, and opportunities by invitation. And at the top, Platinum, the highest level, by invitation."
+SAY: "After the VIP Game, you grow into Gold: unlimited games at the Club, games and training, and opportunities by invitation. Gold is about deals in the game."
+SAY: "And at the top is Platinum, the highest membership level. Any VIP can become Platinum, but it asks for a higher level of qualification: a real-life deal, not just a game deal."
 SAY: "Everything starts with one step. Begin your VIP journey."
 [2 min]
 
@@ -270,8 +272,10 @@ SAY: "And beginning at Gold, opportunities open up, by invitation: speaking and 
 
 *On screen: item*
 
-SAY: "At the top of the journey is Platinum: the highest membership level, by invitation. Psychology of Winning, Irresistible Confidence, Leadership Training, and business partnerships. I do not put a price on Platinum. It is a path you grow into."
-[30 sec]
+SAY: "At the top of the journey is Platinum, the highest membership level. Any VIP can become Platinum. The difference is the qualification: Gold is about deals in the game. Platinum asks for a real-life deal."
+SAY: "With Platinum come Psychology of Winning, Irresistible Confidence, Leadership Training, and business partnerships. I do not put a price on Platinum, because you earn it."
+«CONFIRM: state the exact Platinum qualification (what counts as a real-life deal), and whether the invitation follows qualification.»
+[1 min]
 
 ## Slide 32 · Everything you get (1 of 10)
 
@@ -311,7 +315,7 @@ SAY: 'Plus opportunities by invitation, beginning at Gold.'
 
 ## Slide 41 · Everything you get (10 of 10)
 
-SAY: 'And Platinum, by invitation. The total value of VIP and Gold is 455,000 pesos.' [Pause. Let it land.]
+SAY: 'And Platinum, the highest level, which you earn with a real-life deal. The total value of VIP and Gold is 455,000 pesos.' [Pause. Let it land.]
 
 ## Slide 42 · Three numbers to remember.
 
@@ -328,11 +332,12 @@ SAY: "Three numbers to remember. First, the comparison value: 455,000 pesos for 
 SAY: "The total value of VIP and Gold: 455,000 pesos."
 [Silence. Let the number sit for three seconds.] [30 sec]
 
-## Slide 44 · Start as VIP. Grow into Gold after the VIP Game.
+## Slide 44 · Gold: deals in the game. Platinum: a real-life deal.
 
 *On screen: statement*
 
-SAY: "Here is how the journey grows. Start as VIP. After the VIP Game, you grow into Gold. And Platinum, the highest level, is by invitation."
+SAY: "Here is how the journey grows. Start as VIP. After the VIP Game, you grow into Gold. Gold is about deals in the game. Then Platinum, the highest level. Any VIP can qualify, but it asks for a real-life deal."
+«CONFIRM: describe the Platinum qualification in your own words so no one expects it automatically.»
 [1 min]
 
 ## Slide 45 · From 2027, the price becomes P75,000.
@@ -359,11 +364,11 @@ SAY: "The 2026 rate ends with the year. From 2027 it is 75,000 pesos. Join in 20
 «CONFIRM: confirm the exact cut-off date, for example December 31, 2026. Say it out loud so the deadline is clear.»
 [1 min]
 
-## Slide 48 · Gold after the VIP Game. Opportunities by invitation.
+## Slide 48 · Gold after the VIP Game. Platinum with a real-life deal.
 
 *On screen: statement*
 
-SAY: "And remember where this leads: Gold after the VIP Game, opportunities by invitation, and Platinum, the highest level, by invitation."
+SAY: "And remember where this leads: Gold after the VIP Game, and Platinum, for those who prove it with a real-life deal. Opportunities open by invitation, beginning at Gold."
 «CONFIRM: add any extra bonus for people who join in the room today. Only add what is truly extra.»
 [1 min]
 

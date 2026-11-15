@@ -61,7 +61,7 @@ add(type="cards",id="story-proof",kicker="The Bridge · the experience",label="W
 add(type="offer",id="offer",kicker="Pieces 1 and 2 · the name, where and when",label="The offer",
  name="The Money Table ==VIP== Package",tagline="Learn. Practice. Develop. Lead.",
  problem="How many of you want to know exactly what to do next, after your first games?",
- benefit="Your complete membership journey: start at VIP, grow into Gold, with Platinum by invitation.",
+ benefit="Your complete membership journey: start at VIP, grow into Gold, and qualify for Platinum with a real-life deal.",
  when=["Your start date is your Official Joining Date","It begins the day your payment is verified","Orientation by Zoom or face to face"],
  where="Philippine Cashflow Club, Alpha Chapter. Games, trainings and community.",format="Live games with certified facilitators. Every game verified and tracked.",
  notes="[OUTLINE 6, 11 and 12 · NAME, LOCATION, DATE] Ask the problem question first and read the chat. Then: 'That is why the club created The Money Table VIP.' Say the benefit slowly. NEED: replace the start line with the real VIP start date and venue or Zoom link when confirmed. [2 min]")
@@ -94,7 +94,7 @@ seq=[
  ("Advanced Games","FOMO 1, FOMO 2 and No Pay Day, P10,000 each.",30000,None,"Gold · Piece 3 · everything you get","Real value from the VIP Package value stack."),
  ("Gold Training","Five trainings, from Irresistible Offer to Public Speaking.",260000,None,"Gold · Piece 3 · everything you get","Real value: 15,000 + 50,000 + 50,000 + 95,000 + 50,000."),
  ("Gold Opportunities","Speaking, training and coaching, chapter creation and travel.",None,"By invitation","Gold · Piece 3 · everything you get","By invitation, beginning at Gold. No price attached."),
- ("Platinum","The highest level. Leadership and business partnerships.",None,"By invitation","Platinum · Piece 3 · the path ahead","By invitation. No price attached."),
+ ("Platinum","The highest level. Any VIP can qualify, with a real-life deal.",None,"Earned","Platinum · Piece 3 · the path ahead","Earned by qualifying with a real-life deal. No price attached."),
 ]
 n=len(seq)
 for i,(nm,d,v,vt,k,note) in enumerate(seq,1):
@@ -112,7 +112,7 @@ add(type="cards",id="ladder",kicker="Tuition and price",label="The price",title=
  notes="x")
 add(type="struck",id="struck",kicker="Pieces 4, 5 and 6 · the anchor, the reason, the drop",label="The total",amount=total,currency=C,notes="x")
 add(type="statement",id="future-bonuses",kicker="Introduce future bonuses",label="What comes next",over="What comes next",
- title="Start as VIP. Grow into ==Gold== after the VIP Game.",sub="Platinum is by invitation.",
+ title="Gold: deals in the game. ==Platinum==: a real-life deal.",sub="Any VIP can qualify.",
  notes="x")
 add(type="statement",id="reason",role="reason",kicker="Pieces 4, 5 and 6 · the anchor, the reason, the drop",label="Why today",
  title="From 2027, the price becomes P75,000.",sub="Join in 2026 and keep the 2026 rate.",
@@ -122,7 +122,7 @@ add(type="price",id="price",kicker="Pieces 4, 5 and 6 · the anchor, the reason,
 add(type="limiter",id="limiter",kicker="Piece 7 · the limiter",label="The limit",title="The 2026 rate ends with the year.",kind="deadline",
     deadline="From 2027 it is P75,000",line="Join in 2026 and you lock in P60,000. You save P15,000.",notes="x")
 add(type="statement",id="bonuses",kicker="Bonuses",label="Bonuses",over="Where the journey leads",
- title="Gold after the VIP Game. ==Opportunities== by invitation.",sub="Platinum is the highest level, by invitation.",
+ title="Gold after the VIP Game. ==Platinum== with a real-life deal.",sub="Opportunities by invitation, beginning at Gold.",
  notes="x")
 add(type="statement",id="payment",kicker="Payment options",label="How to pay",over="Payment options",
  title="Message your facilitator. Pay. Get verified. You are in.",
