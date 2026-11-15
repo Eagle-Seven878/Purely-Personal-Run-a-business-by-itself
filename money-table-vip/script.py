@@ -300,3 +300,65 @@ STACK[1]="SAY: 'Plus 3 SRT Games, 15,000.'"
 STACK[2]="SAY: 'Plus RELM, 10,000.'"
 STACK[3]="SAY: 'Plus the Graduation Game, 25,000.'"
 STACK[4]="SAY: 'Plus the VIP Game, 25,000. That is VIP: 90,000 pesos.'"
+
+# ===== Official Value Journey graphic (VIP 290,000 + Gold 280,000 + Platinum 170,000 = 740,000) =====
+for k in list(S):
+    if k.startswith("item-"): S.pop(k)
+S["item-1"]="""SAY: "Let me show you the value of the journey, tier by tier. We start with VIP. Number one: 10 Regular Games, including RELM, valued by the Club at 15,000 pesos."
+«PRIVATE: do not explain RELM. If asked: "You will discover why as you play."»
+[30 sec]"""
+S["item-2"]="""SAY: "Number two: 3 additional SRT Games, games and training before graduation, valued at 15,000 pesos."
+«PRIVATE: SRT stands for Sir Ron's Table. Do not explain what it is for. If asked: "You will discover why as you play."»
+[30 sec]"""
+S["item-3"]="""SAY: "Number three: the Graduation Game, where the rules change. Valued at 25,000 pesos."
+[30 sec]"""
+S["item-4"]="""SAY: "Number four: the VIP Game, your game on the way to Gold. Valued at 25,000 pesos."
+[30 sec]"""
+S["item-5"]="""SAY: "Number five: VIP Training. Irresistible Offer, 15,000. Facilitation Training, 50,000. Teach to Be Rich, 50,000. Masterpiece of a Deal, 95,000. Together, 210,000 pesos. And that makes the VIP benefit value 290,000 pesos."
+[Slow down. Say each training and let the numbers land.] [1 min]"""
+S["item-6"]="""SAY: "Now Gold, the next progression level, after the VIP Game. Unlimited Club Games. The value is based on 50 games at 1,500 pesos, so 75,000, but it is not a play limit. You can play unlimited."
+[30 sec]"""
+S["item-7"]="""SAY: "Advanced Games: FOMO 1, FOMO 2, and No Pay Day. 10,000 pesos each, so 30,000 pesos."
+[30 sec]"""
+S["item-8"]="""SAY: "Gold Training: Public Speaking Training, 50,000. Training and Coaching Development, 75,000. Leadership Training, 50,000. Together, 175,000 pesos. Gold adds 280,000 pesos of value."
+[1 min]"""
+S["item-9"]="""SAY: "And beginning at Gold, opportunities open by invitation: speaking and facilitation, training and coaching pathways, chapter creation, and local and international travel. These depend on qualifications and availability, so the Club does not put a money value on them."
+[30 sec]"""
+S["item-10"]="""SAY: "Platinum is the highest membership level. Any VIP can qualify, but it asks for more: a real-life deal, not just a game deal. Platinum Training: Psychology of Winning, 85,000. Irresistible Confidence, 85,000. Together, 170,000 pesos."
+«CONFIRM: state the exact Platinum qualification (what counts as a real-life deal).»
+[1 min]"""
+S["item-11"]="""SAY: "And with Platinum come advanced leadership pathways and business partnerships, by invitation. No monetary value is assigned to those."
+[30 sec]"""
+STACK=[
+ "SAY: 'Let us put it together. 10 Regular Games, including RELM, 15,000.'",
+ "SAY: 'Plus 3 additional SRT Games, 15,000.'",
+ "SAY: 'Plus the Graduation Game, 25,000.'",
+ "SAY: 'Plus the VIP Game, 25,000.'",
+ "SAY: 'Plus VIP Training, 210,000. That is the VIP benefit value: 290,000 pesos.'",
+ "SAY: 'Then Gold. Unlimited Club Games, 75,000.'",
+ "SAY: 'Plus Advanced Games, 30,000.'",
+ "SAY: 'Plus Gold Training, 175,000. Gold adds 280,000 pesos.'",
+ "SAY: 'Plus opportunities by invitation, beginning at Gold.'",
+ "SAY: 'And Platinum Training, 170,000.'",
+ "SAY: 'Plus leadership and collaboration, by invitation. The total journey value is 740,000 pesos.' [Pause. Let it land.]"]
+S["value-journey"]="""[Show the Value Journey graphic. Walk left to right: VIP, Gold, Platinum.]
+SAY: "Here is the whole value journey on one page. VIP benefit value, 290,000. Gold adds 280,000. Platinum training adds 170,000. The total journey value is 740,000 pesos."
+SAY: "And at the bottom, read it with me: VIP enrollment, 60,000 pesos. Planned 2027 price, 75,000 pesos."
+[2 min]"""
+S["values-note"]="""SAY: "Please hear this clearly. These are Club-assigned benefit values. They are not prices. Gold and Platinum are progression levels. You grow into them. What you enroll in today is VIP, at 60,000 pesos."
+«IMPORTANT: say this line out loud. It is on the Club's own graphic, and it keeps the offer honest.»
+[1 min]"""
+S["ladder"]="""SAY: "Three numbers to remember. First, the total journey value: 740,000 pesos. Second, the planned 2027 price: 75,000 pesos. Third, your 2026 enrollment: 60,000 pesos. Lock it in this year."
+«CONFIRM: the outline calls for a Regular Family Member price. If you have one, say it here.»
+[2 min]"""
+S["struck"]="""SAY: "The total journey value: 740,000 pesos."
+[Silence. Let the number sit for three seconds.] [30 sec]"""
+S["reason"]="""SAY: "Now, why this price today? Because the planned price for 2027 is 75,000 pesos. If you enroll in 2026, you keep the 2026 rate."
+«CONFIRM: add your personal reason, your why for rewarding early members, in your own words.»
+[1 min]"""
+S["price"]="""[STAR MOMENT. Say nothing for three seconds before you speak.]
+SAY: "Not 740,000 pesos. VIP enrollment in 2026 is 60,000 pesos. The planned 2027 price is 75,000, so you save 15,000. VIP alone carries 290,000 pesos of Club benefit value, almost five times what you enroll for."
+[Then stop talking. Hold the silence.] [3 min]"""
+S["limiter"]="""SAY: "The 2026 rate ends with the year. The planned 2027 price is 75,000 pesos. Enroll in 2026, and you lock in 60,000 and save 15,000."
+«CONFIRM: confirm the exact cut-off date, for example December 31, 2026. Say it out loud.»
+[1 min]"""

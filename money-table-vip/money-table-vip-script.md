@@ -1,20 +1,22 @@
 # The Money Table VIP Package: Presenter Script
-Philippine Cashflow Club · 54 slides · about 80 to 95 minutes with Q&A
+Philippine Cashflow Club · 58 slides · about 85 to 100 minutes with Q&A
 
 Open `money-table-vip.html` in Chrome, full screen. Arrow keys move, **N** shows this script on the slide, **S** opens speaker view.
 
-Numbers: VIP P90,000 + Gold P365,000 = P455,000 total value (about 7.6x the price). 2026 rate P60,000, P75,000 from 2027. Platinum (the highest level, earned by any VIP with a real-life deal) and the invitation-only opportunities are shown as a path with no price. Structure follows the Club's official membership journey graphic.
+Numbers follow the Club's official Value Journey graphic: VIP benefit value P290,000 + Gold additional P280,000 + Platinum training P170,000 = P740,000 total journey value. VIP enrollment 2026: P60,000. Planned 2027 price: P75,000. Opportunities by invitation carry no monetary value.
+
+**Say this clearly (it is on the Club's own graphic):** these are Club-assigned benefit values, not prices. Gold and Platinum are progression levels you grow into. What the buyer enrolls in is VIP at P60,000.
 
 ## Pre-flight checklist: confirm before you go live
 
-Each item is marked «CONFIRM» in the script below. None appear on the slides.
+Each item is marked «CONFIRM» or «PRIVATE» in the script below. None appear on the slides.
 
 - [ ] Exact cut-off date for the 2026 rate (for example December 31, 2026).
-- [ ] Exact Platinum qualification: what counts as a real-life deal, and whether the invitation follows qualification.
+- [ ] Exact Platinum qualification: what counts as a real-life deal.
+- [ ] SRT (Sir Ron's Table) Games and RELM are qualifications the Club observes. Never explain them. If asked: "You will discover why as you play."
 - [ ] Your personal reason for rewarding early members.
-- [ ] SRT (Sir Ron's Table) Games and RELM are qualifications the Club observes. The script never explains them. If asked, say: "You will discover why as you play."
 - [ ] Regular Family Member price, if you have one.
-- [ ] Membership validity and renewal terms (still awaiting Board approval in the manual).
+- [ ] Membership validity and renewal terms (awaiting Board approval in the manual).
 - [ ] Payment methods and any installment plan.
 - [ ] Guarantee: say none unless the refund policy is approved.
 - [ ] Real member testimonials, word for word, with permission.
@@ -205,48 +207,48 @@ SAY: "And at the top is Platinum, the highest membership level. Any VIP can beco
 SAY: "Everything starts with one step. Begin your VIP journey."
 [2 min]
 
-## Slide 22 · 10 Cashflow Games
+## Slide 22 · 10 Regular Games (including RELM)
 
 *On screen: item*
 
-SAY: "Let me show you everything you get, tier by tier. We start with VIP. Number one: 10 Cashflow Games. Regular games at 1,500 pesos each, so 15,000 pesos."
-[Pause after the number.] [30 sec]
-
-## Slide 23 · 3 SRT Games
-
-*On screen: item*
-
-SAY: "Number two: 3 SRT Games. Additional games, part of your games and training before graduation. 15,000 pesos."
-«PRIVATE: SRT stands for Sir Ron's Table. Do not explain what it is for. These are qualifications the Club observes, and players are meant to discover them as they play. If asked, say: "You will discover why as you play."»
+SAY: "Let me show you the value of the journey, tier by tier. We start with VIP. Number one: 10 Regular Games, including RELM, valued by the Club at 15,000 pesos."
+«PRIVATE: do not explain RELM. If asked: "You will discover why as you play."»
 [30 sec]
 
-## Slide 24 · RELM
+## Slide 23 · 3 Additional SRT Games
 
 *On screen: item*
 
-SAY: "Number three: RELM, 10,000 pesos. Training before graduation."
-«PRIVATE: do not explain RELM. Same rule: players discover it as they play. If asked: "You will discover why as you play."»
+SAY: "Number two: 3 additional SRT Games, games and training before graduation, valued at 15,000 pesos."
+«PRIVATE: SRT stands for Sir Ron's Table. Do not explain what it is for. If asked: "You will discover why as you play."»
 [30 sec]
 
-## Slide 25 · The Graduation Game
+## Slide 24 · The Graduation Game
 
 *On screen: item*
 
-SAY: "Number four: the Graduation Game, where the rules change. Worth 25,000 pesos."
+SAY: "Number three: the Graduation Game, where the rules change. Valued at 25,000 pesos."
 [30 sec]
 
-## Slide 26 · The VIP Game
+## Slide 25 · The VIP Game
 
 *On screen: item*
 
-SAY: "Number five: the VIP Game, your game on the way to Gold. Worth 25,000 pesos. And that completes VIP: 90,000 pesos of value."
+SAY: "Number four: the VIP Game, your game on the way to Gold. Valued at 25,000 pesos."
 [30 sec]
 
-## Slide 27 · Unlimited Games at the Club
+## Slide 26 · VIP Training
 
 *On screen: item*
 
-SAY: "Now Gold, which comes after the VIP Game. Unlimited games at the Club. Fifty games valued at 75,000 pesos, and then unlimited play."
+SAY: "Number five: VIP Training. Irresistible Offer, 15,000. Facilitation Training, 50,000. Teach to Be Rich, 50,000. Masterpiece of a Deal, 95,000. Together, 210,000 pesos. And that makes the VIP benefit value 290,000 pesos."
+[Slow down. Say each training and let the numbers land.] [1 min]
+
+## Slide 27 · Unlimited Club Games
+
+*On screen: item*
+
+SAY: "Now Gold, the next progression level, after the VIP Game. Unlimited Club Games. The value is based on 50 games at 1,500 pesos, so 75,000, but it is not a play limit. You can play unlimited."
 [30 sec]
 
 ## Slide 28 · Advanced Games
@@ -260,81 +262,108 @@ SAY: "Advanced Games: FOMO 1, FOMO 2, and No Pay Day. 10,000 pesos each, so 30,0
 
 *On screen: item*
 
-SAY: "Gold Training. Five trainings: Irresistible Offer, 15,000. Facilitation Training, 50,000. Teach to Be Rich, 50,000. Masterpiece of a Deal, 95,000. And Public Speaking Training, 50,000. Together, 260,000 pesos. Gold is worth 365,000 pesos."
-[Slow down. Say each training and let the numbers land.] [1 min]
+SAY: "Gold Training: Public Speaking Training, 50,000. Training and Coaching Development, 75,000. Leadership Training, 50,000. Together, 175,000 pesos. Gold adds 280,000 pesos of value."
+[1 min]
 
 ## Slide 30 · Gold Opportunities
 
 *On screen: item*
 
-SAY: "And beginning at Gold, opportunities open up, by invitation: speaking and facilitation, from room facilitator to international facilitator. Training and coaching, from national trainer to international coach. And chapter creation and travel. These come by invitation, so I do not put a price on them."
+SAY: "And beginning at Gold, opportunities open by invitation: speaking and facilitation, training and coaching pathways, chapter creation, and local and international travel. These depend on qualifications and availability, so the Club does not put a money value on them."
 [30 sec]
 
-## Slide 31 · Platinum
+## Slide 31 · Platinum Training
 
 *On screen: item*
 
-SAY: "At the top of the journey is Platinum, the highest membership level. Any VIP can become Platinum. The difference is the qualification: Gold is about deals in the game. Platinum asks for a real-life deal."
-SAY: "With Platinum come Psychology of Winning, Irresistible Confidence, Leadership Training, and business partnerships. I do not put a price on Platinum, because you earn it."
-«CONFIRM: state the exact Platinum qualification (what counts as a real-life deal), and whether the invitation follows qualification.»
+SAY: "Platinum is the highest membership level. Any VIP can qualify, but it asks for more: a real-life deal, not just a game deal. Platinum Training: Psychology of Winning, 85,000. Irresistible Confidence, 85,000. Together, 170,000 pesos."
+«CONFIRM: state the exact Platinum qualification (what counts as a real-life deal).»
 [1 min]
 
-## Slide 32 · Everything you get (1 of 10)
+## Slide 32 · Leadership and Collaboration
 
-SAY: 'Let us put it together. 10 Cashflow Games, 15,000.'
+*On screen: item*
 
-## Slide 33 · Everything you get (2 of 10)
+SAY: "And with Platinum come advanced leadership pathways and business partnerships, by invitation. No monetary value is assigned to those."
+[30 sec]
 
-SAY: 'Plus 3 SRT Games, 15,000.'
+## Slide 33 · Everything you get (1 of 11)
 
-## Slide 34 · Everything you get (3 of 10)
+SAY: 'Let us put it together. 10 Regular Games, including RELM, 15,000.'
 
-SAY: 'Plus RELM, 10,000.'
+## Slide 34 · Everything you get (2 of 11)
 
-## Slide 35 · Everything you get (4 of 10)
+SAY: 'Plus 3 additional SRT Games, 15,000.'
+
+## Slide 35 · Everything you get (3 of 11)
 
 SAY: 'Plus the Graduation Game, 25,000.'
 
-## Slide 36 · Everything you get (5 of 10)
+## Slide 36 · Everything you get (4 of 11)
 
-SAY: 'Plus the VIP Game, 25,000. That is VIP: 90,000 pesos.'
+SAY: 'Plus the VIP Game, 25,000.'
 
-## Slide 37 · Everything you get (6 of 10)
+## Slide 37 · Everything you get (5 of 11)
 
-SAY: 'Then Gold, after the VIP Game. Unlimited games at the Club, 75,000.'
+SAY: 'Plus VIP Training, 210,000. That is the VIP benefit value: 290,000 pesos.'
 
-## Slide 38 · Everything you get (7 of 10)
+## Slide 38 · Everything you get (6 of 11)
+
+SAY: 'Then Gold. Unlimited Club Games, 75,000.'
+
+## Slide 39 · Everything you get (7 of 11)
 
 SAY: 'Plus Advanced Games, 30,000.'
 
-## Slide 39 · Everything you get (8 of 10)
+## Slide 40 · Everything you get (8 of 11)
 
-SAY: 'Plus Gold Training, 260,000. Gold is worth 365,000 pesos.'
+SAY: 'Plus Gold Training, 175,000. Gold adds 280,000 pesos.'
 
-## Slide 40 · Everything you get (9 of 10)
+## Slide 41 · Everything you get (9 of 11)
 
 SAY: 'Plus opportunities by invitation, beginning at Gold.'
 
-## Slide 41 · Everything you get (10 of 10)
+## Slide 42 · Everything you get (10 of 11)
 
-SAY: 'And Platinum, the highest level, which you earn with a real-life deal. The total value of VIP and Gold is 455,000 pesos.' [Pause. Let it land.]
+SAY: 'And Platinum Training, 170,000.'
 
-## Slide 42 · Three numbers to remember.
+## Slide 43 · Everything you get (11 of 11)
+
+SAY: 'Plus leadership and collaboration, by invitation. The total journey value is 740,000 pesos.' [Pause. Let it land.]
+
+## Slide 44 · Value journey
+
+*On screen: slide*
+
+[Show the Value Journey graphic. Walk left to right: VIP, Gold, Platinum.]
+SAY: "Here is the whole value journey on one page. VIP benefit value, 290,000. Gold adds 280,000. Platinum training adds 170,000. The total journey value is 740,000 pesos."
+SAY: "And at the bottom, read it with me: VIP enrollment, 60,000 pesos. Planned 2027 price, 75,000 pesos."
+[2 min]
+
+## Slide 45 · Club-assigned benefit values, not prices.
+
+*On screen: statement*
+
+SAY: "Please hear this clearly. These are Club-assigned benefit values. They are not prices. Gold and Platinum are progression levels. You grow into them. What you enroll in today is VIP, at 60,000 pesos."
+«IMPORTANT: say this line out loud. It is on the Club's own graphic, and it keeps the offer honest.»
+[1 min]
+
+## Slide 46 · Three numbers to remember.
 
 *On screen: cards*
 
-SAY: "Three numbers to remember. First, the comparison value: 455,000 pesos for VIP and Gold. Second, the regular price: starting 2027, it is 75,000 pesos. Third, your 2026 member price: 60,000 pesos. Lock it in this year."
-«CONFIRM: the outline calls for a Regular Family Member price. If you have one, say it here. If not, the 2026 member price is your member price.»
+SAY: "Three numbers to remember. First, the total journey value: 740,000 pesos. Second, the planned 2027 price: 75,000 pesos. Third, your 2026 enrollment: 60,000 pesos. Lock it in this year."
+«CONFIRM: the outline calls for a Regular Family Member price. If you have one, say it here.»
 [2 min]
 
-## Slide 43 · The total
+## Slide 47 · The total
 
 *On screen: struck*
 
-SAY: "The total value of VIP and Gold: 455,000 pesos."
+SAY: "The total journey value: 740,000 pesos."
 [Silence. Let the number sit for three seconds.] [30 sec]
 
-## Slide 44 · Gold: deals in the game. Platinum: a real-life deal.
+## Slide 48 · Gold: deals in the game. Platinum: a real-life deal.
 
 *On screen: statement*
 
@@ -342,31 +371,31 @@ SAY: "Here is how the journey grows. Start as VIP. After the VIP Game, you grow 
 «CONFIRM: describe the Platinum qualification in your own words so no one expects it automatically.»
 [1 min]
 
-## Slide 45 · From 2027, the price becomes P75,000.
+## Slide 49 · From 2027, the planned price is P75,000.
 
 *On screen: statement*
 
-SAY: "Now, why this price today? Because from 2027, the price becomes 75,000 pesos. If you join in 2026, you keep the 2026 rate."
+SAY: "Now, why this price today? Because the planned price for 2027 is 75,000 pesos. If you enroll in 2026, you keep the 2026 rate."
 «CONFIRM: add your personal reason, your why for rewarding early members, in your own words.»
 [1 min]
 
-## Slide 46 · The price
+## Slide 50 · The price
 
 *On screen: price*
 
 [STAR MOMENT. Say nothing for three seconds before you speak.]
-SAY: "Not 455,000 pesos. Not even 75,000. The 2026 rate is 60,000 pesos. Starting 2027 it is 75,000, so you save 15,000. That is more than seven times the value you pay."
+SAY: "Not 740,000 pesos. VIP enrollment in 2026 is 60,000 pesos. The planned 2027 price is 75,000, so you save 15,000. VIP alone carries 290,000 pesos of Club benefit value, almost five times what you enroll for."
 [Then stop talking. Hold the silence.] [3 min]
 
-## Slide 47 · The 2026 rate ends with the year.
+## Slide 51 · The 2026 rate ends with the year.
 
 *On screen: limiter*
 
-SAY: "The 2026 rate ends with the year. From 2027 it is 75,000 pesos. Join in 2026, and you lock in 60,000 and save 15,000."
-«CONFIRM: confirm the exact cut-off date, for example December 31, 2026. Say it out loud so the deadline is clear.»
+SAY: "The 2026 rate ends with the year. The planned 2027 price is 75,000 pesos. Enroll in 2026, and you lock in 60,000 and save 15,000."
+«CONFIRM: confirm the exact cut-off date, for example December 31, 2026. Say it out loud.»
 [1 min]
 
-## Slide 48 · Gold after the VIP Game. Platinum with a real-life deal.
+## Slide 52 · Gold after the VIP Game. Platinum with a real-life deal.
 
 *On screen: statement*
 
@@ -374,7 +403,7 @@ SAY: "And remember where this leads: Gold after the VIP Game, and Platinum, for 
 «CONFIRM: add any extra bonus for people who join in the room today. Only add what is truly extra.»
 [1 min]
 
-## Slide 49 · Message your facilitator. Pay. Get verified. You are in.
+## Slide 53 · Message your facilitator. Pay. Get verified. You are in.
 
 *On screen: statement*
 
@@ -382,7 +411,7 @@ SAY: "How do you join? Message your facilitator or the club page. You complete t
 «CONFIRM: say the real payment methods and any installment plan (GCash, bank transfer, cash, installments).»
 [1 min]
 
-## Slide 50 · Receipt. Member ID. Signed agreement. Your path is on record.
+## Slide 54 · Receipt. Member ID. Signed agreement. Your path is on record.
 
 *On screen: statement*
 
@@ -390,7 +419,7 @@ SAY: "And your seat is documented. You get a receipt, a Member ID, and a signed 
 «CONFIRM: this is a documentation assurance, not a money-back guarantee. Do not say 'guarantee' or promise refunds until the Board approves the refund, transfer, and cancellation policy.»
 [1 min]
 
-## Slide 51 · Bayanihan. Kapwa. Katiwala. Your place is ready.
+## Slide 55 · Bayanihan. Kapwa. Katiwala. Your place is ready.
 
 *On screen: statement*
 
@@ -398,7 +427,7 @@ SAY: "Bayanihan. Kapwa. Katiwala. Together, as one community, caring for each ot
 SAY: "The 2026 rate is 60,000 pesos. If you are ready, here is exactly what to do."
 [1 min]
 
-## Slide 52 · Here is exactly what to do now.
+## Slide 56 · Here is exactly what to do now.
 
 *On screen: cta*
 
@@ -408,14 +437,14 @@ SAY: "Step one: message your facilitator or the club page. Step two: lock in the
 «CONFIRM: add the real registration link to the deck as 'url' so a QR code shows.»
 ROOM MOVE: chat word = VIP. [3 min]
 
-## Slide 53 · Welcome to VIP.
+## Slide 57 · Welcome to VIP.
 
 *On screen: buyerswall*
 
 [Type each first name as it lands in the chat and press Enter. Names appear on the wall.]
 SAY: "Welcome to VIP, welcome, welcome!" [3 min]
 
-## Slide 54 · Thank you. When the rules change, you can change.
+## Slide 58 · Thank you. When the rules change, you can change.
 
 *On screen: statement*
 
