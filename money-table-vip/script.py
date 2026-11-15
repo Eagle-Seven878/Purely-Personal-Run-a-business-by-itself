@@ -477,3 +477,11 @@ S["item-4"]="""SAY: "Number four: the Graduation Game, where the rules change. V
 S["item-4"]="""SAY: "Number four: the Graduation Game, where the rules change. Valued at 25,000 pesos. And here is the good news: our games now run daily, so your pace is yours. The more you play, the sooner you graduate."
 «CONFIRM: say "games run daily" only if the daily schedule is live. Do not explain what SRT or RELM are for. If asked "when do I graduate?", use the answer in the Q&A at the end of this script.»
 [30 sec]"""
+
+# ===== Confirmed by the Club: SRT recommended in first 10 games and before graduation; pace depends on the participant =====
+S["item-2"]="""SAY: "Number two: 3 SRT Games, valued at 15,000 pesos. We recommend them within your first 10 games, and before graduation."
+«PRIVATE: SRT stands for Sir Ron's Table. It is recommended, not a hard gate. Do not explain what it is for. If asked: "You will discover why as you play."»
+[30 sec]"""
+S["item-4"]="""SAY: "Number four: the Graduation Game, where the rules change. Valued at 25,000 pesos. Our games now run daily, so your pace is yours. You graduate as soon as you have the basics."
+«CONFIRM: say "games run daily" only if the daily schedule is live. Do not explain what SRT or RELM are for. If asked "when do I graduate?", use the answer in the Q&A at the end of this script.»
+[30 sec]"""

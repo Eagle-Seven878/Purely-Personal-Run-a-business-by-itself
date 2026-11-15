@@ -3,7 +3,7 @@ from PIL import Image
 d=json.load(open('money-table-vip.deck.json'))
 md=open('money-table-vip-script.md').read()
 head=md[:md.index('---')]
-head=re.sub(r"- \[ \] GRADUATION PACE:.*\n","- [ ] GRADUATION PACE: it depends on the participant, and games now run daily. Confirm the daily schedule is live before saying so. Also decide whether SRT and RELM can run alongside the 10 games, and set a limit on \"play more\" loops.\n",head)
+head=re.sub(r"- \[ \] GRADUATION PACE:.*\n","- [ ] GRADUATION PACE (confirmed by the Club): it depends on how soon each participant wants the basics, and games run daily. SRT is recommended within the first 10 games and before Graduation. Confirm the daily schedule is live before saying so.\n",head)
 out=[head+"---",""]
 n=0
 def title(p): return p.get("title") or p.get("ask") or p.get("name") or p.get("label")
@@ -16,9 +16,10 @@ for p in d["panels"]:
         continue
     n+=1; out+=[f"## Slide {n} · {t}","",f"*On screen: {p['type']}*","",p["notes"],""]
 out+=["---","","## Appendix · If someone asks about the Graduation Game","",
-"**\"When do I graduate?\"**","SAY: \"It depends on you. Our games now run daily, so the more you play, the sooner you reach your Graduation Game. Your facilitator will show you exactly where you are on your journey.\"","«CONFIRM the daily schedule is live before saying so. Never promise a date.»","",
-"**\"Why so many steps before Graduation?\"**","SAY: \"Because Graduation is not another game. It is the moment the rules change. We want you ready for it, so you get the most from it.\"","«Do not explain SRT or RELM. If pressed: \"You will discover why as you play.\"»","",
-"**\"What if I am not ready?\"**","SAY: \"Then your facilitator will recommend more play, and tell you what to focus on. You are never left guessing.\"","«CONFIRM the limit on play-more loops before promising this.»",""]
+"**\"When do I graduate?\"**","SAY: \"It depends on you, on how soon you want the basics. Our games now run daily, so the more you play, the sooner you reach your Graduation Game. Your facilitator will show you exactly where you are on your journey.\"","«CONFIRM the daily schedule is live before saying so. Never promise a date.»","",
+"**\"Do I have to play the SRT Games before Graduation?\"**","SAY: \"We recommend them within your first 10 games, and before graduation. Your facilitator will guide you.\"","«Do not explain what SRT is for. If pressed: \"You will discover why as you play.\"»","",
+"**\"Why the extra steps before Graduation?\"**","SAY: \"Because Graduation is not another game. It is the moment the rules change. We want you ready for it, so you get the most from it.\"","«Do not explain RELM or SRT. If pressed: \"You will discover why as you play.\"»","",
+"**\"What if I am not ready?\"**","SAY: \"Then you keep playing, at your own pace, and your facilitator tells you what to focus on. You graduate when you have the basics.\"","",]
 open("money-table-vip-script.md","w").write("\n".join(out)); print(n)
 fs=sorted(glob.glob('verify-shots/panel-*.png')); ims=[Image.open(f).convert('RGB') for f in fs]
 ims[0].save('money-table-vip-deck.pdf',save_all=True,append_images=ims[1:],resolution=110); print(len(ims))

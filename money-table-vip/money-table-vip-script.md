@@ -14,7 +14,7 @@ Each item is marked «CONFIRM» or «PRIVATE» in the script below. None appear 
 - [ ] Exact cut-off date for the 2026 rate (for example December 31, 2026).
 - [ ] Exact Platinum qualification: what counts as a real-life deal.
 - [ ] SRT (Sir Ron's Table) Games and RELM are qualifications the Club observes. Never explain them. If asked: "You will discover why as you play."
-- [ ] GRADUATION PACE: it depends on the participant, and games now run daily. Confirm the daily schedule is live before saying so. Also decide whether SRT and RELM can run alongside the 10 games, and set a limit on "play more" loops.
+- [ ] GRADUATION PACE (confirmed by the Club): it depends on how soon each participant wants the basics, and games run daily. SRT is recommended within the first 10 games and before Graduation. Confirm the daily schedule is live before saying so.
 - [ ] Your personal reason for rewarding early members.
 - [ ] Regular Family Member price, if you have one.
 - [ ] Membership validity and renewal terms (awaiting Board approval in the manual).
@@ -237,8 +237,8 @@ SAY: "Let me show you the value of the journey, tier by tier. We start with VIP,
 
 *On screen: item*
 
-SAY: "Number two: 3 SRT Games, valued at 15,000 pesos. Games and training before graduation."
-«PRIVATE: SRT stands for Sir Ron's Table. Do not explain what it is for. These are qualifications the Club observes. If asked: "You will discover why as you play."»
+SAY: "Number two: 3 SRT Games, valued at 15,000 pesos. We recommend them within your first 10 games, and before graduation."
+«PRIVATE: SRT stands for Sir Ron's Table. It is recommended, not a hard gate. Do not explain what it is for. If asked: "You will discover why as you play."»
 [30 sec]
 
 ## Slide 26 · RELM
@@ -253,7 +253,7 @@ SAY: "Number three: RELM, valued at 15,000 pesos. Training before graduation."
 
 *On screen: item*
 
-SAY: "Number four: the Graduation Game, where the rules change. Valued at 25,000 pesos. And here is the good news: our games now run daily, so your pace is yours. The more you play, the sooner you graduate."
+SAY: "Number four: the Graduation Game, where the rules change. Valued at 25,000 pesos. Our games now run daily, so your pace is yours. You graduate as soon as you have the basics."
 «CONFIRM: say "games run daily" only if the daily schedule is live. Do not explain what SRT or RELM are for. If asked "when do I graduate?", use the answer in the Q&A at the end of this script.»
 [30 sec]
 
@@ -495,13 +495,16 @@ SAY: "Bayanihan, Kapwa, Katiwala. Good night, and keep playing."
 ## Appendix · If someone asks about the Graduation Game
 
 **"When do I graduate?"**
-SAY: "It depends on you. Our games now run daily, so the more you play, the sooner you reach your Graduation Game. Your facilitator will show you exactly where you are on your journey."
+SAY: "It depends on you, on how soon you want the basics. Our games now run daily, so the more you play, the sooner you reach your Graduation Game. Your facilitator will show you exactly where you are on your journey."
 «CONFIRM the daily schedule is live before saying so. Never promise a date.»
 
-**"Why so many steps before Graduation?"**
+**"Do I have to play the SRT Games before Graduation?"**
+SAY: "We recommend them within your first 10 games, and before graduation. Your facilitator will guide you."
+«Do not explain what SRT is for. If pressed: "You will discover why as you play."»
+
+**"Why the extra steps before Graduation?"**
 SAY: "Because Graduation is not another game. It is the moment the rules change. We want you ready for it, so you get the most from it."
-«Do not explain SRT or RELM. If pressed: "You will discover why as you play."»
+«Do not explain RELM or SRT. If pressed: "You will discover why as you play."»
 
 **"What if I am not ready?"**
-SAY: "Then your facilitator will recommend more play, and tell you what to focus on. You are never left guessing."
-«CONFIRM the limit on play-more loops before promising this.»
+SAY: "Then you keep playing, at your own pace, and your facilitator tells you what to focus on. You graduate when you have the basics."
