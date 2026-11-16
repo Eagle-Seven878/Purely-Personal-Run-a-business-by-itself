@@ -10,7 +10,7 @@
 
 # BOARD RESOLUTION NO. ____, SERIES OF 2026
 
-**A RESOLUTION (I) AFFIRMING THAT THE ANNUAL MEETING OF MEMBERS AND ELECTION OF TRUSTEES SHALL BE HELD ON THE THIRD SATURDAY OF NOVEMBER, 21 NOVEMBER 2026, AS PRESCRIBED BY THE BY-LAWS; AND (II) ENDORSING THE RETENTION OF THE INCUMBENT NATIONAL PRESIDENT, EXECUTIVE NATIONAL VICE PRESIDENT, AND TRUSTEES JEMUEL REQUIROSO IMPAS, ROY GIL BARRIENTOS, JOHN PHILIP SANARES ILANO AND DINLASAN CORPUZ REGINO**
+**A RESOLUTION (I) AFFIRMING THE BY-LAWS REQUIREMENTS ON THE DATE AND NOTICE OF THE ANNUAL MEETING OF MEMBERS AND ELECTION OF TRUSTEES, AND PROVIDING FOR ITS VALID HOLDING; AND (II) ENDORSING THE RETENTION OF THE INCUMBENT NATIONAL PRESIDENT, EXECUTIVE NATIONAL VICE PRESIDENT, AND TRUSTEES JEMUEL REQUIROSO IMPAS, ROY GIL BARRIENTOS, JOHN PHILIP SANARES ILANO AND DINLASAN CORPUZ REGINO**
 
 ---
 
@@ -46,9 +46,9 @@ the Board, after due deliberation, adopted the following:
 
 **WHEREAS**, **Section II(b) of the By-Laws** requires written notice of the regular meeting to be sent to all members at least **twenty-one (21) days** before the meeting, and such notice may be sent by electronic mail;
 
-**[WHEREAS**, written notice of the 21 November 2026 annual meeting was sent to all members on ______ 2026, which is at least twenty-one (21) days before the meeting;**]**
+**WHEREAS**, as of the date of this Resolution the written notice required by Section II(b) has **not** been sent to the members at least twenty-one (21) days before 21 November 2026, for the reason that ______________________________ [state the reason briefly and factually];
 
-**WHEREAS**, the date fixed by the By-Laws binds the Board, the officers and the members alike, and an annual meeting and election held on any other date, unless the By-Laws are first duly amended in the manner required by law, would be **contrary to the By-Laws** and open to challenge, to the damage of the Order and its members;
+**WHEREAS**, the date and notice requirements fixed by the By-Laws bind the Board, the officers and the members alike, and an annual meeting and election held without compliance with them, unless every member entitled to vote waives notice in writing, would be **contrary to the By-Laws** and open to challenge, to the damage of the Order and its members;
 
 **WHEREAS**, under **Section VI of the By-Laws**, immediately after their election the trustees must formally organize by electing a President, a Treasurer, a Secretary and such other officers as the By-Laws provide, and all officers hold office for one (1) year and until their successors are elected and qualified;
 
@@ -64,11 +64,11 @@ the Board, after due deliberation, adopted the following:
 
 **NOW, THEREFORE**, on motion duly made and seconded, the Board of Trustees hereby **RESOLVES**, as it is hereby **RESOLVED**:
 
-## PART B: SUBJECT I: AFFIRMATION OF THE DATE OF THE ANNUAL MEETING AND ELECTION
+## PART B: SUBJECT I: DATE AND NOTICE OF THE ANNUAL MEETING AND ELECTION
 
-**1. RESOLVED**, that the Board **affirms and confirms** that the annual meeting of the members, at which the trustees shall be elected, shall be held on **Saturday, 21 November 2026**, being the third Saturday of November, at ______________________, **Makati City**, in accordance with Sections II(a) and II(e) of the By-Laws.
+**1. RESOLVED**, that the Board **affirms** that Section II(a) of the By-Laws fixes the annual meeting of the members on the **third Saturday of November**, that Section II(b) requires **at least twenty-one (21) days' written notice** to all members, that Section II(e) requires the meeting to be held in **Makati City**, and that all of these bind the Order.
 
-**2. RESOLVED FURTHER**, that no other date for the said annual meeting and election shall be set, recognized or given effect unless the By-Laws are first duly amended as required by law.
+**2. RESOLVED FURTHER**, that (a) the annual meeting and election **may proceed on Saturday, 21 November 2026** at ______________________, Makati City, **only if** every member entitled to vote has signed a **written waiver of notice** and a quorum of a majority of the members is present, the Corporate Secretary to collect and certify the waivers before the meeting is called to order; and (b) **if complete waivers are not obtained** by ______ (date/time), the Corporate Secretary shall send written notice to all members (by electronic mail or other manner allowed by the SEC) **not later than ______ November 2026** for the annual meeting and election to be held on **Saturday, 12 December 2026** (or on the earliest date that is at least twenty-one (21) days after the notice) at ______________________, Makati City, the incumbent trustees and officers **holding over** in the meantime under Sections V(a), V(b) and VI.
 
 **3. RESOLVED FURTHER**, that the Corporate Secretary shall (a) confirm that written notice to all members complied with Section II(b) of the By-Laws, (b) receive proxies in the form required by Section IV of the By-Laws within a reasonable time before the meeting, (c) prepare the list of members entitled to vote and verify the **quorum of a majority of the members** required by Section III of the By-Laws, and (d) coordinate with the Election Committee, if any, for the orderly conduct of the election.
 
