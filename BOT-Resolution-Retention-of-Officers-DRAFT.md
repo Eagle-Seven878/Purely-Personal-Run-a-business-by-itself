@@ -10,7 +10,7 @@
 
 # BOARD RESOLUTION NO. ____, SERIES OF 2026
 
-**A RESOLUTION (I) AFFIRMING THAT THE ANNUAL MEETING OF MEMBERS AND ELECTION OF TRUSTEES SHALL BE HELD ON THE THIRD SATURDAY OF NOVEMBER, 21 NOVEMBER 2026, AS PRESCRIBED BY THE BY-LAWS; AND (II) ENDORSING THE RETENTION OF THE INCUMBENT NATIONAL PRESIDENT, EXECUTIVE NATIONAL VICE PRESIDENT, AND TRUSTEES JEMUEL REQUIROSO IMPAS, ROY GIL BARRIENTOS, JOHN PHILIP SANARES ILANO AND [DINLASAN CORPUZ REGINO]**
+**A RESOLUTION (I) AFFIRMING THAT THE ANNUAL MEETING OF MEMBERS AND ELECTION OF TRUSTEES SHALL BE HELD ON THE THIRD SATURDAY OF NOVEMBER, 21 NOVEMBER 2026, AS PRESCRIBED BY THE BY-LAWS; AND (II) ENDORSING THE RETENTION OF THE INCUMBENT NATIONAL PRESIDENT, EXECUTIVE NATIONAL VICE PRESIDENT, AND TRUSTEES JEMUEL REQUIROSO IMPAS, ROY GIL BARRIENTOS, JOHN PHILIP SANARES ILANO AND DINLASAN CORPUZ REGINO**
 
 ---
 
@@ -18,8 +18,8 @@ At a **[regular / special]** meeting of the Board of Trustees (the "Board") of T
 
 | Trustee | Position | Present / Absent |
 |---|---|---|
-| GILBERT HOLANDA TRANI | | |
-| ERICSON CARBALLO JOSON | | |
+| GILBERT HOLANDA TRANI | National President | |
+| ERICSON CARBALLO JOSON | Executive National Vice President | |
 | VLADIMIR AMBOYA DEADO | Treasurer | |
 | LEONARDO ALLAN PINEDA MASTRILI | | |
 | LARRY DIONO DELA PUERTA | | |
@@ -54,7 +54,7 @@ the Board, after due deliberation, adopted the following:
 
 **WHEREAS**, under **Section V(a) of the By-Laws**, each trustee holds office until the successor is elected and qualified;
 
-**WHEREAS**, the incumbent **National President**, **[FULL NAME]**, and the incumbent **Executive National Vice President**, **[FULL NAME]**, together with Trustees **JEMUEL REQUIROSO IMPAS, ROY GIL BARRIENTOS, JOHN PHILIP SANARES ILANO and [DINLASAN CORPUZ REGINO]**, have rendered faithful, diligent and continuous service to the Order since its organization;
+**WHEREAS**, the incumbent **National President**, **GILBERT HOLANDA TRANI**, and the incumbent **Executive National Vice President**, **ERICSON CARBALLO JOSON**, together with Trustees **JEMUEL REQUIROSO IMPAS, ROY GIL BARRIENTOS, JOHN PHILIP SANARES ILANO and DINLASAN CORPUZ REGINO**, have rendered faithful, diligent and continuous service to the Order since its organization;
 
 **WHEREAS**, continuity of leadership and institutional knowledge is necessary to safeguard the programs, chapters, records and compliance obligations of the Order in its first year of registration, and to ensure an orderly, peaceful and lawful conduct of the election;
 
@@ -74,7 +74,7 @@ the Board, after due deliberation, adopted the following:
 
 **4. RESOLVED FURTHER**, that the Board **endorses and recommends**:
 
-   a. **To the members**, the re-election as trustees, for the ensuing term fixed by the By-Laws, of the trustees among the following who are named in this paragraph: **JEMUEL REQUIROSO IMPAS, ROY GIL BARRIENTOS, JOHN PHILIP SANARES ILANO and [DINLASAN CORPUZ REGINO]**, and of the incumbent **National President, [FULL NAME]**, and the incumbent **Executive National Vice President, [FULL NAME]**; and
+   a. **To the members**, the re-election as trustees, for the ensuing term fixed by the By-Laws, of the following trustees: **JEMUEL REQUIROSO IMPAS, ROY GIL BARRIENTOS, JOHN PHILIP SANARES ILANO and DINLASAN CORPUZ REGINO**, and of the incumbent **National President, GILBERT HOLANDA TRANI**, and the incumbent **Executive National Vice President, ERICSON CARBALLO JOSON**; and
 
    b. **To the incoming Board of Trustees**, that immediately after the election, in the organizational meeting required by Section VI of the By-Laws, it **re-elect** the incumbent **National President** and the incumbent **Executive National Vice President** to their present offices, so that there is no gap in the leadership of the Order.
 
@@ -82,7 +82,7 @@ the Board, after due deliberation, adopted the following:
 
 **6. RESOLVED FURTHER**, that this endorsement is a **recommendation only**. It does not limit the right of any member in good standing to nominate, to be nominated, to vote in person or by proxy, or to run for office, and the final choice rests with the members (as to the trustees) and with the incoming Board (as to the officers).
 
-**7. RESOLVED FURTHER**, that the trustees named or holding the offices described in paragraph 4 **have a personal interest in Subject II and disclose it**, and that Subject II is approved only if it receives both (a) the affirmative vote of a **majority of the trustees present** at a meeting at which a quorum is present, and (b) the affirmative vote of a **majority of the disinterested trustees present**; the votes of the interested trustees, if cast, shall be recorded separately.
+**7. RESOLVED FURTHER**, that the trustees named or holding the offices described in paragraph 4 **have a personal interest in Subject II and disclose it**, and that Subject II is approved only if it receives the affirmative vote of a **majority of the trustees present** at a meeting at which a quorum is present, the votes of the interested trustees being recorded separately in the Record of Vote.
 
 ## PART D: GENERAL PROVISIONS
 
@@ -100,8 +100,8 @@ the Board, after due deliberation, adopted the following:
 
 | Trustee | Subject I (Paras. 1 to 3) | Subject II (Paras. 4 to 7) | Signature |
 |---|---|---|---|
-| GILBERT HOLANDA TRANI | Aye / Nay / Abstain | Aye / Nay / Abstain | |
-| ERICSON CARBALLO JOSON | Aye / Nay / Abstain | Aye / Nay / Abstain | |
+| GILBERT HOLANDA TRANI * | Aye / Nay / Abstain | Interested: Aye / Nay / Abstain | |
+| ERICSON CARBALLO JOSON * | Aye / Nay / Abstain | Interested: Aye / Nay / Abstain | |
 | VLADIMIR AMBOYA DEADO | Aye / Nay / Abstain | Aye / Nay / Abstain | |
 | LEONARDO ALLAN PINEDA MASTRILI | Aye / Nay / Abstain | Aye / Nay / Abstain | |
 | LARRY DIONO DELA PUERTA | Aye / Nay / Abstain | Aye / Nay / Abstain | |
@@ -112,11 +112,11 @@ the Board, after due deliberation, adopted the following:
 | JOHN PHILIP SANARES ILANO * | Aye / Nay / Abstain | Interested: Aye / Nay / Abstain | |
 | ALEX ALBANES PAGLUMOTAN | Aye / Nay / Abstain | Aye / Nay / Abstain | |
 
-\* Interested in Subject II. **Also mark as "Interested" the trustee who is the National President and the trustee who is the Executive National Vice President.**
+\* Interested in Subject II (the six trustees named in paragraph 4).
 
 **Quorum:** ____ of eleven (11) Trustees present.
 **Subject I:** ____ Aye, ____ Nay, ____ Abstain.
-**Subject II:** ____ Aye, ____ Nay, ____ Abstain. **Disinterested trustees present:** ____; **Aye among them:** ____.
+**Subject II:** ____ Aye, ____ Nay, ____ Abstain (of which interested trustees: ____ Aye).
 
 **ATTESTED BY:**
 
