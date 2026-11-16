@@ -1,8 +1,8 @@
 **REPUBLIC OF THE PHILIPPINES**
 
-**THE FRATERNAL ORDER OF HARIBON HARING IBON INTERNATIONAL INCORPORATED**
-*(A Non-Stock, Non-Profit Corporation, SEC Registration No. __________)*
-Principal Office: ______________________________________________
+**THE FRATERNAL ORDER OF HARIBON - HARING IBON INTERNATIONAL INC.**
+*(A Non-Stock Corporation, SEC Company Reg. No. 2026040246159-17)*
+1505 Avida San Lorenzo Tower 1, Chino Roces Avenue, Pio del Pilar, Makati City, 1230
 
 **OFFICE OF THE BOARD OF TRUSTEES**
 
@@ -10,77 +10,87 @@ Principal Office: ______________________________________________
 
 # BOARD RESOLUTION NO. ____, SERIES OF 2026
 
-**A RESOLUTION (I) AFFIRMING THAT THE REGULAR ELECTION SHALL BE HELD ON THE THIRD SATURDAY OF NOVEMBER, 21 NOVEMBER 2026, AS PRESCRIBED BY THE BY-LAWS; AND (II) ENDORSING THE RETENTION OF THE INCUMBENT NATIONAL PRESIDENT, EXECUTIVE NATIONAL VICE PRESIDENT, AND TRUSTEES JIMUEL EMPAS, ROY CARL BARRIENTOS, JOHN PHILIP ILANO AND [FULL NAME] SANLADIN**
+**A RESOLUTION (I) AFFIRMING THAT THE ANNUAL MEETING OF MEMBERS AND ELECTION OF TRUSTEES SHALL BE HELD ON THE THIRD SATURDAY OF NOVEMBER, 21 NOVEMBER 2026, AS PRESCRIBED BY THE BY-LAWS; AND (II) ENDORSING THE RETENTION OF THE INCUMBENT NATIONAL PRESIDENT, EXECUTIVE NATIONAL VICE PRESIDENT, AND TRUSTEES JEMUEL REQUIROSO IMPAS, ROY GIL BARRIENTOS, JOHN PHILIP SANARES ILANO AND [DINLASAN CORPUZ REGINO]**
 
 ---
 
-At a **[regular / special]** meeting of the Board of Trustees (the "Board") of the Fraternal Order of Haribon Haring Ibon International Incorporated (the "Order") held on ______ November 2026, at ______ (a.m./p.m.), at ______________________________ **[or by remote communication/videoconference, as allowed by the By-Laws and the Revised Corporation Code]**, with the following trustees present and constituting a quorum:
+At a **[regular / special]** meeting of the Board of Trustees (the "Board") of The Fraternal Order of HARIBON - Haring Ibon International Inc. (the "Order") held on ______ November 2026, at ______ (a.m./p.m.), at ______________________________ **[or by videoconference or other remote communication, as allowed by Section I(d) of the By-Laws]**, called by the President under Section I(b) of the By-Laws, **notice having been sent to every trustee at least two (2) days before the meeting, or waived, as allowed by Section I(c) of the By-Laws**, the following trustees were present, constituting a **quorum** of the eleven (11) trustees fixed by the Sixth Article of the Articles of Incorporation:
 
 | Trustee | Position | Present / Absent |
 |---|---|---|
-| [FULL NAME] | National President and Vice President of the Board | |
-| [FULL NAME] | Executive National Vice President | |
-| Jimuel Empas | Trustee | |
-| Roy Carl Barrientos | Trustee | |
-| John Philip Ilano | Trustee | |
-| [FULL NAME] Sanladin | Trustee | |
-| ______________ | Trustee | |
-| ______________ | Trustee | |
+| GILBERT HOLANDA TRANI | | |
+| ERICSON CARBALLO JOSON | | |
+| VLADIMIR AMBOYA DEADO | Treasurer | |
+| LEONARDO ALLAN PINEDA MASTRILI | | |
+| LARRY DIONO DELA PUERTA | | |
+| ROY GIL BARRIENTOS | | |
+| MICHAEL PINEDA MASTRILI | | |
+| DINLASAN CORPUZ REGINO | | |
+| JEMUEL REQUIROSO IMPAS | | |
+| JOHN PHILIP SANARES ILANO | | |
+| ALEX ALBANES PAGLUMOTAN | | |
 
-the Board, after due notice and deliberation, unanimously or by the vote recorded below, adopted the following:
+*(Trustees participating remotely are marked "Present (remote)". No trustee may attend or vote by proxy at a Board meeting, Section I(d).)*
+
+the Board, after due deliberation, adopted the following:
 
 ## PART A: RECITALS
 
-**WHEREAS**, the Order is a non-stock, non-profit corporation duly organized and existing under Philippine law and governed by the **Revised Corporation Code of the Philippines (Republic Act No. 11232)**, its **Articles of Incorporation**, and its **By-Laws**;
+**WHEREAS**, the Order is a non-stock corporation duly organized and existing under the laws of the Republic of the Philippines, registered with the Securities and Exchange Commission on 15 April 2026 under Company Reg. No. 2026040246159-17, and governed by the **Revised Corporation Code of the Philippines (Republic Act No. 11232)**, its **Articles of Incorporation**, and its **By-Laws**;
 
-**WHEREAS**, the Board of Trustees exercises the corporate powers of the Order, conducts its business, and controls its properties, and is bound to act within the Articles of Incorporation and By-Laws and in good faith, for the best interest of the Order and its members;
+**WHEREAS**, under Section V(b) of the By-Laws, the corporate powers of the Order are exercised, all its business conducted, and all its property controlled and held by the Board of Trustees;
 
-**WHEREAS**, **Article ____, Section ____ of the By-Laws** provides that the regular election of the trustees and national officers shall be held every **third Saturday of November**, which for the year 2026 falls on **Saturday, 21 November 2026**;
+**WHEREAS**, **Section II(a) of the By-Laws** provides that the regular or annual meeting of the members "shall be held annually on **3rd Saturday of November**", which in 2026 falls on **Saturday, 21 November 2026**, and the trustees are elected from among the members at the said annual meeting;
 
-**WHEREAS**, the date fixed by the By-Laws is binding on the Board, the officers and the members alike, and an election held on any other date, unless validly provided for by an amendment of the By-Laws duly adopted and, where required, filed with and approved by the Securities and Exchange Commission, would be **contrary to the By-Laws, void or voidable, and open to challenge**, to the damage of the Order, its members and its good standing;
+**WHEREAS**, **Section II(e) of the By-Laws** requires that meetings of members be held in the city or municipality where the principal office of the Order is located, which is **Makati City**;
 
-**WHEREAS**, the Board desires to put on record, for the guidance of all members and chapters and for the protection of the Order, that the election shall proceed on the date fixed by the By-Laws, with no postponement or advancement;
+**WHEREAS**, **Section II(b) of the By-Laws** requires written notice of the regular meeting to be sent to all members at least **twenty-one (21) days** before the meeting, and such notice may be sent by electronic mail;
 
-**WHEREAS**, the incumbent **National President**, **[FULL NAME]**, who also serves as Vice President of the Board, and the incumbent **Executive National Vice President**, **[FULL NAME]**, together with Trustees **Jimuel Empas, Roy Carl Barrientos, John Philip Ilano and [FULL NAME] Sanladin**, have rendered faithful, diligent and continuous service to the Order;
+**[WHEREAS**, written notice of the 21 November 2026 annual meeting was sent to all members on ______ 2026, which is at least twenty-one (21) days before the meeting;**]**
 
-**WHEREAS**, continuity of leadership and institutional knowledge during this period is necessary to safeguard the programs, chapters, records, compliance obligations and good name of the Order, and to ensure an orderly, peaceful and lawful conduct of the election;
+**WHEREAS**, the date fixed by the By-Laws binds the Board, the officers and the members alike, and an annual meeting and election held on any other date, unless the By-Laws are first duly amended in the manner required by law, would be **contrary to the By-Laws** and open to challenge, to the damage of the Order and its members;
 
-**WHEREAS**, the Board is authorized to make recommendations to the General Membership, who hold the power to elect the trustees, on matters it considers to be for the benefit of the Order;
+**WHEREAS**, under **Section VI of the By-Laws**, immediately after their election the trustees must formally organize by electing a President, a Treasurer, a Secretary and such other officers as the By-Laws provide, and all officers hold office for one (1) year and until their successors are elected and qualified;
+
+**WHEREAS**, under **Section V(a) of the By-Laws**, each trustee holds office until the successor is elected and qualified;
+
+**WHEREAS**, the incumbent **National President**, **[FULL NAME]**, and the incumbent **Executive National Vice President**, **[FULL NAME]**, together with Trustees **JEMUEL REQUIROSO IMPAS, ROY GIL BARRIENTOS, JOHN PHILIP SANARES ILANO and [DINLASAN CORPUZ REGINO]**, have rendered faithful, diligent and continuous service to the Order since its organization;
+
+**WHEREAS**, continuity of leadership and institutional knowledge is necessary to safeguard the programs, chapters, records and compliance obligations of the Order in its first year of registration, and to ensure an orderly, peaceful and lawful conduct of the election;
+
+**WHEREAS**, the power to elect the trustees rests with the members, and the power to elect the officers rests with the trustees under Section VI, and the Board may recommend to them the course of action it considers to be in the best interest of the Order;
 
 **NOW, THEREFORE**, on motion duly made and seconded, the Board of Trustees hereby **RESOLVES**, as it is hereby **RESOLVED**:
 
-## PART B: SUBJECT I: AFFIRMATION OF THE ELECTION DATE
+## PART B: SUBJECT I: AFFIRMATION OF THE DATE OF THE ANNUAL MEETING AND ELECTION
 
-**1. RESOLVED**, that the Board of Trustees **affirms and confirms** that the regular election of the Board of Trustees and national officers of the Order shall be held on **Saturday, 21 November 2026**, being the third Saturday of November, in accordance with **Article ____, Section ____ of the By-Laws**.
+**1. RESOLVED**, that the Board **affirms and confirms** that the annual meeting of the members, at which the trustees shall be elected, shall be held on **Saturday, 21 November 2026**, being the third Saturday of November, at ______________________, **Makati City**, in accordance with Sections II(a) and II(e) of the By-Laws.
 
-**2. RESOLVED FURTHER**, that no other date for the said election shall be set, recognized or given effect unless the By-Laws are first duly amended in the manner provided by the By-Laws and the Revised Corporation Code, and that all notices, nominations, voters' lists and election procedures shall be conducted on that basis.
+**2. RESOLVED FURTHER**, that no other date for the said annual meeting and election shall be set, recognized or given effect unless the By-Laws are first duly amended as required by law.
 
-**3. RESOLVED FURTHER**, that the Corporate Secretary shall issue, or cause to be issued, the notice of the election to all members entitled to vote **within the period and in the manner required by the By-Laws**, and shall coordinate with the Election Committee, if any, to ensure the orderly conduct of the election.
+**3. RESOLVED FURTHER**, that the Corporate Secretary shall (a) confirm that written notice to all members complied with Section II(b) of the By-Laws, (b) receive proxies in the form required by Section IV of the By-Laws within a reasonable time before the meeting, (c) prepare the list of members entitled to vote and verify the **quorum of a majority of the members** required by Section III of the By-Laws, and (d) coordinate with the Election Committee, if any, for the orderly conduct of the election.
 
 ## PART C: SUBJECT II: ENDORSEMENT OF RETENTION
 
-**4. RESOLVED FURTHER**, that the Board of Trustees hereby **endorses and recommends to the General Membership** the **retention**, for the ensuing term, of the following in their present positions:
+**4. RESOLVED FURTHER**, that the Board **endorses and recommends**:
 
-   a. The incumbent **National President**, [FULL NAME];
-   b. The incumbent **Executive National Vice President**, [FULL NAME];
-   c. Trustee **Jimuel Empas**;
-   d. Trustee **Roy Carl Barrientos**;
-   e. Trustee **John Philip Ilano**; and
-   f. Trustee **[FULL NAME] Sanladin**.
+   a. **To the members**, the re-election as trustees, for the ensuing term fixed by the By-Laws, of the trustees among the following who are named in this paragraph: **JEMUEL REQUIROSO IMPAS, ROY GIL BARRIENTOS, JOHN PHILIP SANARES ILANO and [DINLASAN CORPUZ REGINO]**, and of the incumbent **National President, [FULL NAME]**, and the incumbent **Executive National Vice President, [FULL NAME]**; and
 
-**5. RESOLVED FURTHER**, that pending the election and qualification of their successors, and as allowed by the By-Laws and the Revised Corporation Code, the above-named officers and trustees **shall continue to discharge their duties** so that there shall be no gap in the leadership, management and service of the Order.
+   b. **To the incoming Board of Trustees**, that immediately after the election, in the organizational meeting required by Section VI of the By-Laws, it **re-elect** the incumbent **National President** and the incumbent **Executive National Vice President** to their present offices, so that there is no gap in the leadership of the Order.
 
-**6. RESOLVED FURTHER**, that this endorsement is a **recommendation only**. It does not limit the right of any member in good standing to nominate, to be nominated, to vote or to run for office, and the final choice rests with the members who shall vote on 21 November 2026 in accordance with the By-Laws.
+**5. RESOLVED FURTHER**, that pending the election and qualification of their successors, as provided in Sections V(a), V(b) and VI of the By-Laws, the above-named officers and trustees **shall continue to discharge their duties**.
 
-**7. RESOLVED FURTHER**, that the trustees named in paragraph 4, having a personal interest in this Subject II, **disclose their interest and abstain from voting on Subject II**; the vote on Subject II shall be recorded separately, and the approval of Subject II shall be determined by the vote of the **disinterested trustees** present, a quorum being present.
+**6. RESOLVED FURTHER**, that this endorsement is a **recommendation only**. It does not limit the right of any member in good standing to nominate, to be nominated, to vote in person or by proxy, or to run for office, and the final choice rests with the members (as to the trustees) and with the incoming Board (as to the officers).
+
+**7. RESOLVED FURTHER**, that the trustees named or holding the offices described in paragraph 4 **have a personal interest in Subject II and disclose it**, and that Subject II is approved only if it receives both (a) the affirmative vote of a **majority of the trustees present** at a meeting at which a quorum is present, and (b) the affirmative vote of a **majority of the disinterested trustees present**; the votes of the interested trustees, if cast, shall be recorded separately.
 
 ## PART D: GENERAL PROVISIONS
 
-**8. RESOLVED FURTHER**, that the Board approves, and the other members of the Board are invited to concur in, this Resolution by affixing their signatures below.
+**8. RESOLVED FURTHER**, that the other trustees may concur in this Resolution by signing below, and a trustee who declines to sign or who votes "Nay" shall not be prejudiced.
 
-**9. RESOLVED FURTHER**, that the Corporate Secretary is directed to (a) enter this Resolution in the Minutes and Corporate Records of the Order, (b) furnish certified true copies to all chapters and members, and (c) keep the records of the election, including the minutes, the list of voters and the results, for reporting to the Securities and Exchange Commission, including the **General Information Sheet within thirty (30) days** from the election as required by the Revised Corporation Code and SEC rules.
+**9. RESOLVED FURTHER**, that the Corporate Secretary is directed to (a) enter this Resolution in the Minutes and Corporate Records, (b) furnish copies to the members and chapters, and (c) keep the minutes, the list of members present or represented, the proxies and the results of the election, for the report on the election of trustees and officers and the **General Information Sheet to be filed with the Securities and Exchange Commission within thirty (30) days** from the election, as required by the Revised Corporation Code and SEC rules.
 
-**10. RESOLVED FINALLY**, that the officers of the Order are authorized to do all acts and sign all documents necessary to carry out this Resolution, and that this Resolution **takes effect immediately** upon its approval.
+**10. RESOLVED FINALLY**, that the officers of the Order are authorized to do all acts and sign all documents necessary to carry out this Resolution, which **takes effect immediately** upon its approval.
 
 ---
 
@@ -90,17 +100,23 @@ the Board, after due notice and deliberation, unanimously or by the vote recorde
 
 | Trustee | Subject I (Paras. 1 to 3) | Subject II (Paras. 4 to 7) | Signature |
 |---|---|---|---|
-| [FULL NAME], National President | Aye / Nay / Abstain | Abstain (interested) | |
-| [FULL NAME], Exec. National VP | Aye / Nay / Abstain | Abstain (interested) | |
-| Jimuel Empas | Aye / Nay / Abstain | Abstain (interested) | |
-| Roy Carl Barrientos | Aye / Nay / Abstain | Abstain (interested) | |
-| John Philip Ilano | Aye / Nay / Abstain | Abstain (interested) | |
-| [FULL NAME] Sanladin | Aye / Nay / Abstain | Abstain (interested) | |
-| ______________ | Aye / Nay / Abstain | Aye / Nay / Abstain | |
-| ______________ | Aye / Nay / Abstain | Aye / Nay / Abstain | |
+| GILBERT HOLANDA TRANI | Aye / Nay / Abstain | Aye / Nay / Abstain | |
+| ERICSON CARBALLO JOSON | Aye / Nay / Abstain | Aye / Nay / Abstain | |
+| VLADIMIR AMBOYA DEADO | Aye / Nay / Abstain | Aye / Nay / Abstain | |
+| LEONARDO ALLAN PINEDA MASTRILI | Aye / Nay / Abstain | Aye / Nay / Abstain | |
+| LARRY DIONO DELA PUERTA | Aye / Nay / Abstain | Aye / Nay / Abstain | |
+| ROY GIL BARRIENTOS * | Aye / Nay / Abstain | Interested: Aye / Nay / Abstain | |
+| MICHAEL PINEDA MASTRILI | Aye / Nay / Abstain | Aye / Nay / Abstain | |
+| DINLASAN CORPUZ REGINO * | Aye / Nay / Abstain | Interested: Aye / Nay / Abstain | |
+| JEMUEL REQUIROSO IMPAS * | Aye / Nay / Abstain | Interested: Aye / Nay / Abstain | |
+| JOHN PHILIP SANARES ILANO * | Aye / Nay / Abstain | Interested: Aye / Nay / Abstain | |
+| ALEX ALBANES PAGLUMOTAN | Aye / Nay / Abstain | Aye / Nay / Abstain | |
 
-**Quorum:** ____ of ____ Trustees present.
-**Subject I:** ____ Aye, ____ Nay, ____ Abstain.  **Subject II:** ____ Aye, ____ Nay, ____ Abstain.
+\* Interested in Subject II. **Also mark as "Interested" the trustee who is the National President and the trustee who is the Executive National Vice President.**
+
+**Quorum:** ____ of eleven (11) Trustees present.
+**Subject I:** ____ Aye, ____ Nay, ____ Abstain.
+**Subject II:** ____ Aye, ____ Nay, ____ Abstain. **Disinterested trustees present:** ____; **Aye among them:** ____.
 
 **ATTESTED BY:**
 
@@ -110,22 +126,22 @@ Corporate Secretary
 **CERTIFIED CORRECT / PRESIDING:**
 
 ______________________________
-Presiding Officer
+President / Presiding Officer
 
 ---
 
 # SECRETARY'S CERTIFICATE
 
 **REPUBLIC OF THE PHILIPPINES )**
-**CITY/MUNICIPALITY OF __________ ) S.S.**
+**CITY OF ____________ ) S.S.**
 
 I, ______________________, of legal age, Filipino, with office address at ______________________, after having been duly sworn in accordance with law, depose and state that:
 
-1. I am the duly elected and incumbent **Corporate Secretary** of the **Fraternal Order of Haribon Haring Ibon International Incorporated** (the "Order"), a non-stock corporation duly organized and existing under Philippine law, with principal office at ______________________.
+1. I am the duly elected and incumbent **Corporate Secretary** of **The Fraternal Order of HARIBON - Haring Ibon International Inc.** (the "Order"), a non-stock corporation duly organized and existing under Philippine law, with Company Reg. No. 2026040246159-17, and with principal office at 1505 Avida San Lorenzo Tower 1, Chino Roces Avenue, Pio del Pilar, Makati City, 1230.
 
 2. As Corporate Secretary, I have custody of the corporate records, including the minutes of the meetings of the Board of Trustees.
 
-3. At the **[regular/special]** meeting of the Board of Trustees duly called and held on ______ November 2026, at which a **quorum was present and acting throughout**, the Board unanimously, or by the vote recorded in the Record of Vote, adopted **Board Resolution No. ____, Series of 2026**, a true and correct copy of which is attached as **Annex "A"**.
+3. At the **[regular/special]** meeting of the Board of Trustees duly called and held on ______ November 2026, at which a **quorum was present and acting throughout**, the Board adopted by the vote recorded therein **Board Resolution No. ____, Series of 2026**, a true and correct copy of which is attached as **Annex "A"**.
 
 4. The said Resolution has not been amended, modified or revoked and **remains in full force and effect**.
 
@@ -137,7 +153,7 @@ ______________________________
 Corporate Secretary
 Competent Evidence of Identity / ID No.: ______________
 
-**SUBSCRIBED AND SWORN** to before me this ____ day of November 2026 at ______________________, affiant exhibiting to me his/her competent evidence of identity, as stated above.
+**SUBSCRIBED AND SWORN** to before me this ____ day of November 2026 at ______________________, affiant exhibiting to me the competent evidence of identity stated above.
 
 ______________________________
 NOTARY PUBLIC
