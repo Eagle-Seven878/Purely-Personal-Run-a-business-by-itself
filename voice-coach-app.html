@@ -1,0 +1,347 @@
+<title>Voice Coach</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+/* Layout: one narrow column, sticky tab bar, big readable script card, record button as the focal point */
+:root{
+  --bg:#f2f5f7; --card:#ffffff; --fg:#14202b; --muted:#566878; --line:#dbe2e8;
+  --accent:#0f766e; --accent-fg:#ffffff; --rec:#d2343c; --soft:#e3f1ef; --warn:#a16207; --ok:#15803d;
+  --font-head:"Space Grotesk",system-ui,sans-serif; --font-body:"Inter",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0d151c; --card:#15212b; --fg:#e8eef3; --muted:#93a4b3; --line:#263543;
+  --accent:#2dd4bf; --accent-fg:#06221f; --rec:#ff6b6b; --soft:#133330; --warn:#facc15; --ok:#4ade80; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0d151c; --card:#15212b; --fg:#e8eef3; --muted:#93a4b3; --line:#263543;
+  --accent:#2dd4bf; --accent-fg:#06221f; --rec:#ff6b6b; --soft:#133330; --warn:#facc15; --ok:#4ade80; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:16px/1.5 var(--font-body);
+  padding-block:0 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+main{max-width:640px;margin:0 auto}
+h1,h2,h3{font-family:var(--font-head);margin:0;text-wrap:balance}
+header{padding:18px 0 8px;display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+header h1{font-size:22px}
+header .prog{color:var(--muted);font-size:14px;font-variant-numeric:tabular-nums}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5;display:flex;gap:6px;padding:8px 0;border-bottom:1px solid var(--line)}
+nav button{flex:1;padding:10px 4px;border:0;border-radius:10px;background:transparent;color:var(--muted);font:600 15px var(--font-body);cursor:pointer}
+nav button[aria-selected="true"]{background:var(--soft);color:var(--accent)}
+button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+section{display:flex;flex-direction:column;gap:14px;padding-top:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;min-width:0}
+.days{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px}
+.days button{flex:0 0 auto;width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--fg);font:600 14px var(--font-body);cursor:pointer;font-variant-numeric:tabular-nums}
+.days button[aria-current="true"]{border-color:var(--accent);background:var(--accent);color:var(--accent-fg)}
+.days button.done:not([aria-current="true"]){background:var(--soft);color:var(--accent);border-color:var(--accent)}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+h2{font-size:24px;margin-top:4px}
+ol.steps{margin:10px 0 0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+.btn{border:0;border-radius:12px;padding:13px 18px;font:600 16px var(--font-body);cursor:pointer;background:var(--accent);color:var(--accent-fg)}
+.btn.ghost{background:transparent;color:var(--fg);border:1px solid var(--line)}
+.btn.small{padding:8px 12px;font-size:14px}
+.btn:disabled{opacity:.5;cursor:default}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.script{max-height:46vh;overflow-y:auto;scroll-behavior:auto;padding:14px 4px;font-size:var(--sz,22px);line-height:1.65;border-radius:10px;background:var(--bg);white-space:pre-wrap}
+.script p{margin:0 0 .8em}
+.rec{width:104px;height:104px;border-radius:50%;border:0;background:var(--rec);color:#fff;font:700 15px var(--font-head);cursor:pointer;margin:0 auto;display:block}
+.rec[aria-pressed="true"]{animation:pulse 1.3s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 14px color-mix(in srgb,var(--rec) 25%,transparent)}}
+@media (prefers-reduced-motion:reduce){.rec[aria-pressed="true"]{animation:none}}
+.timer{font:600 34px var(--font-head);text-align:center;font-variant-numeric:tabular-nums}
+.muted{color:var(--muted);font-size:14px}
+textarea,input[type=number],select{width:100%;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--fg);font:16px var(--font-body);padding:10px}
+textarea{min-height:120px;resize:vertical}
+label{font-size:14px;font-weight:600;display:block;margin-bottom:4px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}
+.metric{border:1px solid var(--line);border-radius:12px;padding:12px}
+.metric b{display:block;font:700 28px var(--font-head);font-variant-numeric:tabular-nums}
+.tag{font-size:13px;font-weight:600}
+.good{color:var(--ok)} .warn{color:var(--warn)}
+.table-wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums;font-size:15px}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
+audio{width:100%}
+[hidden]{display:none!important}
+</style>
+
+<main>
+  <header><h1>Voice Coach</h1><span class="prog" id="prog"></span></header>
+  <nav role="tablist" aria-label="Sections">
+    <button role="tab" id="t-today" aria-selected="true" data-tab="today">Today</button>
+    <button role="tab" id="t-record" aria-selected="false" data-tab="record">Record</button>
+    <button role="tab" id="t-score" aria-selected="false" data-tab="score">Scorecard</button>
+  </nav>
+
+  <section id="today">
+    <div class="days" id="days" aria-label="Choose day"></div>
+    <div class="card">
+      <div class="eyebrow" id="d-eyebrow"></div>
+      <h2 id="d-title"></h2>
+      <p class="muted" id="d-goal" style="margin:6px 0 0"></p>
+      <ol class="steps" id="d-steps"></ol>
+      <div class="row" style="margin-top:14px">
+        <button class="btn" id="done-btn">Mark day done</button>
+        <button class="btn ghost" id="to-record">Go record</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="row" style="justify-content:space-between">
+        <div class="eyebrow">Practice script</div>
+        <div class="row">
+          <button class="btn ghost small" id="sz-down" aria-label="Smaller text">A-</button>
+          <button class="btn ghost small" id="sz-up" aria-label="Larger text">A+</button>
+        </div>
+      </div>
+      <div class="script" id="script" tabindex="0"></div>
+      <div class="row" style="margin-top:10px">
+        <button class="btn small" id="scroll-btn">Auto-scroll</button>
+        <label for="tp-wpm" style="margin:0">Pace</label>
+        <select id="tp-wpm" style="width:auto"><option>110</option><option>120</option><option>130</option><option selected>145</option><option>160</option><option>175</option></select>
+        <span class="muted">words per minute</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="record" hidden>
+    <div class="card">
+      <div class="eyebrow">Recording for day <span id="r-day">1</span></div>
+      <div class="timer" id="timer">0:00</div>
+
+      <div id="mic-mode" hidden>
+        <button class="rec" id="rec-btn" aria-pressed="false">Record</button>
+        <p class="muted" style="text-align:center">Records your voice and listens for a live transcript where the browser supports it.</p>
+      </div>
+
+      <div id="fallback-mode" hidden>
+        <p class="muted" style="margin-top:0">This view can't open the microphone directly, so use either option below.</p>
+        <div class="row">
+          <button class="btn" id="dict-btn" hidden>Dictate (live transcript)</button>
+          <label class="btn ghost" for="clip" style="margin:0;cursor:pointer">Record a clip with your phone</label>
+          <input type="file" id="clip" accept="audio/*" capture hidden>
+        </div>
+        <p class="muted">Dictate gives pace and filler numbers. The clip option opens your phone's recorder so you can listen back.</p>
+      </div>
+
+      <audio id="player" controls hidden></audio>
+    </div>
+
+    <div class="card">
+      <h3 style="font-size:18px">Check my recording</h3>
+      <p class="muted" style="margin:4px 0 12px">Paste a transcript from Google Recorder, Otter or Voice Memos if the live one is empty, then enter how long you spoke.</p>
+      <label for="tx">Transcript</label>
+      <textarea id="tx" placeholder="Your words appear here as you speak, or paste them."></textarea>
+      <div class="grid" style="margin-top:10px">
+        <div><label for="secs">Seconds spoken</label><input id="secs" type="number" min="1" inputmode="numeric"></div>
+        <div><label for="energy">Energy (1-5)</label>
+          <select id="energy"><option>1</option><option>2</option><option selected>3</option><option>4</option><option>5</option></select></div>
+        <div><label for="mis">Mis-heard words</label><input id="mis" type="number" min="0" value="0" inputmode="numeric"></div>
+      </div>
+      <div class="row" style="margin-top:12px"><button class="btn" id="analyze">Analyze</button></div>
+    </div>
+
+    <div class="card" id="result" hidden>
+      <div class="grid" id="metrics"></div>
+      <p id="verdict" style="margin:12px 0 0"></p>
+      <p class="muted" id="fill-list" style="margin:6px 0 0"></p>
+      <div class="row" style="margin-top:12px"><button class="btn" id="save">Save to day <span id="s-day">1</span></button><span class="muted" id="saved-note"></span></div>
+    </div>
+  </section>
+
+  <section id="score" hidden>
+    <div class="card">
+      <h3 style="font-size:18px">Your scorecard</h3>
+      <p class="muted" style="margin:4px 0 12px">Targets: 130-160 words per minute, under 3 fillers per minute, under 3 mis-heard words per minute.</p>
+      <div class="table-wrap"><table id="score-table"></table></div>
+      <div class="row" style="margin-top:12px"><button class="btn ghost small" id="reset">Clear all progress</button><span class="muted" id="reset-note"></span></div>
+    </div>
+  </section>
+</main>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap">
+<script>
+const BASE = "The best way to improve how you speak is to listen to yourself. Most people are surprised by what they hear. They notice they speak too quickly, trail off at the end of sentences, or fill silence with extra words. The good news is that every one of these habits can be changed with a few minutes of focused practice each day. Start slowly, breathe, and let each word land before you move on to the next.";
+const DAYS = [
+ {t:"Baseline", g:"Record how you sound today so you can measure progress.", s:["Record 2 minutes of unscripted talking about something you know.","Then record 1 minute reading the script below.","Analyze both and save the numbers."], x:BASE},
+ {t:"Breathing", g:"Finish sentences without running out of air.", s:["Breathe in for 4 counts, out on a steady 'sss' for 10-15. Repeat 5 times.","Read the script one sentence per breath.","Keep shoulders relaxed."], x:BASE},
+ {t:"Pace", g:"Find your target speed.", s:["Read the script at 120 wpm, then 170, then your target of 145.","Use the auto-scroll pace control to follow along.","Record the target pass and analyze it."], x:BASE},
+ {t:"Clarity", g:"Crisp consonants, fewer mis-heard words.", s:["Say each line slowly, then faster, 3 times each.","Land the final t, d, s and k sounds.","Re-read the baseline script and compare mis-heard words."], x:"Red leather, yellow leather.\nUnique New York.\nShe sells seashells by the seashore.\nPeter Piper picked a peck of pickled peppers.\n\n"+BASE},
+ {t:"Pauses, not fillers", g:"Replace um and uh with a silent beat.", s:["Talk for 1 minute on any topic.","When an 'um' comes, stay silent for 1 second.","Record and compare fillers per minute with Day 1."], x:"Topic ideas:\n- Describe your morning routine.\n- Explain what you do for work to a new neighbour.\n- Tell me about the best meal you've had this year."},
+ {t:"Volume", g:"Project without shouting.", s:["Read as if talking to someone across a large room.","Then as if talking to someone 3 feet away.","Settle on the level between, chin level."], x:BASE},
+ {t:"Checkpoint", g:"Re-record Day 1 and compare.", s:["Record the same 2 minute topic and the baseline script.","Analyze and save.","Rest your voice afterwards."], x:BASE},
+ {t:"Pitch variety", g:"Sound lively, not flat.", s:["Read with exaggerated highs and lows.","Read again at about 70% of that.","This is your natural sweet spot."], x:BASE},
+ {t:"Emphasis", g:"Stress the words that carry meaning.", s:["Say the line 7 times, stressing a different word each time.","Notice how the meaning shifts.","Then pick 2-3 key words per sentence in the script."], x:"I never said she took my money.\n\n"+BASE},
+ {t:"Strong endings", g:"End statements on a falling pitch.", s:["Say each line and let the last word drop.","Avoid trailing off or rising like a question.","Record and listen to the last word of each sentence."], x:"I can help with that.\nThe meeting is at three.\nWe will have it ready on Friday.\nThat is the right decision.\nThank you for your time."},
+ {t:"Storytelling", g:"Setup, turn, ending.", s:["Tell a 1 minute story in three parts.","Slow down for the key moment and pause before the punchline.","Record and analyze."], x:"Structure:\n1. Where were you and what was normal?\n2. What changed or went wrong?\n3. How did it end and what did you learn?"},
+ {t:"Real-world test", g:"Use it on a real call, pitch or voice note.", s:["Record a real conversation or voice note (with consent where needed).","Compare pace, fillers and endings with Day 1.","Note what slipped under pressure."], x:"Record a real call or voice note today. Type or paste its transcript on the Record tab."},
+ {t:"Fix your weak spot", g:"Repeat the drill that scored worst.", s:["Open the Scorecard and find your weakest number.","Repeat that day's drill twice.","Analyze and save."], x:BASE},
+ {t:"Final test", g:"Re-record Day 1 and compare the whole fortnight.", s:["Record the same 2 minute topic and the baseline script.","Analyze and save.","Compare Day 1, Day 7 and Day 14 on the Scorecard."], x:BASE}
+];
+const FILLERS = ["um","uh","er","ah","hmm","like","you know","basically","actually","literally","i mean","kind of","sort of"];
+const KEY = "voice-coach-v1";
+let st = {day:1, done:{}, scores:{}, size:22};
+try{ const s = JSON.parse(localStorage.getItem(KEY)||"null"); if(s) st = Object.assign(st,s); }catch(e){}
+const save = () => { try{ localStorage.setItem(KEY, JSON.stringify(st)); }catch(e){} };
+const $ = id => document.getElementById(id);
+
+/* tabs */
+function showTab(name){
+  for(const b of document.querySelectorAll("nav button")){ b.setAttribute("aria-selected", String(b.dataset.tab===name)); }
+  for(const id of ["today","record","score"]) $(id).hidden = id!==name;
+  if(name==="score") renderScore();
+  window.scrollTo(0,0);
+}
+document.querySelectorAll("nav button").forEach(b=>b.addEventListener("click",()=>showTab(b.dataset.tab)));
+$("to-record").onclick = ()=>showTab("record");
+
+/* today */
+function renderDays(){
+  const box = $("days"); box.textContent="";
+  DAYS.forEach((_,i)=>{
+    const n=i+1, b=document.createElement("button");
+    b.textContent=n; b.setAttribute("aria-label","Day "+n);
+    if(st.done[n]) b.className="done";
+    if(n===st.day) b.setAttribute("aria-current","true");
+    b.onclick=()=>{ st.day=n; save(); renderToday(); };
+    box.appendChild(b);
+  });
+  const c = Object.keys(st.done).length;
+  $("prog").textContent = c+" of 14 days done";
+}
+function renderToday(){
+  stopScroll();
+  const d = DAYS[st.day-1];
+  $("d-eyebrow").textContent = "Day "+st.day+" of 14";
+  $("d-title").textContent = d.t;
+  $("d-goal").textContent = d.g;
+  const ol=$("d-steps"); ol.textContent="";
+  d.s.forEach(s=>{const li=document.createElement("li"); li.textContent=s; ol.appendChild(li);});
+  const sc=$("script"); sc.textContent="";
+  d.x.split("\n\n").forEach(p=>{const e=document.createElement("p"); e.textContent=p; sc.appendChild(e);});
+  sc.scrollTop=0;
+  sc.style.setProperty("--sz", st.size+"px");
+  $("done-btn").textContent = st.done[st.day] ? "Done (tap to undo)" : "Mark day done";
+  $("r-day").textContent = st.day; $("s-day").textContent = st.day;
+  renderDays();
+}
+$("done-btn").onclick = ()=>{ if(st.done[st.day]) delete st.done[st.day]; else st.done[st.day]=true; save(); renderToday(); };
+$("sz-up").onclick = ()=>{ st.size=Math.min(40,st.size+3); save(); $("script").style.setProperty("--sz",st.size+"px"); };
+$("sz-down").onclick = ()=>{ st.size=Math.max(15,st.size-3); save(); $("script").style.setProperty("--sz",st.size+"px"); };
+
+/* teleprompter */
+let scrolling=false, raf=0, last=0, pos=0;
+function stopScroll(){ scrolling=false; cancelAnimationFrame(raf); $("scroll-btn").textContent="Auto-scroll"; }
+$("scroll-btn").onclick = ()=>{
+  if(scrolling){ stopScroll(); return; }
+  const el=$("script"); const words=el.textContent.trim().split(/\s+/).length;
+  const wpm=+$("tp-wpm").value; const dur=words/wpm*60;
+  const dist=Math.max(1,el.scrollHeight-el.clientHeight); const speed=dist/dur;
+  scrolling=true; pos=el.scrollTop; last=performance.now(); $("scroll-btn").textContent="Stop";
+  const tick=t=>{ if(!scrolling) return; pos+=speed*(t-last)/1000; last=t; el.scrollTop=pos;
+    if(pos>=dist){ stopScroll(); return; } raf=requestAnimationFrame(tick); };
+  raf=requestAnimationFrame(tick);
+};
+
+/* recording */
+let startT=0, tickId=0, stream=null, mr=null, chunks=[], recog=null, dict=null, dictOn=false, finalText="";
+const fmt = s => Math.floor(s/60)+":"+String(Math.floor(s%60)).padStart(2,"0");
+function startTimer(){ startT=Date.now(); $("timer").textContent="0:00"; tickId=setInterval(()=>{$("timer").textContent=fmt((Date.now()-startT)/1000);},250); }
+function stopTimer(){ clearInterval(tickId); const s=Math.round((Date.now()-startT)/1000); $("secs").value=s; return s; }
+const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+const micOk = !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia && window.MediaRecorder);
+
+async function startRec(){
+  try{ stream = await navigator.mediaDevices.getUserMedia({audio:true}); }
+  catch(e){ $("mic-mode").hidden=true; $("fallback-mode").hidden=false; return; }
+  chunks=[]; finalText=""; $("tx").value="";
+  mr=new MediaRecorder(stream);
+  mr.ondataavailable=e=>{ if(e.data.size) chunks.push(e.data); };
+  mr.onstop=()=>{ const b=new Blob(chunks,{type:mr.mimeType||"audio/webm"}); $("player").src=URL.createObjectURL(b); $("player").hidden=false; stream.getTracks().forEach(t=>t.stop()); };
+  mr.start(); startTimer();
+  if(SR){ recog=new SR(); recog.continuous=true; recog.interimResults=true; recog.lang="en-US";
+    recog.onresult=e=>{ let interim=""; for(let i=e.resultIndex;i<e.results.length;i++){ const r=e.results[i]; if(r.isFinal) finalText+=r[0].transcript+" "; else interim+=r[0].transcript; } $("tx").value=finalText+interim; };
+    recog.onend=()=>{ if($("rec-btn").getAttribute("aria-pressed")==="true"){ try{recog.start();}catch(e){} } };
+    try{ recog.start(); }catch(e){} }
+  $("rec-btn").setAttribute("aria-pressed","true"); $("rec-btn").textContent="Stop";
+}
+function stopRec(){
+  $("rec-btn").setAttribute("aria-pressed","false"); $("rec-btn").textContent="Record";
+  try{ if(recog) recog.stop(); }catch(e){}
+  if(mr && mr.state!=="inactive") mr.stop();
+  stopTimer();
+}
+$("rec-btn").onclick = ()=>{ $("rec-btn").getAttribute("aria-pressed")==="true" ? stopRec() : startRec(); };
+
+/* fallback: phone recorder clip */
+$("clip").onchange = e=>{
+  const f=e.target.files[0]; if(!f) return;
+  const p=$("player"); p.src=URL.createObjectURL(f); p.hidden=false;
+  p.onloadedmetadata=()=>{ if(isFinite(p.duration)) $("secs").value=Math.round(p.duration); };
+};
+/* fallback: dictation capability (set up at load so start() runs straight from the click) */
+$("dict-btn").onclick = ()=>{
+  if(!dict) return;
+  if(dictOn){ dict.stop().then(()=>{}).catch(()=>{}); return; }
+  finalText=""; $("tx").value="";
+  dict.start().catch(()=>{ $("dict-btn").textContent="Dictation was not allowed"; });
+};
+if(window.claude && window.claude.use){
+  window.claude.use("dictation").then(d=>{
+    if(!d) return; dict=d; $("dict-btn").hidden=false;
+    d.onPartial(({text})=>{ $("tx").value=finalText+text; });
+    d.onFinal(({text})=>{ finalText+=text+" "; $("tx").value=finalText; });
+    d.onState(({state})=>{
+      if(state==="listening"){ dictOn=true; $("dict-btn").textContent="Stop dictating"; startTimer(); }
+      else if(dictOn){ dictOn=false; $("dict-btn").textContent="Dictate (live transcript)"; stopTimer(); }
+    });
+  }).catch(()=>{});
+}
+if(micOk) $("mic-mode").hidden=false; else $("fallback-mode").hidden=false;
+
+/* analysis */
+let lastResult=null;
+function analyze(){
+  const text=$("tx").value.trim(); const secs=+$("secs").value;
+  if(!text||!secs){ $("result").hidden=false; $("metrics").textContent=""; $("verdict").textContent="Add a transcript and the seconds you spoke, then tap Analyze."; $("fill-list").textContent=""; lastResult=null; return; }
+  const low=" "+text.toLowerCase().replace(/[^a-z' ]+/g," ").replace(/\s+/g," ")+" ";
+  const words=text.split(/\s+/).filter(Boolean).length; const mins=secs/60;
+  const wpm=Math.round(words/mins); const found={}; let total=0;
+  for(const f of FILLERS){ const m=low.split(" "+f+" ").length-1; if(m){ found[f]=m; total+=m; } }
+  const fpm=Math.round(total/mins*10)/10; const mis=+$("mis").value||0; const mpm=Math.round(mis/mins*10)/10; const energy=+$("energy").value;
+  lastResult={wpm,fpm,mis,mpm,energy,secs,words};
+  const cls=(ok)=>ok?"good":"warn";
+  const wOk=wpm>=130&&wpm<=160, fOk=fpm<3, mOk=mpm<3;
+  const m=$("metrics"); m.textContent="";
+  [["Pace",wpm+" wpm",wOk?"In range":(wpm<130?"A little slow":"A little fast"),wOk],
+   ["Fillers",fpm+" /min",fOk?"Under 3":"Over 3",fOk],
+   ["Mis-heard",mpm+" /min",mOk?"Under 3":"Over 3",mOk],
+   ["Words",String(words),"in "+fmt(secs),true]].forEach(([l,v,n,ok])=>{
+    const d=document.createElement("div"); d.className="metric";
+    const a=document.createElement("span"); a.className="muted"; a.textContent=l;
+    const b=document.createElement("b"); b.textContent=v;
+    const c=document.createElement("span"); c.className="tag "+cls(ok); c.textContent=n;
+    d.append(a,b,c); m.appendChild(d); });
+  let tip = !wOk ? (wpm<130?"Try a slightly brisker pace and trim long pauses.":"Slow down and breathe at every full stop.") : !fOk ? "Swap each filler for a one-second silent pause." : !mOk ? "Open your mouth more and land the last consonants." : "Strong session. Keep the same habits and move on.";
+  $("verdict").textContent=tip;
+  const keys=Object.keys(found).sort((a,b)=>found[b]-found[a]);
+  $("fill-list").textContent = keys.length ? "Fillers found: "+keys.map(k=>k+" x"+found[k]).join(", ")+". Words like 'like' and 'so' can be normal, so judge by context." : "No filler words found.";
+  $("saved-note").textContent=""; $("result").hidden=false;
+}
+$("analyze").onclick=analyze;
+$("save").onclick=()=>{ if(!lastResult) return; st.scores[st.day]=Object.assign({at:Date.now()},lastResult); save(); $("saved-note").textContent="Saved to Day "+st.day; };
+
+/* scorecard */
+function renderScore(){
+  const t=$("score-table"); t.textContent="";
+  const head=document.createElement("tr"); ["Day","Pace","Fillers/min","Mis-heard/min","Energy"].forEach(h=>{const th=document.createElement("th"); th.textContent=h; head.appendChild(th);}); t.appendChild(head);
+  const days=Object.keys(st.scores).map(Number).sort((a,b)=>a-b);
+  if(!days.length){ const r=document.createElement("tr"), td=document.createElement("td"); td.colSpan=5; td.textContent="No results yet. Analyze a recording and tap Save."; r.appendChild(td); t.appendChild(r); return; }
+  days.forEach(d=>{ const s=st.scores[d], r=document.createElement("tr");
+    [d,s.wpm,s.fpm,s.mpm,s.energy].forEach(v=>{const td=document.createElement("td"); td.textContent=v; r.appendChild(td);}); t.appendChild(r); });
+  if(days.length>1){ const a=st.scores[days[0]], b=st.scores[days[days.length-1]];
+    const r=document.createElement("tr"), td=document.createElement("td"); td.colSpan=5;
+    td.textContent="Change since Day "+days[0]+": pace "+(b.wpm-a.wpm>=0?"+":"")+(b.wpm-a.wpm)+" wpm, fillers "+(Math.round((b.fpm-a.fpm)*10)/10)+" /min"; r.appendChild(td); t.appendChild(r); }
+}
+let armed=false;
+$("reset").onclick=()=>{ if(!armed){ armed=true; $("reset-note").textContent="Tap again to confirm."; setTimeout(()=>{armed=false;$("reset-note").textContent="";},4000); return; }
+  st={day:1,done:{},scores:{},size:22}; save(); armed=false; $("reset-note").textContent="Cleared."; renderToday(); renderScore(); };
+
+renderToday();
+</script>
