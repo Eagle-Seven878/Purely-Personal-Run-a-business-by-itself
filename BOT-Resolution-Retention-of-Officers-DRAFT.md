@@ -58,7 +58,9 @@ the Board, after due deliberation, adopted the following:
 
 **WHEREAS**, continuity of leadership and institutional knowledge is necessary to safeguard the programs, chapters, records and compliance obligations of the Order in its first year of registration, and to ensure an orderly, peaceful and lawful conduct of the election;
 
-**WHEREAS**, the power to elect the trustees rests with the members, and the power to elect the officers rests with the trustees under Section VI, and the Board may recommend to them the course of action it considers to be in the best interest of the Order;
+**WHEREAS**, the members of the Order entitled to vote are the members of the **National Assembly**, namely the **Governor, the Vice Governor and the three (3) National Assemblymen** elected in each region, who possess the qualifications set out in **[Article ___ of the Magna Carta]** and in the guidelines of the Order's COMELEC;
+
+**WHEREAS**, the power to elect the trustees rests with those members, and the power to elect the officers rests with the trustees under Section VI, and the Board may recommend to them the course of action it considers to be in the best interest of the Order;
 
 **NOW, THEREFORE**, on motion duly made and seconded, the Board of Trustees hereby **RESOLVES**, as it is hereby **RESOLVED**:
 
@@ -78,19 +80,21 @@ the Board, after due deliberation, adopted the following:
 
    b. **To the incoming Board of Trustees**, that immediately after the election, in the organizational meeting required by Section VI of the By-Laws, it **re-elect** the incumbent **National President** and the incumbent **Executive National Vice President** to their present offices, so that there is no gap in the leadership of the Order.
 
-**5. RESOLVED FURTHER**, that pending the election and qualification of their successors, as provided in Sections V(a), V(b) and VI of the By-Laws, the above-named officers and trustees **shall continue to discharge their duties**.
+**5. RESOLVED FURTHER**, that pending the valid election and qualification of their successors, as provided in Sections V(a), V(b) and VI of the By-Laws, **all incumbent trustees and officers hold over**, and the above-named officers and trustees **shall continue to discharge their duties**, so that there is no gap in the leadership of the Order.
 
-**6. RESOLVED FURTHER**, that this endorsement is a **recommendation only**. It does not limit the right of any member in good standing to nominate, to be nominated, to vote in person or by proxy, or to run for office, and the final choice rests with the members (as to the trustees) and with the incoming Board (as to the officers).
+**6. RESOLVED FURTHER**, that any purported meeting of the members or election held **without compliance** with Sections II, III and IV of the By-Laws, or with the Magna Carta and the guidelines of the Election Committee (COMELEC) of the Order, is **not an act of the Order**; that the Corporate Secretary shall not canvass, certify, enter in the records or report to the Securities and Exchange Commission any result of such a meeting; and that the officers are authorized, on the advice of counsel, to cure any defect in notice (including by obtaining written waivers of notice from the members) and to take all lawful steps to protect the Order, its members and its records.
 
-**7. RESOLVED FURTHER**, that the trustees named or holding the offices described in paragraph 4 **have a personal interest in Subject II and disclose it**, and that Subject II is approved only if it receives the affirmative vote of a **majority of the trustees present** at a meeting at which a quorum is present, the votes of the interested trustees being recorded separately in the Record of Vote.
+**7. RESOLVED FURTHER**, that this endorsement is a **recommendation only**. It does not limit the right of any member in good standing to nominate, to be nominated, to vote in person or by proxy, or to run for office, and the final choice rests with the members (as to the trustees) and with the incoming Board (as to the officers).
+
+**8. RESOLVED FURTHER**, that the trustees named or holding the offices described in paragraph 4 **have a personal interest in Subject II and disclose it**, and that Subject II is approved only if it receives the affirmative vote of a **majority of the trustees present** at a meeting at which a quorum is present, the votes of the interested trustees being recorded separately in the Record of Vote.
 
 ## PART D: GENERAL PROVISIONS
 
-**8. RESOLVED FURTHER**, that the other trustees may concur in this Resolution by signing below, and a trustee who declines to sign or who votes "Nay" shall not be prejudiced.
+**9. RESOLVED FURTHER**, that the other trustees may concur in this Resolution by signing below, and a trustee who declines to sign or who votes "Nay" shall not be prejudiced.
 
-**9. RESOLVED FURTHER**, that the Corporate Secretary is directed to (a) enter this Resolution in the Minutes and Corporate Records, (b) furnish copies to the members and chapters, and (c) keep the minutes, the list of members present or represented, the proxies and the results of the election, for the report on the election of trustees and officers and the **General Information Sheet to be filed with the Securities and Exchange Commission within thirty (30) days** from the election, as required by the Revised Corporation Code and SEC rules.
+**10. RESOLVED FURTHER**, that the Corporate Secretary is directed to (a) enter this Resolution in the Minutes and Corporate Records, (b) furnish copies to the members and chapters, and (c) keep the minutes, the list of members present or represented, the proxies and the results of the election, for the report on the election of trustees and officers and the **General Information Sheet to be filed with the Securities and Exchange Commission within thirty (30) days** from the election, as required by the Revised Corporation Code and SEC rules.
 
-**10. RESOLVED FINALLY**, that the officers of the Order are authorized to do all acts and sign all documents necessary to carry out this Resolution, which **takes effect immediately** upon its approval.
+**11. RESOLVED FINALLY**, that the officers of the Order are authorized to do all acts and sign all documents necessary to carry out this Resolution, which **takes effect immediately** upon its approval.
 
 ---
 
@@ -98,7 +102,7 @@ the Board, after due deliberation, adopted the following:
 
 ### RECORD OF VOTE
 
-| Trustee | Subject I (Paras. 1 to 3) | Subject II (Paras. 4 to 7) | Signature |
+| Trustee | Subject I (Paras. 1 to 3) | Subject II (Paras. 4 to 8) | Signature |
 |---|---|---|---|
 | GILBERT HOLANDA TRANI * | Aye / Nay / Abstain | Interested: Aye / Nay / Abstain | |
 | ERICSON CARBALLO JOSON * | Aye / Nay / Abstain | Interested: Aye / Nay / Abstain | |
