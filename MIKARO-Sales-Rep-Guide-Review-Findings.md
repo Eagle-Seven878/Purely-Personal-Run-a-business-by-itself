@@ -13,6 +13,38 @@
 
 ---
 
+## 0. Summary: what is lacking, what cannot be verified, and the possible effect
+
+### Lacking (missing from the guide or the sources)
+| Lacking | Possible effect |
+| :-- | :-- |
+| Refund, pre-activation and BOD refund rules (blank in S3, S4, S6) | Reps cannot answer "what if I cancel?" for a prepaid order; risk of an improvised promise or a dispute |
+| Payment channel, account, review target, tax treatment and final totals (blank) | No order can be completed correctly; reps may quote a total that later changes |
+| The rep's role in the self-service pipeline, handoff process and tracking tool | Leads and promises go unrecorded; inconsistent follow-up; no audit trail |
+| Rep-facing escalation owner, contact, compensation and discount answer | Unanswerable questions stall deals or reps invent terms |
+| CBF worksheet and rule set | Reps qualify buyers inconsistently; wrong-fit buyers may be pushed to Basic |
+| BOD validation (S7 checklist unchecked) | Reps sell a product whose scoring and payment flow have not been tested |
+| Reminders and notifications channel and cost (S2 ambiguous) | Reps may promise automatic reminders the product does not send |
+| Hosting, storage, retention, export, deletion terms; security contact | Reps cannot answer data-safety questions; prospects with privacy concerns walk away |
+| Pointers to the DPA, Privacy Notice, MSA and marketing-permission documents; outreach consent guidance | Privacy or marketing-consent breach risk in cold outreach |
+| Value case that exceeds the price; verified customer results | Weak answer to "is it expensive?"; lower conversion |
+| Source-numbering map (guide S-numbers versus pack document numbers) | Reps cannot trace a claim to its source |
+
+### Cannot be verified (what I could not check)
+| Not verified | Possible effect |
+| :-- | :-- |
+| DTI statistic "99.63% of establishments, 2024" (DTI site blocked in this session) | A wrong or outdated figure in Play 8 would damage credibility |
+| Pack documents 02, 06, 09, 11, and sources S5, S8, S9, S14 | Claims about legal, privacy, exit and module authority are unconfirmed |
+| MDN pages (S11–S13) on PWA | PWA definitions are unchecked, though the guide avoids selling PWA features |
+| The notebook, glossary and video | They may contain older prices or the superseded payment flow and contradict the guide |
+| Whether the live website and OS behave as the guide describes | The guide may describe preview behaviour that does not exist |
+| My judgement that reps are absent from the v2.2 pipeline | If a rep process exists outside the files I read, findings 6 and 7 would change |
+
+### Overall possible outcome
+If the guide is used as is, reps are likely to: quote unconfirmed terms, promise refunds, reminders or onboarding the sources do not support, sell the BOD before it is tested, and lose leads for lack of a recording process. The pricing, scope and arithmetic they will quote are accurate, so the main risk is in unresolved terms and process, not in the figures.
+
+---
+
 ## 1. What checked out (no action needed)
 - Price, terms and limits in the guide match S1–S4: ₱3,999/month, month-to-month, standard setup included, no separate setup fee, no 3-month minimum, 10 named users, one branch, 500-row import.
 - Setup target (10 business days after confirmed payment and complete inputs), support hours (Mon–Fri 9–5 Manila), one-business-day first response, one non-accumulating guidance hour, 7-day suspension grace, no automatic debit, first payment applied to the first month starting at go-live.
