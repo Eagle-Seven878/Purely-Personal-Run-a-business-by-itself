@@ -1,67 +1,77 @@
-# MIKARO Sales Rep Guide 2026 V1 — Review Findings
+# MIKARO Sales Rep Guide 2026 V1 — Review Findings (Version 2, source-checked)
 
-Reviewed: full guide, Chapters 1–20 and Appendices A–B (text export, 16 Nov 2026 version).
-Not reviewed: the five figures (images), the linked source documents S1–S7, the notebook, the video.
-Items marked **[Confirmed]** are visible inside the guide itself. Items marked **[Check source]** need someone to compare against S1–S7 before they are treated as errors.
+## What was checked
+- The full guide (Chapters 1–20, Appendices A–B), read in full.
+- The five figures, viewed in the PDF export (pages 6, 13, 14, 17, 20).
+- Source documents opened in Drive: S1 (blueprint, offers, brand control), S2 (Offer and Scope v2.0), S3 (Order Form v2.0), S4 (Service Policies v2.0), S6 (BOD Engagement v2.0), S7 (Revision Register and BOD Specification v2.0).
 
-Arithmetic checked and correct: ₱47,988 (12 months), ₱11,997 (3 months), ₱4,998 (BOD + 1 month), ₱4,000 balance, 58.3% margin, 16 hours equivalent, ₱3,000 and ₱1,000 illustrations.
-
----
-
-## A. Decisions needed (highest priority)
-
-1. **Prepayment before go-live. [Confirmed]** Buyers pay before setup (Ch 8, 17), but the subscription month starts at go-live. Refund and pre-activation rules are listed as unresolved (Ch 20). There is no rule for a client who never supplies complete inputs: the 10-business-day clock only starts once inputs are complete (Ch 15).
-2. **Renewal collection. [Confirmed]** Billing is monthly in advance, but there is no automatic debit (Ch 8). The guide does not say how each month is invoiced or collected.
-3. **Terms stated as policy but also listed as unresolved. [Confirmed]** Ch 14 states a 7-day suspension grace period, a 10-business-day setup target and support hours as "current policy". Ch 20 lists refunds, data export/deletion periods, tax treatment, hosting, and support/billing/security/privacy contacts as unresolved. Reps cannot tell which terms are safe to quote. Suggest one table: Confirmed / Pending / Not approved.
-4. **Source precedence. [Confirmed]** Appendix B says S1 sets the pipeline (v2.2), S2–S7 set commercial/service rules (v2.0), and the 13 Nov module tables "remain included". Ch 20 says a later approved decision controls. Nothing says which wins if they conflict.
-5. **Named owner and escalation path. [Confirmed]** "The authorized MIKARO owner" is referenced throughout but never named. No contact, channel, response time, or place to log the handoff record (Ch 8). No rep compensation or discount schedule (Ch 17), so reps are told to refer commercial requests to someone undefined.
-6. **Data privacy and outreach rules. [Confirmed gap]** Nothing on the Philippine Data Privacy Act, even though MIKARO holds clients' customer data. Cold-call and cold-message scripts (Ch 12) have no consent/opt-out guidance beyond "stop after a decline".
-7. **Tax. [Confirmed]** VAT/tax treatment is unresolved (Ch 5, 20) and reps have no approved answer to "is that tax-inclusive?" beyond "confirmed in writing".
-
-## B. Inconsistencies inside the guide
-
-8. **Reminders and notifications. [Confirmed]** Appendix A says Basic will "show or trigger" follow-up reminders (CRM) and "show or send reminders and overdue notifications" (Team). The main chapters only describe staff sending customer messages manually. The channel (email, SMS, in-app) and any cost are not stated. A rep asked "does it send reminders?" has no consistent answer.
-9. **Live demo versus "no routine Zoom". [Confirmed]** Ch 8 and 14 say no mandatory appointments and no routine Zoom onboarding. Ch 10 builds a ten-minute live walkthrough and Ch 12 scripts offer calls. The guide never says how reps deliver the demo or whether it counts as a call.
-10. **Support hour. [Confirmed]** "One routine-guidance hour per month" (Ch 15) is not in the price or offer summaries (Ch 1, 5), and it is unclear whether it is a call or written help, given "asynchronous help" elsewhere.
-11. **"Three offers" versus four rows. [Confirmed]** Ch 2 says three offers. The Ch 5 table lists four, including the free Client Business Fit check (CBF).
-12. **Setup time appears only in Ch 14 and 15. [Confirmed]** The 10-business-day target is missing from the Ch 1 "offer in one breath" and the Ch 5 setup section.
-13. **Version labels. [Confirmed]** The guide is V1 but refers to "BOD 2.0 rubric" (Ch 7) and "v2.2" (Ch 8 figure). Not explained.
-14. **Leftover old-version material. [Confirmed]** Ch 16 (Mehrabian warning), Ch 17 ("old module to avoid: SOP and Documentation Hub") and Ch 20 (old mandatory-diagnostic model) describe history a new rep does not need.
-15. **Demo versus validation. [Confirmed]** Every module in Appendix A says "Validate this in the released system before presenting it as tested". Ch 10 demonstrates several of those items (recurring visit, reversal, rework) using sample data. The guide should say which demo steps are scripted mock-ups.
-
-## C. Gaps in rep enablement
-
-16. **The CBF is not documented. [Confirmed]** No pass/fail criteria, no form. Ch 1 says to use it "when the published entry point is available", and there is no interim worksheet.
-17. **Three overlapping question sets. [Confirmed]** Ch 1 (five questions), Ch 6 (question bank), Ch 12 (discovery sequence). No single script.
-18. **Value story does not support the price. [Confirmed]** Both worked examples (Ch 13) come out below ₱3,999 (₱3,000 capacity value; ₱1,000 expected value). The guide correctly says not to add them, but the "Is it expensive?" objection has no strong answer, and no verified customer results exist.
-19. **Security and incidents. [Confirmed]** No hosting location or access-control evidence; the "designated urgent contact" for incidents is undefined.
-20. **Unmentioned inclusions. [Confirmed]** Appendix A includes Viber as an inquiry source and an "agreed deposit requirement" on quotes. Neither appears in the main chapters. Ch 3's "does it integrate with GCash?" answer should add that manual recording of GCash/Maya/QR Ph payments is supported.
-21. **Structure. [Confirmed]** The most important warning (prototype status, unresolved terms, Ch 20) is at the end. Ch 17's first learning session says to read Ch 1–5 only.
-22. **Local language. [Confirmed]** Taglish appears in some openers only; objection answers and recap are English.
-
-## D. Sources and citations
-
-23. **Orphan sources. [Confirmed]** S9 (Offers and Module Reference) is never cited in the text. S14 is a Canva design template, not a source. S5 (draft assets folder) is cited twice and only for readiness. S8 supports only the "first customer segments" line, which itself says the segments are unproven.
-24. **Thin citations for key terms. [Confirmed]** S3 is cited 3 times and S6 twice. The 7-day suspension, 10-day setup target and support hours rely on S2/S4 and need confirming.
-25. **v2.2 vs v2.0 skew. [Check source]** The pipeline (S1) is v2.2 but the order form, policies and BOD specs (S2–S7) are v2.0. Confirm S3/S4 reflect the self-service model in v2.2 (no mandatory diagnostic, interview or live onboarding).
-26. **DTI statistic. [Check source]** "99.63% of recorded establishments, 2024" (Ch 11, Fig 4) has not been checked against S10.
-27. **Figures. [Check source]** Figure 2 (payment and go-live flow) matters most because Ch 19 says the video version has a "corrected payment-flow visual". Confirm the figure in the guide matches the text.
+## Not checked
+- S5 (master folder), S8 (campaign), S9 (module reference, which S2 reproduces), S14 (Canva template).
+- The DTI figure (S10): the DTI website is not reachable from this session, so "99.63% of establishments, 2024" is unverified. The figure in the guide matches the guide text.
+- MDN pages (S11–S13), the Gemini notebook, the glossary and the video.
+- Pack documents 02 (MSA), 06 (DPA), 09 (Privacy Notice) and 11 (Delivery/Exit forms), which the sources reference but I did not open.
 
 ---
 
-## Suggested fixes, in order
-1. Add one Confirmed / Pending / Not approved terms table.
-2. Decide prepayment, refund and stalled-setup rules; decide how renewals are collected.
-3. Name the escalation owner and add a handoff-record tool or form.
-4. Add a short Data Privacy Act and outreach-consent section.
-5. Write a one-page CBF worksheet and merge the three question sets.
-6. Clarify reminders/notifications and the support hour.
-7. Move the Ch 20 readiness warning to the front; remove old-version references.
-8. Add a source-precedence rule and fix orphan/unused sources.
+## 1. What checked out (no action needed)
+- Price, terms and limits in the guide match S1–S4: ₱3,999/month, month-to-month, standard setup included, no separate setup fee, no 3-month minimum, 10 named users, one branch, 500-row import.
+- Setup target (10 business days after confirmed payment and complete inputs), support hours (Mon–Fri 9–5 Manila), one-business-day first response, one non-accumulating guidance hour, 7-day suspension grace, no automatic debit, first payment applied to the first month starting at go-live.
+- BOD facts: ₱999, 18 questions, six areas, no interview, no automatic credit, scoring bands (below 1.5 / 1.5–2.5 / 2.5–3.0), minimum two known answers per area. All match S6/S7 exactly, including the "draft descriptive bands" wording.
+- Module scope: all six modules, KPI definitions and exclusions in Chapter 4 and Appendix A match the S2 tables.
+- Figures 1, 3 and 5 match their text; Figure 5 values (12,000 / 8,000 / 5,000 / 4,000 / 7,000) match the table. Figure 2 matches the pipeline in S1. Figure 4 matches its text.
+- Arithmetic: ₱47,988, ₱11,997, ₱4,998, ₱4,000, 58.3%, 16 hours, ₱3,000 and ₱1,000 are all correct.
+
+## 2. Corrections to my earlier findings
+- **Stalled setup:** S4 says prolonged client delay is handled by a written revised plan with no delay charge, and Ch 15 says the same. That part of my earlier finding was wrong. Refund rules are still blank in S3/S4.
+- **Terms "stated as policy but listed as unresolved":** the Ch 14 values (7-day grace, 10-day target, hours) are all supported by S2–S4. The remaining problem is only that the guide does not label which terms are confirmed and which are placeholders.
+- **Source precedence:** S1 does state it (16 Nov commercial decisions and the v2.2 pipeline govern; the 13 Nov module tables stay included and authoritative). The guide just does not cite S9 as the module authority.
+- **v2.0 vs v2.2:** not a real mismatch. S7 shows all pack documents were reissued as 2.0 for the self-service model; "v2.2" is the pipeline label. It is a labelling confusion only.
+- **"Three offers" versus four rows:** S2 also says three offers; the guide table adds the free CBF row. Clarify only.
+- **Data privacy:** the pack does include a DPA, Privacy Notice, MSA and marketing-permission/NDA protections. The gap is that the guide never tells reps these exist.
+- **Reminders ambiguity** comes from S2 itself ("show or trigger", "show or send"), not from the guide.
+
+## 3. Decisions needed (for Cyndi / Mia)
+1. **Refund rules are blank in the sources.** Subscription, pre-activation, provider-failure and BOD refund rules are all placeholders in S3/S4/S6. Reps are paid-before-setup sellers with no refund answer.
+2. **Payment channel, account, review target, tax treatment and final totals are blank** (S2–S4, S6). The guide says this correctly; the decision is still open.
+3. **Reminders and notifications.** S2 says Basic will "show or trigger" CRM reminders and "show or send" overdue notifications, but never says by what channel or at what cost. Decide and state it.
+4. **Named owner and escalation path.** The sources reference "authorized MIKARO reviewer/owner" and placeholders for support, billing, privacy, security and escalation contacts. No rep-facing contact exists.
+5. **Rep compensation and discounts.** None approved (S2 says "no automatic discount"). Reps need a stated answer.
+
+## 4. New findings from the source check
+6. **Reps do not appear in the v2.2 pipeline at all.** S1 and S2 describe a self-service journey: website CBF → business-named preview → optional BOD → order → manual payment. "A clear standard fit can proceed without a sales call." The guide's rep-led demo (Ch 10), call scripts (Ch 12) and handoff record (Ch 8) are additions with no source describing the rep role, handoff, or tool.
+7. **There is no real tracking system for reps.** S1 says both the website and MIKARO OS use sample data and browser-local state, and are not a production backend. Ch 2 says MIKARO OS is "used to manage MIKARO's own prospects and subscriptions", which overstates its status. The Ch 8 handoff record has nowhere to live.
+8. **The BOD is not launch-ready, but the guide teaches it as available.** S7's pre-launch checklist (rubric validation, five sample customers, payment-state tests, locked-before-confirmation tests, role/file-handling tests) is entirely unchecked. S6 leaves the BOD refund rule and payment-review target blank. Ch 20's pre-order checks do not list BOD validation, and Ch 7 and 12 teach reps to pitch it.
+9. **S2 contradicts itself on onboarding.** The Basic row says "guided onboarding"; the same document says wizard, recorded walkthroughs, asynchronous help, no live session. Reps may repeat "guided onboarding". S2's BOD row also says "intake questionnaire", which S6 and the guide do not mention. Fix in S2.
+10. **Support detail the guide omits.** S4 says the channel is email/ticket, routine guidance time is tracked with a warning before separately quoted work, a due-date reminder precedes suspension, and price changes need prior disclosure. S2 adds "no automatic overage charge". The guide has none of these.
+11. **Pack numbering does not match guide numbering.** S3/S4 refer to documents 01, 02, 06, 08, 09, 11 of a 15-document pack; the guide cites S1–S14. Reps cannot map one to the other, and the guide references only four pack documents.
+12. **Unmentioned inclusions confirmed in S2.** Viber as an inquiry source, an "agreed deposit requirement" on quotes, and manual recording of GCash, Maya and QR Ph payments. The Starter Kit also includes an onboarding checklist, which the guide omits.
+
+## 5. Gaps and inconsistencies inside the guide (unchanged from version 1)
+13. **CBF is not documented for reps.** S2 lists what it collects (business/contact, operating needs, essential requirements, users/branches, readiness) and S7 says it is "a separate rule set", but neither the rule set nor an interim worksheet is in the guide. Ch 1 says to use it "when the entry point is available".
+14. **Three overlapping question sets** (Ch 1, 6, 12) with no single script.
+15. **Value story does not support the price.** Both Ch 13 examples come out below ₱3,999 and there are no verified customer results.
+16. **Demo versus validation.** S2 marks every module's acceptance check "validate before launch; not a claim of completed testing". Ch 10 demonstrates several of those items using sample data without saying which steps are scripted mock-ups.
+17. **Live demo versus "no routine call".** Ch 10 and 12 invite walkthroughs; S2 reserves calls for material blockers. State whether a rep demo counts.
+18. **Leftover old-version material** in Ch 16, 17 and 20 (Mehrabian warning, "old module to avoid", old mandatory-diagnostic model).
+19. **Structure.** The most important warning (Ch 20, prototype status and unresolved terms) is at the end; Ch 17's first session says to read Ch 1–5 only.
+20. **Security and hosting.** No hosting location or access-control evidence; security contact is a placeholder in S4.
+21. **Local language.** Taglish appears in some openers only; objection answers and recap are English.
+
+## 6. Suggested fixes, in order
+1. Add a Confirmed / Pending / Not approved terms table.
+2. Decide refunds, payment channel and review target, tax treatment.
+3. Define the rep role in the v2.2 pipeline: demo or no demo, who owns handoff, and what tool records it.
+4. Add BOD validation to the Ch 20 pre-order checks; do not teach reps to sell BOD until S7's checklist passes.
+5. Fix S2's "guided onboarding" wording; decide the reminders channel.
+6. Name the escalation owner; add rep-facing contact and compensation answers.
+7. Add a one-page CBF worksheet; merge the three question sets.
+8. Add a short section pointing to the DPA, Privacy Notice, MSA and marketing-permission documents, and add privacy and outreach-consent guidance.
+9. Add a source-numbering map (guide S-numbers ↔ pack document numbers) and cite S9 as the module authority.
+10. Move the Ch 20 readiness warning to the front; remove old-version references.
 
 ## Questions for Cyndi / Mia
-- Who is the authorized owner for commercial and legal questions, and how should reps reach them?
-- What is the refund and pre-activation rule, and what happens if a client stalls during setup?
-- Are reminders and notifications sent by MIKARO, and through what channel?
-- Is the "one routine-guidance hour" a call or written help?
-- Which wins when S1 (v2.2) and S2–S7 (v2.0) differ?
+- What is the rep's role in the self-service pipeline, and where do reps record leads and handoffs?
+- What are the refund and pre-activation rules, and the payment channel and review target?
+- Are reminders sent by MIKARO, and by what channel?
+- Is BOD ready to sell, and when will S7's pre-launch checklist be completed?
+- Who is the authorized contact for commercial, legal and security questions?
