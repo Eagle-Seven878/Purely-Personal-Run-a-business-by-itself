@@ -38,7 +38,15 @@
 | MDN pages (S11–S13) on PWA | PWA definitions are unchecked, though the guide avoids selling PWA features |
 | The notebook, glossary and video | They may contain older prices or the superseded payment flow and contradict the guide |
 | Whether the live website and OS behave as the guide describes | The guide may describe preview behaviour that does not exist |
-| My judgement that reps are absent from the v2.2 pipeline | If a rep process exists outside the files I read, findings 6 and 7 would change |
+| Whether a rep process, handoff or tracking tool exists outside the files I read | The sources I opened do not describe one. That is a finding about those files, not proof that none exists. If one exists, findings 6 and 7 become "the guide does not point to it" |
+
+### Caveat on the status of these findings
+- This is a document-consistency review, not an audit of the product, contracts or legal position. It compares the guide with the files I could open and with itself.
+- "Lacking" means not found in the guide or in the sources I read (S1–S4, S6, S7). It does not mean it does not exist elsewhere, for example in unopened pack documents, a chat group or someone's head.
+- A "blank" placeholder in a source may already be decided and simply not yet written in. I cannot tell from the files.
+- "Cannot be verified" means I lacked access or did not open the file. It does not mean the claim is wrong.
+- The possible effects are my reasoning about how a rep could act on the guide. I have no evidence that any of them has occurred.
+- Findings should be confirmed by the document owners before the guide is changed or reps are told it is wrong.
 
 ### Overall possible outcome
 If the guide is used as is, reps are likely to: quote unconfirmed terms, promise refunds, reminders or onboarding the sources do not support, sell the BOD before it is tested, and lose leads for lack of a recording process. The pricing, scope and arithmetic they will quote are accurate, so the main risk is in unresolved terms and process, not in the figures.
